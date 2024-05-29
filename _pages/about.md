@@ -1,6 +1,6 @@
 ---
 layout: about
-title: ICET-lab
+title: about
 permalink: /
 subtitle: Interaction Design and Software Engineering, Chalmers & University of Gothenburg
 
@@ -19,12 +19,6 @@ social: true # includes social icons at the bottom of the page
 
 The Internet Computing and Emerging Technologies lab (ICET-lab) is a research group of at the <a href="https://www.chalmers.se/en/departments/cse/our-research/interaction-design-and-software-engineering/">Interaction Design and Software Engineering division</a> at <a href="https://www.chalmers.se/">Chalmers</a> and the <a href="https://www.gu.se/en">University of Gothenburg</a>. We conduct research on software engineering for distributed, Web, and cloud-based systems, particularly related to issues of software performance. The lab is led by <a href="http://philippleitner.net/">Dr. Philipp Leitner</a>, associate professor at Chalmers, and currently entails three faculty and five PhD students.
 
----
-team:
-  align: center
-  image: icse18.jpg
-  image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>Group picture</p>
-    <p>(from <a href="https://conf.researchr.org/home/icse-2018">ICSE'18</a>)</p>
----
+<p>Group picture</p>
+![Group Picture](/icse18.jpg)
+<p>(from <a href="https://conf.researchr.org/home/icse-2018">ICSE'18</a>)</p>
