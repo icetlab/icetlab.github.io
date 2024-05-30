@@ -21,4 +21,4 @@ The Internet Computing and Emerging Technologies lab (ICET-lab) is a research gr
 
 <p>Group picture</p>
   {% include figure.liquid loading="eager" path="assets/img/icse18.jpg" class="img-fluid z-depth-1" width="50%" zoomable=true %}
-<p>(from <a href="https://conf.researchr.org/home/icse-2018">ICSE'18</a>)</p>
+<p>(famously outdated, from <a href="https://conf.researchr.org/home/icse-2018">ICSE'18</a>)</p>
