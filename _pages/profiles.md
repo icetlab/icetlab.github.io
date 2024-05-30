@@ -4,7 +4,7 @@ permalink: /people/
 title: people
 description: current ICET-lab members
 nav: true
-nav_order: 5
+nav_order: 2
 
 profiles:
   - align: right
@@ -27,8 +27,7 @@ profiles:
     content: about_erlenhov.md
     image_circular: false # crops the image to make it circular
     more_info: >
-      <p>PhD Student</p>
-      <p>Timlärare</p>
+      <p>PhD Student & Timlärare</p>
       <p>Chalmers University of Technology</p>
   - align: left
     image: samoaa.png
