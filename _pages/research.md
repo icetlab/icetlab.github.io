@@ -1,10 +1,10 @@
 ---
 layout: page
-permalink: /teaching/
-title: teaching
-description: 
+permalink: /research/
+title: research 
+description: ICET-lab research projects, present and past
 nav: true
-nav_order: 6
+nav_order: 2
 ---
 
 <b>Under construction</b>
