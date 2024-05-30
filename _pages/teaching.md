@@ -2,9 +2,9 @@
 layout: page
 permalink: /teaching/
 title: teaching
-description: 
+description:  Internet computing teaching at Gothenburg University and Chalmers
 nav: true
-nav_order: 6
+nav_order: 4
 ---
 
 <b>Under construction</b>
