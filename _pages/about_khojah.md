@@ -1,7 +1,6 @@
 <b> Ranim Khojah </b>
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am is a PhD student at Chalmers University of Technology, conducting research on the use of large language models in software engineering. I conduct my research under the supervision of <a href="http://philippleitner.net">Philipp Leitner and <a href="https://www.gu.se/en/about/find-staff/franciscodeoliveiraneto">Francisco Gomes</a>. I hold a bachelor's degree in Software Engineering and a master's degree in Language Technology, both from the University of Gothenburg.
+My current interests include chatbots that can assist with activities during the software development lifecycle, such as code generation, explanation, and completion.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+More information can be found on my <a href="https://ranimkhojah.com">personal webpage</a>.
