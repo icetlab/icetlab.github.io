@@ -2,27 +2,46 @@
 layout: profiles
 permalink: /people/
 title: people
-description: members of the lab or group
+description: current ICET-lab members
 nav: true
 nav_order: 7
 
 profiles:
-  # if you want to include more than one profile, just replicate the following block
-  # and create one content file for each profile inside _pages/
   - align: right
-    image: prof_pic.jpg
-    content: about_einstein.md
+    image: leitner.jpg
+    content: about_leitner.md
     image_circular: false # crops the image to make it circular
     more_info: >
-      <p>555 your office number</p>
-      <p>123 your address street</p>
-      <p>Your City, State 12345</p>
+      <p>Associate Professor</p>
+      <p>Unit Lead Software Engineering 2</p>
+      <p>Chalmers University of Technology</p>
   - align: left
-    image: prof_pic.jpg
-    content: about_einstein.md
+    image: erlenhov.png
+    content: about_erlenhov.md
     image_circular: false # crops the image to make it circular
     more_info: >
-      <p>555 your office number</p>
-      <p>123 your address street</p>
-      <p>Your City, State 12345</p>
+      <p>PhD Student</p>
+      <p>Timlärare</p>
+      <p>Chalmers University of Technology</p>
+  - align: right
+    image: ayas.png
+    content: about_ayas.md
+    image_circular: false # crops the image to make it circular
+    more_info: >
+      <p>PhD Student</p>
+      <p>Chalmers University of Technology</p>
+  - align: left
+    image: samoaa.png
+    content: about_samoaa.md
+    image_circular: false # crops the image to make it circular
+    more_info: >
+      <p>PhD Student</p>
+      <p>Chalmers University of Technology</p>
+  - align: right
+    image: khojah.png
+    content: about_khojah.md
+    image_circular: false # crops the image to make it circular
+    more_info: >
+      <p>PhD Student</p>
+      <p>Chalmers University of Technology</p>            
 ---
