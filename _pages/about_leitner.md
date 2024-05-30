@@ -1,7 +1,7 @@
 <b> Philipp Leitner </b>
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am an Associate Professor of Software Engineering at Chalmers, a private research university in Gothenburg, Sweden. I currently manage the Software Engineering 2 unit, with approximately 25 faculty and doctoral students. My current research interests are centered around measuring, predicting, and improving the performance of software systems, especially (but not only) in a cloud computing context.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I also lead the Internet Computing and Emerging Technologies Lab (ICET-lab), a research group focussing on various aspects of Internet and cloud computing. I have published some 150 peer-reviewed publications on performance engineering, (micro-)services, cloud systems, and empirical software engineering, leading to an h-index of 45 as <a href="https://scholar.google.com/citations?user=wZ9f8CAAAAAJ&hl=en">tracked by Google Scholar</a>. I am commonly publishing at and reviewing for top conferences and journals in the field, including ICSE, FSE, TSE, and EMSE.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+More detailed information, including a full publication list, can be found on my <a href="http://philippleitner.net">personal webpage</a>.
