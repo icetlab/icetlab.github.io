@@ -14,7 +14,7 @@ Please read the interviews with two previous students (<a href="https://www.gu.s
 ---
 DIT033 / DAT335 <b>Data Management</b>
 
-Data Management is an introduction-level database course for software developers. We follow <a href="https://www.amazon.de/-/en/Ramez-Elmasri/dp/1292097612/ref=sr_1_17?crid=DSE43PL337WT&dib=eyJ2IjoiMSJ9.1OkYB2ZedIPF5smdk1tvLZcM44X1QYqjIgEGYcAKTmbdvK912e2-NuyXOxL97KvyHI1R4T_DvuiRlyDE1xQU5Q.uIUmODe9pYPPRNDH9coPkBxs8_viVh5PhOfqpx5oeKA&dib_tag=se&keywords=databases&qid=1717159291">Fundamentals of Database Systems</a> as a textbook, and also talk about non-relational databases using MongoDB as a case study.
+Data Management is an introduction-level database course for software developers. We follow <a href="https://www.amazon.de/-/en/Ramez-Elmasri/dp/1292097612">Fundamentals of Database Systems</a> as a textbook, and also talk about non-relational databases using MongoDB as a case study.
 
 ---
 DIT342 <b>Web Development</b>

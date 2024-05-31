@@ -17,3 +17,11 @@ ICET-lab is currently mostly funded through grants from the <a href="http://vr.s
 
 ---
 
+<div class="row">
+  <div class="col-md-6">
+  Some text.
+  </div>
+  <div class="col-md-6">
+  Some other text.
+  </div>
+</div>
