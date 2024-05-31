@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-The first version of our new website is online! :sparkles: :sparkles:
+The first version of our new website is online! :sparkles::sparkles:
