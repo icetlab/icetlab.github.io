@@ -21,9 +21,12 @@ In the following, we briefly present some of our current research themes, as wel
 
 <div class="row">
   <div class="col-md-6">
-  Some text.
+    <b>Performance Analysis</b>
+    Under construction.
   </div>
   <div class="col-md-6">
-  Some other text.
+    <div class="publications">
+        {% bibliography --group_by none --query @*[theme=performance]* %}
+    </div>
   </div>
 </div>
