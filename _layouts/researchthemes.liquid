@@ -1,0 +1,26 @@
+---
+layout: page
+---
+<div class="post">
+  <article>
+    {% if page.themes %}
+      {% for theme in page.themes %}
+        <hr>
+        <div class="publications col-md-6 float-{% if theme.align == 'left' %}left{% else %}right{% endif %}">
+          {% if theme.publications %}
+            {% bibliography --group_by none --query @*[theme=theme.publications]* %}
+          {% endif %}
+        </div>
+
+        <div class="clearfix col-md-6">
+          {% if theme.content %}
+            {% capture theme_content %}{% include_relative {{ theme.content }} %}{% endcapture %}
+            {{ theme_content | markdownify }}
+          {% else %}
+            {{ content }}
+          {% endif %}
+        </div>
+      {% endfor %}
+    {% endif %}
+  </article>
+</div>

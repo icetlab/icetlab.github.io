@@ -5,6 +5,12 @@ title: research
 description: ICET-lab research projects, present and past
 nav: true
 nav_order: 3
+
+themes:
+  - align: right
+    publications: performance
+    content: theme_performance.md
+    title: Performance Analysis
 ---
 
 The core research interest of ICET-lab is in software engineering for distributed, Web, and cloud-based systems, as well as (increasingly) in measuring and improving software performance. The overarching goal of the team is to understand how developers use emerging Internet technology, and to support the community in using these technologies effectively.
@@ -16,6 +22,20 @@ Virtually all our papers are available freely via the <a href="https://avandeurs
 ICET-lab is currently mostly funded through grants from the <a href="http://vr.se/">Swedish Research Council (VR)</a> and the <a href="http://wasp-sweden.org/">Wallenberg AI, Autonomous Systems, and Software Programme (WASP)</a>. Historically, we have also received significant financial support from Sweden’s innovation agency Vinnova, the Swiss National Science Foundation (SNF), and the ICT Area of Advance at Chalmers, as well as the EU Horizon 2020 research programme.
 
 In the following, we briefly present some of our current research themes, as well as key papers for each theme. Please see <a href="https://icetlab.github.io/icetlab/publications/">here</a> for a complete publication list of the lab.
+
+---
+
+<div class="row">
+  <div class="col-md-6">
+    <b>Performance Analysis</b>
+    Under construction.
+  </div>
+  <div class="col-md-6">
+    <div class="publications">
+        {% bibliography --group_by none --query @*[theme=performance]* %}
+    </div>
+  </div>
+</div>
 
 ---
 
