@@ -34,30 +34,30 @@ themes:
 
   <div class="col-md-4">
       <div class="row justify-content-sm-center">
-        <div class="col-sm-6 mt-3 mt-md-0">
+        <div class="col-sm-8 mt-3 mt-md-0">
             {% include figure.liquid path="assets/img/ICET-Lab-LOGO-A2" title="Logo ICET-lab" class="img-fluid border-0" %}
         </div>  
       </div>
       <div class="row justify-content-sm-center">
         <div class="col-sm-6 mt-3 mt-md-0">
-            {% include figure.liquid path="assets/img/chalmers.png" title="Logo Chalmers" class="img-fluid border-0" %}
+            {% include figure.liquid path="assets/img/chalmers.png" title="Logo Chalmers" class="img-fluid border-0 d-flex align-items-center" %}
         </div>
         <div class="col-sm-6 mt-3 mt-md-0">
-            {% include figure.liquid path="assets/img/gu.png" title="Logo GU" class="img-fluid z-depth-1" %}
+            {% include figure.liquid path="assets/img/gu.png" title="Logo GU" class="img-fluid border-0 d-flex align-items-center" %}
         </div>
       </div>
       <div class="row justify-content-sm-center">
         <div class="col-sm-8 mt-3 mt-md-0">
-          {% include figure.liquid path="assets/img/wasp.jpg" title="Logo WASP" class="img-fluid z-depth-1" %}
+          {% include figure.liquid path="assets/img/wasp.jpg" title="Logo WASP" class="img-fluid border-0 d-flex align-items-center" %}
         </div>
         <div class="col-sm-4 mt-3 mt-md-0">
-          {% include figure.liquid path="assets/img/vr.jpg" title="Logo VR" class="img-fluid z-depth-1" %}
+          {% include figure.liquid path="assets/img/vr.jpg" title="Logo VR" class="img-fluid border-0 d-flex align-items-center" %}
         </div>
       </div>
   </div>
 </div>
 
----
+<hr/>
 
 <div class="row">
   <div class="col-md-6">
