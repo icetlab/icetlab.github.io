@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Debloating ML Systems
-description: measuring and reducing code bloat in AI platforms
-img: assets/img/mlbloat.png
-importance: 3
-category: performance
+title: Visualizing Performance of Cloud Applications
+description: bringing software performance into the IDE
+img: assets/img/performancehat.png
+importance: 2
+category: cloud engineering
 related_publications: true
 ---
 

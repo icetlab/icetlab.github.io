@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Debloating ML Systems
-description: measuring and reducing code bloat in AI platforms
-img: assets/img/mlbloat.png
-importance: 3
+title: Cloud Benchmarking
+description: measuring the performance of cloud systems
+img: assets/img/cloudbenchmark.png
+importance: 2
 category: performance
 related_publications: true
 ---
