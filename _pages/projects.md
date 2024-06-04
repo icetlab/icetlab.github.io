@@ -6,7 +6,7 @@ description: A growing collection of your cool projects.
 nav: true
 nav_order: 7
 display_categories: [jmh, work]
-horizontal: false
+horizontal: true
 ---
 
 <div class="row">
