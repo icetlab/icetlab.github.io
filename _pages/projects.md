@@ -27,6 +27,7 @@ horizontal: true
       Here we briefly present some of our current research themes, as well as key papers for each theme. Please see <a href="https://icetlab.github.io/icetlab/publications/">here</a> for a complete publication list of the lab.
     </p>
   </div>
+  
 
 <!-- pages/projects.md -->
 <div class="projects">
