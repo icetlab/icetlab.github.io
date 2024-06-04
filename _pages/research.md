@@ -1,16 +1,12 @@
 ---
 layout: page
+title: research
 permalink: /research/
-title: research 
-description: ICET-lab research projects, present and past
+description: important ICET-lab research projects, present and past
 nav: true
 nav_order: 3
-
-themes:
-  - align: right
-    publications: performance
-    content: theme_performance.md
-    title: Performance Analysis
+display_categories: [performance, bots]
+horizontal: true
 ---
 
 <div class="row">
@@ -54,47 +50,35 @@ themes:
           {% include figure.liquid path="assets/img/vr.jpg" title="Logo VR" class="img-fluid border-0 d-flex align-items-center" %}
         </div>
       </div>
-  </div>
+    </div>
 </div>
 
-<hr/>
-
-<div class="row">
-  <div class="col-md-6">
-    <b>Performance Analysis</b>
-    Under construction.
-  </div>
-  <div class="col-md-6">
-    <div class="publications">
-        {% bibliography --group_by none --query @*[theme=performance]* %}
+<!-- pages/projects.md -->
+<div class="projects">
+{% if site.enable_project_categories and page.display_categories %}
+  <!-- Display categorized projects -->
+  {% for category in page.display_categories %}
+  <a id="{{ category }}" href=".#{{ category }}">
+    <h2 class="category">{{ category }}</h2>
+  </a>
+  {% assign categorized_projects = site.projects | where: "category", category %}
+  {% assign sorted_projects = categorized_projects | sort: "importance" %}
+  <!-- Generate cards for each project -->
+  {% if page.horizontal %}
+  <div class="container">
+    <div class="row row-cols-1 row-cols-md-2">
+    {% for project in sorted_projects %}
+      {% include projects_horizontal.liquid %}
+    {% endfor %}
     </div>
   </div>
-</div>
-
----
-
-<div class="row">
-  <div class="col-md-6">
-    <div class="publications">
-        {% bibliography --group_by none --query @*[theme=performance]* %}
-    </div>
-    <div class="col-md-6">
-      <b>Bots in Software Development</b>
-      Under construction.
-    </div>
+  {% else %}
+  <div class="row row-cols-1 row-cols-md-3">
+    {% for project in sorted_projects %}
+      {% include projects.liquid %}
+    {% endfor %}
   </div>
-</div>
+  {% endif %}
+  {% endfor %}
 
----
-
-<div class="row">
-  <div class="col-md-6">
-    <div class="publications">
-        {% bibliography --group_by none --query @*[theme=performance]* %}
-    </div>
-    <div class="col-md-6">
-      <b>Cloud Benchmarking</b>
-      Under construction.
-    </div>
-  </div>
-</div>
+{% else %}
