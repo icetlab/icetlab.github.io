@@ -75,12 +75,26 @@ themes:
 
 <div class="row">
   <div class="col-md-6">
-    <b>Performance Analysis</b>
-    Under construction.
+    <div class="publications">
+        {% bibliography --group_by none --query @*[theme=performance]* %}
+    </div>
+    <div class="col-md-6">
+      <b>Bots in Software Development</b>
+      Under construction.
+    </div>
   </div>
+</div>
+
+---
+
+<div class="row">
   <div class="col-md-6">
     <div class="publications">
         {% bibliography --group_by none --query @*[theme=performance]* %}
+    </div>
+    <div class="col-md-6">
+      <b>Cloud Benchmarking</b>
+      Under construction.
     </div>
   </div>
 </div>

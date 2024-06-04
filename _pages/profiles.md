@@ -16,27 +16,34 @@ profiles:
       <p>Unit Lead Software Engineering 2</p>
       <p>Chalmers University of Technology</p>
   - align: left
+    image: gomes.png
+    content: about_gomes.md
+    image_circular: false # crops the image to make it circular
+    more_info: >
+      <p>Senior Lecturer</p>
+      <p>University of Gothenburg</p>      
+  - align: right
     image: ayas.png
     content: about_ayas.md
     image_circular: false # crops the image to make it circular
     more_info: >
       <p>Postdoc</p>
       <p>Chalmers University of Technology</p>
-  - align: right
+  - align: left
     image: erlenhov.png
     content: about_erlenhov.md
     image_circular: false # crops the image to make it circular
     more_info: >
       <p>PhD Student & Timlärare</p>
       <p>Chalmers University of Technology</p>
-  - align: left
+  - align: right
     image: samoaa.png
     content: about_samoaa.md
     image_circular: false # crops the image to make it circular
     more_info: >
       <p>PhD Student</p>
       <p>Chalmers University of Technology</p>
-  - align: right
+  - align: left
     image: khojah.png
     content: about_khojah.md
     image_circular: false # crops the image to make it circular
