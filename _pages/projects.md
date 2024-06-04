@@ -5,8 +5,8 @@ permalink: /projects/
 description: A growing collection of your cool projects.
 nav: true
 nav_order: 7
-display_categories: [work, fun]
-horizontal: true
+display_categories: [jmh, work]
+horizontal: false
 ---
 
 <div class="row">
@@ -83,11 +83,9 @@ horizontal: true
 
 {% else %}
 
-<!-- Display projects without categories -->
+<!-- code to display uncategorized projects
 
 {% assign sorted_projects = site.projects | sort: "importance" %}
-
-  <!-- Generate cards for each project -->
 
 {% if page.horizontal %}
 
@@ -107,3 +105,5 @@ horizontal: true
   {% endif %}
 {% endif %}
 </div>
+
+-->
