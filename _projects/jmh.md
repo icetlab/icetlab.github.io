@@ -8,7 +8,6 @@ category: performance
 related_publications: true
 ---
 
-
 <div class="row align-items-center">
     <div class="col-sm-7 mt-3 mt-md-0">
         <p>Performance is one of the most central non-functional properties of modern software. And yet we all experience the applications we use on a daily basis to continuously become slower, less reliable, and more bloated.</p>
