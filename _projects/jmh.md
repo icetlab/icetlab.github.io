@@ -28,14 +28,14 @@ Concrete research results include detecting anti-patterns in JMH benchmarks whic
 
 In this line of research, we have also developed multiple open source tools that can support benchmarking research and practice, including [Junit-to-JMH](https://github.com/alniniclas/junit-to-jmh), a tool to generate performance benchmark suites from unit tests {% cite jangali:22 %}, and [Bencher](https://github.com/chrstphlbr/bencher), a tool to analyse static and dynamic coverage of JMH benchmarks.
 
-<div class="row">
-    <div class="col-sm-7 mt-3 mt-md-0 align-items-center">
+<div class="row align-items-center">
+    <div class="col-sm-7 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/badpracticeimpact.png" title="impact of bad JMH practices on benchmark results" class="img-fluid rounded z-depth-1" %}
         <div class="caption">
             The impact of bad JMH practices on benchmark results
         </div>
     </div>
-    <div class="col-sm-5 mt-3 mt-md-0 align-items-center">
+    <div class="col-sm-5 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/dynamicreconfig.png" title="dynamically reconfiguring JMH benchmarks" class="img-fluid rounded z-depth-1" %}
         <div class="caption">
             Dynamically reconfiguring JMH to reduce benchmark execution time
