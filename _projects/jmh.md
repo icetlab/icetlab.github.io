@@ -11,12 +11,12 @@ related_publications: true
 Performance is one of the most central non-functional properties of modern software. And yet we all experience the applications we use on a daily basis to continuously become slower, less reliable, and more bloated.
 
 <div class="row">
-    <div class="col-sm-9 mt-3 mt-md-0">
-        <p>One of the reasons for this is that actually <i>>testing</i> performance is much harder than testing functional correctness, and hence much more rarely done.</p>
+    <div class="col-sm-6 mt-3 mt-md-0">
+        <p>One of the reasons for this is that actually <i>testing</i> performance is much harder than testing functional correctness, and hence much more rarely done.</p>
 
         <p>For the last 10 years, ICET-lab has studied how Java developers can use the <a href="https://openjdk.org/projects/code-tools/jmh/">Java Microbenchmark Harness</a> (JMH) to continuously benchmark their system, for example as part of their CI pipeline.</p>
     </div>
-    <div class="col-sm mt-3 mt-md-0">
+    <div class="col-sm-6 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/jmhexample.png" title="a JMH benchmark" class="img-fluid rounded z-depth-1" %}
         <div class="caption">
             A JMH benchmark example from the <a href="https://protobuf.dev">Protobuf</a> project
@@ -29,13 +29,13 @@ Concrete research results include detecting anti-patterns in JMH benchmarks whic
 In this line of research, we have also developed multiple open source tools that can support benchmarking research and practice, including [Junit-to-JMH](https://github.com/alniniclas/junit-to-jmh), a tool to generate performance benchmark suites from unit tests {% cite jangali:22 %}, and [Bencher](https://github.com/chrstphlbr/bencher), a tool to analyse static and dynamic coverage of JMH benchmarks.
 
 <div class="row">
-    <div class="col-sm-6 mt-3 mt-md-0">
+    <div class="col-sm-8 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/badpracticeimpact.png" title="impact of bad JMH practices on benchmark results" class="img-fluid rounded z-depth-1" %}
         <div class="caption">
             The impact of bad JMH practices on benchmark results
         </div>
     </div>
-    <div class="col-sm-6 mt-3 mt-md-0">
+    <div class="col-sm-4 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/dynamicreconfig.png" title="dynamically reconfiguring JMH benchmarks" class="img-fluid rounded z-depth-1" %}
         <div class="caption">
             Dynamically reconfiguring JMH to reduce benchmark execution time
