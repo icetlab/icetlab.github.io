@@ -18,9 +18,9 @@ One of the reasons for this is that actually *testing* performance is much harde
     </div>
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="caption">
-        A JMH benchmark in Java
+        <div class="caption">
+            A JMH benchmark in Java
+        </div>
     </div>
 </div>
 
@@ -51,3 +51,9 @@ In our ongoing work in this research theme, we are particularly interested in:
 * How to _predict_ the execution time of benchmarks (and, hence, performance) prior to execution. We have already achieved initial success predicting the execution time of small pieces of code using graph-based neural networks {% cite samoaa:22:1 %}. The ultimate vision, of course, is to be able to warn developers _before_ committing slow code, without the need for expensive performance testing.
 
 * How to make performance testing _easier_, through performance assessment bots {% cite markusse:22 %} or good visualizations {% cite cito:19%}.
+
+# Contacts
+
+[Dr. Christoph Laaber](https://laaber.net) (probably the world's foremost expert on academic research about JMH benchmarking)
+
+[Dr. Philipp Leitner](http://philippleitner.net)
