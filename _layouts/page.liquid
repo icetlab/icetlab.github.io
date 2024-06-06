@@ -12,6 +12,7 @@ layout: default
   </article>
 
   {% if page.related_publications %}
+    <p><b>References:</b></p>
     <div class="publications">
       {% bibliography --cited_in_order --group_by none %}
     </div>

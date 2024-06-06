@@ -10,10 +10,10 @@ related_publications: true
 
 Performance is one of the most central non-functional properties of modern software. And yet we all experience the applications we use on a daily basis to continuously become slower, less reliable, and more bloated.
 
-One of the reasons for this is that actually *testing* performance is much harder than testing functional correctness, and hence much more rarely done.
-
 <div class="row">
     <div class="col-sm-9 mt-3 mt-md-0">
+        One of the reasons for this is that actually *testing* performance is much harder than testing functional correctness, and hence much more rarely done.
+
         For the last 10 years, ICET-lab has studied how Java developers can use the [Java Microbenchmark Harness (JMH)](https://openjdk.org/projects/code-tools/jmh/) to continuously benchmark their system, for example as part of their CI pipeline,
     </div>
     <div class="col-sm mt-3 mt-md-0">
@@ -52,7 +52,7 @@ In our ongoing work in this research theme, we are particularly interested in:
 
 * How to make performance testing _easier_, through performance assessment bots {% cite markusse:22 %} or good visualizations {% cite cito:19%}.
 
-# Contacts
+**Contacts:**
 
 [Dr. Christoph Laaber](https://laaber.net) (probably the world's foremost expert on academic research about JMH benchmarking)
 
