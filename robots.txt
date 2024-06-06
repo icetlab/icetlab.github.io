@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://icetlab.github.io/icetlab//sitemap.xml
+Sitemap: https://www.icet-lab.eu/sitemap.xml
