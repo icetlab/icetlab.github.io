@@ -12,14 +12,14 @@ Performance is one of the most central non-functional properties of modern softw
 
 <div class="row">
     <div class="col-sm-9 mt-3 mt-md-0">
-        One of the reasons for this is that actually *testing* performance is much harder than testing functional correctness, and hence much more rarely done.
+        <p>One of the reasons for this is that actually <i>>testing</i> performance is much harder than testing functional correctness, and hence much more rarely done.</p>
 
-        For the last 10 years, ICET-lab has studied how Java developers can use the [Java Microbenchmark Harness (JMH)](https://openjdk.org/projects/code-tools/jmh/) to continuously benchmark their system, for example as part of their CI pipeline,
+        <p>For the last 10 years, ICET-lab has studied how Java developers can use the <a href="https://openjdk.org/projects/code-tools/jmh/">Java Microbenchmark Harness</a> (JMH) to continuously benchmark their system, for example as part of their CI pipeline.</p>
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/jmhexample.png" title="a JMH benchmark" class="img-fluid rounded z-depth-1" %}
         <div class="caption">
-            A JMH benchmark in Java
+            A JMH benchmark example from the <a href="https://protobuf.dev">Protobuf</a> project
         </div>
     </div>
 </div>
@@ -29,20 +29,19 @@ Concrete research results include detecting anti-patterns in JMH benchmarks whic
 In this line of research, we have also developed multiple open source tools that can support benchmarking research and practice, including [Junit-to-JMH](https://github.com/alniniclas/junit-to-jmh), a tool to generate performance benchmark suites from unit tests {% cite jangali:22 %}, and [Bencher](https://github.com/chrstphlbr/bencher), a tool to analyse static and dynamic coverage of JMH benchmarks.
 
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    <div class="col-sm-6 mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/badpracticeimpact.png" title="impact of bad JMH practices on benchmark results" class="img-fluid rounded z-depth-1" %}
+        <div class="caption">
+            The impact of bad JMH practices on benchmark results
+        </div>
     </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    <div class="col-sm-6 mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/dynamicreconfig.png" title="dynamically reconfiguring JMH benchmarks" class="img-fluid rounded z-depth-1" %}
+        <div class="caption">
+            Dynamically reconfiguring JMH to reduce benchmark execution time
+        </div>
     </div>
 </div>
-<div class="caption">
-    Selected JMH research results
-</div>
-
 
 In our ongoing work in this research theme, we are particularly interested in:
 
@@ -57,3 +56,5 @@ In our ongoing work in this research theme, we are particularly interested in:
 [Dr. Christoph Laaber](https://laaber.net) (probably the world's foremost expert on academic research about JMH benchmarking)
 
 [Dr. Philipp Leitner](http://philippleitner.net)
+
+---
