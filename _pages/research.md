@@ -24,7 +24,7 @@ horizontal: true
       ICET-lab is currently mostly funded through grants from the <a href="http://vr.se/">Swedish Research Council (VR)</a> and the <a href="http://wasp-sweden.org/">Wallenberg AI, Autonomous Systems, and Software Programme (WASP)</a>. Historically, we have also received significant financial support from Sweden’s innovation agency Vinnova, the Swiss National Science Foundation (SNF), and the ICT Area of Advance at Chalmers, as well as the EU Horizon 2020 research programme.
     </p>
     <p>
-      Here we briefly present some of our current research themes, as well as key papers for each theme. Please see <a href="https://icetlab.github.io/icetlab/publications/">here</a> for a complete publication list of the lab.
+      Here we briefly present some of our current research themes, as well as key papers for each theme. Please see <a href="https://www.icet-lab.eu/publications/">here</a> for a complete publication list of the lab.
     </p>
   </div>
 
