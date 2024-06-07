@@ -39,7 +39,7 @@ related_publications: true
 </div>
 
 <div class="row align-items-center">
-    <div class="col-sm-12 mt-3 mt-md-0">
+    <div class="col-sm-8 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/cwb-show-execution.png" title="Cloud Workbench" class="img-fluid rounded z-depth-1" %}
     <div class="caption">
         Cloud Workbench web-based user interface
