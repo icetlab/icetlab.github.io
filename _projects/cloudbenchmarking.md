@@ -48,3 +48,10 @@ related_publications: true
 
 <p>For benchmarking serverless systems, we are a member of and collaborate extensively with the <a href="https://research.spec.org">SPEC Research Group</a>, a worldwide research collaboration under the umbrella of the  Standard Performance Evaluation Corporation (<a href="https://spec.org">SPEC</a>), a non-profit consortium that is responsible for most state-of-the-art benchmarks that computer systems are compared with.</p>
 
+**Contacts:**
+
+[Dr. Joel Scheuner](https://joelscheuner.com)
+
+[Dr. Philipp Leitner](http://philippleitner.net)
+
+---
