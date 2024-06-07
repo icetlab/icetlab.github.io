@@ -46,9 +46,9 @@ related_publications: true
     </div>
 </div>
 
-<p>For benchmarking serverless systems, we are a member of and collaborate extensively with the <a href="https://research.spec.org">SPEC Research Group</a>, a worldwide research collaboration under the umbrella of the  Standard Performance Evaluation Corporation (<a href="https://spec.org">SPEC</a>), a non-profit consortium that is responsible for most state-of-the-art benchmarks that computer systems are compared with.</p>
+For benchmarking serverless systems, we are a member of and collaborate extensively with the [SPEC Research Group](https://research.spec.org), a worldwide research collaboration under the umbrella of the  Standard Performance Evaluation Corporation ([SPEC](https://spec.org)), a non-profit consortium that is responsible for most state-of-the-art benchmarks that computer systems are compared with.
 
-<p>We are currently working on a toolkit for benchmarking serverless applications, along with an empirical study of AWS Lambda performance. More details about this work will be added soon!</p>
+We are currently working on a toolkit for benchmarking serverless applications, along with an empirical study of AWS Lambda performance. More details about this work will be added soon!
 
 **Contacts:**
 
