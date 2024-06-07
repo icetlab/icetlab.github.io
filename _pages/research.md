@@ -34,7 +34,7 @@ horizontal: true
             {% include figure.liquid path="assets/img/ICET-Lab-LOGO-A2" title="Logo ICET-lab" class="img-fluid border-0" %}
         </div>  
       </div>
-      <div class="row justify-content-sm-center">
+      <div class="row align-items-center">
         <div class="col-sm-6 mt-3 mt-md-0">
             {% include figure.liquid path="assets/img/chalmers.png" title="Logo Chalmers" class="img-fluid border-0 d-flex align-items-center" %}
         </div>
@@ -42,7 +42,7 @@ horizontal: true
             {% include figure.liquid path="assets/img/gu.png" title="Logo GU" class="img-fluid border-0 d-flex align-items-center" %}
         </div>
       </div>
-      <div class="row justify-content-sm-center">
+      <div class="row align-items-center">
         <div class="col-sm-8 mt-3 mt-md-0">
           {% include figure.liquid path="assets/img/wasp.jpg" title="Logo WASP" class="img-fluid border-0 d-flex align-items-center" %}
         </div>

@@ -17,7 +17,7 @@ related_publications: true
 
         <p>For the last 10 years, ICET-lab has studied how Java developers can use the <a href="https://openjdk.org/projects/code-tools/jmh/">Java Microbenchmark Harness</a> (JMH) to continuously benchmark their system, for example as part of their CI pipeline.</p>
     </div>
-    <div class="col-sm-5 mt-3 mt-md-0 align-items-center">
+    <div class="col-sm-5 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/jmhexample.png" title="a JMH benchmark" class="img-fluid rounded z-depth-1" %}
         <div class="caption">
             A JMH benchmark example from the <a href="https://protobuf.dev">Protobuf</a> project
