@@ -21,7 +21,7 @@ horizontal: true
       Virtually all our papers are available freely via the <a href="https://avandeursen.com/2016/11/06/green-open-access-faq/">green open access</a> model. If you cannot find a specific paper you are always free to email the authors, we will happily provide a (text-identical) preprint version.
     </p>
   </div>
-  <div class="col-md-4 d-sm-none">
+  <div class="col-md-4 d-none d-md-block">
       <div class="row justify-content-sm-center">
         <div class="col-sm-8 mt-3 mt-md-0">
             {% include figure.liquid path="assets/img/ICET-Lab-LOGO-A2" title="Logo ICET-lab" class="img-fluid border-0" %}
@@ -46,7 +46,7 @@ horizontal: true
       ICET-lab is currently mostly funded through grants from the <a href="http://vr.se/">Swedish Research Council (VR)</a> and the <a href="http://wasp-sweden.org/">Wallenberg AI, Autonomous Systems, and Software Programme (WASP)</a>. Historically, we have also received significant financial support from Sweden’s innovation agency Vinnova, the Swiss National Science Foundation (SNF), and the ICT Area of Advance at Chalmers, as well as the EU Horizon 2020 research programme.
     </p>
   </div>
-  <div class="col-md-4 d-sm-none">
+  <div class="col-md-4 d-none d-md-block">
     <div class="row">
         <div class="col-sm-12 mt-3 mt-md-0">
           {% include figure.liquid path="assets/img/wasp.jpg" title="Logo WASP" class="img-fluid border-0 d-flex align-items-center" %}
