@@ -2,7 +2,7 @@
 layout: page
 title: Software Performance Benchmarking with JMH
 description: measuring, predicting, and optimizing software performance in Java using JMH
-img: assets/img/jmh.png
+img: assets/img/dynamicreconfig.png
 importance: 1
 category: performance
 related_publications: true
