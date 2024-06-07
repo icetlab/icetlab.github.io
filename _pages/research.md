@@ -62,6 +62,7 @@ horizontal: true
 
 <hr />
 
+<h3> Research Themes </h3>
 <p>
   Here we briefly present some of our current research themes, as well as key papers for each theme. Please see <a href="https://www.icet-lab.eu/publications/">here</a> for a complete publication list of the lab.
 </p>
