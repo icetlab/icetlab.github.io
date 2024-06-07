@@ -46,5 +46,6 @@ While I believe the website is already in a much better state than our previous 
 - Some images are "grainy" and low-resolution.
 - The team overview on the [website landing page](https://www.icet-lab.eu) is extremely out of date.
 - Some pages do not render nicely on mobile. Since the entire page uses Bootstrap that should be easy enough to fix, but so far I have not focused much on how the website looks on smaller screens.
+- So far I have not adapted the theme / visual styling at all (the current website uses the default of the template I used). I am fairly happy with how the website looks, and I'm not much of a designer in the first place, so I don't plan to change this right now - but if somebody else wants to give it a stab please talk to me.
 
 If you find any other issues (and you cannot, or do not want to, fix them right away) you can always create an [issue in the project issue tracker](https://github.com/icetlab/icetlab.github.io/issues).
