@@ -47,10 +47,12 @@ horizontal: true
     </p>
   </div>
   <div class="col-md-4 d-sm-none">
-    <div class="row align-items-center">
-        <div class="col-sm-8 mt-3 mt-md-0">
+    <div class="row">
+        <div class="col-sm-12 mt-3 mt-md-0">
           {% include figure.liquid path="assets/img/wasp.jpg" title="Logo WASP" class="img-fluid border-0 d-flex align-items-center" %}
         </div>
+    </div>
+    <div class="row justify-content-sm-center">
         <div class="col-sm-6 mt-3 mt-md-0">
           {% include figure.liquid path="assets/img/vr.jpg" title="Logo VR" class="img-fluid border-0 d-flex align-items-center" %}
         </div>
