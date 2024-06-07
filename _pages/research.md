@@ -5,7 +5,7 @@ permalink: /research/
 description: important ICET-lab research projects, present and past
 nav: true
 nav_order: 3
-display_categories: [performance, bots, cloud engineering, work]
+display_categories: [performance, bots, cloud engineering]
 horizontal: true
 ---
 
