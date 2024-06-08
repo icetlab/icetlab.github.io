@@ -38,6 +38,28 @@ The actual research topics are contained in a [separate folder](https://github.c
 
 Topic pages can be arbitrarily complex markdown or HTML, but should contain a simple overview of a specific research topic in ICET-lab (this can be a single paper, a PhD project, or a longer-running research theme, as appropriate). You can cite papers from our bibtex file using `{% cite BIBTEXKEY %}`.
 
+## Debugging and Tips
+
+- If you use Bootstrap for layouting (putting things next to each other, etc.), be aware that Markdown does not seem to work *within a div* (you seem to need to use plain HTML). There is probably a trick that I'm not getting to make this work, but if you see random HTML on pages that's probably why.
+
+- Aside from that, if your Markdown is not rendering properly there is a good chance that you forgot to close a div somewhere earlier.
+
+- Some useful Bootstrap / CSS classes:
+    - `d-none d-md-block`: hide element on small screens (i.e., hide some nice but non-essential visuals on mobile)
+
+    - `justify-content-sm-center`: center elements *vertically*, for example if you have two images of different height next to each other. Needs to go into the wrapping container.
+
+    - `offset-sm-2`: "offset" a container by a certain (2 in this case) number of columns, for example to manually center a div horizontally that's not supposed to span all 12 columns.
+
+    - `caption`: a special class to use for figure captions. Should go into a separate div *after* the figure (but in the same container as the figure).
+
+- Templating magic:
+    - `{% include figure.liquid loading="eager" path="assets/img/cwb-show-execution.png" title="Cloud Workbench" class="img-fluid rounded z-depth-1" %}`: include a figure, with nice shadow. Use a Bootstrap container to control the size of the figure. Don't forget to `git add` the figure ;)
+    
+    - `{% cite leitner:16 %}`: cite a paper
+    
+    - `{% bibliography --group_by none --query @*[selected=true]* %}`: generate a custom bibliography (in this case only including papers that have a field "selected" with a value of "true"). Can be used to generate publication lists for a specific author, for a topic etc. Check the [jekyll-scholar](https://github.com/inukshuk/jekyll-scholar) website for documentation.
+
 ## Known issues
 
 While I believe the website is already in a much better state than our previous Wordpress based site, I am aware that there are a few problems:
