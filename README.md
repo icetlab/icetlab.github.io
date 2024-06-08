@@ -54,7 +54,7 @@ Topic pages can be arbitrarily complex markdown or HTML, but should contain a si
     - `caption`: a special class to use for figure captions. Should go into a separate div *after* the figure (but in the same container as the figure).
 
 - Templating magic:
-    - `{% include figure.liquid loading="eager" path="assets/img/cwb-show-execution.png" title="Cloud Workbench" class="img-fluid rounded z-depth-1" %}`: include a figure, with nice shadow. Use a Bootstrap container to control the size of the figure. Don't forget to `git add` the figure ;)
+    - `{% include figure.liquid loading="eager" path="assets/img/cwb-show-execution.png" title="Cloud Workbench" class="img-fluid rounded z-depth-1" %}`: include a figure, with nice shadow. Use a Bootstrap container to control the size of the figure. Don't forget to also `git add` the figure.
     
     - `{% cite leitner:16 %}`: cite a paper
     
