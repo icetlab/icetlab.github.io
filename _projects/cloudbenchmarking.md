@@ -35,10 +35,9 @@ related_publications: true
     </div>    
 </div>
 
-<div class="container">
-    <div class="row align-items-center">
-        <div class="col-sm-8 offset-sm-2">
-            {% include figure.liquid loading="eager" path="assets/img/cwb-show-execution.png" title="Cloud Workbench" class="img-fluid rounded z-depth-1" %}
+<div class="row align-items-center">
+    <div class="col-sm-8 offset-sm-2">
+        {% include figure.liquid loading="eager" path="assets/img/cwb-show-execution.png" title="Cloud Workbench" class="img-fluid rounded z-depth-1" %}
         <div class="caption">
             The web-based user interface of Cloud Workbench
         </div>
