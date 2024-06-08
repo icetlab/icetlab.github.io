@@ -41,7 +41,7 @@ related_publications: true
     <div class="col-sm-8 offset-sm-2">
         {% include figure.liquid loading="eager" path="assets/img/cwb-show-execution.png" title="Cloud Workbench" class="img-fluid rounded z-depth-1" %}
     <div class="caption">
-        Cloud Workbench web-based user interface
+        The web-based user interface of Cloud Workbench
     </div>
 </div>
 
