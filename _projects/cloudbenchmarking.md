@@ -8,8 +8,6 @@ category: performance
 related_publications: true
 ---
 
-Testtest [SPEC Research Group](https://research.spec.org),
-
 <div class="row align-items-center">
     <div class="col-sm-5 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/cloudbenchmark.png" title="two identical cloud instances have wildly different IO performance" class="img-fluid rounded z-depth-1" %}
@@ -24,8 +22,6 @@ Testtest [SPEC Research Group](https://research.spec.org),
     </div>
 </div>
 
-Testtest [SPEC Research Group](https://research.spec.org),
-
 <div class="row align-items-center">
     <div class="col-sm-7 mt-3 mt-md-0">
         <p>For Infrastructure-as-a-Service clouds, we have compared the performance of three industry-leading services (EC2, Microsoft Azure, and IBM Softlayer), with a particular focus on how <i>predictable</i> performance is. We have executed over 50.000 individual benchmark runs, making this the largest study of it's kind to our knowledge {% cite leitner:16 %}.</p>
@@ -39,17 +35,15 @@ Testtest [SPEC Research Group](https://research.spec.org),
     </div>    
 </div>
 
-Testtest [SPEC Research Group](https://research.spec.org),
-
-<div class="row align-items-center">
-    <div class="col-sm-8 offset-sm-2">
-        {% include figure.liquid loading="eager" path="assets/img/cwb-show-execution.png" title="Cloud Workbench" class="img-fluid rounded z-depth-1" %}
-    <div class="caption">
-        The web-based user interface of Cloud Workbench
+<div class="container">
+    <div class="row align-items-center">
+        <div class="col-sm-8 offset-sm-2">
+            {% include figure.liquid loading="eager" path="assets/img/cwb-show-execution.png" title="Cloud Workbench" class="img-fluid rounded z-depth-1" %}
+        <div class="caption">
+            The web-based user interface of Cloud Workbench
+        </div>
     </div>
 </div>
-
-Testtest [SPEC Research Group](https://research.spec.org),
 
 For benchmarking serverless systems, we are a member of and collaborate extensively with the [SPEC Research Group](https://research.spec.org), a worldwide research collaboration under the umbrella of the  Standard Performance Evaluation Corporation ([SPEC](https://spec.org)), a non-profit consortium that is responsible for most state-of-the-art benchmarks that computer systems are compared with.
 
