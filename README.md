@@ -10,7 +10,7 @@ Here are instructions how to do some common types of updates. The general proced
 
 For publications to show up in our publication list you only need to add them to the [bibtex file](https://github.com/icetlab/icetlab.github.io/blob/master/_bibliography/papers.bib) (`_bibliography/papers.bib`). This will make the publication show up in the [overall list](https://www.icet-lab.eu/publications/), and enables a few cool extra features. For example, papers in the bibtex file can be cited using `{% cite BIBTEXKEY %}` in markdown on the webpage.
 
-Bibtex entries can have arbitrary extra fields, which you can use to display only a subset of papers. For example, papers with a field `selected = {true}` show up in the overview on the title page of the website. If you add additional fields that should not be displayed, you need to configure the website not to show them in the overall [config file](filtered_bibtex_keywords) (`_config.yml`, key `filtered_bibtex_keywords`).
+Bibtex entries can have arbitrary extra fields, which you can use to display only a subset of papers. For example, papers with a field `selected = {true}` show up in the overview on the title page of the website. If you add additional fields that should not be displayed, you need to configure the website not to show them in the overall [config file](https://github.com/icetlab/icetlab.github.io/blob/master/_config.yml) (`_config.yml`, key `filtered_bibtex_keywords`).
 
 ## Adding or editing your profile
 
