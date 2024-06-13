@@ -24,7 +24,7 @@ To help developers understand the performance of their applications, and predict
     </div>
 </div>
 
-We developed a proof-of-concept of this idea in a prototype called *PerformanceHat* {% cite cito:15:2 %}.
+We developed these ideas further in a proof-of-concept prototype called *PerformanceHat* {% cite cito:15:2 %}. PerformanceHat is a plugin for the Eclipse IDE.
 
 <div>
     {% include figure.liquid loading="eager" path="assets/img/performancehat_tool.png" title="screenshot of PerformanceHat" class="img-fluid z-depth-1" %}
@@ -36,6 +36,8 @@ We developed a proof-of-concept of this idea in a prototype called *PerformanceH
 <div class="row">
     <div class="col-sm-7 mt-3 mt-md-0">
         In a controlled experiment, we were able to demonstrate that developers using PerformanceHat were able to identify performance problems faster and more accurately than developers without the tool {% cite cito:19 %}.
+
+        Our ideas on feedback-driven development have been picked up by practitioners on multiple occasions. For example, [Adrian Colyer](https://www.crunchbase.com/person/adrian-colyer) has featured our work on his blog [The Morning Paper](https://blog.acolyer.org/2015/11/10/runtime-metric-meets-developer-building-better-cloud-applications-using-feedback/), in addition to appearing in some other talks and [media coverage](http://radar.oreilly.com/2015/11/four-short-links-11-november-2015.html).
     </div>
     <div class="col-sm-5 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/perfhat_experiment.png" title="results of a controlled experiment evaluating PerformanceHat" class="img-fluid z-depth-1" %}
@@ -44,8 +46,6 @@ We developed a proof-of-concept of this idea in a prototype called *PerformanceH
         </div>
     </div>
 </div>
-
-Our ideas on feedback-driven development have been picked up by practitioners on multiple occasions. For example, [Adrian Colyer](https://www.crunchbase.com/person/adrian-colyer) has featured our work on his blog [The Morning Paper](https://blog.acolyer.org/2015/11/10/runtime-metric-meets-developer-building-better-cloud-applications-using-feedback/), in addition to appearing in some other talks and [media coverage](http://radar.oreilly.com/2015/11/four-short-links-11-november-2015.html).
 
 **Contacts:**
 
