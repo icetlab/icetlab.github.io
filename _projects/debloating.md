@@ -21,13 +21,13 @@ related_publications: true
     </div>
 </div>
 
-In collaboration with the [Computer and Network Systems division](https://www.chalmers.se/en/departments/cse/our-research/computer-and-network-systems/) at Chalmers we are working on methods to reduce machine learning bloat, while at the same time guaranteeing uninterrupted functioning of the system (something that state of the art debloating tools, such as [docker-slim](https://hub.docker.com/r/dslim/docker-slim), sometimes struggle with).
+In collaboration with the [Computer and Network Systems research unit](https://www.chalmers.se/en/departments/cse/our-research/computer-and-network-systems/) at Chalmers we are working on methods to reduce machine learning bloat, while at the same time guaranteeing uninterrupted functioning of the system (something that state of the art debloating tools, such as [docker-slim](https://hub.docker.com/r/dslim/docker-slim), sometimes struggle with).
 
 **Contacts:**
 
-[Huaifeng Zhang](https://scholar.google.se/citations?user=93dCgM4AAAAJ&hl=zh-CN), CNS division, Chalmers
+[Huaifeng Zhang](https://scholar.google.se/citations?user=93dCgM4AAAAJ&hl=zh-CN), CNS unit, Chalmers
 
-[Dr. Ahmed Ali-Eldin Hassan](https://www.chalmers.se/en/persons/ahmhass/), CNS division, Chalmers
+[Dr. Ahmed Ali-Eldin Hassan](https://www.chalmers.se/en/persons/ahmhass/), CNS unit, Chalmers
 
 [Dr. Philipp Leitner](http://philippleitner.net)
 
