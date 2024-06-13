@@ -37,7 +37,7 @@ We developed these ideas further in a proof-of-concept prototype called *Perform
     <div class="col-sm-7 mt-3 mt-md-0">
         In a controlled experiment, we were able to demonstrate that developers using PerformanceHat were able to identify performance problems faster and more accurately than developers without the tool {% cite cito:19 %}.
 
-        Our ideas on feedback-driven development have been picked up by practitioners on multiple occasions. For example, [Adrian Colyer](https://www.crunchbase.com/person/adrian-colyer) has featured our work on his blog [The Morning Paper](https://blog.acolyer.org/2015/11/10/runtime-metric-meets-developer-building-better-cloud-applications-using-feedback/), in addition to appearing in some other talks and [media coverage](http://radar.oreilly.com/2015/11/four-short-links-11-november-2015.html).
+        Our ideas on feedback-driven development have been picked up by practitioners on multiple occasions. For example, <a href="https://www.crunchbase.com/person/adrian-colyer">Adrian Colyer</a> has featured our work on his blog <a href="https://blog.acolyer.org/2015/11/10/runtime-metric-meets-developer-building-better-cloud-applications-using-feedback/">The Morning Paper</a>, in addition to appearing in some other talks and <a href="http://radar.oreilly.com/2015/11/four-short-links-11-november-2015.html">media coverage</a>.
     </div>
     <div class="col-sm-5 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/perfhat_experiment.png" title="results of a controlled experiment evaluating PerformanceHat" class="img-fluid z-depth-1" %}
