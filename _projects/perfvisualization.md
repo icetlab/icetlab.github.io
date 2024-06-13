@@ -45,7 +45,7 @@ We developed a proof-of-concept of this idea in a prototype called *PerformanceH
     </div>
 </div>
 
-Our ideas on feedback-driven development have been picked up by practitioners on multiple occasions. For example, [Adrian Colyer](https://www.crunchbase.com/person/adrian-colyer) has featured our work on his blog [The Morning Paper](https://blog.acolyer.org/2019/07/15/feedback-driven-development/), in addition to appearing in some other talks and [media coverage](http://radar.oreilly.com/2015/11/four-short-links-11-november-2015.html).
+Our ideas on feedback-driven development have been picked up by practitioners on multiple occasions. For example, [Adrian Colyer](https://www.crunchbase.com/person/adrian-colyer) has featured our work on his blog [The Morning Paper](https://blog.acolyer.org/2015/11/10/runtime-metric-meets-developer-building-better-cloud-applications-using-feedback/), in addition to appearing in some other talks and [media coverage](http://radar.oreilly.com/2015/11/four-short-links-11-november-2015.html).
 
 **Contacts:**
 
