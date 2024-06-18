@@ -8,6 +8,7 @@ nav_order: 2
 
 profiles:
   - align: right
+    id: leitner
     image: leitner.jpg
     content: about_leitner.md
     image_circular: false # crops the image to make it circular
@@ -16,6 +17,7 @@ profiles:
       <p>Unit Lead Software Engineering 2</p>
       <p>Chalmers University of Technology</p>
   - align: left
+    id: gomes
     image: gomes.png
     content: about_gomes.md
     image_circular: false # crops the image to make it circular
@@ -23,6 +25,7 @@ profiles:
       <p>Senior Lecturer</p>
       <p>University of Gothenburg</p>      
   - align: right
+    id: ayas
     image: ayas.png
     content: about_ayas.md
     image_circular: false # crops the image to make it circular
@@ -30,6 +33,7 @@ profiles:
       <p>Postdoc</p>
       <p>Chalmers University of Technology</p>
   - align: left
+    id: erlenhov
     image: erlenhov.png
     content: about_erlenhov.md
     image_circular: false # crops the image to make it circular
@@ -37,6 +41,7 @@ profiles:
       <p>PhD Student & Timlärare</p>
       <p>Chalmers University of Technology</p>
   - align: right
+    id: samoaa
     image: samoaa.png
     content: about_samoaa.md
     image_circular: false # crops the image to make it circular
@@ -44,6 +49,7 @@ profiles:
       <p>PhD Student</p>
       <p>Chalmers University of Technology</p>
   - align: left
+    id: khojah
     image: khojah.png
     content: about_khojah.md
     image_circular: false # crops the image to make it circular
