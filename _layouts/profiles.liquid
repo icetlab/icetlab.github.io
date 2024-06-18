@@ -22,7 +22,7 @@ layout: page
           {% endif %}
         </div>
 
-        <div id="{% profile.id %}" class="clearfix">
+        <div id="{{ profile.id }}" class="clearfix">
           {% if profile.content %}
             {% capture profile_content %}{% include {{ profile.content | prepend: 'people/' }} %}{% endcapture %}
             {{ profile_content | markdownify }}
