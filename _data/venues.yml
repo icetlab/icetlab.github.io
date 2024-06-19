@@ -57,7 +57,23 @@
 
 "ICPE 2021":
   url: https://icpe2021.spec.org
-  color: "#009f36"     
+  color: "#009f36"    
+
+"FSE 2020":
+  url: https://2020.esec-fse.org
+  color: "#009f36"   
+
+"ICSE 2019":
+  url: https://2019.icse-conferences.org
+  color: "#009f36"  
+
+"Onward! @ SPLASH 2015":
+  url: https://2015.onward-conference.org
+  color: "#009f36"   
+
+"CloudCom 2014":
+  url: https://www.computer.org/csdl/proceedings/cloudcom/2014/12OmNCuDztj
+  color: "#009f36"           
 
 "JSS":
   url: https://www.sciencedirect.com/journal/journal-of-systems-and-software
@@ -85,4 +101,8 @@
 
 "PeerJ CS":
   url: https://peerj.com/computer-science/
-  color: "#00369f"      
+  color: "#00369f"
+
+"TOIT":
+  url: https://dl.acm.org/journal/toit
+  color: "#00369f"
