@@ -1,9 +1,15 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
+"AIware @ FSE 2024":
+  url: https://2024.aiwareconf.org
   color: "#00369f"
 
-"PhysRev":
-  url: https://journals.aps.org/
+"FSE 2024":
+  url: https://conf.researchr.org/home/fse-2024
+  color: "#009f36"
 
-"Vision":
+"CHASE @ ICSE 2023":
+  url: https://conf.researchr.org/home/chase-2023
+  color: "#009f36"
+
+"JSS":
+  url: https://www.sciencedirect.com/journal/journal-of-systems-and-software
   color: "#009f36"
