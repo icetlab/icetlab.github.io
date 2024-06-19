@@ -1,6 +1,6 @@
 "AIware @ FSE 2024":
   url: https://2024.aiwareconf.org
-  color: "#00369f"
+  color: "#009f36"
 
 "FSE 2024":
   url: https://conf.researchr.org/home/fse-2024
@@ -12,4 +12,4 @@
 
 "JSS":
   url: https://www.sciencedirect.com/journal/journal-of-systems-and-software
-  color: "#009f36"
+  color: "#00369f"
