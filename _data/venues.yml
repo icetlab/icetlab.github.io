@@ -40,7 +40,19 @@
 
 "PROFES 2022":
   url: https://conferences.computer.org/IC2E/2022/
-  color: "#009f36"    
+  color: "#009f36"   
+
+"ESEM 2021":
+  url: https://conf.researchr.org/home/esem-2021
+  color: "#009f36"   
+
+"SOFSEM 2021":
+  url: https://sofsem2021.inf.unibz.it
+  color: "#009f36"     
+
+"ICPE 2021":
+  url: https://icpe2021.spec.org
+  color: "#009f36"     
 
 "JSS":
   url: https://www.sciencedirect.com/journal/journal-of-systems-and-software
