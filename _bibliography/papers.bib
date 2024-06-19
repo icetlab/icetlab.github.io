@@ -19,17 +19,27 @@ year      = {2024},
 note = {To appear.},
 selected = {true},
 preview = {khojah.png},
-abbr = {FSE 2024}
+abbr = {FSE 2024},
+pdf = {https://arxiv.org/pdf/2404.14901},
+url = {https://arxiv.org/pdf/2404.14901},
+supp = {https://zenodo.org/records/8383359}
 }
 
 @article{ayas:24:1,
-  author    = {Hamdy Michael Ayas and Regina Hebig and Philipp Leitner},
-  title     = {{An Empirical Investigation on the Competences and Roles of Practitioners in Microservices-Based Architectures}},
-  journal = {{Journal of Systems and Software (JSS)}},
-  year      = {2024},
-  doi     = {To appear.},
-  preview = {ayas.png},
-  abbr = {JSS}
+title = {An empirical investigation on the competences and roles of practitioners in Microservices-based Architectures},
+journal = {Journal of Systems and Software},
+volume = {213},
+pages = {112055},
+year = {2024},
+issn = {0164-1212},
+doi = {https://doi.org/10.1016/j.jss.2024.112055},
+url = {https://www.sciencedirect.com/science/article/pii/S0164121224001006},
+author = {Hamdy {Michael Ayas} and Regina Hebig and Philipp Leitner},
+keywords = {Microservices, Technical competences, Practitioners profiles, Developer roles, Stackoverflow},
+abstract = {Microservices-based Architectures (MSAs) are gaining popularity since, among others, they enable rapid and independent delivery of software at scale, facilitating the delivery of business value. Additionally, there are attempts towards understanding practitioners’ roles and technical knowledge. MSAs call for affinity in several technologies as well as business domains. This diversity makes it challenging to scope and describe the roles of practitioners. In addition, practitioners often do not receive training and contents of MSA training remain largely undefined, even though there are challenges in finding or developing relevant technical expertise. In this research, we determine the different technical roles that are required in MSAs, along with their detailed competences. We use public online forums (e.g., StackOverflow), where developers share technical knowledge. We analyze 13,517 public profiles of software engineers, deriving their technical competences. Our taxonomy of technical competences in MSAs, contains 11 competences clusters, organized in 3 collections of competences — Web Technologies, DevOps, and Data Technologies. In addition, we derive the roles of microservice practitioners and the characteristics of their roles. Our findings organize the technical competences of MSAs practitioners and determine the training topics and combination of topics that can prepare engineers for MSAs.},
+preview = {ayas.png},
+abbr = {JSS},
+supp = {https://zenodo.org/records/7898566}
 }
 
 @inproceedings{ayas:24,
@@ -41,6 +51,28 @@ note = {To appear.},
 preview = {ayas.png},
 abbr = {CHASE @ ICSE 2023}
 }
+
+@inproceedings{johansson:24,
+author = {Johansson, Albin and Holmberg, Carl and Gomes De Oliveira Neto, Francisco and Leitner, Philipp},
+title = {The Impact of Compiler Warnings on Code Quality in C++ Projects},
+year = {2024},
+isbn = {9798400705861},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3643916.3644410},
+doi = {10.1145/3643916.3644410},
+abstract = {Modern compilers often offer a variety of warning flags, which developers can enable to get feedback on code that, while syntactically correct, may be problematic. In the case of C++, one example of such "correct but problematic" code is code that leads to undefined behavior (UB). The usage of compiler warnings has long been suspected as a way to decrease bugs and increase code quality. However, empirical evidence that supports this hypothesis is rare. In this study, we present evidence from a study of 127 open source C++ projects. We categorize their usage of compiler warnings into five groups based on which warning flags are being used, and analyse the relationship between compiler warnings and five quality metrics (bugs, critical issues, vulnerabilities, code smells, and technical debt) using Bayesian analysis. We conclude that, in general, compiler warnings indeed correlate with, and potentially cause, higher code quality, with the clearest impact being on the number of critical issues in a project. Using stricter warning flags expectantly correlates with higher code quality in our study objects. However, there are substantial differences between projects, which we attribute to the project's individual development culture. That is, while warnings matter, other factors such as quality culture, are likely to be even more important to source code quality.},
+booktitle = {Proceedings of the 32nd IEEE/ACM International Conference on Program Comprehension},
+pages = {270–279},
+numpages = {10},
+keywords = {compiler warnings, code quality, bayesian data analysis},
+location = {Lisbon, Portugal},
+series = {ICPC '24},
+abbr = {ICPC @ ICSE 2023},
+preview = {chalmers.png},
+additional_info = {https://odr.chalmers.se/items/c6fcc1ca-6a51-487e-88b8-3783d7e8b931}
+}
+
 
 @inproceedings{johansson:24,
 title = {{The Impact of Compiler Warnings on Code Quality in C++ Projects}},
