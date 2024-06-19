@@ -26,10 +26,46 @@
   url: http://botse.org
   color: "#009f36"  
 
+"UCC 2022":
+  url: https://nsfcac.github.io/UCC2022/#/
+  color: "#009f36"  
+
+"SEAA 2022":
+  url: https://dsd-seaa2022.iuma.ulpgc.es
+  color: "#009f36"  
+
+"PROFES 2022":
+  url: https://www.profes-conferences.org
+  color: "#009f36"    
+
+"PROFES 2022":
+  url: https://conferences.computer.org/IC2E/2022/
+  color: "#009f36"    
+
 "JSS":
   url: https://www.sciencedirect.com/journal/journal-of-systems-and-software
   color: "#00369f"
 
 "EMSE":
   url: https://link.springer.com/journal/10664
+  color: "#00369f" 
+
+"TCC":
+  url: https://www.computer.org/csdl/journal/cc
   color: "#00369f"  
+
+"TSE":
+  url: https://www.computer.org/csdl/journal/ts
+  color: "#00369f"      
+
+"IEEE Software":
+  url: https://www.computer.org/csdl/magazine/so
+  color: "#00369f"
+
+"IET Software":
+  url: https://digital-library.theiet.org/content/journals/iet-sen
+  color: "#00369f"    
+
+"PeerJ CS":
+  url: https://peerj.com/computer-science/
+  color: "#00369f"      

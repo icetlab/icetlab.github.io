@@ -169,69 +169,150 @@ preview = {ayas.png},
 abbr = {EMSE}
 }
 
-@inproceedings{scheuner:22:2,
-  author    = {Joel Scheuner and Rui Deng and Jan-Philipp Steghöfer and Philipp Leitner},
-  title     = {CrossFit: Fine-grained Benchmarking of Serverless Application Performance across Cloud Providers},
-  booktitle = {{Proceedings of the 15th IEEE/ACM International Conference on Utility and Cloud Computing (UCC 2022)}},
-  year      = {2022}
+@INPROCEEDINGS{scheuner:22:2,
+  author={Scheuner, Joel and Deng, Rui and Steghöfer, Jan-Philipp and Leitner, Philipp},
+  booktitle={2022 IEEE/ACM 15th International Conference on Utility and Cloud Computing (UCC)}, 
+  title={CrossFit: Fine-grained Benchmarking of Serverless Application Performance across Cloud Providers}, 
+  year={2022},
+  volume={},
+  number={},
+  pages={51-60},
+  keywords={Performance evaluation;Cloud computing;Runtime;Instruments;Serverless computing;Tail;Standardization;serverless;FaaS;distributed tracing;observability;performance;benchmarking},
+  doi={10.1109/UCC56403.2022.00016},
+  preview = {scheuner.jpg},
+  abbr = {UCC 2022},
+  pdf = {https://joelscheuner.com/publication/scheuner-22-phdthesis/scheuner-22-crossfit.pdf},
+  url = {https://joelscheuner.com/publication/scheuner-22-phdthesis/scheuner-22-crossfit.pdf}
 }
 
-@article{grambow:22,
-  title   = {{Using Microbenchmark Suites to Detect Application Performance Changes}},
-  journal = {IEEE Transactions on Cloud Computing (TCC)},
-  year    = {2022},
-  author  = {Martin Grambow and Denis Kovalev and Christoph Laaber and Philipp Leitner and David Bermbach},
-  doi     = {To appear.}
+@ARTICLE {grambow:22,
+author = {M. Grambow and D. Kovalev and C. Laaber and P. Leitner and D. Bermbach},
+journal = {IEEE Transactions on Cloud Computing},
+title = {Using Microbenchmark Suites to Detect Application Performance Changes},
+year = {2023},
+volume = {11},
+number = {03},
+issn = {2168-7161},
+pages = {2575-2590},
+abstract = {Software performance changes are costly and often hard to detect pre-release. Similar to software testing frameworks, either application benchmarks or microbenchmarks can be integrated into quality assurance pipelines to detect performance changes before releasing a new application version. Unfortunately, extensive benchmarking studies usually take several hours which is problematic when examining dozens of daily code changes in detail; hence, trade-offs have to be made. Optimized microbenchmark suites, which only include a small subset of the full suite, are a potential solution for this problem, given that they still reliably detect the majority of the application performance changes such as an increased request latency. It is, however, unclear whether microbenchmarks and application benchmarks detect the same performance problems and one can be a proxy for the other. In this paper, we explore whether microbenchmark suites can detect the same application performance changes as an application benchmark. For this, we run extensive benchmark experiments with both the complete and the optimized microbenchmark suites of the two time-series database systems InfluxDB and VictoriaMetrics and compare their results to the results of corresponding application benchmarks. We do this for 70 and 110 commits, respectively. Our results show that it is possible to detect application performance changes using an optimized microbenchmark suite if frequent false-positive alarms can be tolerated.},
+keywords = {benchmark testing;codes;cloud computing;reliability;software;pipelines;mimics},
+doi = {10.1109/TCC.2022.3217947},
+publisher = {IEEE Computer Society},
+address = {Los Alamitos, CA, USA},
+month = {jul},
+preview = {tub.jpg},
+abbr = {TCC},
+pdf = {https://arxiv.org/pdf/2212.09515},
+url = {https://arxiv.org/pdf/2212.09515}
 }
 
-@inproceedings{samoaa:22:1,
-  author    = {Hazem Peter Samoaa and Antonio Longa and Mazen Mohamad and Morteza Haghir Chehreghani and Philipp Leitner},
-  title     = {TEP-GNN: Accurate Execution Time Prediction of Functional Tests using Graph Neural Networks},
-  booktitle = {{Proceedings of the 23nd International Conference on Product-Focused Software Process Improvement (PROFES)}},
-  year      = {2022},
-  preview = {samoaa.png}
+@InProceedings{samoaa:22:1,
+author="Samoaa, Hazem Peter
+and Longa, Antonio
+and Mohamad, Mazen
+and Chehreghani, Morteza Haghir
+and Leitner, Philipp",
+editor="Taibi, Davide
+and Kuhrmann, Marco
+and Mikkonen, Tommi
+and Klünder, Jil
+and Abrahamsson, Pekka",
+title="TEP-GNN: Accurate Execution Time Prediction of Functional Tests Using Graph Neural Networks",
+booktitle="Product-Focused Software Process Improvement",
+year="2022",
+publisher="Springer International Publishing",
+address="Cham",
+pages="464--479",
+abstract="Predicting the performance of production code prior to actual execution is known to be highly challenging. In this paper, we propose a predictive model, dubbed  TEP-GNN, which demonstrates that high-accuracy performance prediction is possible for the special case of predicting unit test execution times.  TEP-GNN uses FA-ASTs, or flow-augmented ASTs, as a graph-based code representation approach, and predicts test execution times using a powerful graph neural network (GNN) deep learning model. We evaluate  TEP-GNN using four real-life Java open source programs, based on 922 test files mined from the projects' public repositories. We find that our approach achieves a high Pearson correlation of 0.789, considerable outperforming a baseline deep learning model. Our work demonstrates that FA-ASTs and GNNs are a feasible approach for predicting absolute performance values, and serves as an important intermediary step towards being able to predict the performance of arbitrary code prior to execution.",
+isbn="978-3-031-21388-5",
+preview = {samoaa.png},
+abbr = {PROFES 2022},
+pdf = {https://arxiv.org/pdf/2208.11947},
+url = {https://arxiv.org/pdf/2208.11947}
 }
 
-@inproceedings{scheuner:22,
-  author    = {Joel Scheuner and Marcus Bertilsson and Oskar Gronqvist and Henrik Tao and Henrik Lagergren and Jan-Philipp Steghöfer and Philipp Leitner},
-  title     = {{TriggerBench: A Performance Benchmark for Serverless Function Triggers (Short Paper)}},
-  booktitle = {{International Conference on Cloud Engineering (IC2E)}},
-  year      = {2022},
+@INPROCEEDINGS{scheuner:22,
+  author={Scheuner, Joel and Bertilsson, Marcus and Grönqvist, Oskar and Tao, Henrik and Lagergren, Henrik and Steghöfer, Jan-Philipp and Leitner, Philipp},
+  booktitle={2022 IEEE International Conference on Cloud Engineering (IC2E)}, 
+  title={TriggerBench: A Performance Benchmark for Serverless Function Triggers}, 
+  year={2022},
+  volume={},
+  number={},
+  pages={96-103},
+  keywords={Runtime;Scalability;Buildings;Serverless computing;Tail;Benchmark testing;Delays;serverless;FaaS;triggers;distributed tracing;observability;performance;benchmarking},
+  doi={10.1109/IC2E55432.2022.00018},
+  preview = {scheuner.jpg},
+  abbr = {IC2E 2022},
+  pdf = {https://joelscheuner.com/publication/scheuner-22-ic2e/scheuner-22-ic2e.pdf},
+  url = {https://joelscheuner.com/publication/scheuner-22-ic2e/scheuner-22-ic2e.pdf}  
 }
 
 @article{jangali:22,
-  title   = {{Automated Generation and Evaluation of JMH Microbenchmark Suites from Unit Tests}},
-  journal = {IEEE Transactions on Software Engineering (TSE)},
-  year    = {2022},
-  author  = {Mostafa Jangali and Yiming Tang and Niclas Alexandersson and Philipp Leitner and Jinqiu Yang and Weiyi Shang},
-  doi     = {To appear.},
-  selected = {true},
-  theme = {jmh}
+author = {Jangali, Mostafa and Tang, Yiming and Alexandersson, Niclas and Leitner, Philipp and Yang, Jinqiu and Shang, Weiyi},
+title = {Automated Generation and Evaluation of JMH Microbenchmark Suites From Unit Tests},
+year = {2023},
+issue_date = {April 2023},
+publisher = {IEEE Press},
+volume = {49},
+number = {4},
+issn = {0098-5589},
+doi = {10.1109/TSE.2022.3188005},
+abstract = {Performance is a crucial non-functional requirement of many software systems. Despite the widespread use of performance testing, developers still struggle to construct and evaluate the quality of performance tests. To address these two major challenges, we implement a framework, dubbed ju2jmh, to automatically generate performance microbenchmarks from JUnit tests and use mutation testing to study the quality of generated microbenchmarks. Specifically, we compare our ju2jmh generated benchmarks to manually written JMH benchmarks and to automatically generated JMH benchmarks using the AutoJMH framework, as well as directly measuring system performance with JUnit tests. For this purpose, we have conducted a study on three subjects (Rxjava, Eclipse-collections, and Zipkin) with <inline-formula><tex-math notation="LaTeX">$sim$</tex-math><alternatives><mml:math><mml:mo>∼</mml:mo></mml:math><inline-graphic xlink:href="tang-ieq1-3188005.gif"/></alternatives></inline-formula>454K <italic>source lines of code</italic> (SLOC), 2,417 JMH benchmarks (including manually written and generated AutoJMH benchmarks) and 35,084 JUnit tests. Our results show that the <italic>ju2jmh</italic> generated JMH benchmarks consistently outperform using the execution time and throughput of JUnit tests as a proxy of performance and JMH benchmarks automatically generated using the AutoJMH framework while being comparable to JMH benchmarks manually written by developers in terms of tests’ stability and ability to detect performance bugs. Nevertheless, <italic>ju2jmh</italic> benchmarks are able to cover more of the software applications than manually written JMH benchmarks during the microbenchmark execution. Furthermore, <italic>ju2jmh</italic> benchmarks are generated automatically, while manually written JMH benchmarks require many hours of hard work and attention; therefore our study can reduce developers’ effort to construct microbenchmarks. In addition, we identify three factors (too low test workload, unstable tests and limited mutant coverage) that affect a benchmark's ability to detect performance bugs. To the best of our knowledge, this is the first study aimed at assisting developers in fully automated microbenchmark creation and assessing microbenchmark quality for performance testing.},
+journal = {IEEE Transactions on Software Engineering},
+month = {apr},
+pages = {1704–1725},
+numpages = {22},
+selected = {true},
+preview = {concordia.png},
+abbr = {TSE},
+pdf = {https://users.encs.concordia.ca/~shang/pubs/MOSTAFA_TSE_2022.pdf},
+url = {https://users.encs.concordia.ca/~shang/pubs/MOSTAFA_TSE_2022.pdf}  
 }
 
-@inproceedings{ayas:22,
-  author    = {Hamdy Michael Ayas and Francisco Gomes and Philipp Leitner},
-  title     = {{Empirical Analysis of Microservices Systems Using Consumer-Driven Contract Testing}},
-  booktitle = {{Euromicro Conference on Software Engineering and Advanced Applications (SEAA)}},
-  year      = {2022},
+@INPROCEEDINGS{ayas:22,
+  author={Ayas, Hamdy Michael and Fischer, Hartmut and Leitner, Philipp and De Oliveira Neto, Francisco Gomes},
+  booktitle={2022 48th Euromicro Conference on Software Engineering and Advanced Applications (SEAA)}, 
+  title={An Empirical Analysis of Microservices Systems Using Consumer-Driven Contract Testing}, 
+  year={2022},
+  volume={},
+  number={},
+  pages={92-99},
+  keywords={Shape;Microservice architectures;Computer architecture;Software;Best practices;Contracts;Testing;Microservice architecture;consumer-driven contract test;repository mining},
+  doi={10.1109/SEAA56994.2022.00022},
+  preview = {ayas.png},
+  abbr = {SEAA 2022}
 }
 
-@article{markusse:22,
-  title   = {{Using Benchmarking Bots for Continuous Performance Assessment}},
-  journal = {IEEE Software},
-  year    = {2022},
-  author  = {Florian Markusse and Philipp Leitner and Alexander Serebrenik},
-  doi = {10.1109/MS.2022.3184430},
-  note     = {To appear.}
+@ARTICLE{markusse:22,
+  author={Markusse, Florian and Leitner, Philipp and Serebrenik, Alexander},
+  journal={IEEE Software}, 
+  title={Using Benchmarking Bots for Continuous Performance Assessment}, 
+  year={2022},
+  volume={39},
+  number={5},
+  pages={50-55},
+  keywords={Benchmark testing;Bot (Internet);Software;Codes;Software development management;Manuals;Open source software},
+  doi={10.1109/MS.2022.3184430},
+  preview = {tue.png},
+  abbr = {IEEE Software},
+  pdf = {https://www.win.tue.nl/~aserebre/IEEESW2022.pdf},
+  url = {https://www.win.tue.nl/~aserebre/IEEESW2022.pdf}
 }
 
 @article{samoaa:22,
-  title   = {{A Systematic Mapping Study of Source Code Representation for Deep Learning in Software Engineering}},
-  journal = {IET Software},
-  year    = {2022},
-  author  = {Hazem (Peter) Samoaa and Firas Bayram and Pasquale Salza and Philipp Leitner},
-  doi = {https://doi.org/10.1049/sfw2.12064},
-  note     = {To appear.}
+author = {Samoaa, Hazem Peter and Bayram, Firas and Salza, Pasquale and Leitner, Philipp},
+title = {A systematic mapping study of source code representation for deep learning in software engineering},
+journal = {IET Software},
+volume = {16},
+number = {4},
+pages = {351-385},
+doi = {https://doi.org/10.1049/sfw2.12064},
+url = {https://ietresearch.onlinelibrary.wiley.com/doi/abs/10.1049/sfw2.12064},
+eprint = {https://ietresearch.onlinelibrary.wiley.com/doi/pdf/10.1049/sfw2.12064},
+abstract = {The usage of deep learning (DL) approaches for software engineering has attracted much attention, particularly in source code modelling and analysis. However, in order to use DL, source code needs to be formatted to fit the expected input form of DL models. This problem is known as source code representation. Source code can be represented via different approaches, most importantly, the tree-based, token-based, and graph-based approaches. We use a systematic mapping study to investigate i detail the representation approaches adopted in 103 studies that use DL in the context of software engineering. Thus, studies are collected from 2014 to 2021 from 14 different journals and 27 conferences. We show that each way of representing source code can provide a different, yet orthogonal view of the same source code. Thus, different software engineering tasks might require different (combinations of) code representation approaches, depending on the nature and complexity of the task. Particularly, we show that it is crucial to define whether the DL approach requires lexical, syntactical, or semantic code information. Our analysis shows that a wide range of different representations and combinations of representations (hybrid representations) are used to solve a wide range of common software engineering problems. However, we also observe that current research does not generally attempt to transfer existing representations or models to other studies even though there are other contexts in which these representations and models may also be useful. We believe that there is potential for more reuse and the application of transfer learning when applying DL to software engineering tasks.},
+year = {2022},
+preview = {samoaa.png},
+abbr = {IET Software}
 }
 
 @article{erlenhov:22,
@@ -243,9 +324,11 @@ abbr = {EMSE}
   pages     = {e849},
   year      = {2021},
   url       = {https://doi.org/10.7717/peerj-cs.849},
-  doi = {https://doi.org/10.7717/peerj-cs.849}
+  doi = {https://doi.org/10.7717/peerj-cs.849},
+  preview = {erlenhov.png},
+  abbr = {PeerJ CS},
+  supp = {https://zenodo.org/records/5567370}
 }
-
 
 @inproceedings{ayas:21:2,
   author    = {Hamdy Michael Ayas and Regina Hebig and Philipp Leitner},
