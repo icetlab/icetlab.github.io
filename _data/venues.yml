@@ -22,6 +22,11 @@
   url: https://bigdataieee.org/BigData2023/
   color: "#009f36"
 
+"SOSE 2023":
+  url: https://ieeesose.com
+  color: "#009f36"     
+
+
 "BotSE @ ICSE 2023":
   url: http://botse.org
   color: "#009f36"  
@@ -38,7 +43,7 @@
   url: https://www.profes-conferences.org
   color: "#009f36"    
 
-"PROFES 2022":
+"IC2E 2022":
   url: https://conferences.computer.org/IC2E/2022/
   color: "#009f36"   
 
