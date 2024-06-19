@@ -6,15 +6,15 @@
   url: https://conf.researchr.org/home/fse-2024
   color: "#009f36"
 
-"CHASE @ ICSE 2023":
+"CHASE @ ICSE 2024":
   url: https://conf.researchr.org/home/chase-2023
   color: "#009f36"
 
-"ICPC @ ICSE 2023":
+"ICPC @ ICSE 2024":
   url: https://conf.researchr.org/home/icpc-2023
   color: "#009f36"
 
-"SIGMETRICS 2023":
+"SIGMETRICS 2024":
   url: https://www.sigmetrics.org/sigmetrics2023/
   color: "#009f36"
 
@@ -22,6 +22,14 @@
   url: https://bigdataieee.org/BigData2023/
   color: "#009f36"
 
+"BotSE @ ICSE 2023":
+  url: http://botse.org
+  color: "#009f36"  
+
 "JSS":
   url: https://www.sciencedirect.com/journal/journal-of-systems-and-software
   color: "#00369f"
+
+"EMSE":
+  url: https://link.springer.com/journal/10664
+  color: "#00369f"  
