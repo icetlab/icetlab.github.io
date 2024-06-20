@@ -8,9 +8,21 @@ Here are instructions how to do some common types of updates. The general proced
 
 ## Adding a new publication
 
-For publications to show up in our publication list you only need to add them to the [bibtex file](https://github.com/icetlab/icetlab.github.io/blob/master/_bibliography/papers.bib) (`_bibliography/papers.bib`). This will make the publication show up in the [overall list](https://www.icet-lab.eu/publications/), and enables a few cool extra features. For example, papers in the bibtex file can be cited using `{% cite BIBTEXKEY %}` in markdown on the webpage.
+For publications to show up in our publication list you only need to add them to the [bibtex file](https://github.com/icetlab/icetlab.github.io/blob/master/_bibliography/papers.bib) (`_bibliography/papers.bib`). This will make the publication show up in the [overall list](https://www.icet-lab.eu/publications/), and enables a few cool extra features.
 
-Bibtex entries can have arbitrary extra fields, which you can use to display only a subset of papers. For example, papers with a field `selected = {true}` show up in the overview on the title page of the website. If you add additional fields that should not be displayed, you need to configure the website not to show them in the overall [config file](https://github.com/icetlab/icetlab.github.io/blob/master/_config.yml) (`_config.yml`, key `filtered_bibtex_keywords`).
+Some non-standard bibtex fields are used to enable some nice formatting on the website:
+
+- `preview = {IMAGENAME}`: what image to use left of the publication entry. The general algorithm is that it should be the profile image of the first author if that author is part of ICET-lab, and if not it should be the logo of the first author's affiliation.
+
+- `abbr = {NAME_OF_VENUE}`: what "venue badge" should be used. If you are adding a conference that is not yet available you also need to add it to the [database file](https://github.com/icetlab/icetlab.github.io/blob/master/_data/venues.yml] (`_data/venues.yml`). As a rule, journals use color `#00369f` and proceedings (conferences, workshops) use color `#009f36`. For co-located events (MSR, CHASE, etc.) also say which event it is co-located with (e.g., "MSR @ ICSE 2020"). For journals just the journal acronym is enough (e.g., "TSE").
+
+- `pdf = {LINK}` and `url = {LINK}`: if there is a green open access version of the paper (e.g., author copy, arXiv, etc.) please provide the link here.
+
+- `supp = {LINK}`: if there is supplementary material (e.g., an online appendix or Zenodo link), please provide the link here.
+
+- `thesis = {LINK}`: if this work is based on a publicly available bachelor's or master's thesis, please add a link to the thesis here.
+
+Bibtex entries can have arbitrary additional extra fields, which you can use to display only a subset of papers. For example, papers with a field `selected = {true}` show up in the overview on the title page of the website. If you add additional fields that should not be displayed, you need to configure the website not to print these fields in the [config file](https://github.com/icetlab/icetlab.github.io/blob/master/_config.yml) (`_config.yml`, key `filtered_bibtex_keywords`).
 
 ## Adding or editing your profile
 
