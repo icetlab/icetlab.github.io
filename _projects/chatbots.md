@@ -20,7 +20,12 @@ ICET-lab has been investigating three main aspects in connection to chatbots in 
 
 <div class="row align-items-center">
     <div class="col-sm-7 mt-3 mt-md-0">
-        <p>Our research present a framework that descibes how software engineers of different roles use chatbots {% cite khojah:24 %}. The framework is based on a categorization of engineer-to-chatbot dialogues that illustrated three main purposes of a conversation. Software engineers initate a dialogue with a chatbot when The want to (i) Manipulate software artifact, (ii) Get guidance on how to solve a problem, and (ii) Get training on a certain skill or concept. The different purposes along with internal factors (concern the prompting) and external factors (concern the organization and chatbot policy) impact the personal experience of the software engineer in terms of productivity and trust.</p>
+        <p>Our research present a framework that descibes how software engineers of different roles use chatbots {% cite khojah:24 %}. The framework is based on a categorization of engineer-to-chatbot dialogues that illustrated three main purposes of a conversation. Software engineers initate a dialogue with a chatbot when they want to
+        <ul>
+            <li>manipulate software artifacts, </li>
+            <li>get guidance on how to solve a problem, and</li><li>get training on a certain skill or concept.</li></p>
+            
+            <p>The different purposes along with internal factors (concern the prompting) and external factors (concern the organization and chatbot policy) impact the personal experience of the software engineer in terms of productivity and trust.</p>
     </div>
     <div class="col-sm-5 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/chatgpt.png" title="Framework of ChatGPT usage in SE" class="img-fluid rounded z-depth-1" %}
