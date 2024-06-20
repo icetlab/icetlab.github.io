@@ -14,7 +14,7 @@ Some non-standard bibtex fields are used to enable some nice formatting on the w
 
 - `preview = {IMAGENAME}`: what image to use left of the publication entry. The general algorithm is that it should be the profile image of the first author if that author is part of ICET-lab, and if not it should be the logo of the first author's affiliation.
 
-- `abbr = {NAME_OF_VENUE}`: what "venue badge" should be used. If you are adding a conference that is not yet available you also need to add it to the [database file](https://github.com/icetlab/icetlab.github.io/blob/master/_data/venues.yml] (`_data/venues.yml`). As a rule, journals use color `#00369f` and proceedings (conferences, workshops) use color `#009f36`. For co-located events (MSR, CHASE, etc.) also say which event it is co-located with (e.g., "MSR @ ICSE 2020"). For journals just the journal acronym is enough (e.g., "TSE").
+- `abbr = {NAME_OF_VENUE}`: what "venue badge" should be used. If you are adding a conference that is not yet available you also need to add it to the [database file](https://github.com/icetlab/icetlab.github.io/blob/master/_data/venues.yml) (`_data/venues.yml`). As a rule, journals use color `#00369f` and proceedings (conferences, workshops) use color `#009f36`. For co-located events (MSR, CHASE, etc.) also say which event it is co-located with (e.g., "MSR @ ICSE 2020"). For journals just the journal acronym is enough (e.g., "TSE").
 
 - `pdf = {LINK}` and `url = {LINK}`: if there is a green open access version of the paper (e.g., author copy, arXiv, etc.) please provide the link here.
 

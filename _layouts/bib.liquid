@@ -32,6 +32,7 @@
           {% assign entry_path = entry.preview | prepend: '/assets/img/' %}
           {%
             include figure.liquid
+            rounded
             loading="eager"
             path=entry_path
             sizes = "200px"
