@@ -12,9 +12,9 @@ For publications to show up in our publication list you only need to add them to
 
 Some non-standard bibtex fields are used to enable some nice formatting on the website:
 
-- `preview = {IMAGENAME}`: what image to use left of the publication entry. The general algorithm is that it should be the profile image of the first author if that author is part of ICET-lab, and if not it should be the logo of the first author's affiliation.
+- `preview = {IMAGENAME}`: what image to use on the left side of the publication entry. Our general algorithm is that the preview should be the profile image of the first author if that author is part of ICET-lab, and if not it should be the logo of the first author's affiliation.
 
-- `abbr = {NAME_OF_VENUE}`: what "venue badge" should be used. If you are adding a conference that is not yet available you also need to add it to the [database file](https://github.com/icetlab/icetlab.github.io/blob/master/_data/venues.yml) (`_data/venues.yml`). As a rule, journals use color `#00369f` and proceedings (conferences, workshops) use color `#009f36`. For co-located events (MSR, CHASE, etc.) also say which event it is co-located with (e.g., "MSR @ ICSE 2020"). For journals just the journal acronym is enough (e.g., "TSE").
+- `abbr = {NAME_OF_VENUE}`: what "venue badge" should be used. If you are adding a new conference or edition you also need to add it to the [database file](https://github.com/icetlab/icetlab.github.io/blob/master/_data/venues.yml) (`_data/venues.yml`). As a rule, journals use color `#00369f` and proceedings (conferences, workshops) use color `#009f36`. For co-located events (MSR, CHASE, etc.) also say which event it is co-located with (e.g., "MSR @ ICSE 2020"). For journals just the journal acronym is enough (e.g., "TSE").
 
 - `pdf = {LINK}` and `url = {LINK}`: if there is a green open access version of the paper (e.g., author copy, arXiv, etc.) please provide the link here.
 
@@ -68,7 +68,7 @@ Topic pages can be arbitrarily complex markdown or HTML, but should contain a si
 - Templating magic:
     - `{% include figure.liquid loading="eager" path="assets/img/cwb-show-execution.png" title="Cloud Workbench" class="img-fluid rounded z-depth-1" %}`: include a figure, with nice shadow. Use a Bootstrap container to control the size of the figure. Don't forget to also `git add` the figure.
     
-    - `{% cite leitner:16 %}`: cite a paper. Use `{% bibliography --cited_in_order  %}` at the end of the page to then display the bibiography of cited papers (not required to research pages, but useful for other types of content, such as longer news articles). This command formats best in a `<div class="publications">` wrapper.
+    - `{% cite leitner:16 %}`: cite a paper. Use `{% bibliography --cited_in_order  %}` at the end of the page to then display the bibiography of cited papers (not required in research pages, but useful for other types of content, such as longer news articles). This command formats best in a `<div class="publications">` wrapper.
     
     - `{% bibliography --group_by none --query @*[selected=true]* %}`: generate a custom bibliography (in this case only including papers that have a field "selected" with a value of "true"). Can be used to generate publication lists for a specific author, for a topic etc. Check the [jekyll-scholar](https://github.com/inukshuk/jekyll-scholar) website for documentation.
 
