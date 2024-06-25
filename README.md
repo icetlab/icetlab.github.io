@@ -68,7 +68,7 @@ Topic pages can be arbitrarily complex markdown or HTML, but should contain a si
 - Templating magic:
     - `{% include figure.liquid loading="eager" path="assets/img/cwb-show-execution.png" title="Cloud Workbench" class="img-fluid rounded z-depth-1" %}`: include a figure, with nice shadow. Use a Bootstrap container to control the size of the figure. Don't forget to also `git add` the figure.
     
-    - `{% cite leitner:16 %}`: cite a paper
+    - `{% cite leitner:16 %}`: cite a paper. Use `{% bibliography --cited_in_order  %}` at the end of the page to then display the bibiography of cited papers.
     
     - `{% bibliography --group_by none --query @*[selected=true]* %}`: generate a custom bibliography (in this case only including papers that have a field "selected" with a value of "true"). Can be used to generate publication lists for a specific author, for a topic etc. Check the [jekyll-scholar](https://github.com/inukshuk/jekyll-scholar) website for documentation.
 

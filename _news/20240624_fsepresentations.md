@@ -17,3 +17,5 @@ ICET-lab members will present three talks at [FSE 2024](https://conf.researchr.o
 - Friday, 11:36 (Baobá 1 room): Ranim will present "Beyond Code Generation: An Observational Study of ChatGPT Usage in Software Engineering Practice" {% cite khojah:24 %} in the main research track.
 
 - Friday, 15:03 (Baobá 6 room): Linda will present "The lion, the ecologist and the plankton: a classification of species in multi-bot ecosystems" {% cite platis:24 %} in the Ideas, Visions, and Reflections track.
+
+{% bibliography --cited_in_order  %}
