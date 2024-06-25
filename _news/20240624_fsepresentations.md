@@ -18,4 +18,7 @@ ICET-lab members will present three talks at [FSE 2024](https://conf.researchr.o
 
 - Friday, 15:03 (Baobá 6 room): Linda will present "The lion, the ecologist and the plankton: a classification of species in multi-bot ecosystems" {% cite platis:24 %} in the Ideas, Visions, and Reflections track.
 
-{% bibliography --cited_in_order  %}
+<h2>References</h2>
+<div class="publications">
+    {% bibliography --cited_in_order  %}
+</div>

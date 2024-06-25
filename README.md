@@ -28,7 +28,7 @@ Bibtex entries can have arbitrary additional extra fields, which you can use to 
 
 In order to edit your profile page on the [team overview](https://www.icet-lab.eu/people/) (or adding a new page), you need to edit a few different files:
 
-- The [overview](https://github.com/icetlab/icetlab.github.io/blob/master/_pages/profiles.md) (`_pages/profiles.md`) contains metadata how the team page should be rendered. Entries here should be self-explanatory.
+- The [overview](https://github.com/icetlab/icetlab.github.io/blob/master/_pages/profiles.md) (`_pages/profiles.md`) contains metadata how the team page should be rendered. Entries here are self-explanatory.
 - The actual text should be in a separate markdown page for each person (`_includes/people/YOUR_LAST_NAME.md`). You can use either HTML or Jekyll markdown. Check existing pages for examples.
 - Your profile picture should go into `assets/img/YOUR_LAST_NAME.png` (or jpg).
 
@@ -36,7 +36,7 @@ In order to edit your profile page on the [team overview](https://www.icet-lab.e
 
 The [website landing page](https://www.icet-lab.eu) has an entry for news items. News items can either be short (just a date and a string) or long (link to a subpage).
 
-News entries are created by adding a new markdown page in the [correct folder](https://github.com/icetlab/icetlab.github.io/tree/master/_news) (`_news`). All markdown files in this directory are rendered automatically, no further configuration is needed. Prefix the file name with the date, as this is used to determine the order in which the markdown is rendered (and newest entries should come first, of course).
+News entries are created by adding a new markdown page in the [correct folder](https://github.com/icetlab/icetlab.github.io/tree/master/_news) (`_news`). All markdown files in this directory are rendered automatically, no further configuration is needed. Prefix the file name with the date, as this is used to determine the order in which the markdown is rendered (and newest entries should come first, of course). *Pages cannot have a filename with more than one underscore `_`!*
 
 Check the existing examples to see how to create short or long news entries.
 
@@ -68,7 +68,7 @@ Topic pages can be arbitrarily complex markdown or HTML, but should contain a si
 - Templating magic:
     - `{% include figure.liquid loading="eager" path="assets/img/cwb-show-execution.png" title="Cloud Workbench" class="img-fluid rounded z-depth-1" %}`: include a figure, with nice shadow. Use a Bootstrap container to control the size of the figure. Don't forget to also `git add` the figure.
     
-    - `{% cite leitner:16 %}`: cite a paper. Use `{% bibliography --cited_in_order  %}` at the end of the page to then display the bibiography of cited papers.
+    - `{% cite leitner:16 %}`: cite a paper. Use `{% bibliography --cited_in_order  %}` at the end of the page to then display the bibiography of cited papers (not required to research pages, but useful for other types of content, such as longer news articles). This command formats best in a `<div class="publications">` wrapper.
     
     - `{% bibliography --group_by none --query @*[selected=true]* %}`: generate a custom bibliography (in this case only including papers that have a field "selected" with a value of "true"). Can be used to generate publication lists for a specific author, for a topic etc. Check the [jekyll-scholar](https://github.com/inukshuk/jekyll-scholar) website for documentation.
 
