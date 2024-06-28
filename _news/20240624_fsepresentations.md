@@ -6,13 +6,15 @@ inline: false
 related_posts: false
 ---
 
-Come visit the three talks from ICET-lab at FSE 2024!
+Come visit the four talks from ICET-lab at FSE 2024!
 
 ---
 
-ICET-lab members will present three talks at [FSE 2024](https://conf.researchr.org/home/fse-2024) in Porto de Galinhas, Brazil:
+ICET-lab members will present fouur talks at [FSE 2024](https://conf.researchr.org/home/fse-2024) in Porto de Galinhas, Brazil:
 
 - Monday, 14:30 (Baobá 1 room): Ranim will present "From Human-to-Human to Human-to-Bot Conversations in Software Engineering" {% cite khojah:24:2 %} in AIWare.
+
+- Monday, 14:50 (Baobá 1 room): Francisco will present "Unveiling Assumptions: Exploring the Decisions of AI Chatbots and Human Testers" in AIWare.
 
 - Friday, 11:36 (Baobá 1 room): Ranim will present "Beyond Code Generation: An Observational Study of ChatGPT Usage in Software Engineering Practice" {% cite khojah:24 %} in the main research track.
 
