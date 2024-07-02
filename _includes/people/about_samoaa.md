@@ -1,4 +1,4 @@
-<b> Hazem (Peter) Samoaa </b>
+<b> Peter Samoaa </b>
 
 I am a PhD student specializing in enhancing regression techniques for trees and graphs. My research focuses on analyzing the behavior of tree-based neural networks in regression tasks. I aim to improve regression performance from both model-centric and data-centric perspectives. This includes enhancing models through advanced algorithms and improving data quality by acquiring labels for graph data using active learning. My primary tool for graph regression analysis is Graph Neural Networks (GNNs). As part of my research, I use software performance prediction as a case study to validate my methods.
 
