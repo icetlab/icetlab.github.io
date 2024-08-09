@@ -25,14 +25,6 @@ profiles:
       <p>Senior Lecturer</p>
       <p>University of Gothenburg</p>      
   - align: right
-    id: ayas
-    image: ayas.png
-    content: about_ayas.md
-    image_circular: false # crops the image to make it circular
-    more_info: >
-      <p>Postdoc</p>
-      <p>Chalmers University of Technology</p>
-  - align: left
     id: erlenhov
     image: erlenhov.png
     content: about_erlenhov.md
@@ -40,7 +32,7 @@ profiles:
     more_info: >
       <p>PhD Student & Timlärare</p>
       <p>Chalmers University of Technology</p>
-  - align: right
+  - align: left
     id: samoaa
     image: samoaa.png
     content: about_samoaa.md
@@ -48,7 +40,7 @@ profiles:
     more_info: >
       <p>PhD Student</p>
       <p>Chalmers University of Technology</p>
-  - align: left
+  - align: right
     id: khojah
     image: khojah.png
     content: about_khojah.md

@@ -7,6 +7,9 @@ nav: true
 nav_order: 6
 
 profiles:
+  - align: left
+    content: about_ayas.md
+    image_circular: false # crops the image to make it circular
   - align: right
     content: about_scheuner.md
     image_circular: false # crops the image to make it circular
