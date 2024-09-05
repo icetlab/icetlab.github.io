@@ -26,7 +26,7 @@ Our contributions in this area include:
 
 * Decision-making processes for migrations to microservices, and aggregated migration journeys from various organizations and technical solutions used by practitioners {% cite ayas:23 %}.
 * Testing in microservices, particularly related to consumer-driven contract testing {% cite ayas:22 %}.
-* Mining repositories and studying job-ads to classify the roles, responsibilities and skills of engineers working with microservices {% cite ayas:24:1} {% cite ayas:24}.
+* Mining repositories and studying job-ads to classify the roles, responsibilities and skills of engineers working with microservices {% cite ayas:24:1 %} {% cite ayas:24 %}.
 
 
 **Contacts:**
