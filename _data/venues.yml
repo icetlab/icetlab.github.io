@@ -110,3 +110,7 @@
 "TOIT":
   url: https://dl.acm.org/journal/toit
   color: "#00369f"
+
+"EAAI":
+  url: https://www.sciencedirect.com/journal/engineering-applications-of-artificial-intelligence
+  color: "#00369f"
