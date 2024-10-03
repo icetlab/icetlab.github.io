@@ -10,6 +10,7 @@ Peter has successfully defended his doctoral dissertation! Congratulations, Dr. 
 
 ---
 
+
 On Wednesday, Oct 2nd Peter hass successfully defended his doctoral dissertation titled [From Trees to Graphs: Advancing Regression Analysis through Model-Centric AI, Data-Centric AI, and Active Learning](https://research.chalmers.se/publication/542522/file/542522_Fulltext.pdf).
 
 Congratulations, Dr. Samoaa!
