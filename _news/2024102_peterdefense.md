@@ -1,5 +1,6 @@
 ---
 layout: post
+title: Peter has successfully defended his doctoral dissertation! 
 date: 2024-10-02 07:59:00-0400
 inline: false
 related_posts: false
