@@ -33,19 +33,19 @@ profiles:
       <p>PhD Student & Timlärare</p>
       <p>Chalmers University of Technology</p>
   - align: left
-    id: samoaa
-    image: samoaa.png
-    content: about_samoaa.md
-    image_circular: false # crops the image to make it circular
-    more_info: >
-      <p>PhD Student</p>
-      <p>Chalmers University of Technology</p>
-  - align: right
     id: khojah
     image: khojah.png
     content: about_khojah.md
     image_circular: false # crops the image to make it circular
     more_info: >
       <p>PhD Student</p>
-      <p>Chalmers University of Technology</p>            
+      <p>Chalmers University of Technology</p>
+  - align: right
+    id: schiopu
+    image: missing.jpeg
+    content: about_schiopu.md
+    image_circular: false # crops the image to make it circular
+    more_info: >
+      <p>PhD Student</p>
+      <p>Chalmers University of Technology</p>                  
 ---
