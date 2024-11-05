@@ -8,7 +8,6 @@ nav_order: 6
 
 profiles:
   - align: left
-    image: samoaa.png
     content: about_samoaa.md
   - align: left
     content: about_ayas.md
