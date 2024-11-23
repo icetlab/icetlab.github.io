@@ -40,12 +40,4 @@ profiles:
     more_info: >
       <p>PhD Student</p>
       <p>Chalmers University of Technology</p>
-  - align: right
-    id: schiopu
-    image: missing.jpeg
-    content: about_schiopu.md
-    image_circular: false # crops the image to make it circular
-    more_info: >
-      <p>PhD Student</p>
-      <p>Chalmers University of Technology</p>                  
 ---
