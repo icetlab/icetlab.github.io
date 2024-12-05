@@ -7,5 +7,5 @@ nav_order: 7
 description: ICET-lab documents and resources
 ---
 
-# Publication Strategy
+### Publication Strategy
 Summary of our [publication strategy](/assets/pdf/icet_publication_strategy_v1.pdf) (last updated 2024-12-05)
