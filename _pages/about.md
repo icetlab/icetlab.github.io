@@ -21,7 +21,7 @@ The Internet Computing and Emerging Technologies lab (ICET-lab) is a research gr
 
 
 <p>
-    {% include figure.liquid loading="eager" path="assets/img/ICET_Lab/_38A1119.jpg" class="img-fluid z-depth-1" width="45%" zoomable=true %}
+    {% include figure.liquid loading="eager" path="assets/img/ICET_Lab/38A1119.jpg" class="img-fluid z-depth-1" width="45%" zoomable=true %}
     <p>
       Group picture from fall 2024<br>
       (from left to right: Philipp Leitner, Peter Samoaa, Matei Schiopu, Ranim Khojah, Francisco Gomes, Linda Erlenhov)
