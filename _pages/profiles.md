@@ -34,7 +34,7 @@ profiles:
       <p>Chalmers University of Technology</p>
   - align: left
     id: khojah
-    image: khojah.png
+    image: khojah.jpg
     content: about_khojah.md
     image_circular: false # crops the image to make it circular
     more_info: >
