@@ -9,7 +9,7 @@ nav_order: 2
 profiles:
   - align: right
     id: leitner
-    image: leitner.jpg
+    image: leitnerv2.png
     content: about_leitner.md
     image_circular: false # crops the image to make it circular
     more_info: >
