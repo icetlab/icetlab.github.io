@@ -8,4 +8,4 @@ description: ICET-lab documents and resources
 ---
 
 ### Publication Strategy
-Summary of our [publication strategy](/assets/pdf/icet_publication_strategy_v1.pdf) (last updated 2024-12-05)
+Summary of our [publication strategy](/assets/pdf/icet_publication_strategy_v1.1.pdf) (last updated 2024-12-05)
