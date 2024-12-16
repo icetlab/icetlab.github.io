@@ -24,7 +24,7 @@ horizontal: true
   <div class="col-md-4 d-none d-md-block">
       <div class="row justify-content-sm-center">
         <div class="col-sm-8 mt-3 mt-md-0">
-            {% include figure.liquid path="assets/img/ICET-Lab-LOGO-A2" title="Logo ICET-lab" class="img-fluid border-0" %}
+            {% include figure.liquid path="assets/img/ICET-Lab-LOGO-A2.png" title="Logo ICET-lab" class="img-fluid border-0" %}
         </div>  
       </div>
       <div class="row align-items-center">
