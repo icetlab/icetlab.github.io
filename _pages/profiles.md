@@ -30,7 +30,7 @@ profiles:
     content: about_erlenhov.md
     image_circular: false # crops the image to make it circular
     more_info: >
-      <p>PhD Student & Timlärare</p>
+      <p>Technical Instructor & PhD Student</p>
       <p>Chalmers University of Technology</p>
   - align: left
     id: khojah
@@ -42,7 +42,7 @@ profiles:
       <p>Chalmers University of Technology</p>
   - align: right
     id: genc
-    image: genc.jpeg
+    image: genc.jpg
     content: about_genc.md
     image_circular: false # crops the image to make it circular
     more_info: >
