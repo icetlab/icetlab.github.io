@@ -50,7 +50,7 @@ profiles:
       <p>Chalmers University of Technology</p>
   - align: left
     id: yi
-    image: yi.jpg
+    image: yi.png
     content: about_yi.md
     image_circular: false # crops the image to make it circular
     more_info: >
