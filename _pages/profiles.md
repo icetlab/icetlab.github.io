@@ -41,19 +41,19 @@ profiles:
       <p>PhD Student</p>
       <p>Chalmers University of Technology</p>
   - align: right
-    id: genc
-    image: genc.jpg
-    content: about_genc.md
-    image_circular: false # crops the image to make it circular
-    more_info: >
-      <p>Research Assistant</p>
-      <p>Chalmers University of Technology</p>
-  - align: left
     id: yi
     image: yi.png
     content: about_yi.md
     image_circular: false # crops the image to make it circular
     more_info: >
       <p>PhD Student</p>
+      <p>Chalmers University of Technology</p>      
+  - align: left
+    id: genc
+    image: genc.jpg
+    content: about_genc.md
+    image_circular: false # crops the image to make it circular
+    more_info: >
+      <p>Research Assistant</p>
       <p>Chalmers University of Technology</p>
 ---
