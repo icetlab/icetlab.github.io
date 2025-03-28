@@ -12,6 +12,8 @@ Congratulations to Ranim, who has successfully defended her licentiate thesis to
 
 On Friday, March 28th, Ranim successfully defended her licentiate thesis titled [Understanding and Evaluating Chatbot Interactions in Software Engineering](https://research.chalmers.se/en/publication/545368).
 
+Ranim's discussion leader was [Prof. Diomidis Spinellis](https://www2.dmst.aueb.gr/dds/).
+
 Congratulations, and we are very much looking forward to the second half of your PhD journey at ICET-lab!
 
 
