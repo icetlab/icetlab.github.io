@@ -24,4 +24,10 @@ Congratulations, and we are very much looking forward to the second half of your
     <div class="col-sm-6 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/ranim_lic/ranim2.png" title="Images of Ranim's Licentiate Defense" class="img-fluid rounded z-depth-1" %}
     </div>
+    <div class="col-sm-6 mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/ranim_lic/ranim3.jpg" title="Images of Ranim's Licentiate Defense" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm-6 mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/ranim_lic/ranim4.jpg" title="Images of Ranim's Licentiate Defense" class="img-fluid rounded z-depth-1" %}
+    </div>
 </div>
