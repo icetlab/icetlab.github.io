@@ -8,15 +8,17 @@ nav_order: 6
 
 profiles:
   - align: left
-    content: about_samoaa.md
+    content: people/about_genc.md
   - align: left
-    content: about_ayas.md
+    content: people/about_samoaa.md
+  - align: left
+    content: people/about_ayas.md
   - align: right
-    content: about_scheuner.md
+    content: people/about_scheuner.md
   - align: left
-    content: about_laaber.md
+    content: people/about_laaber.md
   - align: right
-    content: about_schermann.md
+    content: people/about_schermann.md
   - align: left
-    content: about_cito.md
+    content: people/about_cito.md
 ---

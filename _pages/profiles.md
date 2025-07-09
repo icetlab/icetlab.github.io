@@ -10,7 +10,7 @@ profiles:
   - align: right
     id: leitner
     image: leitnerv2.png
-    content: about_leitner.md
+    content: people/about_leitner.md
     image_circular: false # crops the image to make it circular
     more_info: >
       <p>Associate Professor</p>
@@ -19,7 +19,7 @@ profiles:
   - align: left
     id: gomes
     image: gomes.png
-    content: about_gomes.md
+    content: people/about_gomes.md
     image_circular: false # crops the image to make it circular
     more_info: >
       <p>Senior Lecturer</p>
@@ -27,7 +27,7 @@ profiles:
   - align: right
     id: erlenhov
     image: erlenhov.png
-    content: about_erlenhov.md
+    content: people/about_erlenhov.md
     image_circular: false # crops the image to make it circular
     more_info: >
       <p>Technical Instructor & PhD Student</p>
@@ -35,7 +35,7 @@ profiles:
   - align: left
     id: khojah
     image: khojah.jpg
-    content: about_khojah.md
+    content: people/about_khojah.md
     image_circular: false # crops the image to make it circular
     more_info: >
       <p>PhD Student</p>
@@ -43,17 +43,9 @@ profiles:
   - align: right
     id: yi
     image: yi.png
-    content: about_yi.md
+    content: people/about_yi.md
     image_circular: false # crops the image to make it circular
     more_info: >
       <p>PhD Student</p>
       <p>Chalmers University of Technology</p>      
-  - align: left
-    id: genc
-    image: genc.jpg
-    content: about_genc.md
-    image_circular: false # crops the image to make it circular
-    more_info: >
-      <p>Research Assistant</p>
-      <p>Chalmers University of Technology</p>
 ---
