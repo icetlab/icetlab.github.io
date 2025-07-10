@@ -560,25 +560,11 @@ ninja.data = [{
           section: "Projects",handler: () => {
               window.location.href = "/projects/perfvisualization/";
             },},{
-        id: 'social-bluesky',
-        title: 'Bluesky',
-        section: 'Socials',
-        handler: () => {
-          window.open("", "_blank");
-        },
-      },{
         id: 'social-email',
         title: 'email',
         section: 'Socials',
         handler: () => {
           window.open("mailto:%70%68%69%6C%69%70%70.%6C%65%69%74%6E%65%72@%63%68%61%6C%6D%65%72%73.%73%65", "_blank");
-        },
-      },{
-        id: 'social-inspire',
-        title: 'Inspire HEP',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://inspirehep.net/authors/", "_blank");
         },
       },{
         id: 'social-medium',
@@ -600,12 +586,5 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("https://scholar.google.com/citations?user=wZ9f8CAAAAAJ", "_blank");
-        },
-      },{
-        id: 'social-custom_social',
-        title: 'Custom_social',
-        section: 'Socials',
-        handler: () => {
-          window.open("", "_blank");
         },
       },];
