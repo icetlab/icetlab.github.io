@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Philipp has accepted an appointment as Awards Chair for ICPE 2026 in Florence, Italy!
+Philipp has accepted an appointment as Awards Chair for [ICPE 2026](https://icpe2026.spec.org/) in Florence, Italy!
