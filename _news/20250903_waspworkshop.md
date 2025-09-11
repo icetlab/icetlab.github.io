@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-On Sept. 11th, Philipp will give a talk titled "Adventures in Performance Engineering" at the [2025 WASP Software Engineering and Technology Cluster Workshop](https://www.chalmers.se/en/current/calendar/wasp-software-engineering-and-technology-cluster-workshop/).
+On Sept. 11th, Philipp will give a talk titled "Adventures in Performance Engineering" at the [2025 WASP Software Engineering and Technology Cluster Workshop](https://www.chalmers.se/en/current/calendar/wasp-software-engineering-and-technology-cluster-workshop/). Find slides for the talk [here](https://speakerdeck.com/xleitix/presentation-wasp-software-technology-cluster-2025).
