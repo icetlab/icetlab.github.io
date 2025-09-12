@@ -184,14 +184,11 @@ ninja.data = [{
           section: "News",},{id: "news-philipp-will-serve-on-the-selection-committee-of-the-spec-kaivalya-dixit-distinguished-dissertation-award-2025-send-your-nominations",
           title: 'Philipp will serve on the selection committee of the SPEC Kaivalya Dixit Distinguished...',
           description: "",
-          section: "News",},{id: "news-on-sept-11th-philipp-has-given-a-talk-titled-adventures-in-performance-engineering-at-the-2025-wasp-software-engineering-and-technology-cluster-workshop-find-slides-for-the-talk-here",
-          title: 'On Sept. 11th, Philipp has given a talk titled “Adventures in Performance Engineering”...',
-          description: "",
-          section: "News",},{id: "news-on-sept-11th-philipp-has-given-a-talk-titled-quot-adventures-in-performance-engineering-quot-at-the-2025-wasp-software-engineering-and-technology-cluster-workshop",
-          title: 'On Sept. 11th, Philipp has given a talk titled &amp;quot;Adventures in Performance Engineering&amp;quot;...',
+          section: "News",},{id: "news-wasp-software-engineering-and-technology-cluster-workshop-talk",
+          title: 'WASP Software Engineering and Technology Cluster Workshop Talk',
           description: "",
           section: "News",handler: () => {
-              window.location.href = "/news/20250903_waspworkshop2/";
+              window.location.href = "/news/20250903_waspworkshop/";
             },},{id: "projects-chatbots-in-software-development",
           title: 'Chatbots in Software Development',
           description: "how are LLMs used, designed, and evaluated in software engineering industry?",
