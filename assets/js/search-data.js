@@ -187,7 +187,12 @@ ninja.data = [{
           section: "News",},{id: "news-on-sept-11th-philipp-has-given-a-talk-titled-adventures-in-performance-engineering-at-the-2025-wasp-software-engineering-and-technology-cluster-workshop-find-slides-for-the-talk-here",
           title: 'On Sept. 11th, Philipp has given a talk titled “Adventures in Performance Engineering”...',
           description: "",
-          section: "News",},{id: "projects-chatbots-in-software-development",
+          section: "News",},{id: "news-on-sept-11th-philipp-has-given-a-talk-titled-quot-adventures-in-performance-engineering-quot-at-the-2025-wasp-software-engineering-and-technology-cluster-workshop",
+          title: 'On Sept. 11th, Philipp has given a talk titled &amp;quot;Adventures in Performance Engineering&amp;quot;...',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/20250903_waspworkshop2/";
+            },},{id: "projects-chatbots-in-software-development",
           title: 'Chatbots in Software Development',
           description: "how are LLMs used, designed, and evaluated in software engineering industry?",
           section: "Projects",handler: () => {
