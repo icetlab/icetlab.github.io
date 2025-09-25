@@ -14,7 +14,7 @@ profiles:
     image_circular: false # crops the image to make it circular
     more_info: >
       <p>Associate Professor</p>
-      <p>Unit Lead Software Engineering 2</p>
+      <p>Head of ICET-lab</p>
       <p>Chalmers University of Technology</p>
   - align: left
     id: gomes
