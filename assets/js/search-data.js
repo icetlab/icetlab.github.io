@@ -161,21 +161,12 @@ ninja.data = [{
             window.open("https://philippleitner.medium.com/a-quick-recap-of-the-1st-vienna-seminar-on-the-relation-of-software-architecture-and-devops-e2a013ce1555?source=rss-a7d643a6ea6f------2", "_blank");
           
         },
-      },{id: "news-lirong-esme-yi-is-a-new-doctoral-student-joining-us-at-icet-lab-esme-will-be-working-on-predicting-and-optimizing-the-execution-time-of-java-programs-welcome-esme",
-          title: 'Lirong Esme Yi is a new doctoral student joining us at ICET-lab. Esme...',
-          description: "",
-          section: "News",},{id: "news-ranim-has-successfully-defended-her-licentiate",
+      },{id: "news-ranim-has-successfully-defended-her-licentiate",
           title: 'Ranim has successfully defended her licentiate!',
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/20250328_ranimdefense/";
-            },},{id: "news-philipp-has-given-keynote-talks-at-at-closer-2025-and-iceis-2025-in-early-april-2025-see-videos-of-the-talks-at-iceis-and-closer-online",
-          title: 'Philipp has given keynote talks at at CLOSER 2025 and ICEIS 2025 in...',
-          description: "",
-          section: "News",},{id: "news-philipp-will-serve-on-the-grading-committee-of-lidia-kidane-umeå-university-for-her-phd-thesis-defense-on-may-30th-2025",
-          title: 'Philipp will serve on the grading committee of Lidia Kidane (Umeå University) for...',
-          description: "",
-          section: "News",},{id: "news-new-paper-accepted-in-transactions-on-software-engineering-tse-the-impact-of-prompt-programming-on-function-level-code-generation-ranim-francisco-mazen-philipp-preprint-available",
+            },},{id: "news-new-paper-accepted-in-transactions-on-software-engineering-tse-the-impact-of-prompt-programming-on-function-level-code-generation-ranim-francisco-mazen-philipp-preprint-available",
           title: 'New paper accepted in Transactions on Software Engineering (TSE): The Impact of Prompt...',
           description: "",
           section: "News",},{id: "news-philipp-has-accepted-an-appointment-as-awards-chair-for-icpe-2026-in-florence-italy",
