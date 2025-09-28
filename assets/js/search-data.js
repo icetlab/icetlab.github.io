@@ -180,7 +180,10 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/20250903_waspworkshop/";
-            },},{id: "projects-chatbots-in-software-development",
+            },},{id: "news-paper-accepted-at-acm-socc-the-premiere-conference-on-cloud-computing-the-title-of-the-paper-is-blafs-a-bloat-aware-container-file-system-preprint-tool",
+          title: 'Paper accepted at ACM SoCC, the premiere conference on cloud computing. The title...',
+          description: "",
+          section: "News",},{id: "projects-chatbots-in-software-development",
           title: 'Chatbots in Software Development',
           description: "how are LLMs used, designed, and evaluated in software engineering industry?",
           section: "Projects",handler: () => {
