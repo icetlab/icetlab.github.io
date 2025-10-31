@@ -176,7 +176,7 @@ ninja.data = [{
           title: 'New project accepted by VR (Swedish Research Council)',
           description: "",
           section: "News",handler: () => {
-              window.location.href = "/news/20251031_vrproject/";
+              window.location.href = "/news/20251030_vrproject/";
             },},{id: "projects-chatbots-in-software-development",
           title: 'Chatbots in Software Development',
           description: "how are LLMs used, designed, and evaluated in software engineering industry?",
