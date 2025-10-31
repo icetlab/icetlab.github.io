@@ -187,7 +187,7 @@ ninja.data = [{
           title: 'Paper accepted at the IEEE Software Special Issue on AIware in the Foundation...',
           description: "",
           section: "News",},{id: "news-new-project-accepted-by-vr-swedish-research-council",
-          title: 'New project accepted by VR / Swedish Research Council',
+          title: 'New project accepted by VR (Swedish Research Council)',
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/20251031_vr/";
