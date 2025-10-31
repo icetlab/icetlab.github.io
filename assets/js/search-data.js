@@ -161,21 +161,7 @@ ninja.data = [{
             window.open("https://philippleitner.medium.com/a-quick-recap-of-the-1st-vienna-seminar-on-the-relation-of-software-architecture-and-devops-e2a013ce1555?source=rss-a7d643a6ea6f------2", "_blank");
           
         },
-      },{id: "news-ranim-has-successfully-defended-her-licentiate",
-          title: 'Ranim has successfully defended her licentiate!',
-          description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/20250328_ranimdefense/";
-            },},{id: "news-new-paper-accepted-in-transactions-on-software-engineering-tse-the-impact-of-prompt-programming-on-function-level-code-generation-ranim-francisco-mazen-philipp-preprint-available",
-          title: 'New paper accepted in Transactions on Software Engineering (TSE): The Impact of Prompt...',
-          description: "",
-          section: "News",},{id: "news-philipp-has-accepted-an-appointment-as-awards-chair-for-icpe-2026-in-florence-italy",
-          title: 'Philipp has accepted an appointment as Awards Chair for ICPE 2026 in Florence,...',
-          description: "",
-          section: "News",},{id: "news-philipp-will-serve-on-the-selection-committee-of-the-spec-kaivalya-dixit-distinguished-dissertation-award-2025-send-your-nominations",
-          title: 'Philipp will serve on the selection committee of the SPEC Kaivalya Dixit Distinguished...',
-          description: "",
-          section: "News",},{id: "news-wasp-software-engineering-and-technology-cluster-workshop-talk",
+      },{id: "news-wasp-software-engineering-and-technology-cluster-workshop-talk",
           title: 'WASP Software Engineering and Technology Cluster Workshop Talk',
           description: "",
           section: "News",handler: () => {
