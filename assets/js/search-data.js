@@ -161,7 +161,12 @@ ninja.data = [{
             window.open("https://philippleitner.medium.com/a-quick-recap-of-the-1st-vienna-seminar-on-the-relation-of-software-architecture-and-devops-e2a013ce1555?source=rss-a7d643a6ea6f------2", "_blank");
           
         },
-      },{id: "news-wasp-software-engineering-and-technology-cluster-workshop-talk",
+      },{id: "news-ranim-has-successfully-defended-her-licentiate",
+          title: 'Ranim has successfully defended her licentiate!',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/20251031_newproject/";
+            },},{id: "news-wasp-software-engineering-and-technology-cluster-workshop-talk",
           title: 'WASP Software Engineering and Technology Cluster Workshop Talk',
           description: "",
           section: "News",handler: () => {
