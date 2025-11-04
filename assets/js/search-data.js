@@ -177,6 +177,11 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/20251030_vrproject/";
+            },},{id: "news-two-chalmers-prizes-won-by-francisco",
+          title: 'Two Chalmers prizes won by Francisco!',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/20251104_franciscoawards/";
             },},{id: "projects-chatbots-in-software-development",
           title: 'Chatbots in Software Development',
           description: "how are LLMs used, designed, and evaluated in software engineering industry?",
