@@ -14,4 +14,9 @@ Francisco has won the 2025 Chalmers Pedagogical Prize for "for his inclusiveness
 
 Additionally, Francisco *also* won the 2025 Chalmers Equality Award for his long-term and dedicated efforts to create a more inclusive and equitable academic environment.
 
-Both prizes will be awarded on Thursday, Nov. 6th 2025, as part of Chalmers' yearly [årshögtid](https://www.chalmers.se/aktuellt/kalender/chalmers-arshogtid/). Congratulations, Francisco!
+Both prizes were awarded on Thursday, Nov. 6th 2025, as part of Chalmers' yearly [årshögtid](https://www.chalmers.se/aktuellt/kalender/chalmers-arshogtid/). Congratulations, Francisco!
+
+<div class="row align-items-center">
+    <div class="col-sm-9 mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/francisco_awards/award.jpg" title="Francisco receiving the Chalmers Equality Award from the Chalmers rector" class="img-fluid rounded z-depth-1" %}
+    </div>
