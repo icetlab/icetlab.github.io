@@ -1,12 +1,12 @@
 metadata:
-  last_updated: '2025-12-08'
+  last_updated: '2025-12-17'
 papers:
   wZ9f8CAAAAAJ:-BKJ5vZJwzMC:
     citations: 15
     title: Using microbenchmark suites to detect application performance changes
     year: '2022'
   wZ9f8CAAAAAJ:-LHtoeeytlUC:
-    citations: 30
+    citations: 31
     title: 'Let''s trace it: Fine-grained serverless benchmarking using synchronous and asynchronous orchestrated applications'
     year: '2022'
   wZ9f8CAAAAAJ:-fu4zM_6qcIC:
@@ -34,11 +34,11 @@ papers:
     title: The roles, responsibilities, and skills of engineers in the era of microservices-based architectures
     year: '2024'
   wZ9f8CAAAAAJ:1Aeql8wG3wEC:
-    citations: 382
+    citations: 385
     title: Extraction of microservices from monolithic software architectures
     year: '2017'
   wZ9f8CAAAAAJ:1_W9tMSvGuwC:
-    citations: 199
+    citations: 201
     title: Comparing and combining predictive business process monitoring techniques
     year: '2014'
   wZ9f8CAAAAAJ:2_BaaiyHPJIC:
@@ -54,7 +54,7 @@ papers:
     title: "Patterns in the chaos\u2014a study of performance variation and predictability in public iaas clouds"
     year: '2016'
   wZ9f8CAAAAAJ:3_f9JqYsqVQC:
-    citations: 49
+    citations: 50
     title: 'Cloud workbench: Benchmarking iaas providers based on infrastructure-as-code'
     year: '2015'
   wZ9f8CAAAAAJ:3fE2CSJIrl8C:
@@ -158,7 +158,7 @@ papers:
     title: An empirical investigation on the competences and roles of practitioners in Microservices-based Architectures
     year: '2024'
   wZ9f8CAAAAAJ:CC3C2HR4nz8C:
-    citations: 151
+    citations: 152
     title: 'Function-as-a-service performance evaluation: A multivocal literature review'
     year: '2020'
   wZ9f8CAAAAAJ:CKf5m1HYVjMC:
@@ -258,7 +258,7 @@ papers:
     title: An empirical study on principles and practices of continuous delivery and deployment
     year: '2016'
   wZ9f8CAAAAAJ:Kv9jytqXTosC:
-    citations: 82
+    citations: 84
     title: "An empirical study of bots in software development: Characteristics and challenges from a practitioner\u2019s perspective"
     year: '2020'
   wZ9f8CAAAAAJ:LkGwnXOMwfcC:
@@ -270,7 +270,7 @@ papers:
     title: 'A tale of CI build failures: An open source and a financial organization perspective'
     year: '2017'
   wZ9f8CAAAAAJ:M3NEmzRMIkIC:
-    citations: 138
+    citations: 139
     title: 'Winds of change: From vendor lock-in to the meta cloud'
     year: '2013'
   wZ9f8CAAAAAJ:M3ejUd6NZC8C:
@@ -386,7 +386,7 @@ papers:
     title: "VRESCo\u2013Vienna Runtime Environment for Service-oriented Computing"
     year: '2010'
   wZ9f8CAAAAAJ:UY3hNwcQ290C:
-    citations: 9
+    citations: 11
     title: The impact of prompt programming on function-level code generation
     year: '2025'
   wZ9f8CAAAAAJ:UeHWp8X0CEIC:
@@ -406,7 +406,7 @@ papers:
     title: VRESCo-Vienna Runtime Environment for Service-Oriented Computing
     year: '2009'
   wZ9f8CAAAAAJ:W7OEmFMy1HYC:
-    citations: 171
+    citations: 172
     title: Runtime prediction of service level agreement violations for composite services
     year: '2009'
   wZ9f8CAAAAAJ:WF5omc3nYNoC:
@@ -426,7 +426,7 @@ papers:
     title: SANER 2022
     year: Unknown Year
   wZ9f8CAAAAAJ:Y0RG-0fxPaAC:
-    citations: 20
+    citations: 21
     title: 'Tep-gnn: Accurate execution time prediction of functional tests using graph neural networks'
     year: '2022'
   wZ9f8CAAAAAJ:Y0pCki6q_DkC:
@@ -726,7 +726,7 @@ papers:
     title: An exploratory study of the state of practice of performance testing in java-based open source projects
     year: '2017'
   wZ9f8CAAAAAJ:qYOp8iumCsAC:
-    citations: 10
+    citations: 11
     title: "Studying the impact of ci on pull request delivery time in open source projects\u2014a conceptual replication"
     year: '2019'
   wZ9f8CAAAAAJ:qjMakFHDy7sC:
@@ -802,7 +802,7 @@ papers:
     title: "2023 IEEE International Conference on Service-Oriented System Engineering (SOSE)| 979-8-3503-2239-2/23/$31.00\xA9 2023 IEEE| DOI: 10.1109/SOSE58276. 2023.00039"
     year: Unknown Year
   wZ9f8CAAAAAJ:w9ZB08sdvuUC:
-    citations: 85
+    citations: 88
     title: 'Beyond code generation: An observational study of chatgpt usage in software engineering practice'
     year: '2024'
   wZ9f8CAAAAAJ:wgKq3sYidysC:
