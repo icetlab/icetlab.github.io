@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-New paper accepted at the [Journal of Software: Evolution and Process](https://onlinelibrary.wiley.com/journal/20477481). The title of the paper is *Empowering Software Engineers to Design More Secure Web Applications: Guidelines and Potential of Using LLMs as a Recommender Tool*.
+Another post-Christmas paper accepted at the [Journal of Software: Evolution and Process](https://onlinelibrary.wiley.com/journal/20477481). The title of the paper is *Empowering Software Engineers to Design More Secure Web Applications: Guidelines and Potential of Using LLMs as a Recommender Tool*.
