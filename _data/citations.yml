@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-01-14'
+  last_updated: '2026-01-16'
 papers:
   wZ9f8CAAAAAJ:-BKJ5vZJwzMC:
     citations: 15
@@ -190,7 +190,7 @@ papers:
     title: 'WPress: Benchmarking Infrastructure-as-a-Service cloud computing systems for on-line transaction processing applications'
     year: '2014'
   wZ9f8CAAAAAJ:EsrhoZGmrkoC:
-    citations: 463
+    citations: 462
     title: Optimized IoT service placement in the fog
     year: '2017'
   wZ9f8CAAAAAJ:F9HO9s0W2bwC:
