@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-01-16'
+  last_updated: '2026-01-19'
 papers:
   wZ9f8CAAAAAJ:-BKJ5vZJwzMC:
     citations: 15
@@ -50,7 +50,7 @@ papers:
     title: 'CAM05-2: A Distributed Policy Based Solution in a Fault Management Scenario'
     year: '2006'
   wZ9f8CAAAAAJ:37Fl7vPTsUIC:
-    citations: 302
+    citations: 304
     title: "Patterns in the chaos\u2014a study of performance variation and predictability in public iaas clouds"
     year: '2016'
   wZ9f8CAAAAAJ:3_f9JqYsqVQC:
@@ -74,7 +74,7 @@ papers:
     title: Deriving a unified fault taxonomy for event-based systems
     year: '2012'
   wZ9f8CAAAAAJ:4TOpqqG69KYC:
-    citations: 12
+    citations: 13
     title: Ensuring cost-optimal sla conformance for composite service providers
     year: '2009'
   wZ9f8CAAAAAJ:4tNoA7Af41QC:
@@ -162,7 +162,7 @@ papers:
     title: An empirical investigation on the competences and roles of practitioners in Microservices-based Architectures
     year: '2024'
   wZ9f8CAAAAAJ:CC3C2HR4nz8C:
-    citations: 159
+    citations: 160
     title: 'Function-as-a-service performance evaluation: A multivocal literature review'
     year: '2020'
   wZ9f8CAAAAAJ:CKf5m1HYVjMC:
@@ -190,7 +190,7 @@ papers:
     title: 'WPress: Benchmarking Infrastructure-as-a-Service cloud computing systems for on-line transaction processing applications'
     year: '2014'
   wZ9f8CAAAAAJ:EsrhoZGmrkoC:
-    citations: 462
+    citations: 461
     title: Optimized IoT service placement in the fog
     year: '2017'
   wZ9f8CAAAAAJ:F9HO9s0W2bwC:
@@ -349,6 +349,10 @@ papers:
     citations: 0
     title: BotSE 2023
     year: Unknown Year
+  wZ9f8CAAAAAJ:RgMnzfD6kpIC:
+    citations: 0
+    title: 'BLAFS: A Bloat-Aware Container File System'
+    year: '2025'
   wZ9f8CAAAAAJ:RgznTc0nqo4C:
     citations: 0
     title: UCC 2015
@@ -814,7 +818,7 @@ papers:
     title: Cloud Computing
     year: '2010'
   wZ9f8CAAAAAJ:wlzmIqt2EaEC:
-    citations: 281
+    citations: 279
     title: Resource provisioning for IoT services in the fog
     year: '2016'
   wZ9f8CAAAAAJ:xm1hsP5ya-EC:
