@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-01-19'
+  last_updated: '2026-01-21'
 papers:
   wZ9f8CAAAAAJ:-BKJ5vZJwzMC:
     citations: 15
@@ -34,7 +34,7 @@ papers:
     title: The roles, responsibilities, and skills of engineers in the era of microservices-based architectures
     year: '2024'
   wZ9f8CAAAAAJ:1Aeql8wG3wEC:
-    citations: 385
+    citations: 384
     title: Extraction of microservices from monolithic software architectures
     year: '2017'
   wZ9f8CAAAAAJ:1_W9tMSvGuwC:
@@ -74,7 +74,7 @@ papers:
     title: Deriving a unified fault taxonomy for event-based systems
     year: '2012'
   wZ9f8CAAAAAJ:4TOpqqG69KYC:
-    citations: 13
+    citations: 12
     title: Ensuring cost-optimal sla conformance for composite service providers
     year: '2009'
   wZ9f8CAAAAAJ:4tNoA7Af41QC:
@@ -262,7 +262,7 @@ papers:
     title: An empirical study on principles and practices of continuous delivery and deployment
     year: '2016'
   wZ9f8CAAAAAJ:Kv9jytqXTosC:
-    citations: 84
+    citations: 85
     title: "An empirical study of bots in software development: Characteristics and challenges from a practitioner\u2019s perspective"
     year: '2020'
   wZ9f8CAAAAAJ:LkGwnXOMwfcC:
