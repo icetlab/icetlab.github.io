@@ -60,13 +60,23 @@ abstract = {In safety-critical software systems, cybersecurity activities become
 @inproceedings{zhang:25,
 author = {Zhang, Huaifeng and Alhanahnah, Mohannad and Leitner, Philipp and Ali-Eldin, Ahmed},
 title = {BLAFS: A Bloat-Aware Container File System},
-year = {2025},
-booktitle = {Proceedings of the ACM Symposium on Cloud Computing (SoCC)},
+year = {2026},
+isbn = {9798400722769},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3772052.3772263},
+doi = {10.1145/3772052.3772263},
+abstract = {Containers have become the standard for deploying applications in many cloud systems due to its convenience. However, this convenience leads to significant container bloat, i.e., unused files that inflate container image sizes, increase provisioning times, waste resources and introduce security vulnerabilities. Bloat is particularly problematic in serverless and edge computing scenarios, where resources are constrained, and performance is critical, and for microservice applications where rapid scaling is key to meet performance targets. However, existing container debloating tools are often limited in both effectiveness and robustness. In this paper, we propose BLAFS, a bloat-aware container filesystem that removes bloat while guaranteeing the correct operation of the debloated containers. BLAFS addresses bloat at the filesystem level by introducing new layers in the filesystem to enable debloating. During runtime, accessed files are moved to the debloating layers, and then similar to garbage collection mechanisms, BLAFS removes files that are not accessed during runtime. An optional reloading layer fetches files from a remote cloud cache on-demand if the files are mistakenly removed. We discuss how BLAFS can be used in different deployment scenarios and for different use-cases including container security-hardened and a dynamic deployment mode where the target is improved provisioning performance. We evaluate BLAFS performance using the top 20 downloaded containers from DockerHub, four ML containers, and SEBS, a Serverless Benchmark containing 10 serverless functions and compare its performance against two state-of-the-art debloating tools. Our evaluation shows that BLAFS reduces container sizes by up to 95\% and cold-starts by up to 68\%. In the security-hardened mode, BLAFS removes up to 89\% of CVEs while the two state-of-the-art debloating tools fail on most of the workloads. We identify their limitations, and show how BLAFS provides a more principled approach to debloating. Additionally, when combined with lazy-loading snapshotters, BLAFS improves provisioning efficiency, reducing conversion times by up to 93\% and provisioning times by up to 19\%.},
+booktitle = {Proceedings of the 2025 ACM Symposium on Cloud Computing},
+pages = {614–628},
+numpages = {15},
+keywords = {Software Bloat, Cloud Computing, Serverless Computing, Container, File System},
+location = { },
+series = {SoCC '25},
 abbr = {SoCC 2025},
 pdf = {https://arxiv.org/abs/2305.04641},
 preview = {chalmers.png},
-supp = {https://github.com/negativa-ai/BLAFS},
-abstract = {{Containers have become a standard for deploying applications due to their convenience, but they often suffer from significant software bloat-unused files that inflate image sizes, increase provisioning times, and waste resources. These inefficiencies are particularly problematic in serverless and edge computing scenarios, where resources are constrained, and performance is critical. Existing debloating tools are limited in scope and effectiveness, failing to address the widespread issue of container bloat at scale. In this paper, we conduct a large-scale evaluation of container bloat, analyzing the top 20 most downloaded containers on DockerHub. We evaluate two state-of-the-art debloating tools, identify their limitations, and propose a novel solution, BAFFS, which addresses bloat at the filesystem level by introducing a flexible debloating layer that preserves the layered structure of container filesystems. The debloating layer can be organized in different ways to meet diverse requirements. Our evaluation demonstrates that over 50% of the top-downloaded containers have more than 60% bloat, and BAFFS reduces container sizes significantly while maintaining functionality. For serverless functions, BAFFS reduces cold start latency by up to 68%. Additionally, when combined with lazy-loading snapshotters, BAFFS enhances provisioning efficiency, reducing conversion times by up to 93% and provisioning times by up to 19%.}}
+supp = {https://github.com/negativa-ai/BLAFS}
 }
 
 @article{khojah:25,
