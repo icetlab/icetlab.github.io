@@ -53,7 +53,7 @@ function initCollaboratorsMap() {
 
   if (markers.length > 0) {
     var group = L.featureGroup(markers);
-    map.fitBounds(group.getBounds().pad(0.15));
+    map.fitBounds(group.getBounds(), { padding: [20, 20] });
   }
 }
 
