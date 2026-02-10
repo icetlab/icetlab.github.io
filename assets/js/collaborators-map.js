@@ -53,13 +53,4 @@ function initCollaboratorsMap() {
   }
 }
 
-// Use the same pattern as leaflet-setup.js
-document.addEventListener("readystatechange", function () {
-  if (document.readyState === "complete") {
-    initCollaboratorsMap();
-  }
-});
-// Also handle case where readyState is already complete
-if (document.readyState === "complete") {
-  initCollaboratorsMap();
-}
+window.addEventListener("load", initCollaboratorsMap);

@@ -15,7 +15,7 @@ We actively collaborate with researchers across Europe and the Americas. The map
 <script>
   var collaboratorsData = {{ site.data.collaborators | jsonify }};
 </script>
-<script src="{{ '/assets/js/collaborators-map.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/collaborators-map.js' | relative_url }}"></script>
 
 <h2>Collaborators by Institution</h2>
 
