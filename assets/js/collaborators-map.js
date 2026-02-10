@@ -1,6 +1,6 @@
-document.addEventListener("DOMContentLoaded", function () {
+function initCollaboratorsMap() {
   var mapEl = document.getElementById("collaborators-map");
-  if (!mapEl || typeof collaboratorsData === "undefined") return;
+  if (!mapEl || typeof collaboratorsData === "undefined" || typeof L === "undefined") return;
 
   var map = L.map(mapEl, { scrollWheelZoom: false });
 
@@ -51,4 +51,15 @@ document.addEventListener("DOMContentLoaded", function () {
     var group = L.featureGroup(markers);
     map.fitBounds(group.getBounds().pad(0.15));
   }
+}
+
+// Use the same pattern as leaflet-setup.js
+document.addEventListener("readystatechange", function () {
+  if (document.readyState === "complete") {
+    initCollaboratorsMap();
+  }
 });
+// Also handle case where readyState is already complete
+if (document.readyState === "complete") {
+  initCollaboratorsMap();
+}
