@@ -32,7 +32,7 @@ ninja.data = [{
           },
         },{id: "nav-collaborators",
           title: "collaborators",
-          description: "research collaborators of the ICET-lab (2021-present)",
+          description: "research collaborators of the ICET-lab (2016-present)",
           section: "Navigation",
           handler: () => {
             window.location.href = "/collaborators/";
