@@ -1,6 +1,7 @@
 - name: Nikolas Herbst
   affiliation: University of Würzburg
   city: Würzburg, Germany
+  continent: Europe
   lat: 49.7913
   lng: 9.9534
   url: https://se.informatik.uni-wuerzburg.de/software-engineering-group/staff/nikolas-herbst/
@@ -8,6 +9,7 @@
 - name: Alexandru Iosup
   affiliation: VU Amsterdam
   city: Amsterdam, Netherlands
+  continent: Europe
   lat: 52.3336
   lng: 4.8654
   url: https://atlarge-research.com/aiosup/
@@ -15,6 +17,7 @@
 - name: Cristina L. Abad
   affiliation: ESPOL
   city: Guayaquil, Ecuador
+  continent: Americas
   lat: -2.1467
   lng: -79.9663
   url: https://sites.google.com/fiec.espol.edu.ec/cv-cabad/english
@@ -22,6 +25,7 @@
 - name: Mohannad Alhanahnah
   affiliation: Qatar Computing Research Institute
   city: Doha, Qatar
+  continent: Asia
   lat: 25.3148
   lng: 51.4395
   url: https://mohannadcse.netlify.app/
@@ -29,6 +33,7 @@
 - name: Antonio Longa
   affiliation: University of Trento
   city: Trento, Italy
+  continent: Europe
   lat: 46.0664
   lng: 11.1211
   url: https://antoniolonga.github.io/
@@ -36,6 +41,7 @@
 - name: Regina Hebig
   affiliation: University of Rostock
   city: Rostock, Germany
+  continent: Europe
   lat: 54.0887
   lng: 12.1407
   url: https://se.informatik.uni-rostock.de/team/lehrstuhlinhaber/prof-dr-rer-nat-regina-hebig/
@@ -43,6 +49,7 @@
 - name: David Bermbach
   affiliation: TU Berlin
   city: Berlin, Germany
+  continent: Europe
   lat: 52.5125
   lng: 13.3269
   url: https://dbermbach.github.io/
@@ -50,6 +57,7 @@
 - name: Alexander Serebrenik
   affiliation: TU Eindhoven
   city: Eindhoven, Netherlands
+  continent: Europe
   lat: 51.4484
   lng: 5.4907
   url: https://www.tue.nl/en/research/researchers/alexander-serebrenik
@@ -57,6 +65,7 @@
 - name: Yiming Tang
   affiliation: Rochester Institute of Technology
   city: Rochester, NY, USA
+  continent: Americas
   lat: 43.0844
   lng: -77.6749
   url: https://yiming-tang-cs.github.io/
@@ -64,6 +73,7 @@
 - name: Weiyi Shang
   affiliation: Concordia University
   city: Montreal, Canada
+  continent: Americas
   lat: 45.4972
   lng: -73.5790
   url: https://users.encs.concordia.ca/~shang/
@@ -71,6 +81,7 @@
 - name: Diego Elias Costa
   affiliation: Concordia University
   city: Montreal, Canada
+  continent: Americas
   lat: 45.4972
   lng: -73.5790
   url: https://diegoeliascosta.github.io/
@@ -78,6 +89,7 @@
 - name: Harald C. Gall
   affiliation: University of Zurich
   city: Zurich, Switzerland
+  continent: Europe
   lat: 47.3744
   lng: 8.5508
   url: https://www.ifi.uzh.ch/en/seal/people/gall.html
@@ -85,6 +97,7 @@
 - name: Martin Monperrus
   affiliation: KTH Royal Institute of Technology
   city: Stockholm, Sweden
+  continent: Europe
   lat: 59.3417
   lng: 18.0703
   url: https://www.monperrus.net/martin/
@@ -92,6 +105,31 @@
 - name: Tushar Sharma
   affiliation: Dalhousie University
   city: Halifax, Canada
+  continent: Americas
   lat: 44.6355
   lng: -63.5883
   url: https://www.tusharma.in/
+
+- name: Cor-Paul Bezemer
+  affiliation: University of Alberta
+  city: Edmonton, Canada
+  continent: Americas
+  lat: 53.523
+  lng: -113.526
+  url: https://www.ece.ualberta.ca/~bezemer/
+
+- name: Sebastiano Panichella
+  affiliation: University of Bern
+  city: Bern, Switzerland
+  continent: Europe
+  lat: 46.951
+  lng: 7.438
+  url: https://spanichella.github.io/
+
+- name: Pooyan Jamshidi
+  affiliation: University of South Carolina
+  city: Columbia, SC, USA
+  continent: Americas
+  lat: 33.997
+  lng: -81.025
+  url: https://pooyanjamshidi.github.io/
