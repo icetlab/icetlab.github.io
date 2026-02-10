@@ -1226,6 +1226,14 @@ nav[data-toggle="toc"] {
   width: 100%;
 }
 
+.collaborators-map {
+  height: 550px;
+  width: 100%;
+  border-radius: 8px;
+  z-index: 0;
+  margin-bottom: 1.5rem;
+}
+
 swiper-container {
   --swiper-navigation-color: var(--global-theme-color);
   --swiper-pagination-color: var(--global-theme-color);
