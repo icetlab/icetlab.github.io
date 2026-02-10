@@ -24,7 +24,7 @@ We actively collaborate with researchers across Europe and the Americas. The map
 **{{ group.name }}** ({{ group.items[0].city }})
 <ul>
 {% for person in group.items %}
-<li>{{ person.name }}</li>
+<li><a href="{{ person.url }}" target="_blank">{{ person.name }}</a></li>
 {% endfor %}
 </ul>
 {% endfor %}

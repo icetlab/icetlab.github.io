@@ -23,20 +23,21 @@ function initCollaboratorsMap() {
         lng: c.lng,
         affiliation: c.affiliation,
         city: c.city,
-        names: [],
+        people: [],
       };
     }
-    groups[key].names.push(c.name);
+    groups[key].people.push({ name: c.name, url: c.url });
   });
 
   var markers = [];
   Object.keys(groups).forEach(function (key) {
     var g = groups[key];
-    var nameList = g.names.map(function (n) {
-      return "<li>" + n + "</li>";
+    var nameList = g.people.map(function (p) {
+      return '<li><a href="' + p.url + '" target="_blank">' + p.name + "</a></li>";
     }).join("");
+    var nameText = g.people.map(function (p) { return p.name; }).join(", ");
 
-    var tooltipText = "<strong>" + g.affiliation + "</strong><br>" + g.names.join(", ");
+    var tooltipText = "<strong>" + g.affiliation + "</strong><br>" + nameText;
     var popupText =
       "<strong>" + g.affiliation + "</strong><br>" +
       "<em>" + g.city + "</em><ul style='margin:4px 0 0 16px;padding:0'>" +
