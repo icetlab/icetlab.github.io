@@ -2,6 +2,9 @@ function initCollaboratorsMap() {
   var mapEl = document.getElementById("collaborators-map");
   if (!mapEl || typeof collaboratorsData === "undefined" || typeof L === "undefined") return;
 
+  // Fix marker icon path when Leaflet CSS is loaded from CDN
+  L.Icon.Default.imagePath = "https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/images/";
+
   var map = L.map(mapEl, { scrollWheelZoom: false });
 
   L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
