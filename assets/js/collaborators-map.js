@@ -29,7 +29,22 @@ function initCollaboratorsMap() {
     groups[key].people.push({ name: c.name, url: c.url });
   });
 
-  var markers = [];
+  // ICET-lab home marker (orange)
+  var homeIcon = L.icon({
+    iconUrl: "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-orange.png",
+    iconRetinaUrl: "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-orange.png",
+    shadowUrl: "https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/images/marker-shadow.png",
+    iconSize: [25, 41],
+    iconAnchor: [12, 41],
+    popupAnchor: [1, -34],
+    shadowSize: [41, 41],
+  });
+  var homeMarker = L.marker([57.6872, 11.9795], { icon: homeIcon })
+    .bindTooltip("<strong>ICET-lab</strong><br>Gothenburg, Sweden")
+    .bindPopup('<strong>ICET-lab</strong><br><em>Gothenburg, Sweden</em><br><a href="https://www.icet-lab.eu" target="_blank">icet-lab.eu</a>')
+    .addTo(map);
+
+  var markers = [homeMarker];
   Object.keys(groups).forEach(function (key) {
     var g = groups[key];
     var nameList = g.people.map(function (p) {
