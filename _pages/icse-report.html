@@ -1,0 +1,1772 @@
+---
+layout: null
+permalink: /icse-report/
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ICSE 2026 vs 2016: A Decade of Software Engineering Research</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1"></script>
+<style>
+:root {
+  --primary: #1a365d;
+  --primary-light: #2b6cb0;
+  --accent: #e53e3e;
+  --accent-light: #fc8181;
+  --bg: #f7fafc;
+  --card-bg: #ffffff;
+  --text: #2d3748;
+  --text-light: #718096;
+  --border: #e2e8f0;
+  --success: #38a169;
+  --warning: #d69e2e;
+  --purple: #805ad5;
+  --teal: #319795;
+  --gradient-start: #1a365d;
+  --gradient-end: #2b6cb0;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.hero {
+  background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.hero .subtitle {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.hero-stat {
+  text-align: center;
+}
+
+.hero-stat .number {
+  font-size: 3rem;
+  font-weight: 700;
+  display: block;
+}
+
+.hero-stat .label {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+nav.sticky-nav {
+  position: sticky;
+  top: 0;
+  background: var(--card-bg);
+  border-bottom: 1px solid var(--border);
+  z-index: 100;
+  padding: 0 20px;
+  overflow-x: auto;
+  white-space: nowrap;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+nav.sticky-nav a {
+  display: inline-block;
+  padding: 14px 16px;
+  color: var(--text-light);
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s;
+}
+
+nav.sticky-nav a:hover,
+nav.sticky-nav a.active {
+  color: var(--primary);
+  border-bottom-color: var(--primary);
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section {
+  margin: 40px 0;
+}
+
+section h2 {
+  font-size: 1.8rem;
+  color: var(--primary);
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid var(--primary);
+}
+
+section h3 {
+  font-size: 1.3rem;
+  color: var(--primary-light);
+  margin: 20px 0 10px;
+}
+
+.card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 24px;
+  margin: 16px 0;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  border: 1px solid var(--border);
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  margin: 20px 0;
+}
+
+.summary-card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 20px;
+  border-left: 4px solid var(--primary);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.summary-card.highlight { border-left-color: var(--accent); }
+.summary-card.success { border-left-color: var(--success); }
+.summary-card.warning { border-left-color: var(--warning); }
+.summary-card.purple { border-left-color: var(--purple); }
+
+.summary-card h4 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-light);
+  margin-bottom: 8px;
+}
+
+.summary-card .value {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.summary-card p {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+.chart-container {
+  position: relative;
+  margin: 20px 0;
+  padding: 20px;
+  background: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  border: 1px solid var(--border);
+}
+
+.chart-container canvas {
+  max-height: 450px;
+}
+
+.chart-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .chart-row { grid-template-columns: 1fr; }
+  .hero h1 { font-size: 1.8rem; }
+  .hero-stat .number { font-size: 2rem; }
+}
+
+.methodology-list {
+  list-style: none;
+  padding: 0;
+}
+
+.methodology-list li {
+  padding: 8px 0 8px 24px;
+  position: relative;
+  font-size: 0.95rem;
+}
+
+.methodology-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 15px;
+  width: 8px;
+  height: 8px;
+  background: var(--primary);
+  border-radius: 50%;
+}
+
+.category-section {
+  margin: 30px 0;
+}
+
+.collapsible {
+  cursor: pointer;
+  user-select: none;
+  padding: 12px 16px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  margin: 6px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.2s;
+}
+
+.collapsible:hover {
+  background: #edf2f7;
+}
+
+.collapsible .arrow {
+  transition: transform 0.2s;
+  font-size: 0.8rem;
+  color: var(--text-light);
+}
+
+.collapsible.open .arrow {
+  transform: rotate(90deg);
+}
+
+.collapsible-content {
+  display: none;
+  padding: 12px 16px;
+  border: 1px solid var(--border);
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+  background: white;
+  margin-top: -6px;
+  margin-bottom: 6px;
+}
+
+.collapsible-content.show {
+  display: block;
+}
+
+.paper-list {
+  list-style: none;
+  padding: 0;
+}
+
+.paper-list li {
+  padding: 6px 0;
+  font-size: 0.88rem;
+  color: var(--text);
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.paper-list li:last-child {
+  border-bottom: none;
+}
+
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-left: 8px;
+}
+
+.badge-2026 { background: #ebf4ff; color: var(--primary-light); }
+.badge-2016 { background: #fff5f5; color: var(--accent); }
+.badge-new { background: #f0fff4; color: var(--success); }
+.badge-growing { background: #fffff0; color: var(--warning); }
+.badge-stable { background: #f7fafc; color: var(--text-light); }
+.badge-declining { background: #fff5f5; color: var(--accent); }
+
+.shift-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.shift-up { background: #f0fff4; color: var(--success); }
+.shift-down { background: #fff5f5; color: var(--accent); }
+.shift-stable { background: #f7fafc; color: var(--text-light); }
+
+table.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  margin: 16px 0;
+}
+
+table.data-table th {
+  background: var(--primary);
+  color: white;
+  padding: 10px 12px;
+  text-align: left;
+  font-weight: 600;
+}
+
+table.data-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+table.data-table tr:hover td {
+  background: #f7fafc;
+}
+
+.narrative {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--text);
+  margin: 16px 0;
+}
+
+.narrative strong {
+  color: var(--primary);
+}
+
+.highlight-box {
+  background: linear-gradient(135deg, #ebf8ff, #e6fffa);
+  border-radius: 12px;
+  padding: 20px 24px;
+  margin: 20px 0;
+  border-left: 4px solid var(--teal);
+}
+
+.highlight-box h4 {
+  color: var(--teal);
+  margin-bottom: 8px;
+}
+
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  color: var(--text-light);
+  font-size: 0.85rem;
+  border-top: 1px solid var(--border);
+  margin-top: 60px;
+}
+
+.two-year-legend {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin: 10px 0;
+  font-size: 0.85rem;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.legend-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.legend-dot.y2026 { background: #2b6cb0; }
+.legend-dot.y2016 { background: #e53e3e; }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <h1>ICSE 2026 vs 2016</h1>
+  <p class="subtitle">A Decade of Software Engineering Research &mdash; How Topics Have Shifted</p>
+  <div class="hero-stats">
+    <div class="hero-stat">
+      <span class="number">321</span>
+      <span class="label">ICSE 2026 Papers</span>
+    </div>
+    <div class="hero-stat">
+      <span class="number">101</span>
+      <span class="label">ICSE 2016 Papers</span>
+    </div>
+    <div class="hero-stat">
+      <span class="number">3.2&times;</span>
+      <span class="label">Growth Factor</span>
+    </div>
+    <div class="hero-stat">
+      <span class="number">9</span>
+      <span class="label">Topic Categories</span>
+    </div>
+  </div>
+</header>
+
+<nav class="sticky-nav">
+  <a href="#executive-summary">Summary</a>
+  <a href="#methodology">Methodology</a>
+  <a href="#landscape">Landscape</a>
+  <a href="#ai-revolution">AI Revolution</a>
+  <a href="#topic-shifts">Topic Shifts</a>
+  <a href="#subcategory-dives">Deep Dives</a>
+  <a href="#paper-lists">Paper Lists</a>
+  <a href="#conclusion">Conclusion</a>
+</nav>
+
+<main>
+
+<!-- ==================== EXECUTIVE SUMMARY ==================== -->
+<section id="executive-summary">
+  <h2>Executive Summary</h2>
+  <div class="summary-grid">
+    <div class="summary-card highlight">
+      <h4>The AI Takeover</h4>
+      <div class="value">34.3%</div>
+      <p>of ICSE 2026 papers involve AI/ML topics, up from 6.9% in 2016. LLMs dominate with 75 papers on code generation and agents alone.</p>
+    </div>
+    <div class="summary-card success">
+      <h4>Security Surge</h4>
+      <div class="value">10.9%</div>
+      <p>of 2026 papers address security (up from 5.9%). Smart contract security emerged as an entirely new subcategory with 9 papers.</p>
+    </div>
+    <div class="summary-card warning">
+      <h4>Testing Holds Steady</h4>
+      <div class="value">~14%</div>
+      <p>Testing remains a core pillar in both years, but fuzzing grew from 0 to 18 papers and domain-specific testing now covers autonomous driving and XR.</p>
+    </div>
+    <div class="summary-card purple">
+      <h4>Classical SE Declines</h4>
+      <div class="value">&darr;50%</div>
+      <p>Program analysis, verification, and symbolic execution shrank from 18.8% to 8.7% of papers. Traditional SE topics are being absorbed by AI approaches.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== METHODOLOGY ==================== -->
+<section id="methodology">
+  <h2>Methodology</h2>
+  <div class="card">
+    <h3>Data Collection</h3>
+    <ul class="methodology-list">
+      <li><strong>ICSE 2026:</strong> 321 paper titles extracted from the official ICSE 2026 Research Track page on researchr.org</li>
+      <li><strong>ICSE 2016:</strong> 101 paper titles extracted via the DBLP API for the ICSE 2016 proceedings</li>
+      <li><strong>Categorization:</strong> Each paper was manually assigned to one primary subcategory based on the dominant theme in its title. Categories were designed to capture both 2016-era and 2026-era topics.</li>
+      <li><strong>Normalization:</strong> Because the conferences have different sizes (321 vs 101 papers), all comparisons use percentages rather than raw counts.</li>
+    </ul>
+    <h3>Limitations</h3>
+    <ul class="methodology-list">
+      <li>Categorization is based on titles only, not abstracts or full papers, which may miss nuances</li>
+      <li>Some papers span multiple categories; each was assigned to one primary category using best judgment</li>
+      <li>ICSE 2016 had ~101 research track papers while ICSE 2026 accepted ~321, reflecting broader growth in the field</li>
+      <li>The 9 main categories with 33 subcategories were designed post-hoc to best capture both eras</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ==================== OVERALL LANDSCAPE ==================== -->
+<section id="landscape">
+  <h2>Overall Research Landscape</h2>
+
+  <p class="narrative">The most striking change over the past decade is the <strong>explosion of AI &amp; Machine Learning research</strong>, which grew from 6.9% to 34.3% of all papers. Meanwhile, <strong>Program Analysis &amp; Verification</strong> and <strong>SE Process &amp; People</strong> have seen their relative share decline, even as absolute paper counts grew. Testing remains a bedrock of the community, and Security has seen meaningful growth driven by smart contracts and supply chain concerns.</p>
+
+  <div class="chart-container">
+    <h3>Main Category Distribution: 2016 vs 2026</h3>
+    <div class="two-year-legend">
+      <span class="legend-item"><span class="legend-dot y2026"></span> ICSE 2026</span>
+      <span class="legend-item"><span class="legend-dot y2016"></span> ICSE 2016</span>
+    </div>
+    <canvas id="mainCategoryChart"></canvas>
+  </div>
+
+  <div class="chart-row">
+    <div class="chart-container">
+      <h3>Radar: Topic Profile Overlay</h3>
+      <canvas id="radarChart"></canvas>
+    </div>
+    <div class="chart-container">
+      <h3>Percentage-Point Change (2016 &rarr; 2026)</h3>
+      <canvas id="divergenceChart"></canvas>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>Category Breakdown</h3>
+    <table class="data-table">
+      <thead>
+        <tr><th>Category</th><th>2016 (#)</th><th>2016 (%)</th><th>2026 (#)</th><th>2026 (%)</th><th>Change</th></tr>
+      </thead>
+      <tbody id="categoryTable"></tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ==================== THE AI REVOLUTION ==================== -->
+<section id="ai-revolution">
+  <h2>The AI Revolution in Software Engineering</h2>
+
+  <p class="narrative">In 2016, AI-related SE research consisted of <strong>7 papers (6.9%)</strong> focused primarily on traditional ML techniques like defect prediction with word embeddings, statistical API learning, and early program synthesis with natural language. By 2026, this category has <strong>exploded to 110 papers (34.3%)</strong>, driven almost entirely by the rise of Large Language Models.</p>
+
+  <div class="chart-container">
+    <h3>AI &amp; ML Subcategory Breakdown</h3>
+    <canvas id="aiSubcategoryChart"></canvas>
+  </div>
+
+  <div class="highlight-box">
+    <h4>Key Findings</h4>
+    <p><strong>LLM Code Generation &amp; Repair</strong> is the single largest subcategory in all of ICSE 2026 with 28 papers (8.7%), covering code completion, program repair, code translation, and automated programming with LLMs.</p>
+    <p style="margin-top:8px"><strong>LLM Evaluation &amp; Analysis</strong> has emerged as its own research area with 27 papers (8.4%), investigating robustness, memorization, hallucination, fairness, and the limits of LLM capabilities.</p>
+    <p style="margin-top:8px"><strong>LLM Agents &amp; Autonomous SE</strong> represents a brand-new paradigm with 20 papers (6.2%), exploring multi-agent systems, SWE-bench benchmarks, and fully autonomous software engineering agents.</p>
+    <p style="margin-top:8px"><strong>AI for Security</strong> accounts for 18 papers (5.6%), applying LLMs to vulnerability detection, jailbreaking, and AI supply chain security&mdash;a topic that simply didn't exist in 2016.</p>
+  </div>
+</section>
+
+<!-- ==================== TOPIC SHIFTS ==================== -->
+<section id="topic-shifts">
+  <h2>Topic Shifts: What Grew, Shrank, and Emerged</h2>
+
+  <div class="chart-container">
+    <h3>Topic Trajectory: 2016 &rarr; 2026</h3>
+    <canvas id="trajectoryChart"></canvas>
+  </div>
+
+  <div class="card">
+    <h3>Growing Topics</h3>
+    <p class="narrative"><strong>AI &amp; Machine Learning (+27.4 pp)</strong> saw the largest absolute growth, driven by the LLM revolution. <strong>Security (+5.0 pp)</strong> grew significantly with the emergence of smart contract security and supply chain attacks. <strong>Fuzzing</strong> went from essentially zero papers to 18 papers, becoming a dominant testing technique.</p>
+  </div>
+
+  <div class="card">
+    <h3>Stable Topics</h3>
+    <p class="narrative"><strong>Software Testing (~14%)</strong> maintained its share even as its composition shifted toward fuzzing and domain-specific testing. <strong>Software Maintenance &amp; Evolution (~6-13%)</strong> remained present but with a shift toward dependency management over code review.</p>
+  </div>
+
+  <div class="card">
+    <h3>Declining Topics (Relative Share)</h3>
+    <p class="narrative"><strong>Program Analysis &amp; Verification</strong> dropped from 18.8% to 8.7%&mdash;not because there are fewer papers, but because AI research has grown disproportionately. <strong>SE Process &amp; People</strong> declined from 15.8% to 8.1%. <strong>Symbolic Execution</strong> went from 6 papers (5.9%) to just 2 papers (0.6%), a dramatic shift as LLM-based approaches subsume this space.</p>
+  </div>
+
+  <div class="card">
+    <h3>New-in-2026 Topics</h3>
+    <table class="data-table">
+      <thead><tr><th>Subcategory</th><th>2026 Papers</th><th>Notes</th></tr></thead>
+      <tbody>
+        <tr><td>LLM Code Generation &amp; Repair</td><td>28</td><td>Entire subcategory new; LLMs didn't exist in 2016</td></tr>
+        <tr><td>LLM Agents &amp; Autonomous SE</td><td>20</td><td>Multi-agent, SWE-bench, autonomous debugging</td></tr>
+        <tr><td>LLM Evaluation &amp; Analysis</td><td>27</td><td>Robustness, memorization, hallucination research</td></tr>
+        <tr><td>AI for Security</td><td>18</td><td>LLM-based vuln detection, jailbreaking, AI supply chain</td></tr>
+        <tr><td>Smart Contract Security</td><td>9</td><td>Ethereum/DeFi security emerged post-2016</td></tr>
+        <tr><td>Supply Chain Security</td><td>8</td><td>SolarWinds, Log4j era concerns</td></tr>
+        <tr><td>Cloud &amp; Microservices</td><td>3</td><td>Serverless, microservices architecture</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ==================== SUBCATEGORY DEEP DIVES ==================== -->
+<section id="subcategory-dives">
+  <h2>Subcategory Deep Dives</h2>
+
+  <p class="narrative">Each main category contains multiple subcategories. The donut charts below show the internal composition of ICSE 2026 papers within each main category, revealing where the community's attention is concentrated.</p>
+
+  <div class="chart-row">
+    <div class="chart-container">
+      <h3>AI &amp; ML Subcategories (2026)</h3>
+      <canvas id="donutAI"></canvas>
+    </div>
+    <div class="chart-container">
+      <h3>Testing Subcategories (2026)</h3>
+      <canvas id="donutTesting"></canvas>
+    </div>
+  </div>
+  <div class="chart-row">
+    <div class="chart-container">
+      <h3>Security Subcategories (2026)</h3>
+      <canvas id="donutSecurity"></canvas>
+    </div>
+    <div class="chart-container">
+      <h3>Program Analysis Subcategories (2026)</h3>
+      <canvas id="donutPA"></canvas>
+    </div>
+  </div>
+  <div class="chart-row">
+    <div class="chart-container">
+      <h3>Maintenance Subcategories (2026)</h3>
+      <canvas id="donutMaint"></canvas>
+    </div>
+    <div class="chart-container">
+      <h3>SE Process Subcategories (2026)</h3>
+      <canvas id="donutSEProcess"></canvas>
+    </div>
+  </div>
+  <div class="chart-row">
+    <div class="chart-container">
+      <h3>Requirements &amp; Architecture (2026)</h3>
+      <canvas id="donutReq"></canvas>
+    </div>
+    <div class="chart-container">
+      <h3>Specialized Domains (2026)</h3>
+      <canvas id="donutSpecialized"></canvas>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== PAPER LISTS ==================== -->
+<section id="paper-lists">
+  <h2>Paper Lists by Category</h2>
+  <p class="narrative">Click any category or subcategory below to expand and see the individual paper titles assigned to it.</p>
+  <div id="paperListContainer"></div>
+</section>
+
+<!-- ==================== CONCLUSION ==================== -->
+<section id="conclusion">
+  <h2>Conclusion</h2>
+  <div class="card">
+    <p class="narrative">The decade from ICSE 2016 to ICSE 2026 tells a dramatic story of transformation in software engineering research:</p>
+    <p class="narrative"><strong>1. The LLM Revolution is Real and Pervasive.</strong> Over one-third of ICSE 2026 papers involve AI/ML, with LLMs appearing not just as research subjects but as tools across testing, security, program analysis, and maintenance. The emergence of "LLM Agents" as autonomous software engineers represents a paradigm shift that was unimaginable in 2016.</p>
+    <p class="narrative"><strong>2. Security Has Moved Center Stage.</strong> From smart contract exploits to supply chain attacks (SolarWinds, Log4j, XZ Utils), security concerns now permeate SE research. The convergence of AI and security&mdash;both using AI for security and securing AI systems&mdash;is a defining theme of 2026.</p>
+    <p class="narrative"><strong>3. Classical Techniques Are Being Augmented, Not Replaced.</strong> While symbolic execution and traditional static analysis have declined as standalone topics, they increasingly appear as components within LLM-assisted approaches. The field isn't abandoning formal methods&mdash;it's hybridizing them.</p>
+    <p class="narrative"><strong>4. The Conference Has Grown Substantially.</strong> With 321 papers vs 101, ICSE 2026 is more than three times the size of 2016, reflecting both the field's growth and increasing submission volumes driven by AI-assisted research.</p>
+    <p class="narrative"><strong>5. New Application Domains Have Emerged.</strong> Autonomous driving, extended reality, DeFi smart contracts, and RISC-V firmware&mdash;these domains barely existed in SE research a decade ago and now have dedicated testing and verification research streams.</p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p>ICSE 2026 vs 2016 Comparative Topical Analysis &mdash; Generated February 2026</p>
+  <p>Data: ICSE 2026 Research Track (researchr.org) &bull; ICSE 2016 (DBLP)</p>
+</footer>
+
+<script>
+// ========================================
+// DATA: All papers categorized
+// ========================================
+
+const data2026 = {
+  "AI & Machine Learning": {
+    "LLM Code Generation & Repair": [
+      "AdapTrack: Constrained Decoding without Distorting LLM's Output Intent",
+      "Aligning Requirement for Large Language Model's Code Generation",
+      "A Semantic-based Optimization Approach for Repairing LLMs: Case Study on Code Generation",
+      "Automatic Dockerfile Generation with Large Language Models",
+      "Distance-Guided Search in Program Synthesis with Imperfect LLM Solutions",
+      "Enhancing LLM Code Generation with Ensembles: A Similarity-Based Selection Approach",
+      "Environment-Aware Code Generation: How far are We?",
+      "From Code to Correctness: Closing the Last Mile of Code Generation with Hierarchical Debugging",
+      "Generating Energy-Efficient Code via Large-Language Models - Where are we now?",
+      "HarnessLLM: Rust Verification Harness Generation with Large Language Models",
+      "Improving Code Generation via Small Language Model-as-a-judge",
+      "Input Reduction Enhanced LLM-based Program Repair",
+      "Knowledge Matters: Injecting Project and Testing Knowledge into LLM-based Unit Test Generation",
+      "LLM4JMH: Studying the Use of LLMs for Generating Java Performance Microbenchmarks",
+      "LLM-based API Argument Completion with Knowledge-Augmented Prompts",
+      "LSPRAG: LSP-Guided RAG for Language-Agnostic Real-Time Unit Test Generation",
+      "Memory-Efficient Large Language Models for Program Repair with Semantic-Guided Patch Generation",
+      "Repair Ingredients Are All You Need: Improving Large Language Model-Based Program Repair via Repair Ingredients Search",
+      "Repairing LLM Executions for Secure Automatic Programming",
+      "RepoScope: Leveraging Call Chain-Aware Multi-View Context for Repository-Level Code Generation",
+      "SEER: Enhancing Chain-of-Thought Code Generation through Self-Exploring Deep Reasoning",
+      "SmartC2Rust: Iterative, Feedback-Driven C-to-Rust Translation via Large Language Models for Safety and Equivalence",
+      "Synthetic Repo-level Bug Dataset for Training Automated Program Repair Models",
+      "Think Like Human Developers: Harnessing Community Knowledge for Structured Code Reasoning",
+      "Top General Performance = Top Domain Performance? DomainCodeBench: A Multi-domain Code Generation Benchmark",
+      "Unlocking LLM Repair Capabilities Through Cross-Language Translation and Multi-Agent Refinement",
+      "What to Retrieve for Effective Retrieval-Augmented Code Generation? An Empirical Study and Beyond",
+      "Write Your Own Code Checker: An Automated Test-Driven Checker Development Approach with LLMs"
+    ],
+    "LLM Agents & Autonomous SE": [
+      "Agent-Based Ensemble Reasoning for Repository-Level Issue Resolution",
+      "AgentSpec: Customizable Runtime Enforcement for Safe and Reliable LLM Agents",
+      "An LLM Agentic Approach for Legal-Critical Software: A Case Study for Tax Prep Software",
+      "Atomizer: An LLM-based Collaborative Multi-Agent Framework for Intent-Driven Commit Untangling",
+      "Beyond Final Code: A Process-Oriented Error Analysis of Software Development Agents in Real-World GitHub Scenarios",
+      "Breaking Single-Tester Limits: Multi-Agent LLMs for Multi-User Feature Testing",
+      "Comfrey: Mitigating Integration Failures in LLM-enabled Software at Run-Time",
+      "Enhancing Issue Localization Agent with Tool-Interactive Training",
+      "Evaluating and Improving Automated Repository-Level Rust Issue Resolution with LLM-based Agents",
+      "FreshBrew: A Benchmark for Evaluating AI Agents on Java Code Migration",
+      "Heterogeneous Prompting and Execution Feedback for SWE Issue Test Generation and Selection",
+      "LLM-based Agents for Automated Bug Fixing: How Far Are We?",
+      "MaCTG: Multi-Agent Collaborative Thought Graph for Automatic Programming",
+      "More with Less: An Empirical Study of Turn-Control Strategies for Efficient Coding Agents",
+      "PreServe: Intelligent Management for LMaaS Systems via Hierarchical Prediction",
+      "SEAlign: Alignment Training for Software Engineering Agent",
+      "SpecOps: A Fully Automated AI Agent Testing Framework in Real-World GUI Environments",
+      "SWE-Debate: Competitive Multi-Agent Debate for Software Issue Resolution",
+      "TraceCoder: A Trace-Driven Multi-Agent Framework for Automated Debugging of LLM-Generated Code",
+      "Unified Software Engineering agent as AI Software Engineer"
+    ],
+    "LLM Evaluation & Analysis": [
+      "A Causal Perspective on Measuring, Explaining and Mitigating Smells in LLM-Generated Code",
+      "A Comparison of Conversational Models and Humans in Answering Technical Questions: the Firefox Case",
+      "Are Humans and LLMs Confused by the Same Code? An Empirical Study on Fixation-Related Potentials and LLM Perplexity",
+      "Are 'Solved Issues' in SWE-bench Really Solved Correctly? An Empirical Study",
+      "Assessing Coherency and Consistency of Code Execution Reasoning by Large Language Models",
+      "Attention Pruning: Automated Fairness Repair of Language Models via Surrogate Simulated Annealing",
+      "Beyond Correctness: Exposing LLM-generated Logical Flaws in Reasoning via Multi-step Automated Theorem Proving",
+      "Cognitive Biases in LLM-Assisted Software Development",
+      "CREME: Robustness Enhancement of Code LLMs via Layer-Aware Model Editing",
+      "Enabling Global, Human-Centered Explanations for LLMs: From Tokens to Interpretable Code and Test Generation",
+      "Evaluating Generated Commit Messages with Large Language Models",
+      "Evaluating the effectiveness of LLM-based interoperability",
+      "Filtering before Tuning: Robust Fine-Tuning of Large Code Models under Noisy Labels",
+      "HoarePrompt: Structural Reasoning About Program Correctness in Natural Language",
+      "Inside Out: Uncovering How Comment Internalization Steers LLMs for Better or Worse",
+      "LLM4Perf: Large Language Models Are Effective Samplers for Multi-Objective Performance Modeling",
+      "On LLMs' Internal Representation of Code Correctness",
+      "Order Matters! An Empirical Study on Large Language Models' Input Order Bias in Software Fault Localization",
+      "ProxyWar: Dynamic Assessment of LLM Code Generation in Game Arenas",
+      "Quantifying Memorization Advantage in Code LLMs",
+      "TACO: Trust Assessment of Large Language Models in Coding Assistance Tasks",
+      "The Hidden Cost of Readability: How Code Formatting Silently Consumes Your LLM Budget",
+      "Toward Systematic Counterfactual Fairness Evaluation of Large Language Models: The CAFFE Framework",
+      "VADA: A Multicultural Benchmark for Value-Aware Data Generation and Alignment Evaluation in LLMs",
+      "What Makes Code Generation Ethically Sourced?",
+      "When Prompts Go Wrong: Evaluating Code Model Robustness to Ambiguous, Contradictory, and Incomplete Task Descriptions",
+      "XRFix: Exploring Performance Bug Repair of Extended Reality Applications with Large Language Models"
+    ],
+    "Deep Learning Systems Engineering": [
+      "A Comprehensive Study of Deep Learning Model Fixing Approaches",
+      "An Empirical Study of Knowledge Distillation for Code Understanding Tasks",
+      "AtPatch: Debugging Transformers via Hot-Fixing Over-Attention",
+      "Checking Unsupervised Learning for Nondeterminism and Inconsistency via SMT Solving",
+      "Depradar: Agentic Coordination for Context-Aware Defect Impact Analysis in Deep Learning Libraries",
+      "DNN Modularization via Activation-Driven Training",
+      "Fairness Is Not Just Ethical: Performance Trade-Off via Data Correlation Tuning to Mitigate Bias in ML Software",
+      "From Code Changes to Quality Gains: An Empirical Study in Python ML Systems with PyQu",
+      "Imitation Game: Reproducing Deep Learning Bugs Leveraging an Intelligent Agent",
+      "ModularEvo: Evolving Multi-Task Models via Neural Network Modularization and Composition",
+      "NB2P: Generating Data Science Pipelines from Computational Notebooks",
+      "On the Robustness of Fairness Practices: A Causal Framework for Systematic Evaluation",
+      "Optimization-Aware Test Generation for Deep Learning Compilers",
+      "Revisiting 'Revisiting Neuron Coverage for DNN Testing: A Layer-Wise and Distribution-Aware Criterion': A Critical Review",
+      "TestifAI: Tomography-Based Testing for Deep Learning Systems",
+      "Testing Deep Learning Libraries via Neurosymbolic Constraint Learning",
+      "Why Attention Fails: A Taxonomy of Faults in Attention-Based Neural Networks"
+    ],
+    "AI for Security": [
+      "A First Look at Model Supply Chain: From the Risk Perspective",
+      "Argus: A Multi-agent Sensitive Information Leakage Detection Framework Based on Hierarchical Reference Relationships",
+      "Exploring and Improving Real-World Vulnerability Data Generation via Prompting Large Language Models",
+      "How Do Semantically Equivalent Code Transformations Impact Membership Inference on LLMs for Code?",
+      "Let the Trial Begin: A Mock-Court Approach to Vulnerability Detection using LLM-Based Agents",
+      "LLM-based Vulnerability Discovery through the Lens of Code Metrics",
+      "MazeBreaker: Multi-Agent Reinforcement Learning for Dynamic Jailbreaking of LLM Security Defenses",
+      "Out of Distribution, Out of Luck: How Well Can LLMs Trained on Vulnerability Datasets Detect Top 25 CWE Weaknesses?",
+      "Rethinking the Capability of Fine-Tuned Language Models for Automated Vulnerability Repair",
+      "Rethinking the Evaluation of Secure Code Generation",
+      "RulePilot: An LLM-Powered Agent for Security Rule Generation",
+      "Scrub It Out! Erasing Sensitive Memorization in Code Language Models via Machine Unlearning",
+      "SecureReviewer: Enhancing Large Language Models for Secure Code Review through Secure-Aware Fine-Tuning",
+      "Securing the AI Supply Chain: What Can We Learn From Developer-Reported Security Issues and Solutions of AI Projects?",
+      "Smoke and Mirrors: Jailbreaking LLM-based Code Generation via Implicit Malicious Prompts",
+      "TaintP2X: Detecting Taint-Style Prompt-to-Anything Injection Vulnerabilities in LLM-Integrated Applications",
+      "Training on Clean Data but Getting Backdoored Models! A Poisoning Attack on Code Encoders",
+      "When AI Takes the Wheel: Security Analysis of Framework-Constrained Program Generation"
+    ]
+  },
+  "Software Testing": {
+    "Fuzzing": [
+      "Agentic Predicates Reasoning for Directed Fuzzing",
+      "Attention Distance: A Novel Metric for Directed Fuzzing with Large Language Models",
+      "BTreeFuzz: Enhanced Feedback Mechanism for ROS Program Fuzzer Based on Behavior Tree",
+      "Configuration-Sensitive Linux Kernel Fuzzing",
+      "Context-Free Property Oriented Fuzzing",
+      "DyMA-Fuzz: Dynamic Direct Memory Access Abstraction for Re-hosted Monolithic Firmware Fuzzing",
+      "FrameShift: Resizing Fuzzer Inputs Without Breaking Them",
+      "Fuzzing Java Optimizing Compilers with Complex Inter-Class Structures Guided by Heterogeneous Program Graphs",
+      "Fuzzing JavaScript Engines by Fusing JavaScript and WebAssembly",
+      "How Good are Input Grammar Miners? An Empirical Study",
+      "Metamorphic Fuzzing for Multi-Agent Path Finding Algorithms",
+      "On Interaction Effects in Greybox Fuzzing",
+      "Parse this! Summoning Context-Sensitive Inputs with Goblin",
+      "RusyFuzz: Unhandled Exception Guided Fuzzing for Rust OS Kernel",
+      "StorFuzz: Using Data Diversity to Overcome Fuzzing Plateaus",
+      "Temporal Specification Oriented Fuzzing for Trigger-Action-Programming Smart Home Integrations",
+      "Variability-Aware Fuzzing",
+      "VDBFuzz: Understanding and Detecting Crash Bugs in Vector Database Management Systems"
+    ],
+    "Test Generation & Selection": [
+      "AssertFlip: Reproducing Bugs via Inversion of LLM-Generated Passing Tests",
+      "Change And Cover: Last-Mile, Pull Request-Based Regression Test Augmentation",
+      "CombCT: Compiler Testing via Combinatorial Testing",
+      "CRUDinfer: Automated CRUD Semantics Inference for REST APIs Through Black-box Testing",
+      "Defects4REST: A Benchmark of Real-World Defects to Enable Controlled Testing and Debugging Studies for REST APIs",
+      "E-Test: E'er-Improving Test Suites",
+      "Issue2Test: Generating Reproducing Test Cases from Issue Reports",
+      "LLM Test Generation via Iterative Hybrid Program Analysis",
+      "Measuring the Influence of Incorrect Code on Test Generation",
+      "MioHint: LLM-Assisted Request Mutation for Whitebox REST API Testing",
+      "RBCTest: Leveraging LLMs to Mine and Verify Oracles of API Response Bodies for RESTful API Testing",
+      "Retrieval-Augmented Test Generation: How Far Are We?",
+      "SAINT: Service-level Integration Test Generation with Program Analysis and LLM-based Agents",
+      "Testora: Using Natural Language Intent to Detect Behavioral Regressions",
+      "TestWeaver: Execution-aware, Feedback-driven Regression Testing Generation with Large Language Models"
+    ],
+    "Mutation Testing": [
+      "Hybrid Fault-Driven Mutation Testing for Python",
+      "MutDafny: A Mutation-Based Approach to Assess Dafny Specifications",
+      "Test Flimsiness: Characterizing Flakiness Induced by Mutation to the Code Under Test"
+    ],
+    "Domain-Specific Testing": [
+      "DeFT: Maintaining Determinism and Extracting Unit Tests for Autonomous Driving Planning",
+      "META\u00b2V2V: Revealing Behavioural Deviations under Mutual Perception in Multi-Vehicle Autonomous Driving",
+      "Misbehavior Forecasting for Focused Autonomous Driving Systems Testing",
+      "RealityCraft: Automated Synthesis of Extended Reality Device Interaction Scripts from Natural Language Instructions",
+      "SAFE: Harnessing LLM for Scenario-Driven ADS Testing from Multimodal Crash Data",
+      "Scalpel: Automotive Deep Learning Framework Testing via Assembling Model Components",
+      "Synthesizing Hardware-Specific Instructions for Efficient Code Generation of Simulink",
+      "TARIPlay: A Test Framework for AR Applications based on Interactive Area Detection in Playback Videos",
+      "Think Outside the Box: Automating Inter-App Functionality Testing via Memory Implanting and Reasoning",
+      "Uncovering Failures in Cyber-Physical System State Transitions: A Fuzzing-Based Approach Applied to sUAS"
+    ]
+  },
+  "Security & Vulnerability": {
+    "Vulnerability Detection & Repair": [
+      "An Empirical Study of Fine-Grained Entity Relationships for Tracing Natural Language and Code Vulnerability Artifacts",
+      "Beyond Fuzzy Matching: Constraint-Guided Patch Presence Testing for Obfuscated Java Binaries",
+      "Demystifying the CVE Ecosystem: Community-Perceived Impacts and Problems",
+      "Diffploit: Facilitating Cross-Version Exploit Migration for Open Source Library Vulnerabilities",
+      "INTENTFIX: Automated Logic Vulnerability Repair via LLM-Driven Intent Modeling",
+      "Scaling Security Testing by Addressing the Reachability Gap",
+      "Software Vulnerability Management in the Era of Artificial Intelligence: An Industry Perspective",
+      "SymRadar: PoC-Centered Bounded Verification for Vulnerability Repair",
+      "Well Begun is Half Done: Location-Aware and Trace-Guided Iterative Automated Vulnerability Repair"
+    ],
+    "Supply Chain Security": [
+      "AnchorDiff: Binary OSS Version Identification Method Based on Anchor Node Slicing",
+      "Bytecode-centric Detection of Known-to-be-vulnerable Dependencies in Java Projects",
+      "Closing the Chain: How to reduce your risk of being SolarWinds, Log4j, or XZ Utils",
+      "ConfuGuard: Using Metadata to Detect Active and Stealthy Package Confusion Attacks Accurately and at Scale",
+      "Dependency-aware Residual Risk Analysis",
+      "Insecure Ingredients? Exploring Dependency Update Patterns of Bundled JavaScript Packages on the Web",
+      "IntelliRadar: A Comprehensive Platform to Pinpoint Malicious Package Information from Cyber Intelligence",
+      "PTV: Scalable Version Detection of Web Libraries and its Security Application"
+    ],
+    "Smart Contract Security": [
+      "Boosting Gas Revenues of Ethereum Miners",
+      "Bounded Exhaustive Random Program Generation for Testing Solidity Compilers",
+      "EchoFuzz: Empowering Smart Contract Fuzzing with Large Language Models",
+      "Enforcing Control Flow Integrity on DeFi Smart Contracts",
+      "FORGE: An LLM-driven Framework for Large-Scale Smart Contract Vulnerability Dataset Construction",
+      "GenDetect: Generalizing Reactive Detection for Resilience Against Imitative DeFi Attack Cascade",
+      "OctopusGuard: K-Line Enhanced Token Scam Detector Powered by Multimodal LLMs",
+      "One Signature, Multiple Payments: Demystifying and Detecting Signature Replay Vulnerabilities in Smart Contracts",
+      "Precise Static Identification of Ethereum Storage Variables"
+    ],
+    "Application Security": [
+      "A Large-Scale Empirical Study of Secret Key Leakage in Hugging Face Spaces",
+      "An Empirical Study on Static Application Security Testing (SAST) Tools for Python",
+      "Breaking Strong Encapsulation: A Comprehensive Study of Java Module Abuse",
+      "EMC: A Semantic-Enhanced Malware Classification Method with Robustness and Scalability",
+      "Hallucinating Certificates: Differential Testing of TLS Certificate Validation Using Generative Language Models",
+      "SeRe: A Security-Related Code Review Dataset Aligned with Real-World Review Activities",
+      "Towards Understanding and Characterizing Vulnerabilities in Intelligent Connected Vehicles through Real-World Exploits",
+      "Understanding DevOps Security of Google Workspace Apps",
+      "WhisperCatcher: Demystifying Unauthorized and Encrypted Private Data Transmission in Android Applications"
+    ]
+  },
+  "Program Analysis & Verification": {
+    "Static Analysis": [
+      "Actionable Warning Is Not Enough: Recommending Valid Actionable Warnings with Weak Supervision",
+      "CoBrA: Context-, Branch-sensitive Static Analysis for Detecting Taint-style Vulnerabilities in PHP Web Applications",
+      "Efficient Strong Updates For Path Sensitive Data Dependence Analysis",
+      "Fast Flow-Sensitive C Program Partitioning via Iterative Value-Flow Refinement",
+      "Is Call Graph Pruning Really Effective? An Empirical Re-evaluation",
+      "Large Language Model-Aided Partial Program Dependence Analysis",
+      "LoopSCC: Summarizing Complex Multi-branch Nested Loops via Periodic Oscillation Interval",
+      "No Shot in the Dark: Efficient Context-Free Language Reachability via Context-Aware Tabulation",
+      "PredicateFix: Repairing Static Analysis Alerts with Bridging Predicates",
+      "Project-Level Resource Leak Detection through Agent-based Ownership Analysis and Repair Pattern Verification",
+      "PyXray: Practical Cross-Language Call Graph Construction through Object Layout Analysis",
+      "Rusted Types: Static Detection of Rust Type Confusion Bugs",
+      "SpecGuru: Hierarchical LLM-Driven API Points-to Specification Generation with Self-Validation",
+      "TypeCare: Boosting Python Type Inference Models via Context-Aware Re-Ranking and Augmentation",
+      "WhyFlow: Interrogative Debugger for Sensemaking Taint Analysis"
+    ],
+    "Symbolic Execution": [
+      "Enhancing Symbolic Execution with Self-Configuring Parameters",
+      "Generator Solving for Symbolic Execution"
+    ],
+    "Formal Verification": [
+      "3D Software Synthesis Driven by Constraint-Expressive Intermediate Representation",
+      "Accelerating IC3 Verification by Exploiting Unsatisfiable Cores and Satisfying Models",
+      "Accurate Inference of Termination Conditions",
+      "Cobblestone: A Divide-and-Conquer Approach for Automating Formal Verification",
+      "Do Unit Proofs Work? An Empirical Study of Compositional Bounded Model Checking for Memory Safety Verification",
+      "ProofCoop: Collaborative Automated Formal Verification",
+      "Validating Mixed-Integer Programming Solvers",
+      "Verification of Multi-Model Stochastic Systems"
+    ],
+    "Dynamic Analysis": [
+      "Context-Free Grammar Inference for Complex Programming Languages in Black Box Settings",
+      "Fine-Grained Analyses for Evolution-Aware Runtime Verification",
+      "Modeling Like Peeling an Onion: Layerwise Analysis-Driven Automatic Behavioral Model Generation"
+    ]
+  },
+  "Software Maintenance & Evolution": {
+    "Code Review & Quality": [
+      "Breaking the Alphabet: Rethinking File Ordering in Code Review",
+      "Causal or Correlational? A Cohort Study on the Effects of Code Smells on Class Change- and Fault-Proneness",
+      "The Cost vs the Benefit of Adding an Extra Code Reviewer to Mitigate Developer Turnover through Reviewer Recommenders"
+    ],
+    "Refactoring": [
+      "Automating Just-In-Time Python Type Annotation Updating",
+      "Decades of GNU Patch and Git Cherry-Pick: Can We Do Better?",
+      "RefAgent: A Multi-agent LLM-based Framework for Automatic Software Refactoring",
+      "RISE: Rule-Driven SQL Dialect Translation via Query Reduction"
+    ],
+    "Dependency Management": [
+      "Designing Abandabot: When Does Open Source Dependency Abandonment Matter?",
+      "Efficient Build Dependency Verification Using eBPF and Incremental Analysis",
+      "Minimizing Breaking Changes and Redundancy in Mitigating Technical Lag for Java Projects",
+      "Small Changes, Big Trouble: Demystifying and Parsing License Variants for Incompatibility Detection in the PyPI Ecosystem",
+      "Toward Efficient Package Maintenance: An Empirical Study of Patch Sharing across Four Linux Distributions"
+    ],
+    "Code Search & Comprehension": [
+      "Automating API Documentation from Crowdsourced Knowledge",
+      "Back to the Basics: Rethinking Issue-Commit Linking with LLM-Assisted Retrieval",
+      "CodeMapper: A Language-Agnostic Approach to Mapping Code Regions Across Commits",
+      "From Seed to Scope: Reasoning to Identify Change Impact Sets",
+      "HistoryFinder: Advancing Method-Level Source Code History Generation with Accurate Oracles and Enhanced Algorithm",
+      "Same Same But Different: Preventing Refactoring Attacks on Software Plagiarism Detection",
+      "UniCoR: Modality Collaboration for Robust Cross-Language Hybrid Code Retrieval"
+    ]
+  },
+  "SE Process & People": {
+    "Developer Experience & Productivity": [
+      "An Eye for AI: Eye-Tracking the Micro-Interruptions of GenAI Code Suggestions",
+      "Evolving with AI: A Longitudinal Analysis of Developer Logs",
+      "'Making Our Life Less Monotonous' or 'Just Tick Things Off': An Exploratory Multi-Method Study of Toil",
+      "'Maybe We Need Some More Examples:' Individual and Team Drivers of Developer GenAI Tool Use",
+      "TaCoS: Generated Context Summaries for Task Resumption"
+    ],
+    "Human & Social Factors": [
+      "Connected to Stay: Gender Homophily and Its Role in Open-Source Software Developer Retention",
+      "'Game Changer' or 'Overenthusiastic Drunk Acquaintance'? Generative AI Use by Blind and Low Vision Software Professionals",
+      "'I need to learn better searching tactics for privacy policy laws.' Investigating Software Developers' Behavior",
+      "Perspective-Taking in Software Engineering: A Study on its Relationship to Team Performance",
+      "Staying or Leaving? How Job Satisfaction, Embeddedness and Antecedents Predict Turnover Intentions of Software Professionals",
+      "STEM-EF: A Model for Assessing Scrum Team Effectiveness Based on Emotional Factors",
+      "What's in a Software Engineering Job Posting?",
+      "Women's Career Paths in the Nordic Software Industry: A Narrative Analysis Through Gender-Switched Personas"
+    ],
+    "Open Source Communities": [
+      "An empirical Analysis of Community and Coding Patterns in OSS4SG vs. Conventional OSS",
+      "Beyond Adoption: Examining the Evolution and Impact of Codes of Conduct on Open-Source Communities",
+      "How Does Core Contributor Disengagement Impact Open Source Project Activity? A Quasi-Experiment",
+      "Six Million (Suspected) Fake Stars on GitHub: A Growing Spiral of Popularity Contests, Spams, and Malware",
+      "Towards Supporting Open Source Library Maintainers with Community-Based Analytics",
+      "Toxicity Ahead: Forecasting Conversational Derailment on GitHub",
+      "'Write in English, Nobody Understands Your Language Here': A Study of Non-English Trends in Open-Source Repositories"
+    ],
+    "Empirical Methods": [
+      "Learning From Software Failures: A Case Study at a National Space Research Center",
+      "Reflections on the Reproducibility of Commercial LLM Performance in Empirical Software Engineering Studies",
+      "The Software Infrastructure Attitude Scale (SIAS): A Questionnaire Instrument",
+      "The State of Open Science in Software Engineering Research: A Case Study of ICSE Artifacts",
+      "Views on Internal and External Validity in Empirical Software Engineering: 10 Years Later and Beyond",
+      "Weak Programmers Need Not Apply, LLMs Welcome! Survey Screening in the AI Era"
+    ]
+  },
+  "Requirements & Architecture": {
+    "Requirements Engineering": [
+      "ADARULE: LLM-Driven Natural Language to LTL Conversion via Pattern-Adaptive Rule Induction",
+      "Automating Requirements Formalization: Using LLMs and Low-Complexity Distinguishing Traces for Semantic Validation",
+      "Hey, ChatGPT, Look at My Work: Using Conversational AI in Requirements Engineering Education",
+      "Light over Heavy: Automated Performance Requirements Quantification with Linguistic Inducement",
+      "Unlocking the Silent Needs: Business-Logic-Driven Iterative Requirements Auto-completion"
+    ],
+    "Software Architecture": [
+      "Multi-Location Software Model Completion",
+      "Semantic-Enhanced Automatic Refinement of Architecture Recovery Results Using LLMs",
+      "SSAR: A Novel Software Architecture Recovery Approach Enhancing Accuracy and Scalability"
+    ],
+    "Configuration & Variability": [
+      "Bayesian Multi-Level Performance Models for Multi-Factor Variability of Configurable Software Systems",
+      "Can SAT Solvers Keep Up With the Linux Kernel's Feature Model?",
+      "Dually Hierarchical Drift Adaptation for Online Configuration Performance Learning",
+      "FM4MC: Improving Feature Models for Microservice Chains",
+      "PromiseTune: Unveiling Causally Promising and Explainable Configuration Tuning"
+    ]
+  },
+  "Specialized Domains": {
+    "Mobile & Android": [
+      "An Empirical Study on the Robustness of Android Third-Party Library Detection Tools Against Advanced Obfuscation",
+      "LikeThis! Empowering App Users to Submit UI Improvement Suggestions Instead of Complaints",
+      "Practitioner Views on Mobile App Accessibility: Practices and Challenges",
+      "Towards Global Matches for Third-Party Library Detection in Android",
+      "Towards Scalable and Interpretable Mobile App Risk Analysis via Large Language Models"
+    ],
+    "Web & JavaScript": [
+      "An Empirical Study of WebAssembly Usage in Node.js",
+      "Characterizing GPU-accelerated Web Applications in Browsers",
+      "D-BUNDLR: Destructing JavaScript Bundles for Effective Static Analysis",
+      "Evolving Trends, Patterns, and Hidden Pitfalls: Unveiling JavaScript Feature Usage in the Wild",
+      "NotDec: WebAssembly Decompilation With Inter-Procedural Type Recovery",
+      "Remediating Superfluous Re-Rendering in React Applications"
+    ],
+    "Blockchain & Smart Contracts": [
+      "Is My RPC Response Reliable? Detecting RPC Bugs in Blockchain Client under Context"
+    ],
+    "Cloud & Microservices": [
+      "Automated Network-Level Fault Injection Testing of Microservice Architectures",
+      "FlowScope: Non-Intrusive Distributed Tracing with Method-Level Delay Estimation for Microservices Troubleshooting",
+      "Metronome: Differentiated Delay Scheduling for Serverless Functions"
+    ],
+    "Embedded & IoT": [
+      "EmbedAgent: Benchmarking Large Language Models in Embedded System Development",
+      "End-to-End Model Generation with Large Language Models for Adaptive IoT Application Deployment",
+      "Sapling: Quantifying and Measuring the Maturity of the RISC-V Software Ecosystem"
+    ]
+  },
+  "Performance & Reliability": {
+    "Performance Analysis": [
+      "CCLInsight: Unveiling Insights in GPU Collective Communication Libraries via Primitive-Centric Analysis",
+      "Energy-Efficient Software Development: A Multi-dimensional Empirical Analysis of Stack Overflow",
+      "FlipFlop: A Static Analysis-based Energy Optimization Framework for GPU Kernels",
+      "JEDI: Java Evaluation of Declarative and Imperative Queries - Benchmarking the Java Stream API",
+      "One Size Does Fit All: Kernel-Assisted Fine-Grained Debloating and Layout Randomization for Shared Libraries",
+      "Panoptes: A Profile Clustering Framework for Context-Aware Binary Optimization",
+      "Portable Power Modeling with Transfer Learning on JVM-Based Applications",
+      "SustainDiffusion: Optimising the Social and Environmental Sustainability of Stable Diffusion Models"
+    ],
+    "Debugging & Fault Localization": [
+      "A Comprehensive Study of Concurrency Bugs in the Linux Kernel",
+      "BFix: Automated Safe Memory-Leak Fixing for Binary Code",
+      "Characterizing Regression Bug-Inducing Changes and Improving LLM-Based Regression Bug Detection",
+      "ConfLogger: Enhance Systems' Configuration Diagnosability through Configuration Logging",
+      "CoReX: Context-Aware Refinement-Based Slicing for Debugging Regression Failures",
+      "Debugging Performance Issues in WebAssembly Runtimes via Mutation-based Inference",
+      "FoundRoot: Towards Foundation Model for Root Cause Analysis via Structured Deep Thinking",
+      "GPTrace: Effective Crash Deduplication Using LLM Embeddings",
+      "Learning without Forgetting: Towards Continual learning of Fault Localization Models in Industrial Software Systems",
+      "Online and Interactive Bayesian Inference Debugging",
+      "TAAF: A Trace Abstraction and Analysis Framework Synergizing Knowledge Graphs and LLMs",
+      "Towards Better Linux Kernel Fault Localization: Leveraging Contrastive Reasoning and Hierarchical Context Analysis",
+      "Using a Sledgehammer to Crack a Nut? Revisiting Automated Compiler Fault Isolation"
+    ],
+    "Reliability & Resilience": [
+      "InferLog: Accelerating LLM Inference for Online Log Parsing via ICL-oriented Prefix Caching",
+      "Knowledge-Augmented Log Anomaly Detection with Large Language Models",
+      "LogFold: Compressing Logs with Structured Tokens and Hybrid Encoding",
+      "MINES: Explainable Anomaly Detection through Web API Invariant Inference",
+      "Predicting Failures in Smart Human-Centric EcoSystems"
+    ]
+  }
+};
+
+const data2016 = {
+  "AI & Machine Learning": {
+    "Traditional ML/NLP for SE": [
+      "Automated parameter optimization of classification techniques for defect prediction models",
+      "Automatically learning semantic features for defect prediction",
+      "Cross-project defect prediction using a connectivity-based unsupervised classifier",
+      "From word embeddings to document similarities for improved information retrieval in software engineering",
+      "Learning API usages from bytecode: a statistical approach",
+      "On the 'naturalness' of buggy code",
+      "Program synthesis using natural language"
+    ]
+  },
+  "Software Testing": {
+    "Test Generation & Selection": [
+      "An empirical comparison of compiler testing techniques",
+      "Comparing white-box and black-box test prioritization",
+      "Coverage-driven test code generation for concurrent classes",
+      "How does regression test prioritization perform in real-world software evolution?",
+      "Shadow of a doubt: testing for divergences between software versions",
+      "The impact of test case summaries on bug fixing performance: an empirical investigation"
+    ],
+    "Mutation Testing": [
+      "Featured model-based mutation analysis",
+      "On the limits of mutation reduction strategies"
+    ],
+    "Domain-Specific Testing": [
+      "Automated test suite generation for time-continuous simulink models",
+      "VDTest: an automated framework to support testing for virtual devices"
+    ]
+  },
+  "Security & Vulnerability": {
+    "Application Security": [
+      "Discovering 'unknown known' security requirements",
+      "Finding security bugs in web applications using a catalog of access control patterns",
+      "Jumping through hoops: why do Java developers struggle with cryptography APIs?",
+      "Mining sandboxes",
+      "Reference hijacking: patching, protecting and analyzing on unmodified and non-rooted android devices",
+      "Toward a framework for detecting privacy policy violations in android application code"
+    ]
+  },
+  "Program Analysis & Verification": {
+    "Static Analysis": [
+      "Exploring language support for immutability",
+      "Finding and analyzing compiler warning defects",
+      "Floating-point precision tuning using blame analysis",
+      "Locking discipline inference and checking",
+      "Nomen est omen: exploring and exploiting similarities between argument and parameter names",
+      "Scalable thread sharing analysis",
+      "StubDroid: automatic inference of precise data-flow summaries for the android framework"
+    ],
+    "Symbolic Execution": [
+      "Angelix: scalable multiline program patch synthesis via symbolic analysis",
+      "Generating performance distributions via probabilistic symbolic execution",
+      "Guiding dynamic symbolic execution toward unverified program executions",
+      "On the techniques we create, the tools we build, and their misalignments: a study of KLEE",
+      "Synthesizing framework models for symbolic execution",
+      "Type-aware concolic testing of JavaScript programs"
+    ],
+    "Formal Verification": [
+      "Crowdsourcing program preconditions via a classification game",
+      "IntEQ: recognizing benign integer overflows via equivalence checking across multiple precisions",
+      "PAC learning-based verification and model synthesis",
+      "Termination-checking for LLVM peephole optimizations"
+    ],
+    "Dynamic Analysis": [
+      "DoubleTake: fast and precise error detection via evidence-based dynamic analysis",
+      "Efficient large-scale trace checking using mapreduce"
+    ]
+  },
+  "Software Maintenance & Evolution": {
+    "Code Review & Quality": [
+      "CUSTODES: automatic spreadsheet cell clustering and smell detection using strong and weak features",
+      "Code anomalies flock together: exploring code anomaly agglomerations for locating design problems",
+      "Code review quality: how developers see it",
+      "Revisiting code ownership and its relationship with software quality in the scope of modern code review",
+      "Using (bio)metrics to predict code quality online"
+    ],
+    "Refactoring": [
+      "An analysis of the search spaces for generate and validate patch generation systems",
+      "Improving refactoring speed by 10X",
+      "Understanding and fixing multiple language interoperability issues: the C/Fortran case"
+    ],
+    "Code Search & Comprehension": [
+      "Augmenting API documentation with insights from stack overflow",
+      "Automatic model generation from documentation for Java API functions",
+      "SWIM: synthesizing what i mean: code search and idiomatic snippet synthesis",
+      "SourcererCC: scaling code clone detection to big-code",
+      "The evolution of C programming practices: a study of the Unix operating system 1973-2015"
+    ]
+  },
+  "SE Process & People": {
+    "Developer Experience & Productivity": [
+      "Too long; didn't watch!: extracting relevant fragments from software development video tutorials",
+      "Work practices and challenges in pull-based development: the contributor's perspective"
+    ],
+    "Human & Social Factors": [
+      "Building a theory of job rotation in software engineering from an instrumental case study",
+      "Quantifying and mitigating turnover-induced knowledge loss: case studies of chrome and a project at avaya",
+      "The challenges of staying together while moving fast: an exploratory study",
+      "The emerging role of data scientists on software development teams"
+    ],
+    "Open Source Communities": [
+      "Disseminating architectural knowledge on open-source projects: a case study of the book 'architecture of open-source applications'",
+      "Overcoming open source project entry barriers with a portal for newcomers",
+      "The sky is not the limit: multitasking across GitHub projects"
+    ],
+    "Empirical Methods": [
+      "A practical guide to select quality indicators for assessing pareto-based search algorithms in search-based software engineering",
+      "An empirical study on the impact of C++ lambdas and programmer experience",
+      "Belief & evidence in empirical software engineering",
+      "Grounded theory in software engineering research: a critical review and guidelines",
+      "Missing data imputation based on low-rank recovery and semi-supervised regression for software effort estimation",
+      "Multi-objective software effort estimation",
+      "Quality experience: a grounded theory of successful agile projects without dedicated testers"
+    ]
+  },
+  "Requirements & Architecture": {
+    "Requirements Engineering": [
+      "Are 'non-functional' requirements really non-functional?: an investigation of non-functional requirements in practice",
+      "Probing for requirements knowledge to stimulate architectural thinking",
+      "Release planning of mobile apps based on user reviews",
+      "Risk-driven revision of requirements models"
+    ],
+    "Software Architecture": [
+      "Decoupling level: a new metric for architectural maintenance complexity",
+      "Identifying and quantifying architectural debt"
+    ],
+    "Configuration & Variability": [
+      "A comparison of 10 sampling algorithms for configurable systems",
+      "Feature-model interfaces: the highway to compositional analyses of highly-configurable systems",
+      "How does the degree of variability affect bug finding?"
+    ]
+  },
+  "Specialized Domains": {
+    "Mobile & Android": [
+      "Automated energy optimization of HTTP requests for mobile applications",
+      "Automated partitioning of android applications for trusted execution environments",
+      "MobiPlay: a remote execution based record-and-replay tool for mobile applications",
+      "PRADA: prioritizing android devices for apps by mining large-scale usage data",
+      "Reducing combinatorics in GUI testing of android applications"
+    ],
+    "Web & JavaScript": [
+      "Cross-supervised synthesis of web-crawlers",
+      "Feedback-directed instrumentation for deployed JavaScript applications",
+      "Performance issues and optimizations in JavaScript: an empirical study",
+      "Understanding asynchronous interactions in full-stack JavaScript"
+    ],
+    "Cloud & Microservices": [
+      "Optimizing selection of competing services with probabilistic hierarchical refinement"
+    ]
+  },
+  "Performance & Reliability": {
+    "Performance Analysis": [
+      "An empirical study of practitioners' perspectives on green software engineering",
+      "Energy profiles of Java collections classes"
+    ],
+    "Debugging & Fault Localization": [
+      "AntMiner: mining more bugs by reducing noise interference",
+      "BigDebug: debugging primitives for interactive big data processing in spark",
+      "Debugging for reactive programming",
+      "Fixing deadlocks via lock pre-acquisitions",
+      "RETracer: triaging crashes by reverse execution from partial memory dumps",
+      "Revisit of automatic debugging via human focus-tracking analysis",
+      "iDice: problem identification for emerging issues"
+    ],
+    "Reliability & Resilience": [
+      "Behavioral log analysis with statistical guarantees",
+      "Reliability of Run-Time Quality-of-Service evaluation using parametric model checking"
+    ]
+  }
+};
+
+// ========================================
+// COMPUTE COUNTS
+// ========================================
+
+function countCategory(dataObj) {
+  const counts = {};
+  const subCounts = {};
+  for (const [cat, subs] of Object.entries(dataObj)) {
+    counts[cat] = 0;
+    subCounts[cat] = {};
+    for (const [sub, papers] of Object.entries(subs)) {
+      subCounts[cat][sub] = papers.length;
+      counts[cat] += papers.length;
+    }
+  }
+  return { counts, subCounts };
+}
+
+const c2026 = countCategory(data2026);
+const c2016 = countCategory(data2016);
+
+const total2026 = Object.values(c2026.counts).reduce((a, b) => a + b, 0);
+const total2016 = Object.values(c2016.counts).reduce((a, b) => a + b, 0);
+
+const allCategories = [
+  "AI & Machine Learning",
+  "Software Testing",
+  "Security & Vulnerability",
+  "Program Analysis & Verification",
+  "Software Maintenance & Evolution",
+  "SE Process & People",
+  "Requirements & Architecture",
+  "Specialized Domains",
+  "Performance & Reliability"
+];
+
+const categoryShortNames = [
+  "AI & ML",
+  "Testing",
+  "Security",
+  "Prog. Analysis",
+  "Maintenance",
+  "SE Process",
+  "Req. & Arch.",
+  "Specialized",
+  "Perf. & Rel."
+];
+
+const pct2026 = allCategories.map(c => ((c2026.counts[c] || 0) / total2026 * 100));
+const pct2016 = allCategories.map(c => ((c2016.counts[c] || 0) / total2016 * 100));
+
+// ========================================
+// POPULATE TABLE
+// ========================================
+
+const tableBody = document.getElementById('categoryTable');
+allCategories.forEach((cat, i) => {
+  const n26 = c2026.counts[cat] || 0;
+  const n16 = c2016.counts[cat] || 0;
+  const p26 = pct2026[i].toFixed(1);
+  const p16 = pct2016[i].toFixed(1);
+  const diff = (pct2026[i] - pct2016[i]).toFixed(1);
+  const arrow = diff > 0 ? '\u25B2' : diff < 0 ? '\u25BC' : '\u25CF';
+  const cls = diff > 1 ? 'shift-up' : diff < -1 ? 'shift-down' : 'shift-stable';
+  const tr = document.createElement('tr');
+  tr.innerHTML = `<td><strong>${cat}</strong></td><td>${n16}</td><td>${p16}%</td><td>${n26}</td><td>${p26}%</td><td><span class="shift-indicator ${cls}">${arrow} ${diff > 0 ? '+' : ''}${diff}pp</span></td>`;
+  tableBody.appendChild(tr);
+});
+
+// ========================================
+// CHART COLORS
+// ========================================
+const blue = 'rgba(43, 108, 176, 0.85)';
+const red = 'rgba(229, 62, 62, 0.85)';
+const blueBorder = 'rgba(43, 108, 176, 1)';
+const redBorder = 'rgba(229, 62, 62, 1)';
+const blueLight = 'rgba(43, 108, 176, 0.15)';
+const redLight = 'rgba(229, 62, 62, 0.15)';
+
+const donutColors = [
+  '#2b6cb0', '#e53e3e', '#38a169', '#d69e2e', '#805ad5',
+  '#319795', '#dd6b20', '#d53f8c', '#3182ce', '#e53e3e'
+];
+
+// ========================================
+// CHART 1: Main Category Bar Chart
+// ========================================
+
+new Chart(document.getElementById('mainCategoryChart'), {
+  type: 'bar',
+  data: {
+    labels: categoryShortNames,
+    datasets: [
+      {
+        label: 'ICSE 2026 (%)',
+        data: pct2026.map(v => +v.toFixed(1)),
+        backgroundColor: blue,
+        borderColor: blueBorder,
+        borderWidth: 1
+      },
+      {
+        label: 'ICSE 2016 (%)',
+        data: pct2016.map(v => +v.toFixed(1)),
+        backgroundColor: red,
+        borderColor: redBorder,
+        borderWidth: 1
+      }
+    ]
+  },
+  options: {
+    responsive: true,
+    plugins: {
+      tooltip: {
+        callbacks: {
+          afterLabel: function(ctx) {
+            const cat = allCategories[ctx.dataIndex];
+            const n = ctx.datasetIndex === 0 ? (c2026.counts[cat]||0) : (c2016.counts[cat]||0);
+            const t = ctx.datasetIndex === 0 ? total2026 : total2016;
+            return `${n} of ${t} papers`;
+          }
+        }
+      }
+    },
+    scales: {
+      y: {
+        beginAtZero: true,
+        title: { display: true, text: '% of Papers' }
+      }
+    }
+  }
+});
+
+// ========================================
+// CHART 2: Radar Chart
+// ========================================
+
+new Chart(document.getElementById('radarChart'), {
+  type: 'radar',
+  data: {
+    labels: categoryShortNames,
+    datasets: [
+      {
+        label: 'ICSE 2026',
+        data: pct2026.map(v => +v.toFixed(1)),
+        backgroundColor: blueLight,
+        borderColor: blueBorder,
+        borderWidth: 2,
+        pointBackgroundColor: blueBorder
+      },
+      {
+        label: 'ICSE 2016',
+        data: pct2016.map(v => +v.toFixed(1)),
+        backgroundColor: redLight,
+        borderColor: redBorder,
+        borderWidth: 2,
+        pointBackgroundColor: redBorder
+      }
+    ]
+  },
+  options: {
+    responsive: true,
+    scales: {
+      r: {
+        beginAtZero: true,
+        ticks: { stepSize: 5 }
+      }
+    }
+  }
+});
+
+// ========================================
+// CHART 3: Divergence Chart
+// ========================================
+
+const divergence = allCategories.map((_, i) => +(pct2026[i] - pct2016[i]).toFixed(1));
+const divColors = divergence.map(d => d >= 0 ? 'rgba(56, 161, 105, 0.85)' : 'rgba(229, 62, 62, 0.85)');
+const divBorders = divergence.map(d => d >= 0 ? 'rgba(56, 161, 105, 1)' : 'rgba(229, 62, 62, 1)');
+
+new Chart(document.getElementById('divergenceChart'), {
+  type: 'bar',
+  data: {
+    labels: categoryShortNames,
+    datasets: [{
+      label: 'Change (pp)',
+      data: divergence,
+      backgroundColor: divColors,
+      borderColor: divBorders,
+      borderWidth: 1
+    }]
+  },
+  options: {
+    indexAxis: 'y',
+    responsive: true,
+    plugins: {
+      legend: { display: false },
+      tooltip: {
+        callbacks: {
+          label: function(ctx) {
+            const v = ctx.parsed.x;
+            return `${v > 0 ? '+' : ''}${v} percentage points`;
+          }
+        }
+      }
+    },
+    scales: {
+      x: {
+        title: { display: true, text: 'Percentage Point Change' }
+      }
+    }
+  }
+});
+
+// ========================================
+// CHART 4: AI Subcategory Chart
+// ========================================
+
+const aiSubs2026 = Object.keys(data2026["AI & Machine Learning"]);
+const aiVals2026 = aiSubs2026.map(s => data2026["AI & Machine Learning"][s].length);
+
+const aiSubs2016Names = ["Traditional ML/NLP for SE"];
+const aiVals2016 = [7];
+
+// Combined chart showing both years
+const allAISubs = [...new Set([...aiSubs2026, ...aiSubs2016Names])];
+const aiData2026 = allAISubs.map(s => (data2026["AI & Machine Learning"]?.[s]?.length || 0));
+const aiData2016 = allAISubs.map(s => (data2016["AI & Machine Learning"]?.[s]?.length || 0));
+
+new Chart(document.getElementById('aiSubcategoryChart'), {
+  type: 'bar',
+  data: {
+    labels: allAISubs.map(s => s.length > 30 ? s.substring(0, 28) + '...' : s),
+    datasets: [
+      {
+        label: 'ICSE 2026',
+        data: aiData2026,
+        backgroundColor: blue,
+        borderColor: blueBorder,
+        borderWidth: 1
+      },
+      {
+        label: 'ICSE 2016',
+        data: aiData2016,
+        backgroundColor: red,
+        borderColor: redBorder,
+        borderWidth: 1
+      }
+    ]
+  },
+  options: {
+    responsive: true,
+    plugins: {
+      tooltip: {
+        callbacks: {
+          afterLabel: function(ctx) {
+            return allAISubs[ctx.dataIndex];
+          }
+        }
+      }
+    },
+    scales: {
+      y: {
+        beginAtZero: true,
+        title: { display: true, text: 'Number of Papers' }
+      },
+      x: {
+        ticks: { maxRotation: 45, minRotation: 20 }
+      }
+    }
+  }
+});
+
+// ========================================
+// CHART 5: Trajectory / Timeline Chart
+// ========================================
+
+const trajectoryData = allCategories.map((cat, i) => ({
+  label: categoryShortNames[i],
+  x2016: pct2016[i],
+  x2026: pct2026[i]
+}));
+
+new Chart(document.getElementById('trajectoryChart'), {
+  type: 'bar',
+  data: {
+    labels: categoryShortNames,
+    datasets: [
+      {
+        label: 'ICSE 2016 (%)',
+        data: pct2016.map(v => +v.toFixed(1)),
+        backgroundColor: 'rgba(229, 62, 62, 0.3)',
+        borderColor: redBorder,
+        borderWidth: 2
+      },
+      {
+        label: 'ICSE 2026 (%)',
+        data: pct2026.map(v => +v.toFixed(1)),
+        backgroundColor: 'rgba(43, 108, 176, 0.3)',
+        borderColor: blueBorder,
+        borderWidth: 2
+      }
+    ]
+  },
+  options: {
+    responsive: true,
+    plugins: {
+      tooltip: {
+        callbacks: {
+          afterBody: function(items) {
+            if (items.length > 0) {
+              const idx = items[0].dataIndex;
+              const diff = (pct2026[idx] - pct2016[idx]).toFixed(1);
+              return `Change: ${diff > 0 ? '+' : ''}${diff} pp`;
+            }
+          }
+        }
+      }
+    },
+    scales: {
+      y: {
+        beginAtZero: true,
+        title: { display: true, text: '% of Papers' }
+      }
+    }
+  }
+});
+
+// ========================================
+// DONUT CHARTS: Subcategory breakdowns
+// ========================================
+
+function makeDonut(canvasId, catData) {
+  const labels = Object.keys(catData);
+  const values = labels.map(l => catData[l].length);
+  new Chart(document.getElementById(canvasId), {
+    type: 'doughnut',
+    data: {
+      labels: labels,
+      datasets: [{
+        data: values,
+        backgroundColor: donutColors.slice(0, labels.length),
+        borderWidth: 2,
+        borderColor: '#fff'
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        tooltip: {
+          callbacks: {
+            label: function(ctx) {
+              const total = ctx.dataset.data.reduce((a, b) => a + b, 0);
+              const pct = (ctx.parsed / total * 100).toFixed(1);
+              return `${ctx.label}: ${ctx.parsed} papers (${pct}%)`;
+            }
+          }
+        },
+        legend: {
+          position: 'bottom',
+          labels: { boxWidth: 12, padding: 10, font: { size: 11 } }
+        }
+      }
+    }
+  });
+}
+
+makeDonut('donutAI', data2026["AI & Machine Learning"]);
+makeDonut('donutTesting', data2026["Software Testing"]);
+makeDonut('donutSecurity', data2026["Security & Vulnerability"]);
+makeDonut('donutPA', data2026["Program Analysis & Verification"]);
+makeDonut('donutMaint', data2026["Software Maintenance & Evolution"]);
+makeDonut('donutSEProcess', data2026["SE Process & People"]);
+makeDonut('donutReq', data2026["Requirements & Architecture"]);
+makeDonut('donutSpecialized', data2026["Specialized Domains"]);
+
+// ========================================
+// COLLAPSIBLE PAPER LISTS
+// ========================================
+
+const container = document.getElementById('paperListContainer');
+
+function buildPaperLists() {
+  allCategories.forEach(cat => {
+    const catDiv = document.createElement('div');
+    catDiv.className = 'category-section';
+
+    const n26 = c2026.counts[cat] || 0;
+    const n16 = c2016.counts[cat] || 0;
+
+    const catHeader = document.createElement('div');
+    catHeader.className = 'collapsible';
+    catHeader.innerHTML = `<span><strong>${cat}</strong> <span class="badge badge-2026">${n26} in 2026</span> <span class="badge badge-2016">${n16} in 2016</span></span><span class="arrow">\u25B6</span>`;
+
+    const catContent = document.createElement('div');
+    catContent.className = 'collapsible-content';
+
+    catHeader.addEventListener('click', () => {
+      catHeader.classList.toggle('open');
+      catContent.classList.toggle('show');
+    });
+
+    // Get all subcategories from both years
+    const allSubs = new Set([
+      ...Object.keys(data2026[cat] || {}),
+      ...Object.keys(data2016[cat] || {})
+    ]);
+
+    allSubs.forEach(sub => {
+      const papers26 = data2026[cat]?.[sub] || [];
+      const papers16 = data2016[cat]?.[sub] || [];
+
+      const subHeader = document.createElement('div');
+      subHeader.className = 'collapsible';
+      subHeader.style.marginLeft = '16px';
+      subHeader.innerHTML = `<span>${sub} <span class="badge badge-2026">${papers26.length}</span> <span class="badge badge-2016">${papers16.length}</span></span><span class="arrow">\u25B6</span>`;
+
+      const subContent = document.createElement('div');
+      subContent.className = 'collapsible-content';
+      subContent.style.marginLeft = '16px';
+
+      subHeader.addEventListener('click', (e) => {
+        e.stopPropagation();
+        subHeader.classList.toggle('open');
+        subContent.classList.toggle('show');
+      });
+
+      let html = '';
+      if (papers26.length > 0) {
+        html += '<p style="font-weight:600;color:#2b6cb0;margin:8px 0 4px;font-size:0.85rem;">ICSE 2026:</p><ul class="paper-list">';
+        papers26.forEach(p => { html += `<li>${p}</li>`; });
+        html += '</ul>';
+      }
+      if (papers16.length > 0) {
+        html += '<p style="font-weight:600;color:#e53e3e;margin:8px 0 4px;font-size:0.85rem;">ICSE 2016:</p><ul class="paper-list">';
+        papers16.forEach(p => { html += `<li>${p}</li>`; });
+        html += '</ul>';
+      }
+      if (papers26.length === 0 && papers16.length === 0) {
+        html = '<p style="color:#999;font-size:0.85rem;">No papers in this subcategory.</p>';
+      }
+
+      subContent.innerHTML = html;
+      catContent.appendChild(subHeader);
+      catContent.appendChild(subContent);
+    });
+
+    catDiv.appendChild(catHeader);
+    catDiv.appendChild(catContent);
+    container.appendChild(catDiv);
+  });
+}
+
+buildPaperLists();
+
+// ========================================
+// ACTIVE NAV HIGHLIGHTING
+// ========================================
+
+const navLinks = document.querySelectorAll('nav.sticky-nav a');
+const sections = document.querySelectorAll('section[id]');
+
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(section => {
+    const top = section.offsetTop - 80;
+    if (window.scrollY >= top) {
+      current = section.getAttribute('id');
+    }
+  });
+  navLinks.forEach(link => {
+    link.classList.remove('active');
+    if (link.getAttribute('href') === '#' + current) {
+      link.classList.add('active');
+    }
+  });
+});
+
+// Log verification counts to console
+console.log('=== Paper Count Verification ===');
+console.log('ICSE 2026 total:', total2026);
+console.log('ICSE 2016 total:', total2016);
+console.log('--- 2026 by category ---');
+allCategories.forEach(c => {
+  console.log(`  ${c}: ${c2026.counts[c] || 0}`);
+  const subs = c2026.subCounts[c] || {};
+  for (const [s, n] of Object.entries(subs)) {
+    console.log(`    ${s}: ${n}`);
+  }
+});
+console.log('--- 2016 by category ---');
+allCategories.forEach(c => {
+  console.log(`  ${c}: ${c2016.counts[c] || 0}`);
+  const subs = c2016.subCounts[c] || {};
+  for (const [s, n] of Object.entries(subs)) {
+    console.log(`    ${s}: ${n}`);
+  }
+});
+</script>
+
+</body>
+</html>
