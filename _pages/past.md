@@ -3,7 +3,7 @@ layout: profiles
 permalink: /past/
 title: graduates
 description: previous ICET-lab members and graduates
-nav: true
+nav: false
 nav_order: 6
 
 profiles:

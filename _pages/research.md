@@ -3,7 +3,7 @@ layout: page
 title: research
 permalink: /research/
 description: important ICET-lab research projects, present and past
-nav: true
+nav: false
 nav_order: 3
 display_categories: [performance, bots, cloud engineering]
 horizontal: true

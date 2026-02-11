@@ -3,7 +3,7 @@ layout: page
 permalink: /collaborators/
 title: collaborators
 description: research collaborators of the ICET-lab (2016-present)
-nav: true
+nav: false
 nav_order: 4.5
 map: true
 ---

@@ -3,7 +3,7 @@ layout: profiles
 permalink: /people/
 title: people
 description: current ICET-lab members
-nav: true
+nav: false
 nav_order: 2
 
 profiles:
