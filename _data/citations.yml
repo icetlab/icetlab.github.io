@@ -1,8 +1,8 @@
 metadata:
-  last_updated: '2026-01-26'
+  last_updated: '2026-02-18'
 papers:
   wZ9f8CAAAAAJ:-BKJ5vZJwzMC:
-    citations: 15
+    citations: 17
     title: Using microbenchmark suites to detect application performance changes
     year: '2022'
   wZ9f8CAAAAAJ:-LHtoeeytlUC:
@@ -10,7 +10,7 @@ papers:
     title: 'Let''s trace it: Fine-grained serverless benchmarking using synchronous and asynchronous orchestrated applications'
     year: '2022'
   wZ9f8CAAAAAJ:-fu4zM_6qcIC:
-    citations: 75
+    citations: 73
     title: 'Continuous experimentation: challenges, implementation techniques, and current research'
     year: '2018'
   wZ9f8CAAAAAJ:-qpA3cGbmHsC:
@@ -26,7 +26,7 @@ papers:
     title: 'Ws-aggregation: distributed aggregation of web services data'
     year: '2011'
   wZ9f8CAAAAAJ:0Kh4an1R61UC:
-    citations: 16
+    citations: 17
     title: Using application benchmark call graphs to quantify and improve the practical relevance of microbenchmark suites
     year: '2021'
   wZ9f8CAAAAAJ:0paDrhnEFY0C:
@@ -34,11 +34,11 @@ papers:
     title: The roles, responsibilities, and skills of engineers in the era of microservices-based architectures
     year: '2024'
   wZ9f8CAAAAAJ:1Aeql8wG3wEC:
-    citations: 388
+    citations: 392
     title: Extraction of microservices from monolithic software architectures
     year: '2017'
   wZ9f8CAAAAAJ:1_W9tMSvGuwC:
-    citations: 200
+    citations: 197
     title: Comparing and combining predictive business process monitoring techniques
     year: '2014'
   wZ9f8CAAAAAJ:2_BaaiyHPJIC:
@@ -50,7 +50,7 @@ papers:
     title: 'CAM05-2: A Distributed Policy Based Solution in a Fault Management Scenario'
     year: '2006'
   wZ9f8CAAAAAJ:37Fl7vPTsUIC:
-    citations: 305
+    citations: 296
     title: "Patterns in the chaos\u2014a study of performance variation and predictability in public iaas clouds"
     year: '2016'
   wZ9f8CAAAAAJ:3_f9JqYsqVQC:
@@ -58,23 +58,19 @@ papers:
     title: 'Cloud workbench: Benchmarking iaas providers based on infrastructure-as-code'
     year: '2015'
   wZ9f8CAAAAAJ:3fE2CSJIrl8C:
-    citations: 162
+    citations: 151
     title: Cost-based optimization of service compositions
     year: '2013'
-  wZ9f8CAAAAAJ:3pYxbvHKFu8C:
-    citations: 0
-    title: Demonstration Chairs
-    year: '2018'
   wZ9f8CAAAAAJ:43B52WW2E64C:
-    citations: 10
-    title: 'Triggerbench: A performance benchmark for serverless function triggers'
+    citations: 11
+    title: 'TriggerBench: A Performance Benchmark for Serverless Function Triggers.'
     year: '2022'
   wZ9f8CAAAAAJ:4JMBOYKVnBMC:
     citations: 40
     title: Deriving a unified fault taxonomy for event-based systems
     year: '2012'
   wZ9f8CAAAAAJ:4TOpqqG69KYC:
-    citations: 12
+    citations: 10
     title: Ensuring cost-optimal sla conformance for composite service providers
     year: '2009'
   wZ9f8CAAAAAJ:4tNoA7Af41QC:
@@ -82,43 +78,39 @@ papers:
     title: An approach and case study of cloud instance type selection for multi-tier web applications
     year: '2017'
   wZ9f8CAAAAAJ:4uoR24qA-WYC:
-    citations: 19
+    citations: 20
     title: An exploratory study of the impact of parameterization on JMH measurement results in open-source projects
     year: '2021'
   wZ9f8CAAAAAJ:5bfplxN71z4C:
-    citations: 38
+    citations: 36
     title: Bursting with Possibilities--An Empirical Study of Credit-Based Bursting Cloud Instance Types
     year: '2015'
   wZ9f8CAAAAAJ:5nxA0vEk-isC:
-    citations: 16
+    citations: 17
     title: Publish/subscribe in the VRESCo SOA runtime
     year: '2008'
   wZ9f8CAAAAAJ:5p9vMBpPSXYC:
     citations: 15
     title: A unified active learning framework for annotating graph data with application to software source code performance prediction
     year: '2023'
-  wZ9f8CAAAAAJ:654Jc7Ppz2kC:
-    citations: 0
-    title: Engineering Java Applications for the Infrastructure-as-a-Service Cloud
-    year: '2013'
   wZ9f8CAAAAAJ:6Zm5LS9gQ5UC:
-    citations: 14
+    citations: 13
     title: Identifying web performance degradations through synthetic and real-user monitoring
     year: '2015'
   wZ9f8CAAAAAJ:6pF0wJmtdfAC:
-    citations: 44
+    citations: 43
     title: Connecting fog and cloud computing
     year: '2017'
   wZ9f8CAAAAAJ:71d7Y1FijdoC:
-    citations: 29
+    citations: 31
     title: 'Facing the giant: A grounded theory study of decision-making in microservices migrations'
     year: '2021'
   wZ9f8CAAAAAJ:7XUxBq3GufIC:
-    citations: 31
+    citations: 32
     title: Toward a definition for serverless computing
     year: '2021'
   wZ9f8CAAAAAJ:8k81kl-MbHgC:
-    citations: 90
+    citations: 92
     title: Identifying influential factors of business process performance using dependency analysis
     year: '2011'
   wZ9f8CAAAAAJ:8rLWgkbgOXQC:
@@ -134,7 +126,7 @@ papers:
     title: A step-by-step debugging technique to facilitate mashup development and maintenance
     year: '2010'
   wZ9f8CAAAAAJ:9tXw7Op4-u0C:
-    citations: 13
+    citations: 12
     title: SPEEDL-a declarative event-based language to define the scaling behavior of cloud applications
     year: '2015'
   wZ9f8CAAAAAJ:9yKSN-GCB0IC:
@@ -150,15 +142,15 @@ papers:
     title: Automated generation and evaluation of jmh microbenchmark suites from unit tests
     year: '2022'
   wZ9f8CAAAAAJ:BFa5h04uPMwC:
-    citations: 66
+    citations: 65
     title: Cloud work bench--infrastructure-as-code based cloud benchmarking
     year: '2014'
   wZ9f8CAAAAAJ:BqipwSGYUEgC:
-    citations: 8
+    citations: 7
     title: Decisions, Models, and Monitoring--A Lifecycle Model for the Evolution of Service-Based Systems
     year: '2013'
   wZ9f8CAAAAAJ:C5mqfHIFIucC:
-    citations: 13
+    citations: 14
     title: An empirical investigation on the competences and roles of practitioners in Microservices-based Architectures
     year: '2024'
   wZ9f8CAAAAAJ:CC3C2HR4nz8C:
@@ -167,14 +159,14 @@ papers:
     year: '2020'
   wZ9f8CAAAAAJ:CKf5m1HYVjMC:
     citations: 4
-    title: From Human-to-Human to Human-to-Bot Conversations in Software Engineering
+    title: From human-to-human to human-to-bot conversations in software engineering
     year: '2024'
   wZ9f8CAAAAAJ:CMPXdcK5v8EC:
     citations: 13
     title: End-to-end support for QoS-aware service selection, invocation and mediation in VRESCo
     year: '2009'
   wZ9f8CAAAAAJ:DPO9WFcz7UcC:
-    citations: 102
+    citations: 101
     title: "We\u2019re doing it live: A multi-method empirical study on continuous experimentation"
     year: '2018'
   wZ9f8CAAAAAJ:Dmoar05iI2YC:
@@ -186,11 +178,11 @@ papers:
     title: WS-Aggregation
     year: '2011'
   wZ9f8CAAAAAJ:DwWRdx-KAo4C:
-    citations: 8
-    title: 'WPress: Benchmarking Infrastructure-as-a-Service cloud computing systems for on-line transaction processing applications'
+    citations: 6
+    title: 'WPress: Benchmarking infrastructure-as-a-service cloud computing systems for on-line transaction processing applications'
     year: '2014'
   wZ9f8CAAAAAJ:EsrhoZGmrkoC:
-    citations: 462
+    citations: 464
     title: Optimized IoT service placement in the fog
     year: '2017'
   wZ9f8CAAAAAJ:F9HO9s0W2bwC:
@@ -198,11 +190,15 @@ papers:
     title: SOCA 2015
     year: Unknown Year
   wZ9f8CAAAAAJ:FQ36aI_S1AEC:
-    citations: 30
+    citations: 32
     title: 'Runtime metric meets developer: building better cloud applications using feedback'
     year: '2015'
+  wZ9f8CAAAAAJ:G7txJ4jiatkC:
+    citations: 0
+    title: Software Runtime Analytics for Developers
+    year: '2018'
   wZ9f8CAAAAAJ:GnPB-g6toBAC:
-    citations: 14
+    citations: 13
     title: Fifty shades of grey in SOA testing
     year: '2013'
   wZ9f8CAAAAAJ:HoDPlbN_d1QC:
@@ -210,19 +206,15 @@ papers:
     title: Using Microbenchmark Suites to Detect Application Performance Changes-Replication Package
     year: '2022'
   wZ9f8CAAAAAJ:I-2NeQpV75MC:
-    citations: 63
+    citations: 61
     title: 'CloudWave: Where adaptive cloud management meets DevOps'
     year: '2014'
-  wZ9f8CAAAAAJ:ITz7TVZQ0sgC:
-    citations: 0
-    title: WS-Aggregation Debugger
-    year: '2010'
   wZ9f8CAAAAAJ:IWHjjKOFINEC:
     citations: 4
     title: Service Research Challenges and Solutions for the Future Internet
     year: '2010'
   wZ9f8CAAAAAJ:IjCSPb-OGe4C:
-    citations: 188
+    citations: 181
     title: Monitoring and analyzing influential factors of business process performance
     year: '2009'
   wZ9f8CAAAAAJ:J-ba04ztB30C:
@@ -238,7 +230,7 @@ papers:
     title: Current and future bots in software development
     year: '2019'
   wZ9f8CAAAAAJ:JV2RwH3_ST0C:
-    citations: 95
+    citations: 80
     title: Application-level performance monitoring of cloud services based on the complex event processing paradigm
     year: '2012'
   wZ9f8CAAAAAJ:JavbeY_VQWIC:
@@ -250,45 +242,41 @@ papers:
     title: CHASE 2024
     year: Unknown Year
   wZ9f8CAAAAAJ:JqN3CTdJtl0C:
-    citations: 90
+    citations: 89
     title: An evaluation of open-source software microbenchmark suites for continuous performance assessment
     year: '2018'
   wZ9f8CAAAAAJ:KlAtU1dfN6UC:
-    citations: 19
+    citations: 18
     title: Test coverage of data-centric dynamic compositions in service-based systems
     year: '2011'
   wZ9f8CAAAAAJ:KqW5X_olkfQC:
-    citations: 41
+    citations: 39
     title: An empirical study on principles and practices of continuous delivery and deployment
     year: '2016'
   wZ9f8CAAAAAJ:Kv9jytqXTosC:
-    citations: 85
+    citations: 88
     title: "An empirical study of bots in software development: Characteristics and challenges from a practitioner\u2019s perspective"
     year: '2020'
   wZ9f8CAAAAAJ:LkGwnXOMwfcC:
-    citations: 85
+    citations: 82
     title: 'VieSLAF Framework: Enabling Adaptive and Versatile SLA-Management'
     year: '2009'
   wZ9f8CAAAAAJ:Lo8V22OuN40C:
-    citations: 101
+    citations: 99
     title: 'A tale of CI build failures: An open source and a financial organization perspective'
     year: '2017'
   wZ9f8CAAAAAJ:M3NEmzRMIkIC:
-    citations: 140
+    citations: 134
     title: 'Winds of change: From vendor lock-in to the meta cloud'
     year: '2013'
   wZ9f8CAAAAAJ:M3ejUd6NZC8C:
-    citations: 99
+    citations: 94
     title: 'Esc: Towards an elastic stream computing platform for the cloud'
     year: '2011'
   wZ9f8CAAAAAJ:MXK_kJrjxJIC:
-    citations: 22
+    citations: 21
     title: Selecting web services based on past user experiences
     year: '2009'
-  wZ9f8CAAAAAJ:MnogvFdIBdwC:
-    citations: 0
-    title: Building Elastic Java Applications based on CloudScale and the Infrastructure-as-a-Service Paradigm
-    year: '2013'
   wZ9f8CAAAAAJ:Mx5hWS9ctUkC:
     citations: 0
     title: Main Track
@@ -302,23 +290,23 @@ papers:
     title: 'The dark side of SOA testing: Towards testing contemporary SOAs based on criticality metrics'
     year: '2013'
   wZ9f8CAAAAAJ:O3NaXMp0MMsC:
-    citations: 17
+    citations: 15
     title: A framework and middleware for application-level cloud bursting on top of infrastructure-as-a-service clouds
     year: '2013'
   wZ9f8CAAAAAJ:Oj-SLI0tZTcC:
     citations: 0
-    title: CloudWave-Leveraging DevOps for Cloud Management and Application Development
+    title: "CloudWave\u2013Leveraging DevOps for Cloud Management and Application Development"
     year: '2015'
   wZ9f8CAAAAAJ:PazO6pb-sMwC:
     citations: 0
     title: LLM Company Policies and Policy Implications in Software Organizations
     year: '2025'
   wZ9f8CAAAAAJ:PklR0melJeUC:
-    citations: 9
+    citations: 8
     title: Performance testing in the cloud. How bad is it really?
     year: '2018'
   wZ9f8CAAAAAJ:QIV2ME_5wuYC:
-    citations: 7
+    citations: 5
     title: Stepwise and asynchronous runtime optimization of web service compositions
     year: '2011'
   wZ9f8CAAAAAJ:QYmifXMdJWgC:
@@ -330,11 +318,11 @@ papers:
     title: 2015 IEEE 23rd International Conference on Program Comprehension (ICPC 2015)
     year: Unknown Year
   wZ9f8CAAAAAJ:QtA78RmWg5MC:
-    citations: 28
-    title: 'JCloudScale: closing the gap between IaaS and PaaS'
+    citations: 26
+    title: 'Jcloudscale: closing the gap between iaas and paas'
     year: '2015'
   wZ9f8CAAAAAJ:RHpTSmoSYBkC:
-    citations: 42
+    citations: 35
     title: 'Cloudscale: a novel middleware for building transparently scaling cloud applications'
     year: '2012'
   wZ9f8CAAAAAJ:RJujIP1NYNUC:
@@ -342,7 +330,7 @@ papers:
     title: Performance benchmarking of infrastructure-as-a-service (IaaS) clouds with Cloud WorkBench
     year: '2019'
   wZ9f8CAAAAAJ:RVqaWcrwK10C:
-    citations: 56
+    citations: 53
     title: Towards quality gates in continuous delivery and deployment
     year: '2016'
   wZ9f8CAAAAAJ:RdUpO4xyVKMC:
@@ -363,7 +351,7 @@ papers:
     year: '2016'
   wZ9f8CAAAAAJ:SEKBqlyTJecC:
     citations: 1
-    title: The Impact of Compiler Warnings on Code Quality in C++ Projects
+    title: The impact of compiler warnings on code quality in C++ projects
     year: '2024'
   wZ9f8CAAAAAJ:SgM-ki2adj0C:
     citations: 0
@@ -374,35 +362,39 @@ papers:
     title: Towards identifying root causes of faults in service-based applications
     year: '2012'
   wZ9f8CAAAAAJ:TQgYirikUcIC:
-    citations: 10
+    citations: 9
     title: Non-intrusive policy optimization for dependable and adaptive service-oriented systems
     year: '2012'
+  wZ9f8CAAAAAJ:TY5xIG7f_2sC:
+    citations: 0
+    title: 5 Panel discussions 5.1 Toward a Definition for Serverless Computing
+    year: Unknown Year
   wZ9f8CAAAAAJ:T_0gP6tLVL0C:
-    citations: 36
+    citations: 35
     title: Emerging trends, challenges, and experiences in DevOps and microservice APIs
     year: '2019'
   wZ9f8CAAAAAJ:Tyk-4Ss8FVUC:
-    citations: 104
+    citations: 100
     title: End-to-end versioning support for web services
     year: '2008'
   wZ9f8CAAAAAJ:U3qCfcK-7lkC:
     citations: 1
-    title: Mining lifecycle event logs for enhancing service-based applications
+    title: Mining Lifecycle Event Logs for Enhancing Service-Based Applications
     year: '2013'
   wZ9f8CAAAAAJ:ULOm3_A8WrAC:
     citations: 15
     title: "VRESCo\u2013Vienna Runtime Environment for Service-oriented Computing"
-    year: '2010'
+    year: '2011'
   wZ9f8CAAAAAJ:UY3hNwcQ290C:
-    citations: 17
+    citations: 19
     title: The impact of prompt programming on function-level code generation
     year: '2025'
   wZ9f8CAAAAAJ:UeHWp8X0CEIC:
-    citations: 65
+    citations: 59
     title: Advanced event processing and notifications in service runtime environments
     year: '2008'
   wZ9f8CAAAAAJ:UebtZRa9Y70C:
-    citations: 94
+    citations: 90
     title: Metaheuristic optimization of large-scale qos-aware service compositions
     year: '2010'
   wZ9f8CAAAAAJ:V63Ir2N1OTwC:
@@ -414,11 +406,11 @@ papers:
     title: VRESCo-Vienna Runtime Environment for Service-Oriented Computing
     year: '2009'
   wZ9f8CAAAAAJ:W7OEmFMy1HYC:
-    citations: 172
+    citations: 169
     title: Runtime prediction of service level agreement violations for composite services
     year: '2009'
   wZ9f8CAAAAAJ:WF5omc3nYNoC:
-    citations: 217
+    citations: 206
     title: Monitoring, prediction and prevention of sla violations in composite services
     year: '2010'
   wZ9f8CAAAAAJ:WGv8Og3F3KgC:
@@ -438,7 +430,7 @@ papers:
     title: 'Tep-gnn: Accurate execution time prediction of functional tests using graph neural networks'
     year: '2022'
   wZ9f8CAAAAAJ:Y0pCki6q_DkC:
-    citations: 168
+    citations: 160
     title: Comprehensive qos monitoring of web services and event-based sla violation detection
     year: '2009'
   wZ9f8CAAAAAJ:YFjsv_pBGBYC:
@@ -450,15 +442,15 @@ papers:
     title: Service composition
     year: '2010'
   wZ9f8CAAAAAJ:YsMSGLbcyi4C:
-    citations: 139
-    title: End-to-end support for QoS-aware service selection, binding, and mediation in VRESCo
+    citations: 133
+    title: End-to-end support for qos-aware service selection, binding, and mediation in vresco
     year: '2010'
   wZ9f8CAAAAAJ:ZOYfmFL0FrgC:
     citations: 1
     title: Mining lifecycle event logs for enhancing service-based applications
     year: '2011'
   wZ9f8CAAAAAJ:ZYsTHYU9jrMC:
-    citations: 88
+    citations: 90
     title: Modelling and managing deployment costs of microservice-based cloud applications
     year: '2016'
   wZ9f8CAAAAAJ:Zbx7W2Xs4QsC:
@@ -466,11 +458,11 @@ papers:
     title: Interactive production performance feedback in the IDE
     year: '2019'
   wZ9f8CAAAAAJ:Zph67rFs4hoC:
-    citations: 6
+    citations: 7
     title: Distributed continuous queries over web service event streams
     year: '2011'
   wZ9f8CAAAAAJ:ZqLB7dQ1iF4C:
-    citations: 21
+    citations: 19
     title: Context-based analytics-establishing explicit links between runtime traces and source code
     year: '2017'
   wZ9f8CAAAAAJ:_AkkBXT-jcoC:
@@ -478,7 +470,7 @@ papers:
     title: State of the art and research challenges in the area of autonomous control for a reliable internet of services
     year: '2018'
   wZ9f8CAAAAAJ:_FxGoFyzp5QC:
-    citations: 41
+    citations: 40
     title: Service provenance in QoS-aware web service runtimes
     year: '2009'
   wZ9f8CAAAAAJ:_Qo2XoVZTnwC:
@@ -494,8 +486,8 @@ papers:
     title: A Mediator-Based Approach to Resolving Interface Heterogeneity of Web Services
     year: '2008'
   wZ9f8CAAAAAJ:_n8fIOMweQoC:
-    citations: 198
-    title: A mixed-method empirical study of Function-as-a-Service software development in industrial practice
+    citations: 197
+    title: A mixed-method empirical study of function-as-a-service software development in industrial practice
     year: '2019'
   wZ9f8CAAAAAJ:aCwMkEyfDy8C:
     citations: 0
@@ -506,35 +498,39 @@ papers:
     title: What's wrong with my benchmark results? Studying bad practices in JMH benchmarks
     year: '2019'
   wZ9f8CAAAAAJ:aU4yMueWZ3QC:
-    citations: 13
+    citations: 14
     title: Search-based scheduling of experiments in continuous deployment
     year: '2018'
   wZ9f8CAAAAAJ:anDooRL1HQEC:
-    citations: 8
+    citations: 7
     title: Speedl-a declarative event-based language for cloud scaling definition
     year: '2015'
   wZ9f8CAAAAAJ:aqlVkmm33-oC:
-    citations: 21
+    citations: 19
     title: Dynamic migration of processing elements for optimized query execution in event-based systems
     year: '2011'
   wZ9f8CAAAAAJ:bEWYMUwI8FkC:
-    citations: 89
+    citations: 85
     title: Cost-efficient and application SLA-aware client side request scheduling in an infrastructure-as-a-service cloud
     year: '2012'
   wZ9f8CAAAAAJ:bbjcffOLshcC:
-    citations: 209
+    citations: 207
     title: An empirical analysis of the docker container ecosystem on github
     year: '2017'
+  wZ9f8CAAAAAJ:beqBT5984LEC:
+    citations: 0
+    title: QoS and SLA Aware Service Runtime Environment
+    year: '2011'
   wZ9f8CAAAAAJ:bkKuixW_xMkC:
     citations: 4
     title: '(h| g) opper: Performance History Mining and Analysis'
     year: '2017'
   wZ9f8CAAAAAJ:blknAaTinKkC:
-    citations: 78
+    citations: 74
     title: Data-driven and automated prediction of service level agreement violations in service compositions
     year: '2013'
   wZ9f8CAAAAAJ:cOfwuRB03ygC:
-    citations: 48
+    citations: 49
     title: "Generic event\u2010based monitoring and adaptation methodology for heterogeneous distributed systems"
     year: '2014'
   wZ9f8CAAAAAJ:cww_0JKUTDwC:
@@ -542,7 +538,7 @@ papers:
     title: A note on software tools and techniques for monitoring and prediction of cloud services
     year: '2014'
   wZ9f8CAAAAAJ:cx97FdCJQX8C:
-    citations: 38
+    citations: 39
     title: 'PerformanceHat: augmenting source code with runtime performance traces in the IDE'
     year: '2018'
   wZ9f8CAAAAAJ:d1gkVwhDpl0C:
@@ -562,7 +558,7 @@ papers:
     title: Distributed continuous data aggregation over web service event streams
     year: '2011'
   wZ9f8CAAAAAJ:dhpJJ7xvgBgC:
-    citations: 6
+    citations: 5
     title: 'Advances in Service-Oriented and Cloud Computing: Workshops of ESOCC 2015, Taormina, Italy, September 15-17, 2015, Revised Selected Papers'
     year: '2016'
   wZ9f8CAAAAAJ:djft3U1LymYC:
@@ -570,7 +566,7 @@ papers:
     title: An Experimental Study of Real-Life LLM-Proposed Performance Improvements
     year: '2025'
   wZ9f8CAAAAAJ:e0LTWoPxLYMC:
-    citations: 168
+    citations: 170
     title: An empirical analysis of build failures in the continuous integration workflows of java-based open-source software
     year: '2017'
   wZ9f8CAAAAAJ:e5wmG9Sq2KIC:
@@ -586,15 +582,15 @@ papers:
     title: Cachematic-automatic invalidation in application-level caching systems
     year: '2019'
   wZ9f8CAAAAAJ:eJD0kABLposC:
-    citations: 10
+    citations: 12
     title: Machine learning systems are bloated and vulnerable
     year: '2024'
   wZ9f8CAAAAAJ:eLRq4zTgah0C:
-    citations: 29
+    citations: 30
     title: An empirical study of the systemic and technical migration towards microservices
     year: '2023'
   wZ9f8CAAAAAJ:eQOLeE2rZwMC:
-    citations: 128
+    citations: 121
     title: An end-to-end approach for QoS-aware service composition
     year: '2009'
   wZ9f8CAAAAAJ:fF_gHTpLxhAC:
@@ -606,15 +602,19 @@ papers:
     title: The perceived impact and sequence of activities when transitioning to microservices
     year: '2023'
   wZ9f8CAAAAAJ:g30IDTdgJMgC:
-    citations: 152
+    citations: 145
     title: 'The making of cloud applications: An empirical study on software development for the cloud'
     year: '2015'
+  wZ9f8CAAAAAJ:gI9wzKcniAoC:
+    citations: 0
+    title: The Migration Journey Towards
+    year: '2021'
   wZ9f8CAAAAAJ:gkldIfsazJcC:
-    citations: 85
+    citations: 82
     title: 'Bifrost: Supporting continuous deployment with automated enactment of multi-phase live testing strategies'
     year: '2016'
   wZ9f8CAAAAAJ:h1pkognVyKwC:
-    citations: 38
+    citations: 37
     title: 'Wpress: An application-driven performance benchmark for cloud-based virtual machines'
     year: '2014'
   wZ9f8CAAAAAJ:hFOr9nPyWt4C:
@@ -622,11 +622,11 @@ papers:
     title: 'CD-JRA-2.3. 3: Requirements for Service Infrastructures in Dynamic'
     year: '2009'
   wZ9f8CAAAAAJ:hMod-77fHWUC:
-    citations: 16
+    citations: 15
     title: Model-based adaptation of cloud computing applications
     year: '2013'
   wZ9f8CAAAAAJ:hqOjcs7Dif8C:
-    citations: 39
+    citations: 38
     title: Preventing SLA violations in service compositions using aspect-based fragment substitution
     year: '2010'
   wZ9f8CAAAAAJ:hrkNWuzUpWwC:
@@ -634,11 +634,11 @@ papers:
     title: The migration journey towards microservices
     year: '2021'
   wZ9f8CAAAAAJ:ibZ2AwG9z6wC:
-    citations: 12
+    citations: 13
     title: "Dependency management bots in open-source systems\u2014prevalence and adoption"
     year: '2022'
   wZ9f8CAAAAAJ:j3f4tGmQtD8C:
-    citations: 24
+    citations: 22
     title: 'Design by units: Abstractions for human and compute resources for elastic systems'
     year: '2012'
   wZ9f8CAAAAAJ:j6V8Syvup0UC:
@@ -646,7 +646,7 @@ papers:
     title: BotSE 2021
     year: Unknown Year
   wZ9f8CAAAAAJ:jMZTt8odoasC:
-    citations: 13
+    citations: 14
     title: 'Crossfit: Fine-grained benchmarking of serverless application performance across cloud providers'
     year: '2022'
   wZ9f8CAAAAAJ:jq04SsiGh3QC:
@@ -670,7 +670,7 @@ papers:
     title: Identifying incompatible service implementations using pooled decision trees
     year: '2013'
   wZ9f8CAAAAAJ:koF6b02d8EEC:
-    citations: 65
+    citations: 62
     title: 'All the services large and micro: Revisiting industrial practice in services computing'
     year: '2015'
   wZ9f8CAAAAAJ:lPDSu1ZU3VAC:
@@ -678,7 +678,7 @@ papers:
     title: Transpiling applications into optimized serverless orchestrations
     year: '2019'
   wZ9f8CAAAAAJ:lRPiJ3GhvscC:
-    citations: 15
+    citations: 16
     title: 'Sqa-profiles: Rule-based activity profiles for continuous integration environments'
     year: '2015'
   wZ9f8CAAAAAJ:lSLsV1MU4ZUC:
@@ -690,11 +690,11 @@ papers:
     title: 'The Cure is in the Cause: A Filesystem for Container Debloating'
     year: '2023'
   wZ9f8CAAAAAJ:mVmsd5A6BfQC:
-    citations: 5
+    citations: 6
     title: "SEPL\u2014a domain-specific language and execution environment for protocols of stateful Web services"
     year: '2011'
   wZ9f8CAAAAAJ:maZDTaKrznsC:
-    citations: 20
+    citations: 19
     title: "Testing of data\u2010centric and event\u2010based dynamic service compositions"
     year: '2013'
   wZ9f8CAAAAAJ:nj26e0utjpAC:
@@ -706,11 +706,11 @@ papers:
     title: 'Building Elastic Java Application Services Seamlessly in the Cloud: A Middleware Framework'
     year: '2016'
   wZ9f8CAAAAAJ:oFn-K-OQSCAC:
-    citations: 32
+    citations: 30
     title: Discovering loners and phantoms in commit and issue data
     year: '2015'
   wZ9f8CAAAAAJ:oH8HCDhqVGsC:
-    citations: 13
+    citations: 12
     title: Profiling-based task scheduling for factory-worker applications in infrastructure-as-a-service clouds
     year: '2014'
   wZ9f8CAAAAAJ:onKP9CxGSkIC:
@@ -730,7 +730,7 @@ papers:
     title: A framework for a cost-efficient cloud ecosystem
     year: '2015'
   wZ9f8CAAAAAJ:qSd0DAb9jMoC:
-    citations: 91
+    citations: 90
     title: An exploratory study of the state of practice of performance testing in java-based open source projects
     year: '2017'
   wZ9f8CAAAAAJ:qYOp8iumCsAC:
@@ -738,7 +738,7 @@ papers:
     title: "Studying the impact of ci on pull request delivery time in open source projects\u2014a conceptual replication"
     year: '2019'
   wZ9f8CAAAAAJ:qjMakFHDy7sC:
-    citations: 100
+    citations: 94
     title: 'Daios: Efficient dynamic web service invocation'
     year: '2009'
   wZ9f8CAAAAAJ:qxL8FJ1GzNcC:
@@ -758,7 +758,7 @@ papers:
     title: Topology-aware continuous experimentation in microservice-based applications
     year: '2020'
   wZ9f8CAAAAAJ:roLk4NBRz8UC:
-    citations: 18
+    citations: 17
     title: Towards flexible interface mediation for dynamic service invocations
     year: '2008'
   wZ9f8CAAAAAJ:sfsSB7lKuh0C:
@@ -770,7 +770,7 @@ papers:
     title: Bifrost
     year: '2016'
   wZ9f8CAAAAAJ:tSVUDDkujAIC:
-    citations: 36
+    citations: 40
     title: Cloud futurology
     year: '2019'
   wZ9f8CAAAAAJ:u-x6o8ySG0sC:
@@ -778,7 +778,7 @@ papers:
     title: Securing the Madeira network management system
     year: '2007'
   wZ9f8CAAAAAJ:u5HHmVD_uO8C:
-    citations: 14
+    citations: 15
     title: Fault management based on peer-to-peer paradigms; a case study report from the celtic project madeira
     year: '2007'
   wZ9f8CAAAAAJ:uQVPmWFBlwUC:
@@ -790,12 +790,12 @@ papers:
     title: Vergleich und Kombination von Techniken des Predictive Business Process Monitoring
     year: '2017'
   wZ9f8CAAAAAJ:ufrVoPGSRksC:
-    citations: 26
+    citations: 24
     title: Integrated metadata support for web service runtimes
     year: '2008'
   wZ9f8CAAAAAJ:v6PuF9mNY3oC:
     citations: 90
-    title: Software microbenchmarking in the cloud. How bad is it really?
+    title: Software microbenchmarking in the cloud. how bad is it really?
     year: '2019'
   wZ9f8CAAAAAJ:vkz5F8TaVKkC:
     citations: 4
@@ -810,15 +810,15 @@ papers:
     title: "2023 IEEE International Conference on Service-Oriented System Engineering (SOSE)| 979-8-3503-2239-2/23/$31.00\xA9 2023 IEEE| DOI: 10.1109/SOSE58276. 2023.00039"
     year: Unknown Year
   wZ9f8CAAAAAJ:w9ZB08sdvuUC:
-    citations: 93
+    citations: 100
     title: 'Beyond code generation: An observational study of chatgpt usage in software engineering practice'
     year: '2024'
   wZ9f8CAAAAAJ:wgKq3sYidysC:
     citations: 0
     title: Cloud Computing
-    year: '2010'
+    year: Unknown Year
   wZ9f8CAAAAAJ:wlzmIqt2EaEC:
-    citations: 279
+    citations: 275
     title: Resource provisioning for IoT services in the fog
     year: '2016'
   wZ9f8CAAAAAJ:xm1hsP5ya-EC:
@@ -826,7 +826,7 @@ papers:
     title: Topology-Aware Continuous Experimentation in Microservice-Based
     year: '2020'
   wZ9f8CAAAAAJ:yNlG6JgpFqoC:
-    citations: 38
+    citations: 39
     title: A systematic mapping study of source code representation for deep learning in software engineering
     year: '2022'
   wZ9f8CAAAAAJ:yaBp1wUtcLsC:
@@ -834,6 +834,6 @@ papers:
     title: Analysing the Behaviour of Tree-Based Neural Networks in Regression Tasks
     year: '2024'
   wZ9f8CAAAAAJ:zYLM7Y9cAGgC:
-    citations: 90
+    citations: 82
     title: Towards composition as a service-a quality of service driven approach
     year: '2009'
