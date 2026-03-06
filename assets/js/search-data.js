@@ -172,12 +172,12 @@ ninja.data = [{
           title: 'New project accepted by VR (Swedish Research Council)',
           description: "",
           section: "News",handler: () => {
-              window.location.href = "/news/20251030_vrproject/";
+              window.location.href = "/news/old/20251030_vrproject/";
             },},{id: "news-two-chalmers-prizes-won-by-francisco",
           title: 'Two Chalmers prizes won by Francisco!',
           description: "",
           section: "News",handler: () => {
-              window.location.href = "/news/20251104_franciscoawards/";
+              window.location.href = "/news/old/20251104_franciscoawards/";
             },},{id: "news-huaifeng-has-defended-his-phd-today-congratulations-dr-zhang",
           title: 'Huaifeng has defended his PhD today! Congratulations, Dr. Zhang!',
           description: "",
@@ -190,17 +190,20 @@ ninja.data = [{
           section: "News",},{id: "news-another-post-christmas-paper-accepted-at-the-journal-of-software-evolution-and-process-the-title-of-the-paper-is-empowering-software-engineers-to-design-more-secure-web-applications-guidelines-and-potential-of-using-llms-as-a-recommender-tool",
           title: 'Another post-Christmas paper accepted at the Journal of Software: Evolution and Process. The...',
           description: "",
-          section: "News",},{id: "news-we-still-have-an-open-postdoc-position-in-icet-lab",
-          title: 'We still have an open postdoc position in ICET-lab!',
-          description: "",
           section: "News",},{id: "news-philipp-will-join-the-programme-committee-pc-of-the-2026-symposium-on-cloud-computing-socc",
           title: 'Philipp will join the Programme Committee (PC) of the 2026 Symposium on Cloud...',
+          description: "",
+          section: "News",},{id: "news-we-still-have-an-open-postdoc-position-in-icet-lab",
+          title: 'We still have an open postdoc position in ICET-lab!',
           description: "",
           section: "News",},{id: "news-philipp-is-serving-as-assessor-for-federico-di-menna-s-phd-defense-at-the-università-degli-studi-dell-aquila-italy",
           title: 'Philipp is serving as assessor for Federico Di Menna’s PhD defense at the...',
           description: "",
           section: "News",},{id: "news-we-published-an-ai-generated-topic-analysis-comparing-icse-2016-and-2026-exploring-how-software-engineering-research-topics-at-icse-have-shifted-over-the-past-decade",
           title: 'We published an AI-generated topic analysis comparing ICSE 2016 and 2026, exploring how...',
+          description: "",
+          section: "News",},{id: "news-new-paper-accepted-at-promise-2026-co-located-with-fse-2026-the-paper-is-titled-developer-behavior-in-response-to-llm-generated-code-refactoring-suggestions",
+          title: 'New paper accepted at PROMISE 2026, co-located with FSE 2026. The paper is...',
           description: "",
           section: "News",},{id: "projects-chatbots-in-software-development",
           title: 'Chatbots in Software Development',
