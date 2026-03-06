@@ -168,23 +168,7 @@ ninja.data = [{
             window.open("https://philippleitner.medium.com/a-quick-recap-of-the-1st-vienna-seminar-on-the-relation-of-software-architecture-and-devops-e2a013ce1555?source=rss-a7d643a6ea6f------2", "_blank");
           
         },
-      },{id: "news-new-project-accepted-by-vr-swedish-research-council",
-          title: 'New project accepted by VR (Swedish Research Council)',
-          description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/old/20251030_vrproject/";
-            },},{id: "news-two-chalmers-prizes-won-by-francisco",
-          title: 'Two Chalmers prizes won by Francisco!',
-          description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/old/20251104_franciscoawards/";
-            },},{id: "news-huaifeng-has-defended-his-phd-today-congratulations-dr-zhang",
-          title: 'Huaifeng has defended his PhD today! Congratulations, Dr. Zhang!',
-          description: "",
-          section: "News",},{id: "news-ranim-will-present-her-research-to-the-plenary-in-the-2026-wasp-winter-conference-the-title-of-her-talk-will-be-chatbots-in-software-engineering",
-          title: 'Ranim will present her research to the plenary in the 2026 WASP Winter...',
-          description: "",
-          section: "News",},{id: "news-new-paper-accepted-at-future-generation-computer-systems-the-title-of-the-paper-is-let-s-trace-it-fine-grained-serverless-benchmarking-for-synchronous-and-asynchronous-applications-paper",
+      },{id: "news-new-paper-accepted-at-future-generation-computer-systems-the-title-of-the-paper-is-let-s-trace-it-fine-grained-serverless-benchmarking-for-synchronous-and-asynchronous-applications-paper",
           title: 'New paper accepted at Future Generation Computer Systems. The title of the paper...',
           description: "",
           section: "News",},{id: "news-another-post-christmas-paper-accepted-at-the-journal-of-software-evolution-and-process-the-title-of-the-paper-is-empowering-software-engineers-to-design-more-secure-web-applications-guidelines-and-potential-of-using-llms-as-a-recommender-tool",
@@ -193,14 +177,8 @@ ninja.data = [{
           section: "News",},{id: "news-philipp-will-join-the-programme-committee-pc-of-the-2026-symposium-on-cloud-computing-socc",
           title: 'Philipp will join the Programme Committee (PC) of the 2026 Symposium on Cloud...',
           description: "",
-          section: "News",},{id: "news-we-still-have-an-open-postdoc-position-in-icet-lab",
-          title: 'We still have an open postdoc position in ICET-lab!',
-          description: "",
           section: "News",},{id: "news-philipp-is-serving-as-assessor-for-federico-di-menna-s-phd-defense-at-the-università-degli-studi-dell-aquila-italy",
           title: 'Philipp is serving as assessor for Federico Di Menna’s PhD defense at the...',
-          description: "",
-          section: "News",},{id: "news-we-published-an-ai-generated-topic-analysis-comparing-icse-2016-and-2026-exploring-how-software-engineering-research-topics-at-icse-have-shifted-over-the-past-decade",
-          title: 'We published an AI-generated topic analysis comparing ICSE 2016 and 2026, exploring how...',
           description: "",
           section: "News",},{id: "news-new-paper-accepted-at-promise-2026-co-located-with-fse-2026-the-paper-is-titled-developer-behavior-in-response-to-llm-generated-code-refactoring-suggestions",
           title: 'New paper accepted at PROMISE 2026, co-located with FSE 2026. The paper is...',
