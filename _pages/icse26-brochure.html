@@ -240,7 +240,7 @@ permalink: /icse26-brochure/
       color: #fff;
     }
 
-    /* committee list */
+    /* committee list — used in main conference / CAIN sections */
     .committee-list {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -259,6 +259,56 @@ permalink: /icse26-brochure/
       font-size: 0.78rem;
       color: var(--muted);
       margin-top: 0.1rem;
+    }
+
+    /* pc-roles table — grouped by person, used in Workshops section */
+    .pc-roles-table {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+    .pc-roles-row {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 0.5rem 0.9rem;
+      font-size: 0.88rem;
+      flex-wrap: wrap;
+    }
+    .pc-roles-name {
+      min-width: 180px;
+      font-weight: 600;
+      color: var(--blue);
+    }
+    .pc-roles-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+    }
+    .pc-roles-tags a {
+      font-size: 0.78rem;
+      color: var(--accent);
+      text-decoration: none;
+      border: 1px solid var(--accent);
+      border-radius: 3px;
+      padding: 1px 8px;
+      white-space: nowrap;
+      transition: background 0.15s, color 0.15s;
+    }
+    .pc-roles-tags a:hover {
+      background: var(--accent);
+      color: #fff;
+    }
+    .pc-roles-tags a.role-org {
+      color: var(--green);
+      border-color: var(--green);
+    }
+    .pc-roles-tags a.role-org:hover {
+      background: var(--green);
+      color: #fff;
     }
 
     /* ── Footer ── */
@@ -389,7 +439,7 @@ permalink: /icse26-brochure/
       </div>
       <div class="committee-item">
         <strong>Miroslaw Staron</strong>
-        <span class="role-label">PC Member (Research Track) + Publicity Co-Chair (Organizing Committee)</span>
+        <span class="role-label">PC Member, Research Track; Publicity Co-Chair (Organizing Committee)</span>
       </div>
       <div class="committee-item">
         <strong>Francisco Gomes de Oliveira Neto</strong>
@@ -444,7 +494,7 @@ permalink: /icse26-brochure/
     <div class="card talk">
       <div class="card-title">The factors influencing well-being in software engineers: A mixed-method study</div>
       <div class="card-authors">
-        Cristina M. Montes, <strong>Birgit Penzenstadler</strong>, <strong>Robert Feldt</strong>
+        <strong>Cristina M. Montes</strong>, <strong>Birgit Penzenstadler</strong>, <strong>Robert Feldt</strong>
       </div>
       <div class="card-abstract">
         Journal-first presentation at CHASE 2026 of the TOSEM paper (2025) reporting a mixed-method investigation into the personal, social, and organisational factors that shape well-being among software engineers.
@@ -529,7 +579,7 @@ permalink: /icse26-brochure/
     <div class="card">
       <div class="card-title">Data Annotation Quality Problems in AI-Enabled Perception System Development</div>
       <div class="card-authors">
-        <strong>Hina Saeeda</strong>, Tommy Johansson, Mazen Mohamad, <strong>Eric Knauss</strong>
+        <strong>Hina Saeeda</strong>, Tommy Johansson, <strong>Mazen Mohamad</strong>, <strong>Eric Knauss</strong>
       </div>
       <div class="card-abstract">
         A multi-organisational case study examining data annotation errors in AI-enabled perception systems for automotive applications, involving six companies and four research institutes across Europe.
@@ -575,7 +625,7 @@ permalink: /icse26-brochure/
       </div>
     </div>
 
-    <div class="subsection-label">Organization</div>
+    <div class="subsection-label">Program &amp; Organizing Committee</div>
     <div class="committee-list">
       <div class="committee-item">
         <strong>Jennifer Horkoff</strong>
@@ -662,65 +712,79 @@ permalink: /icse26-brochure/
       </div>
     </div>
 
-    <!-- PC roles in other workshops -->
-    <div class="subsection-label" style="margin-top:1.5rem;">Program Committee Roles in Other Workshops</div>
+    <!-- AGENT 2026 -->
+    <div class="subsection-label" style="margin-top:1.5rem;">
+      AGENT 2026 &mdash; 1st International Workshop on Agentic Engineering
+      &nbsp;<a href="https://conf.researchr.org/home/icse-2026/agent-2026" target="_blank" style="font-size:0.8rem;color:var(--accent);">Website &rarr;</a>
+      &nbsp;<span style="font-size:0.78rem;color:var(--muted);">Tuesday, April 14</span>
+    </div>
 
-    <div class="committee-list">
-      <div class="committee-item">
-        <strong>Jan Bosch</strong>
-        <span class="role-label">
-          PC Member &mdash;
-          <a href="https://conf.researchr.org/home/icse-2026/iwsib-2026" target="_blank">IWSiB 2026</a>
-          (Mon Apr 13)
-        </span>
+    <div class="card keynote">
+      <div class="card-title">Title TBD (Keynote)</div>
+      <div class="card-authors">
+        <strong>Robert Feldt</strong>
       </div>
-      <div class="committee-item">
-        <strong>Jan Bosch</strong>
-        <span class="role-label">
-          PC Member &mdash;
-          <a href="https://conf.researchr.org/home/icse-2026/agent-2026" target="_blank">AGENT 2026</a>
-          (Tue Apr 14)
-        </span>
+      <div class="card-abstract">
+        Robert Feldt is an invited keynote speaker at AGENT 2026. The keynote title and abstract are not yet available. Each keynote speaker delivers a 20-minute talk followed by a joint Q&amp;A panel with all keynote speakers.
       </div>
-      <div class="committee-item">
-        <strong>Jan Bosch</strong>
-        <span class="role-label">
-          Steering Committee &amp; PC Member &mdash;
-          <a href="https://conf.researchr.org/home/icse-2026/sesos-2026" target="_blank">SESoS 2026</a>
-          (Sun Apr 12)
-        </span>
+    </div>
+
+    <!-- PC roles in other workshops -->
+    <div class="subsection-label" style="margin-top:1.5rem;">Program Committee &amp; Organizing Roles in Other Workshops</div>
+
+    <div class="pc-roles-table">
+      <div class="pc-roles-row">
+        <span class="pc-roles-name">Jan Bosch</span>
+        <div class="pc-roles-tags">
+          <a href="https://conf.researchr.org/home/icse-2026/sesos-2026" target="_blank" class="role-org">Steering Committee &mdash; SESoS</a>
+          <a href="https://conf.researchr.org/home/icse-2026/sesos-2026" target="_blank">PC &mdash; SESoS</a>
+          <a href="https://conf.researchr.org/home/icse-2026/iwsib-2026" target="_blank">PC &mdash; IWSiB</a>
+          <a href="https://conf.researchr.org/home/icse-2026/agent-2026" target="_blank">PC &mdash; AGENT</a>
+        </div>
       </div>
-      <div class="committee-item">
-        <strong>Jennifer Horkoff</strong>
-        <span class="role-label">
-          PC Member &mdash;
-          <a href="https://conf.researchr.org/home/icse-2026/agent-2026" target="_blank">AGENT 2026</a>
-          (Tue Apr 14)
-        </span>
+      <div class="pc-roles-row">
+        <span class="pc-roles-name">Jennifer Horkoff</span>
+        <div class="pc-roles-tags">
+          <a href="https://conf.researchr.org/home/icse-2026/raie-2026" target="_blank">PC &mdash; RAIE</a>
+          <a href="https://conf.researchr.org/home/icse-2026/raise-2026" target="_blank">PC &mdash; RAISE</a>
+          <a href="https://conf.researchr.org/home/icse-2026/agent-2026" target="_blank">PC &mdash; AGENT</a>
+        </div>
       </div>
-      <div class="committee-item">
-        <strong>Jennifer Horkoff</strong>
-        <span class="role-label">
-          PC Member &mdash;
-          <a href="https://conf.researchr.org/home/icse-2026/raie-2026" target="_blank">RAIE 2026</a>
-          (Sun Apr 12)
-        </span>
+      <div class="pc-roles-row">
+        <span class="pc-roles-name">Robert Feldt</span>
+        <div class="pc-roles-tags">
+          <a href="https://conf.researchr.org/home/icse-2026/wsese-2026" target="_blank" class="role-org">PC Chair &mdash; WSESE</a>
+        </div>
       </div>
-      <div class="committee-item">
-        <strong>Jennifer Horkoff</strong>
-        <span class="role-label">
-          PC Member &mdash;
-          <a href="https://conf.researchr.org/home/icse-2026/raise-2026" target="_blank">RAISE 2026</a>
-          (Sun Apr 12)
-        </span>
+      <div class="pc-roles-row">
+        <span class="pc-roles-name">Philipp Leitner</span>
+        <div class="pc-roles-tags">
+          <a href="https://conf.researchr.org/home/icse-2026/botse-2026" target="_blank">PC &mdash; BoatSE</a>
+        </div>
       </div>
-      <div class="committee-item">
-        <strong>Philipp Leitner</strong>
-        <span class="role-label">
-          PC Member &mdash;
-          <a href="https://conf.researchr.org/home/icse-2026/botse-2026" target="_blank">BoatSE 2026</a>
-          (Mon Apr 13)
-        </span>
+      <div class="pc-roles-row">
+        <span class="pc-roles-name">Ranim Khojah</span>
+        <div class="pc-roles-tags">
+          <a href="https://conf.researchr.org/home/icse-2026/botse-2026" target="_blank">PC &mdash; BoatSE</a>
+        </div>
+      </div>
+      <div class="pc-roles-row">
+        <span class="pc-roles-name">Linda Erlenhov</span>
+        <div class="pc-roles-tags">
+          <a href="https://conf.researchr.org/home/icse-2026/botse-2026" target="_blank">PC &mdash; BoatSE</a>
+        </div>
+      </div>
+      <div class="pc-roles-row">
+        <span class="pc-roles-name">Beatriz Cabrero-Daniel</span>
+        <div class="pc-roles-tags">
+          <a href="https://conf.researchr.org/home/icse-2026/raie-2026" target="_blank">PC &mdash; RAIE</a>
+        </div>
+      </div>
+      <div class="pc-roles-row">
+        <span class="pc-roles-name">Julian Frattini</span>
+        <div class="pc-roles-tags">
+          <a href="https://conf.researchr.org/home/icse-2026/wsese-2026" target="_blank" class="role-org">Web Chair &mdash; WSESE</a>
+        </div>
       </div>
     </div>
 
