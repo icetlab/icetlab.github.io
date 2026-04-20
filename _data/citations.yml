@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-04-01'
+  last_updated: '2026-04-20'
 papers:
   wZ9f8CAAAAAJ:-BKJ5vZJwzMC:
     citations: 17
@@ -34,11 +34,11 @@ papers:
     title: The roles, responsibilities, and skills of engineers in the era of microservices-based architectures
     year: '2024'
   wZ9f8CAAAAAJ:1Aeql8wG3wEC:
-    citations: 401
+    citations: 406
     title: Extraction of microservices from monolithic software architectures
     year: '2017'
   wZ9f8CAAAAAJ:1_W9tMSvGuwC:
-    citations: 197
+    citations: 198
     title: Comparing and combining predictive business process monitoring techniques
     year: '2014'
   wZ9f8CAAAAAJ:2_BaaiyHPJIC:
@@ -50,7 +50,7 @@ papers:
     title: 'CAM05-2: A Distributed Policy Based Solution in a Fault Management Scenario'
     year: '2006'
   wZ9f8CAAAAAJ:37Fl7vPTsUIC:
-    citations: 301
+    citations: 302
     title: "Patterns in the chaos\u2014a study of performance variation and predictability in public iaas clouds"
     year: '2016'
   wZ9f8CAAAAAJ:3_f9JqYsqVQC:
@@ -58,7 +58,7 @@ papers:
     title: 'Cloud workbench: Benchmarking iaas providers based on infrastructure-as-code'
     year: '2015'
   wZ9f8CAAAAAJ:3fE2CSJIrl8C:
-    citations: 152
+    citations: 153
     title: Cost-based optimization of service compositions
     year: '2013'
   wZ9f8CAAAAAJ:43B52WW2E64C:
@@ -114,7 +114,7 @@ papers:
     title: Identifying influential factors of business process performance using dependency analysis
     year: '2011'
   wZ9f8CAAAAAJ:8rLWgkbgOXQC:
-    citations: 50
+    citations: 51
     title: 'Dynamically reconfiguring software microbenchmarks: Reducing execution time without sacrificing result quality'
     year: '2020'
   wZ9f8CAAAAAJ:9CGX2owmTHMC:
@@ -154,11 +154,11 @@ papers:
     title: An empirical investigation on the competences and roles of practitioners in Microservices-based Architectures
     year: '2024'
   wZ9f8CAAAAAJ:CC3C2HR4nz8C:
-    citations: 168
+    citations: 171
     title: 'Function-as-a-service performance evaluation: A multivocal literature review'
     year: '2020'
   wZ9f8CAAAAAJ:CKf5m1HYVjMC:
-    citations: 5
+    citations: 6
     title: From human-to-human to human-to-bot conversations in software engineering
     year: '2024'
   wZ9f8CAAAAAJ:CMPXdcK5v8EC:
@@ -182,7 +182,7 @@ papers:
     title: 'WPress: Benchmarking infrastructure-as-a-service cloud computing systems for on-line transaction processing applications'
     year: '2014'
   wZ9f8CAAAAAJ:EsrhoZGmrkoC:
-    citations: 468
+    citations: 469
     title: Optimized IoT service placement in the fog
     year: '2017'
   wZ9f8CAAAAAJ:F9HO9s0W2bwC:
@@ -262,11 +262,11 @@ papers:
     title: 'VieSLAF Framework: Enabling Adaptive and Versatile SLA-Management'
     year: '2009'
   wZ9f8CAAAAAJ:Lo8V22OuN40C:
-    citations: 102
+    citations: 103
     title: 'A tale of CI build failures: An open source and a financial organization perspective'
     year: '2017'
   wZ9f8CAAAAAJ:M3NEmzRMIkIC:
-    citations: 134
+    citations: 135
     title: 'Winds of change: From vendor lock-in to the meta cloud'
     year: '2013'
   wZ9f8CAAAAAJ:M3ejUd6NZC8C:
@@ -330,7 +330,7 @@ papers:
     title: Performance benchmarking of infrastructure-as-a-service (IaaS) clouds with Cloud WorkBench
     year: '2019'
   wZ9f8CAAAAAJ:RVqaWcrwK10C:
-    citations: 53
+    citations: 54
     title: Towards quality gates in continuous delivery and deployment
     year: '2016'
   wZ9f8CAAAAAJ:RdUpO4xyVKMC:
@@ -370,7 +370,7 @@ papers:
     title: 5 Panel discussions 5.1 Toward a Definition for Serverless Computing
     year: Unknown Year
   wZ9f8CAAAAAJ:T_0gP6tLVL0C:
-    citations: 35
+    citations: 36
     title: Emerging trends, challenges, and experiences in DevOps and microservice APIs
     year: '2019'
   wZ9f8CAAAAAJ:Tyk-4Ss8FVUC:
@@ -386,7 +386,7 @@ papers:
     title: "VRESCo\u2013Vienna Runtime Environment for Service-oriented Computing"
     year: '2011'
   wZ9f8CAAAAAJ:UY3hNwcQ290C:
-    citations: 24
+    citations: 25
     title: The impact of prompt programming on function-level code generation
     year: '2025'
   wZ9f8CAAAAAJ:UeHWp8X0CEIC:
@@ -450,7 +450,7 @@ papers:
     title: Mining lifecycle event logs for enhancing service-based applications
     year: '2011'
   wZ9f8CAAAAAJ:ZYsTHYU9jrMC:
-    citations: 90
+    citations: 91
     title: Modelling and managing deployment costs of microservice-based cloud applications
     year: '2016'
   wZ9f8CAAAAAJ:Zbx7W2Xs4QsC:
@@ -486,7 +486,7 @@ papers:
     title: A Mediator-Based Approach to Resolving Interface Heterogeneity of Web Services
     year: '2008'
   wZ9f8CAAAAAJ:_n8fIOMweQoC:
-    citations: 198
+    citations: 200
     title: A mixed-method empirical study of function-as-a-service software development in industrial practice
     year: '2019'
   wZ9f8CAAAAAJ:aCwMkEyfDy8C:
@@ -498,7 +498,7 @@ papers:
     title: What's wrong with my benchmark results? Studying bad practices in JMH benchmarks
     year: '2019'
   wZ9f8CAAAAAJ:aU4yMueWZ3QC:
-    citations: 15
+    citations: 16
     title: Search-based scheduling of experiments in continuous deployment
     year: '2018'
   wZ9f8CAAAAAJ:anDooRL1HQEC:
@@ -546,7 +546,7 @@ papers:
     title: Fault Management based on peer-to-peer paradigms
     year: '2007'
   wZ9f8CAAAAAJ:d6JCS5z0ckYC:
-    citations: 31
+    citations: 32
     title: Applying test case prioritization to software microbenchmarks
     year: '2021'
   wZ9f8CAAAAAJ:dMpQl7XwOw4C:
@@ -566,7 +566,7 @@ papers:
     title: An Experimental Study of Real-Life LLM-Proposed Performance Improvements
     year: '2025'
   wZ9f8CAAAAAJ:e0LTWoPxLYMC:
-    citations: 174
+    citations: 175
     title: An empirical analysis of build failures in the continuous integration workflows of java-based open-source software
     year: '2017'
   wZ9f8CAAAAAJ:e5wmG9Sq2KIC:
@@ -582,11 +582,11 @@ papers:
     title: Cachematic-automatic invalidation in application-level caching systems
     year: '2019'
   wZ9f8CAAAAAJ:eJD0kABLposC:
-    citations: 13
+    citations: 14
     title: Machine learning systems are bloated and vulnerable
     year: '2024'
   wZ9f8CAAAAAJ:eLRq4zTgah0C:
-    citations: 31
+    citations: 33
     title: An empirical study of the systemic and technical migration towards microservices
     year: '2023'
   wZ9f8CAAAAAJ:eQOLeE2rZwMC:
@@ -602,7 +602,7 @@ papers:
     title: The perceived impact and sequence of activities when transitioning to microservices
     year: '2023'
   wZ9f8CAAAAAJ:g30IDTdgJMgC:
-    citations: 146
+    citations: 148
     title: 'The making of cloud applications: An empirical study on software development for the cloud'
     year: '2015'
   wZ9f8CAAAAAJ:gI9wzKcniAoC:
@@ -704,7 +704,7 @@ papers:
   wZ9f8CAAAAAJ:o-PowTg_VKEC:
     citations: 1
     title: 'Building Elastic Java Application Services Seamlessly in the Cloud: A Middleware Framework'
-    year: '2016'
+    year: '2014'
   wZ9f8CAAAAAJ:oFn-K-OQSCAC:
     citations: 30
     title: Discovering loners and phantoms in commit and issue data
@@ -726,11 +726,11 @@ papers:
     title: Using benchmarking bots for continuous performance assessment
     year: '2022'
   wZ9f8CAAAAAJ:qCaWouos7ogC:
-    citations: 0
+    citations: 1
     title: A framework for a cost-efficient cloud ecosystem
     year: '2015'
   wZ9f8CAAAAAJ:qSd0DAb9jMoC:
-    citations: 92
+    citations: 93
     title: An exploratory study of the state of practice of performance testing in java-based open source projects
     year: '2017'
   wZ9f8CAAAAAJ:qYOp8iumCsAC:
@@ -810,7 +810,7 @@ papers:
     title: "2023 IEEE International Conference on Service-Oriented System Engineering (SOSE)| 979-8-3503-2239-2/23/$31.00\xA9 2023 IEEE| DOI: 10.1109/SOSE58276. 2023.00039"
     year: Unknown Year
   wZ9f8CAAAAAJ:w9ZB08sdvuUC:
-    citations: 111
+    citations: 117
     title: 'Beyond code generation: An observational study of chatgpt usage in software engineering practice'
     year: '2024'
   wZ9f8CAAAAAJ:wgKq3sYidysC:
@@ -818,7 +818,7 @@ papers:
     title: Cloud Computing
     year: Unknown Year
   wZ9f8CAAAAAJ:wlzmIqt2EaEC:
-    citations: 277
+    citations: 278
     title: Resource provisioning for IoT services in the fog
     year: '2016'
   wZ9f8CAAAAAJ:xm1hsP5ya-EC:
