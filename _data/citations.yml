@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-04-20'
+  last_updated: '2026-04-27'
 papers:
   wZ9f8CAAAAAJ:-BKJ5vZJwzMC:
     citations: 17
@@ -34,7 +34,7 @@ papers:
     title: The roles, responsibilities, and skills of engineers in the era of microservices-based architectures
     year: '2024'
   wZ9f8CAAAAAJ:1Aeql8wG3wEC:
-    citations: 406
+    citations: 407
     title: Extraction of microservices from monolithic software architectures
     year: '2017'
   wZ9f8CAAAAAJ:1_W9tMSvGuwC:
@@ -50,7 +50,7 @@ papers:
     title: 'CAM05-2: A Distributed Policy Based Solution in a Fault Management Scenario'
     year: '2006'
   wZ9f8CAAAAAJ:37Fl7vPTsUIC:
-    citations: 302
+    citations: 303
     title: "Patterns in the chaos\u2014a study of performance variation and predictability in public iaas clouds"
     year: '2016'
   wZ9f8CAAAAAJ:3_f9JqYsqVQC:
@@ -102,7 +102,7 @@ papers:
     title: Connecting fog and cloud computing
     year: '2017'
   wZ9f8CAAAAAJ:71d7Y1FijdoC:
-    citations: 33
+    citations: 34
     title: 'Facing the giant: A grounded theory study of decision-making in microservices migrations'
     year: '2021'
   wZ9f8CAAAAAJ:7XUxBq3GufIC:
@@ -135,8 +135,8 @@ papers:
     year: '2008'
   wZ9f8CAAAAAJ:Amrzk_ktLr0C:
     citations: 0
-    title: "Let\u2019s Trace It: Fine-Grained Serverless Benchmarking for Synchronous and Asynchronous Applications"
-    year: '2025'
+    title: "Let\u2019s trace it: Fine-grained serverless benchmarking for synchronous and asynchronous applications"
+    year: '2026'
   wZ9f8CAAAAAJ:AubyX3KqGToC:
     citations: 28
     title: Automated generation and evaluation of jmh microbenchmark suites from unit tests
@@ -154,7 +154,7 @@ papers:
     title: An empirical investigation on the competences and roles of practitioners in Microservices-based Architectures
     year: '2024'
   wZ9f8CAAAAAJ:CC3C2HR4nz8C:
-    citations: 171
+    citations: 172
     title: 'Function-as-a-service performance evaluation: A multivocal literature review'
     year: '2020'
   wZ9f8CAAAAAJ:CKf5m1HYVjMC:
@@ -166,7 +166,7 @@ papers:
     title: End-to-end support for QoS-aware service selection, invocation and mediation in VRESCo
     year: '2009'
   wZ9f8CAAAAAJ:DPO9WFcz7UcC:
-    citations: 103
+    citations: 104
     title: "We\u2019re doing it live: A multi-method empirical study on continuous experimentation"
     year: '2018'
   wZ9f8CAAAAAJ:Dmoar05iI2YC:
@@ -182,7 +182,7 @@ papers:
     title: 'WPress: Benchmarking infrastructure-as-a-service cloud computing systems for on-line transaction processing applications'
     year: '2014'
   wZ9f8CAAAAAJ:EsrhoZGmrkoC:
-    citations: 469
+    citations: 470
     title: Optimized IoT service placement in the fog
     year: '2017'
   wZ9f8CAAAAAJ:F9HO9s0W2bwC:
@@ -386,7 +386,7 @@ papers:
     title: "VRESCo\u2013Vienna Runtime Environment for Service-oriented Computing"
     year: '2011'
   wZ9f8CAAAAAJ:UY3hNwcQ290C:
-    citations: 25
+    citations: 30
     title: The impact of prompt programming on function-level code generation
     year: '2025'
   wZ9f8CAAAAAJ:UeHWp8X0CEIC:
@@ -410,7 +410,7 @@ papers:
     title: Runtime prediction of service level agreement violations for composite services
     year: '2009'
   wZ9f8CAAAAAJ:WF5omc3nYNoC:
-    citations: 206
+    citations: 207
     title: Monitoring, prediction and prevention of sla violations in composite services
     year: '2010'
   wZ9f8CAAAAAJ:WGv8Og3F3KgC:
@@ -486,7 +486,7 @@ papers:
     title: A Mediator-Based Approach to Resolving Interface Heterogeneity of Web Services
     year: '2008'
   wZ9f8CAAAAAJ:_n8fIOMweQoC:
-    citations: 200
+    citations: 201
     title: A mixed-method empirical study of function-as-a-service software development in industrial practice
     year: '2019'
   wZ9f8CAAAAAJ:aCwMkEyfDy8C:
@@ -514,7 +514,7 @@ papers:
     title: Cost-efficient and application SLA-aware client side request scheduling in an infrastructure-as-a-service cloud
     year: '2012'
   wZ9f8CAAAAAJ:bbjcffOLshcC:
-    citations: 210
+    citations: 212
     title: An empirical analysis of the docker container ecosystem on github
     year: '2017'
   wZ9f8CAAAAAJ:beqBT5984LEC:
@@ -546,7 +546,7 @@ papers:
     title: Fault Management based on peer-to-peer paradigms
     year: '2007'
   wZ9f8CAAAAAJ:d6JCS5z0ckYC:
-    citations: 32
+    citations: 33
     title: Applying test case prioritization to software microbenchmarks
     year: '2021'
   wZ9f8CAAAAAJ:dMpQl7XwOw4C:
@@ -566,7 +566,7 @@ papers:
     title: An Experimental Study of Real-Life LLM-Proposed Performance Improvements
     year: '2025'
   wZ9f8CAAAAAJ:e0LTWoPxLYMC:
-    citations: 175
+    citations: 177
     title: An empirical analysis of build failures in the continuous integration workflows of java-based open-source software
     year: '2017'
   wZ9f8CAAAAAJ:e5wmG9Sq2KIC:
@@ -646,7 +646,7 @@ papers:
     title: BotSE 2021
     year: Unknown Year
   wZ9f8CAAAAAJ:jMZTt8odoasC:
-    citations: 14
+    citations: 15
     title: 'Crossfit: Fine-grained benchmarking of serverless application performance across cloud providers'
     year: '2022'
   wZ9f8CAAAAAJ:jq04SsiGh3QC:
@@ -726,7 +726,7 @@ papers:
     title: Using benchmarking bots for continuous performance assessment
     year: '2022'
   wZ9f8CAAAAAJ:qCaWouos7ogC:
-    citations: 1
+    citations: 0
     title: A framework for a cost-efficient cloud ecosystem
     year: '2015'
   wZ9f8CAAAAAJ:qSd0DAb9jMoC:
@@ -794,7 +794,7 @@ papers:
     title: Integrated metadata support for web service runtimes
     year: '2008'
   wZ9f8CAAAAAJ:v6PuF9mNY3oC:
-    citations: 90
+    citations: 91
     title: Software microbenchmarking in the cloud. how bad is it really?
     year: '2019'
   wZ9f8CAAAAAJ:vkz5F8TaVKkC:
@@ -810,7 +810,7 @@ papers:
     title: "2023 IEEE International Conference on Service-Oriented System Engineering (SOSE)| 979-8-3503-2239-2/23/$31.00\xA9 2023 IEEE| DOI: 10.1109/SOSE58276. 2023.00039"
     year: Unknown Year
   wZ9f8CAAAAAJ:w9ZB08sdvuUC:
-    citations: 117
+    citations: 120
     title: 'Beyond code generation: An observational study of chatgpt usage in software engineering practice'
     year: '2024'
   wZ9f8CAAAAAJ:wgKq3sYidysC:
@@ -818,7 +818,7 @@ papers:
     title: Cloud Computing
     year: Unknown Year
   wZ9f8CAAAAAJ:wlzmIqt2EaEC:
-    citations: 278
+    citations: 279
     title: Resource provisioning for IoT services in the fog
     year: '2016'
   wZ9f8CAAAAAJ:xm1hsP5ya-EC:
