@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-04-27'
+  last_updated: '2026-04-29'
 papers:
   wZ9f8CAAAAAJ:-BKJ5vZJwzMC:
     citations: 17
@@ -34,7 +34,7 @@ papers:
     title: The roles, responsibilities, and skills of engineers in the era of microservices-based architectures
     year: '2024'
   wZ9f8CAAAAAJ:1Aeql8wG3wEC:
-    citations: 407
+    citations: 408
     title: Extraction of microservices from monolithic software architectures
     year: '2017'
   wZ9f8CAAAAAJ:1_W9tMSvGuwC:
@@ -50,7 +50,7 @@ papers:
     title: 'CAM05-2: A Distributed Policy Based Solution in a Fault Management Scenario'
     year: '2006'
   wZ9f8CAAAAAJ:37Fl7vPTsUIC:
-    citations: 303
+    citations: 304
     title: "Patterns in the chaos\u2014a study of performance variation and predictability in public iaas clouds"
     year: '2016'
   wZ9f8CAAAAAJ:3_f9JqYsqVQC:
@@ -386,7 +386,7 @@ papers:
     title: "VRESCo\u2013Vienna Runtime Environment for Service-oriented Computing"
     year: '2011'
   wZ9f8CAAAAAJ:UY3hNwcQ290C:
-    citations: 30
+    citations: 31
     title: The impact of prompt programming on function-level code generation
     year: '2025'
   wZ9f8CAAAAAJ:UeHWp8X0CEIC:
@@ -514,7 +514,7 @@ papers:
     title: Cost-efficient and application SLA-aware client side request scheduling in an infrastructure-as-a-service cloud
     year: '2012'
   wZ9f8CAAAAAJ:bbjcffOLshcC:
-    citations: 212
+    citations: 213
     title: An empirical analysis of the docker container ecosystem on github
     year: '2017'
   wZ9f8CAAAAAJ:beqBT5984LEC:
@@ -810,7 +810,7 @@ papers:
     title: "2023 IEEE International Conference on Service-Oriented System Engineering (SOSE)| 979-8-3503-2239-2/23/$31.00\xA9 2023 IEEE| DOI: 10.1109/SOSE58276. 2023.00039"
     year: Unknown Year
   wZ9f8CAAAAAJ:w9ZB08sdvuUC:
-    citations: 120
+    citations: 121
     title: 'Beyond code generation: An observational study of chatgpt usage in software engineering practice'
     year: '2024'
   wZ9f8CAAAAAJ:wgKq3sYidysC:
