@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-04-29'
+  last_updated: '2026-05-04'
 papers:
   wZ9f8CAAAAAJ:-BKJ5vZJwzMC:
     citations: 17
@@ -34,11 +34,11 @@ papers:
     title: The roles, responsibilities, and skills of engineers in the era of microservices-based architectures
     year: '2024'
   wZ9f8CAAAAAJ:1Aeql8wG3wEC:
-    citations: 408
+    citations: 410
     title: Extraction of microservices from monolithic software architectures
     year: '2017'
   wZ9f8CAAAAAJ:1_W9tMSvGuwC:
-    citations: 198
+    citations: 199
     title: Comparing and combining predictive business process monitoring techniques
     year: '2014'
   wZ9f8CAAAAAJ:2_BaaiyHPJIC:
@@ -58,7 +58,7 @@ papers:
     title: 'Cloud workbench: Benchmarking iaas providers based on infrastructure-as-code'
     year: '2015'
   wZ9f8CAAAAAJ:3fE2CSJIrl8C:
-    citations: 153
+    citations: 154
     title: Cost-based optimization of service compositions
     year: '2013'
   wZ9f8CAAAAAJ:43B52WW2E64C:
@@ -135,8 +135,8 @@ papers:
     year: '2008'
   wZ9f8CAAAAAJ:Amrzk_ktLr0C:
     citations: 0
-    title: "Let\u2019s trace it: Fine-grained serverless benchmarking for synchronous and asynchronous applications"
-    year: '2026'
+    title: "Let\u2019s Trace It: Fine-Grained Serverless Benchmarking for Synchronous and Asynchronous Applications"
+    year: '2025'
   wZ9f8CAAAAAJ:AubyX3KqGToC:
     citations: 28
     title: Automated generation and evaluation of jmh microbenchmark suites from unit tests
@@ -182,7 +182,7 @@ papers:
     title: 'WPress: Benchmarking infrastructure-as-a-service cloud computing systems for on-line transaction processing applications'
     year: '2014'
   wZ9f8CAAAAAJ:EsrhoZGmrkoC:
-    citations: 470
+    citations: 472
     title: Optimized IoT service placement in the fog
     year: '2017'
   wZ9f8CAAAAAJ:F9HO9s0W2bwC:
@@ -262,7 +262,7 @@ papers:
     title: 'VieSLAF Framework: Enabling Adaptive and Versatile SLA-Management'
     year: '2009'
   wZ9f8CAAAAAJ:Lo8V22OuN40C:
-    citations: 103
+    citations: 102
     title: 'A tale of CI build failures: An open source and a financial organization perspective'
     year: '2017'
   wZ9f8CAAAAAJ:M3NEmzRMIkIC:
@@ -330,7 +330,7 @@ papers:
     title: Performance benchmarking of infrastructure-as-a-service (IaaS) clouds with Cloud WorkBench
     year: '2019'
   wZ9f8CAAAAAJ:RVqaWcrwK10C:
-    citations: 54
+    citations: 55
     title: Towards quality gates in continuous delivery and deployment
     year: '2016'
   wZ9f8CAAAAAJ:RdUpO4xyVKMC:
@@ -386,7 +386,7 @@ papers:
     title: "VRESCo\u2013Vienna Runtime Environment for Service-oriented Computing"
     year: '2011'
   wZ9f8CAAAAAJ:UY3hNwcQ290C:
-    citations: 31
+    citations: 29
     title: The impact of prompt programming on function-level code generation
     year: '2025'
   wZ9f8CAAAAAJ:UeHWp8X0CEIC:
@@ -566,7 +566,7 @@ papers:
     title: An Experimental Study of Real-Life LLM-Proposed Performance Improvements
     year: '2025'
   wZ9f8CAAAAAJ:e0LTWoPxLYMC:
-    citations: 177
+    citations: 178
     title: An empirical analysis of build failures in the continuous integration workflows of java-based open-source software
     year: '2017'
   wZ9f8CAAAAAJ:e5wmG9Sq2KIC:
@@ -646,7 +646,7 @@ papers:
     title: BotSE 2021
     year: Unknown Year
   wZ9f8CAAAAAJ:jMZTt8odoasC:
-    citations: 15
+    citations: 16
     title: 'Crossfit: Fine-grained benchmarking of serverless application performance across cloud providers'
     year: '2022'
   wZ9f8CAAAAAJ:jq04SsiGh3QC:
@@ -726,7 +726,7 @@ papers:
     title: Using benchmarking bots for continuous performance assessment
     year: '2022'
   wZ9f8CAAAAAJ:qCaWouos7ogC:
-    citations: 0
+    citations: 1
     title: A framework for a cost-efficient cloud ecosystem
     year: '2015'
   wZ9f8CAAAAAJ:qSd0DAb9jMoC:
@@ -794,7 +794,7 @@ papers:
     title: Integrated metadata support for web service runtimes
     year: '2008'
   wZ9f8CAAAAAJ:v6PuF9mNY3oC:
-    citations: 91
+    citations: 92
     title: Software microbenchmarking in the cloud. how bad is it really?
     year: '2019'
   wZ9f8CAAAAAJ:vkz5F8TaVKkC:
@@ -818,7 +818,7 @@ papers:
     title: Cloud Computing
     year: Unknown Year
   wZ9f8CAAAAAJ:wlzmIqt2EaEC:
-    citations: 279
+    citations: 280
     title: Resource provisioning for IoT services in the fog
     year: '2016'
   wZ9f8CAAAAAJ:xm1hsP5ya-EC:
