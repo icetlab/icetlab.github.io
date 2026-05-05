@@ -1,315 +1,177 @@
-<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>ICET-lab — Target Conference Venues</title> <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&amp;family=Roboto+Slab:wght@300;400;500;700&amp;display=swap" rel="stylesheet"> <style>:root{--theme:#b509ac;--theme-dark:#8a0882;--theme-light:rgba(181,9,172,0.08);--text:#1a1a1a;--text-light:#666;--border:rgba(0,0,0,0.08);--bg:#fff;--card-bg:#fff;--footer-bg:#1c1c1d;--footer-text:#e8e8e8;--top-color:#00369f;--disc-color:#009f36;--other-color:#888;--radius:8px}*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}body{font-family:'Roboto',sans-serif;background:#f5f5f7;color:var(--text);min-height:100vh;display:flex;flex-direction:column}.hero{background:var(--bg);border-bottom:1px solid var(--border);padding:2.5rem 1.5rem 2rem}.hero-inner{max-width:1050px;margin:0 auto}.hero h1{font-family:'Roboto Slab',serif;font-size:1.8rem;font-weight:500;color:var(--text);margin-bottom:.4rem}.hero p{color:var(--text-light);font-size:.95rem}.hero p a{color:var(--theme);text-decoration:none}.hero p a:hover{text-decoration:underline}.timeline-wrap{background:var(--bg);border-bottom:1px solid var(--border);padding:1.4rem 0 0}.timeline-inner{max-width:1050px;margin:0 auto;padding:0 1.5rem}.timeline-title{font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--text-light);margin-bottom:.75rem}.timeline-scroll{overflow-x:auto;overflow-y:visible;padding-bottom:1rem;scrollbar-width:thin;scrollbar-color:rgba(181,9,172,0.25) transparent}.timeline-scroll::-webkit-scrollbar{height:4px}.timeline-scroll::-webkit-scrollbar-track{background:transparent}.timeline-scroll::-webkit-scrollbar-thumb{background:rgba(181,9,172,0.3);border-radius:2px}.timeline-svg-wrap{position:relative;min-width:800px}#timelineSvg{display:block;width:100%;overflow:visible}.tl-tooltip{position:fixed;background:#1c1c1d;color:#e8e8e8;font-size:.78rem;padding:.5rem .8rem;border-radius:6px;pointer-events:none;z-index:200;display:none;max-width:240px;line-height:1.5;box-shadow:0 4px 16px rgba(0,0,0,0.28)}.tl-tooltip strong{color:#fff;display:block;margin-bottom:2px}.controls{max-width:1050px;margin:1.5rem auto .75rem;padding:0 1.5rem;display:flex;gap:.75rem;flex-wrap:wrap;align-items:center}.filter-btn{border:1.5px solid var(--border);background:var(--bg);border-radius:20px;padding:.3rem 1rem;font-size:.82rem;font-weight:500;cursor:pointer;color:var(--text-light);transition:all .15s;font-family:'Roboto',sans-serif}.filter-btn:hover{border-color:var(--theme);color:var(--theme)}.filter-btn.active{background:var(--theme);border-color:var(--theme);color:#fff}.table-wrap{max-width:1050px;margin:0 auto 3rem;padding:0 1.5rem}.card{background:var(--card-bg);border-radius:var(--radius);box-shadow:0 2px 12px rgba(0,0,0,0.07);overflow:hidden}table{width:100%;border-collapse:collapse}thead{background:var(--theme);color:#fff}thead th{padding:.85rem 1.1rem;text-align:left;font-size:.78rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap}tbody tr{border-bottom:1px solid var(--border);transition:background .12s}tbody tr:last-child{border-bottom:0}tbody tr:hover{background:var(--theme-light)}tbody td{padding:.85rem 1.1rem;font-size:.9rem;vertical-align:middle}.deadline-cell{white-space:nowrap;font-weight:500}.deadline-cell.confirmed{color:var(--text)}.deadline-cell.tentative{color:var(--text-light);font-style:italic}.tentative-note{font-size:.72rem;color:var(--text-light);margin-top:1px}.days-chip{display:inline-block;padding:.18rem .55rem;border-radius:12px;font-size:.72rem;font-weight:600;white-space:nowrap;margin-left:.4rem;vertical-align:middle}.days-chip.urgent{background:#fde8e8;color:#c62828}.days-chip.soon{background:#fff3e0;color:#e65100}.days-chip.medium{background:#e8f5e9;color:#2e7d32}.days-chip.far{background:#e3f2fd;color:#1565c0}.conf-name{font-weight:500}.conf-note{font-size:.78rem;color:var(--text-light);margin-top:2px}.tier-badge{display:inline-block;padding:.2rem .6rem;border-radius:4px;font-size:.72rem;font-weight:600;letter-spacing:.03em;color:#fff;white-space:nowrap}.tier-top{background:var(--top-color)}.tier-disc{background:var(--disc-color)}.tier-other{background:var(--other-color)}.topic-tag{display:inline-block;background:var(--theme-light);color:var(--theme-dark);border:1px solid rgba(181,9,172,0.2);border-radius:4px;padding:.15rem .5rem;font-size:.75rem;margin:2px 2px 0 0}.section-sep td{background:#f5f5f7;padding:.45rem 1.1rem;font-size:.72rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--text-light);border-bottom:1px solid var(--border)}.empty-state{padding:3rem 1rem;text-align:center;color:var(--text-light);font-size:.95rem}footer{margin-top:auto;background:var(--footer-bg);color:var(--footer-text);padding:1rem 1.5rem;font-size:.78rem;text-align:center}footer a{color:#fff;text-decoration:none}footer a:hover{color:var(--theme)}@media(max-width:700px){.hero h1{font-size:1.3rem}thead th,tbody td{padding:.6rem .75rem;font-size:.82rem}.col-location,.col-topical{display:none}}</style> </head> <body> <div class="hero"> <div class="hero-inner"> <h1>Target Conference Venues</h1> <p>Upcoming submission deadlines tracked by <a href="https://www.icet-lab.eu" target="_blank">ICET-lab</a> — Internet Computing &amp; Emerging Technologies, Chalmers &amp; University of Gothenburg. Last updated May 2026.</p> </div> </div> <div class="timeline-wrap"> <div class="timeline-inner"> <div class="timeline-title">Submission timeline</div> <div class="timeline-scroll"> <div class="timeline-svg-wrap"> <svg id="timelineSvg"></svg> </div> </div> </div> </div> <div class="tl-tooltip" id="tlTooltip"></div> <div class="controls"> <button class="filter-btn active" data-filter="all">All</button> <button class="filter-btn" data-filter="Top">Top venues</button> <button class="filter-btn" data-filter="Disciplinary">Disciplinary</button> <button class="filter-btn" data-filter="Other">Other</button> </div> <div class="table-wrap"> <div class="card"> <table id="confTable"> <thead> <tr> <th style="width:165px">Deadline</th> <th>Conference / Venue</th> <th class="col-location" style="width:160px">Location</th> <th style="width:120px">Tier</th> <th class="col-topical">Topical Focus</th> <th style="width:80px">CFP</th> </tr> </thead> <tbody id="tableBody"></tbody> </table> <div class="empty-state" id="emptyState" style="display:none">No entries match the current filter.</div> </div> </div> <footer> © 2026 <a href="https://www.icet-lab.eu" target="_blank">ICET-lab</a> — Chalmers &amp; University of Gothenburg  |  Maintained by <a href="http://philippleitner.net" target="_blank" rel="external nofollow noopener">Philipp Leitner</a> </footer> <script>
-// ─────────────────────────────────────────────────────────────────────────────
-// DATA
-// ─────────────────────────────────────────────────────────────────────────────
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> Target Conference Venues | Internet Computing and Emerging Technologies lab (ICET-lab) </title> <meta name="author" content="Philipp Leitner"> <meta name="description" content="Upcoming submission deadlines tracked by ICET-lab — Internet Computing &amp; Emerging Technologies, Chalmers &amp; University of Gothenburg. Last updated May 2026. "> <link rel="stylesheet" href="/assets/css/bootstrap.min.css?a4b3f509e79c54a512b890d73235ef04"> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="/assets/css/academicons.min.css?f0b7046b84e425c55f3463ac249818f5"> <link defer rel="stylesheet" href="/assets/css/scholar-icons.css?62b2ac103a88034e6882a5be5f3e2772"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="/assets/img/Favicon.png?7d1fd838734c74f575bb0653bf0a58ae"> <link rel="stylesheet" href="/assets/css/main.css?d41d8cd98f00b204e9800998ecf8427e"> <link rel="canonical" href="https://www.icet-lab.eu/target-venues/"> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> Internet Computing and Emerging Technologies lab (ICET-lab) </a> <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse text-right" id="navbarNav"> <ul class="navbar-nav ml-auto flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">about </a> </li> <li class="nav-item dropdown "> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">people </a> <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown"> <a class="dropdown-item " href="/people/">people</a> <a class="dropdown-item " href="/past/">graduates</a> </div> </li> <li class="nav-item dropdown "> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">research </a> <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown"> <a class="dropdown-item " href="/research/">research</a> <a class="dropdown-item " href="/publications/">publications</a> <a class="dropdown-item " href="/collaborators/">collaborators</a> </div> </li> <li class="nav-item "> <a class="nav-link" href="/teaching/">teaching </a> </li> <li class="nav-item dropdown "> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">resources </a> <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown"> <a class="dropdown-item " href="/resources/">resources</a> <a class="dropdown-item " href="/target-venues/">target venues</a> </div> </li> <li class="nav-item"> <button id="search-toggle" title="Search" onclick="openSearchModal()"> <span class="nav-link">ctrl k <i class="ti ti-search"></i></span> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">Target Conference Venues</h1> <p class="post-description">Upcoming submission deadlines tracked by ICET-lab — Internet Computing &amp; Emerging Technologies, Chalmers &amp; University of Gothenburg. Last updated May 2026. </p> </header> <article> <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&amp;family=Roboto+Slab:wght@300;400;500;700&amp;display=swap" rel="stylesheet"> <style>:root{--theme:#b509ac;--theme-dark:#8a0882;--theme-light:rgba(181,9,172,0.08);--text:#1a1a1a;--text-light:#666;--border:rgba(0,0,0,0.08);--bg:#fff;--card-bg:#fff;--top-color:#00369f;--disc-color:#009f36;--other-color:#888;--radius:8px}.tv-timeline-wrap{background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);padding:1.4rem 0 0;margin-bottom:1.5rem}.tv-timeline-inner{padding:0 1.5rem}.tv-timeline-title{font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--text-light);margin-bottom:.75rem}.tv-timeline-scroll{overflow-x:auto;overflow-y:visible;padding-bottom:1rem;scrollbar-width:thin;scrollbar-color:rgba(181,9,172,0.25) transparent}.tv-timeline-scroll::-webkit-scrollbar{height:4px}.tv-timeline-scroll::-webkit-scrollbar-track{background:transparent}.tv-timeline-scroll::-webkit-scrollbar-thumb{background:rgba(181,9,172,0.3);border-radius:2px}.tv-timeline-svg-wrap{position:relative;min-width:800px}#timelineSvg{display:block;width:100%;overflow:visible}.tv-tooltip{position:fixed;background:#1c1c1d;color:#e8e8e8;font-size:.78rem;padding:.5rem .8rem;border-radius:6px;pointer-events:none;z-index:200;display:none;max-width:240px;line-height:1.5;box-shadow:0 4px 16px rgba(0,0,0,0.28)}.tv-tooltip strong{color:#fff;display:block;margin-bottom:2px}.tv-controls{margin:0 0 .75rem;display:flex;gap:.75rem;flex-wrap:wrap;align-items:center}.tv-filter-btn{border:1.5px solid var(--border);background:var(--bg);border-radius:20px;padding:.3rem 1rem;font-size:.82rem;font-weight:500;cursor:pointer;color:var(--text-light);transition:all .15s}.tv-filter-btn:hover{border-color:var(--theme);color:var(--theme)}.tv-filter-btn.active{background:var(--theme);border-color:var(--theme);color:#fff}.tv-card{background:var(--card-bg);border-radius:var(--radius);box-shadow:0 2px 12px rgba(0,0,0,0.07);overflow:hidden;margin-bottom:2rem}.tv-card table{width:100%;border-collapse:collapse}.tv-card thead{background:var(--theme);color:#fff}.tv-card thead th{padding:.85rem 1.1rem;text-align:left;font-size:.78rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap}.tv-card tbody tr{border-bottom:1px solid var(--border);transition:background .12s}.tv-card tbody tr:last-child{border-bottom:0}.tv-card tbody tr:hover{background:var(--theme-light)}.tv-card tbody td{padding:.85rem 1.1rem;font-size:.9rem;vertical-align:middle}.tv-deadline-cell{white-space:nowrap;font-weight:500}.tv-deadline-cell.confirmed{color:var(--text)}.tv-deadline-cell.tentative{color:var(--text-light);font-style:italic}.tv-tentative-note{font-size:.72rem;color:var(--text-light);margin-top:1px}.tv-days-chip{display:inline-block;padding:.18rem .55rem;border-radius:12px;font-size:.72rem;font-weight:600;white-space:nowrap;margin-left:.4rem;vertical-align:middle}.tv-days-chip.urgent{background:#fde8e8;color:#c62828}.tv-days-chip.soon{background:#fff3e0;color:#e65100}.tv-days-chip.medium{background:#e8f5e9;color:#2e7d32}.tv-days-chip.far{background:#e3f2fd;color:#1565c0}.tv-conf-name{font-weight:500}.tv-conf-note{font-size:.78rem;color:var(--text-light);margin-top:2px}.tv-tier-badge{display:inline-block;padding:.2rem .6rem;border-radius:4px;font-size:.72rem;font-weight:600;letter-spacing:.03em;color:#fff;white-space:nowrap}.tv-tier-top{background:var(--top-color)}.tv-tier-disc{background:var(--disc-color)}.tv-tier-other{background:var(--other-color)}.tv-topic-tag{display:inline-block;background:var(--theme-light);color:var(--theme-dark);border:1px solid rgba(181,9,172,0.2);border-radius:4px;padding:.15rem .5rem;font-size:.75rem;margin:2px 2px 0 0}.tv-section-sep td{background:#f5f5f7;padding:.45rem 1.1rem;font-size:.72rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--text-light);border-bottom:1px solid var(--border)}.tv-empty-state{padding:3rem 1rem;text-align:center;color:var(--text-light);font-size:.95rem}@media(max-width:700px){.tv-card thead th,.tv-card tbody td{padding:.6rem .75rem;font-size:.82rem}.tv-col-location,.tv-col-topical{display:none}}</style> <div class="tv-timeline-wrap"> <div class="tv-timeline-inner"> <div class="tv-timeline-title">Submission timeline</div> <div class="tv-timeline-scroll"> <div class="tv-timeline-svg-wrap"> <svg id="timelineSvg"></svg> </div> </div> </div> </div> <div class="tv-tooltip" id="tlTooltip"></div> <div class="tv-controls"> <button class="tv-filter-btn active" data-filter="all">All</button> <button class="tv-filter-btn" data-filter="Top">Top venues</button> <button class="tv-filter-btn" data-filter="Disciplinary">Disciplinary</button> <button class="tv-filter-btn" data-filter="Other">Other</button> </div> <div class="tv-card"> <table id="confTable"> <thead> <tr> <th style="width:165px">Deadline</th> <th>Conference / Venue</th> <th class="tv-col-location" style="width:160px">Location</th> <th style="width:120px">Tier</th> <th class="tv-col-topical">Topical Focus</th> <th style="width:80px">CFP</th> </tr> </thead> <tbody id="tableBody"></tbody> </table> <div class="tv-empty-state" id="emptyState" style="display:none">No entries match the current filter.</div> </div> <script>
 const conferences = [
-  { deadline:"2026-05-18", tentative:false, name:"ESEM",                    fullName:"International Symposium on Empirical Software Engineering and Measurement",                            location:"Munich, Germany",    tier:"Disciplinary", topical:["Empirical research"], cfpUrl:"https://conf.researchr.org/track/eseiw-2026/eseiw-2026-esem---technical-track" },
-  { deadline:"2026-06-11", tentative:false, name:"SCAM '26",                fullName:"IEEE International Working Conference on Source Code Analysis and Manipulation",                       location:"Benevento, Italy",   tier:"Other",        topical:[],                       cfpUrl:"https://conf.researchr.org/track/scam-2026/scam-2026-research-track" },
-  { deadline:"2026-06-30", tentative:false, name:"ICSE '27",                fullName:"International Conference on Software Engineering",                                                     location:"Dublin, Ireland",    tier:"Top",          topical:[],                       cfpUrl:"https://conf.researchr.org/track/icse-2027/icse-2027-research-track" },
-  { deadline:"2026-10-02", tentative:false, name:"FSE '27",                 fullName:"ACM International Conference on the Foundations of Software Engineering",                              location:"Shenzhen, China",    tier:"Top",          topical:[],                       cfpUrl:"https://conf.researchr.org/track/fse-2027/fse-2027-papers" },
-  { deadline:"2026-10-16", tentative:true,  name:"SANER '27",               fullName:"IEEE International Conference on Software Analysis, Evolution and Reengineering",                      location:"Richmond, VA, USA",  tier:"Disciplinary", topical:[],                       cfpUrl:"https://conf.researchr.org/home/saner-2027" },
-  { deadline:"2026-10-23", tentative:false, name:"ICSE '27 NIER",           fullName:"ICSE New Ideas and Emerging Results Track",                                                            location:"Dublin, Ireland",    tier:"Disciplinary", topical:["Industry studies"],     cfpUrl:"https://conf.researchr.org/track/icse-2027/icse-2027-new-ideas-and-emerging-results--nier-" },
-  { deadline:"2026-10-23", tentative:true,  name:"MSR/ICPC/CHASE '27",      fullName:"ICSE co-located events (MSR, ICPC, CHASE, …)",                                                       location:"Dublin, Ireland",    tier:"Disciplinary", topical:[],                       cfpUrl:"https://conf.researchr.org/home/icse-2027" },
-  { deadline:"2026-11-04", tentative:false, name:"ICSA",                    fullName:"IEEE International Conference on Software Architecture",                                               location:"Sydney, Australia",  tier:"Disciplinary", topical:["Architecture"],         cfpUrl:"https://conf.researchr.org/track/icsa-2027/icsa-2027-papers" },
-  { deadline:"2026-11-17", tentative:true,  name:"ICPE",                    fullName:"International Conference on Performance Engineering",                                                  location:"Gothenburg",         tier:"Disciplinary", topical:["Performance"],          cfpUrl:null, note:"Philipp cannot submit as General Chair!" },
-  { deadline:"2026-11-27", tentative:false, name:"ICSE Workshops",          fullName:"ICSE Workshop Track",                                                                                  location:"Dublin, Ireland",    tier:"Other",        topical:[],                       cfpUrl:"https://conf.researchr.org/track/icse-2027/icse-2027-workshops" },
-  { deadline:"2026-12-22", tentative:true,  name:"ICST",                    fullName:"IEEE International Conference on Software Testing, Verification and Validation",                      location:"TBD",                tier:"Disciplinary", topical:["Testing"],              cfpUrl:null },
-  { deadline:"2027-01-29", tentative:true,  name:"ISSTA",                   fullName:"ACM SIGSOFT International Symposium on Software Testing and Analysis",                                location:"Singapore",          tier:"Disciplinary", topical:["Testing"],              cfpUrl:null },
-  { deadline:"2027-02-15", tentative:true,  name:"AIWare",                  fullName:"IEEE/ACM International Conference on AI Engineering",                                                 location:"TBD",                tier:"Disciplinary", topical:["AI / LLM"],             cfpUrl:null },
-  { deadline:"2027-02-20", tentative:true,  name:"ICWE",                    fullName:"International Conference on Web Engineering",                                                          location:"TBD",                tier:"Other",        topical:["Web development"],       cfpUrl:null, note:"" },
-  { deadline:"2027-03-06", tentative:true,  name:"ICSME",                   fullName:"IEEE International Conference on Software Maintenance and Evolution",                                 location:"TBD",                tier:"Disciplinary", topical:[],                       cfpUrl:null },
-  { deadline:"2027-03-17", tentative:true,  name:"OOPSLA (2nd round)",      fullName:"ACM SIGPLAN International Conference on Object-Oriented Programming, Systems, Languages, and Applications", location:"TBD",           tier:"Top",          topical:["Programming"],          cfpUrl:null },
-  { deadline:"2027-03-26", tentative:true,  name:"ECSA",                    fullName:"European Conference on Software Architecture",                                                         location:"TBD",                tier:"Disciplinary", topical:["Architecture"],         cfpUrl:null },
-  { deadline:"2027-03-27", tentative:true,  name:"ASE '27",                 fullName:"IEEE/ACM International Conference on Automated Software Engineering",                                 location:"TBD",                tier:"Top",          topical:[],                       cfpUrl:null },
+  { deadline:"2026-05-18", tentative:false, name:"ESEM",               fullName:"International Symposium on Empirical Software Engineering and Measurement",                                  location:"Munich, Germany",   tier:"Disciplinary", topical:["Empirical research"], cfpUrl:"https://conf.researchr.org/track/eseiw-2026/eseiw-2026-esem---technical-track" },
+  { deadline:"2026-06-11", tentative:false, name:"SCAM '26",           fullName:"IEEE International Working Conference on Source Code Analysis and Manipulation",                             location:"Benevento, Italy",  tier:"Other",        topical:[],                     cfpUrl:"https://conf.researchr.org/track/scam-2026/scam-2026-research-track" },
+  { deadline:"2026-06-30", tentative:false, name:"ICSE '27",           fullName:"International Conference on Software Engineering",                                                           location:"Dublin, Ireland",   tier:"Top",          topical:[],                     cfpUrl:"https://conf.researchr.org/track/icse-2027/icse-2027-research-track" },
+  { deadline:"2026-10-02", tentative:false, name:"FSE '27",            fullName:"ACM International Conference on the Foundations of Software Engineering",                                    location:"Shenzhen, China",   tier:"Top",          topical:[],                     cfpUrl:"https://conf.researchr.org/track/fse-2027/fse-2027-papers" },
+  { deadline:"2026-10-16", tentative:true,  name:"SANER '27",          fullName:"IEEE International Conference on Software Analysis, Evolution and Reengineering",                            location:"Richmond, VA, USA", tier:"Disciplinary", topical:[],                     cfpUrl:"https://conf.researchr.org/home/saner-2027" },
+  { deadline:"2026-10-23", tentative:false, name:"ICSE '27 NIER",      fullName:"ICSE New Ideas and Emerging Results Track",                                                                  location:"Dublin, Ireland",   tier:"Disciplinary", topical:["Industry studies"],   cfpUrl:"https://conf.researchr.org/track/icse-2027/icse-2027-new-ideas-and-emerging-results--nier-" },
+  { deadline:"2026-10-23", tentative:true,  name:"MSR/ICPC/CHASE '27", fullName:"ICSE co-located events (MSR, ICPC, CHASE, …)",                                                        location:"Dublin, Ireland",   tier:"Disciplinary", topical:[],                     cfpUrl:"https://conf.researchr.org/home/icse-2027" },
+  { deadline:"2026-11-04", tentative:false, name:"ICSA",               fullName:"IEEE International Conference on Software Architecture",                                                     location:"Sydney, Australia", tier:"Disciplinary", topical:["Architecture"],       cfpUrl:"https://conf.researchr.org/track/icsa-2027/icsa-2027-papers" },
+  { deadline:"2026-11-17", tentative:true,  name:"ICPE",               fullName:"International Conference on Performance Engineering",                                                        location:"Gothenburg",        tier:"Disciplinary", topical:["Performance"],        cfpUrl:null, note:"Philipp cannot submit as General Chair!" },
+  { deadline:"2026-11-27", tentative:false, name:"ICSE Workshops",     fullName:"ICSE Workshop Track",                                                                                        location:"Dublin, Ireland",   tier:"Other",        topical:[],                     cfpUrl:"https://conf.researchr.org/track/icse-2027/icse-2027-workshops" },
+  { deadline:"2026-12-22", tentative:true,  name:"ICST",               fullName:"IEEE International Conference on Software Testing, Verification and Validation",                            location:"TBD",               tier:"Disciplinary", topical:["Testing"],            cfpUrl:null },
+  { deadline:"2027-01-29", tentative:true,  name:"ISSTA",              fullName:"ACM SIGSOFT International Symposium on Software Testing and Analysis",                                       location:"Singapore",         tier:"Disciplinary", topical:["Testing"],            cfpUrl:null },
+  { deadline:"2027-02-15", tentative:true,  name:"AIWare",             fullName:"IEEE/ACM International Conference on AI Engineering",                                                       location:"TBD",               tier:"Disciplinary", topical:["AI / LLM"],           cfpUrl:null },
+  { deadline:"2027-02-20", tentative:true,  name:"ICWE",               fullName:"International Conference on Web Engineering",                                                               location:"TBD",               tier:"Other",        topical:["Web development"],    cfpUrl:null },
+  { deadline:"2027-03-06", tentative:true,  name:"ICSME",              fullName:"IEEE International Conference on Software Maintenance and Evolution",                                       location:"TBD",               tier:"Disciplinary", topical:[],                     cfpUrl:null },
+  { deadline:"2027-03-17", tentative:true,  name:"OOPSLA (2nd round)", fullName:"ACM SIGPLAN International Conference on Object-Oriented Programming, Systems, Languages, and Applications", location:"TBD",               tier:"Top",          topical:["Programming"],        cfpUrl:null },
+  { deadline:"2027-03-26", tentative:true,  name:"ECSA",               fullName:"European Conference on Software Architecture",                                                              location:"TBD",               tier:"Disciplinary", topical:["Architecture"],       cfpUrl:null },
+  { deadline:"2027-03-27", tentative:true,  name:"ASE '27",            fullName:"IEEE/ACM International Conference on Automated Software Engineering",                                       location:"TBD",               tier:"Top",          topical:[],                     cfpUrl:null },
 ];
 
-// ─────────────────────────────────────────────────────────────────────────────
-// HELPERS  — today is computed fresh each time so the doc stays live
-// ─────────────────────────────────────────────────────────────────────────────
-function getToday() {
-  const d = new Date();
-  d.setHours(0, 0, 0, 0);
-  return d;
-}
-
-function parseDateLocal(iso) {
-  const [y, m, d] = iso.split("-").map(Number);
-  return new Date(y, m - 1, d);
-}
-
-function daysFrom(iso) {
-  return Math.round((parseDateLocal(iso) - getToday()) / 86400000);
-}
-
+function getToday() { const d = new Date(); d.setHours(0,0,0,0); return d; }
+function parseDateLocal(iso) { const [y,m,d] = iso.split("-").map(Number); return new Date(y,m-1,d); }
+function daysFrom(iso) { return Math.round((parseDateLocal(iso) - getToday()) / 86400000); }
 function daysChip(iso) {
   const d = daysFrom(iso);
   let cls, label;
-  if      (d === 0)  { cls = "urgent"; label = "today!"; }
-  else if (d <= 14)  { cls = "urgent"; label = `${d}d`; }
-  else if (d <= 45)  { cls = "soon";   label = `${d}d`; }
-  else if (d <= 120) { cls = "medium"; label = `${d}d`; }
-  else               { cls = "far";    label = `${d}d`; }
-  return `<span class="days-chip ${cls}">${label}</span>`;
+  if      (d === 0)  { cls="urgent"; label="today!"; }
+  else if (d <= 14)  { cls="urgent"; label=`${d}d`; }
+  else if (d <= 45)  { cls="soon";   label=`${d}d`; }
+  else if (d <= 120) { cls="medium"; label=`${d}d`; }
+  else               { cls="far";    label=`${d}d`; }
+  return `<span class="tv-days-chip ${cls}">${label}</span>`;
 }
-
 function formatDate(iso) {
-  return parseDateLocal(iso).toLocaleDateString("en-GB", { day:"2-digit", month:"short", year:"numeric" });
+  return parseDateLocal(iso).toLocaleDateString("en-GB",{day:"2-digit",month:"short",year:"numeric"});
 }
-
 function tierBadge(tier) {
-  const cls = tier === "Top" ? "tier-top" : tier === "Disciplinary" ? "tier-disc" : "tier-other";
-  return `<span class="tier-badge ${cls}">${tier}</span>`;
+  const cls = tier==="Top" ? "tv-tier-top" : tier==="Disciplinary" ? "tv-tier-disc" : "tv-tier-other";
+  return `<span class="tv-tier-badge ${cls}">${tier}</span>`;
 }
 
-// ─────────────────────────────────────────────────────────────────────────────
-// TABLE RENDER
-// ─────────────────────────────────────────────────────────────────────────────
 let activeFilter = "all";
-
 function render() {
   const tbody = document.getElementById("tableBody");
   const empty = document.getElementById("emptyState");
   tbody.innerHTML = "";
-
-  const rows = conferences.filter(c =>
-    activeFilter === "all" || c.tier === activeFilter
-  );
-
-  if (rows.length === 0) { empty.style.display = ""; return; }
+  const rows = conferences.filter(c => activeFilter==="all" || c.tier===activeFilter);
+  if (rows.length === 0) { empty.style.display=""; return; }
   empty.style.display = "none";
-
   let lastSection = null;
   rows.forEach(c => {
     const dt = parseDateLocal(c.deadline);
-    const section = `${dt.getFullYear()} — ${dt.toLocaleDateString("en-GB", {month:"long"})}`;
-
+    const section = `${dt.getFullYear()} — ${dt.toLocaleDateString("en-GB",{month:"long"})}`;
     if (section !== lastSection) {
       lastSection = section;
       const sep = document.createElement("tr");
-      sep.className = "section-sep";
+      sep.className = "tv-section-sep";
       sep.innerHTML = `<td colspan="6">${section}</td>`;
       tbody.appendChild(sep);
     }
-
     const tr = document.createElement("tr");
-    const noteHtml = c.note ? `<div class="conf-note">⚠ ${c.note}</div>` : "";
-    const tags = c.topical.map(t => `<span class="topic-tag">${t}</span>`).join("");
-
+    const noteHtml = c.note ? `<div class="tv-conf-note">⚠ ${c.note}</div>` : "";
+    const tags = c.topical.map(t=>`<span class="tv-topic-tag">${t}</span>`).join("");
     const cfpHtml = c.cfpUrl
       ? `<a href="${c.cfpUrl}" target="_blank" style="color:var(--theme);font-size:0.82rem;white-space:nowrap;font-weight:500">CFP ↗</a>`
       : `<span style="color:var(--text-light);font-size:0.82rem">TBA</span>`;
-
     tr.innerHTML = `
-      <td class="deadline-cell ${c.tentative ? "tentative" : "confirmed"}">
-        ${c.tentative ? "~" : ""}${formatDate(c.deadline)}
+      <td class="tv-deadline-cell ${c.tentative?"tentative":"confirmed"}">
+        ${c.tentative?"~":""}${formatDate(c.deadline)}
         ${daysChip(c.deadline)}
-        ${c.tentative ? '<div class="tentative-note">Date not yet confirmed</div>' : ""}
+        ${c.tentative?'<div class="tv-tentative-note">Date not yet confirmed</div>':""}
       </td>
       <td>
-        <div class="conf-name">${c.name}</div>
-        <div class="conf-note">${c.fullName}</div>
+        <div class="tv-conf-name">${c.name}</div>
+        <div class="tv-conf-note">${c.fullName}</div>
         ${noteHtml}
       </td>
-      <td class="col-location" style="color:var(--text-light);font-size:0.85rem">${c.location}</td>
+      <td class="tv-col-location" style="color:var(--text-light);font-size:0.85rem">${c.location}</td>
       <td>${tierBadge(c.tier)}</td>
-      <td class="col-topical">${tags}</td>
+      <td class="tv-col-topical">${tags}</td>
       <td>${cfpHtml}</td>`;
-
     tbody.appendChild(tr);
   });
 }
 
-document.querySelectorAll(".filter-btn").forEach(btn => {
+document.querySelectorAll(".tv-filter-btn").forEach(btn => {
   btn.addEventListener("click", () => {
-    document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
+    document.querySelectorAll(".tv-filter-btn").forEach(b => b.classList.remove("active"));
     btn.classList.add("active");
     activeFilter = btn.dataset.filter;
     render();
   });
 });
 
-// ─────────────────────────────────────────────────────────────────────────────
-// TIMELINE
-// ─────────────────────────────────────────────────────────────────────────────
 (function buildTimeline() {
-  const SVG_NS   = "http://www.w3.org/2000/svg";
-  const svg      = document.getElementById("timelineSvg");
-  const tooltip  = document.getElementById("tlTooltip");
-
-  const TIER_COLOR   = { Top:"#00369f", Disciplinary:"#009f36", Other:"#888" };
-  const DOT_R        = 6;
-  const AXIS_Y       = 20;   // axis sits near top; labels hang below
-  const LABEL_BASE_Y = AXIS_Y + DOT_R + 16;  // first label row below axis
-  const ROW_H        = 16;   // vertical gap between label rows
-  const MAX_ROWS     = 5;    // maximum stagger rows
-  const TICK_H       = 5;
-  const PAD_L        = 8;
-  const PAD_R        = 20;
-  const TOTAL_H      = LABEL_BASE_Y + MAX_ROWS * ROW_H + 18; // axis label at bottom
-
-  // Estimate pixel width of a label string (px per char at font-size 9.5)
-  const CHAR_W = 6.2;
-  function labelWidth(text) { return text.length * CHAR_W + 4; }
-
-  const sorted = [...conferences].sort((a,b) =>
-    parseDateLocal(a.deadline) - parseDateLocal(b.deadline));
-
-  // Date extents
-  const today    = getToday();
-  const minDate  = new Date(today);
-  const maxDate  = new Date(Math.max(...conferences.map(c => parseDateLocal(c.deadline))));
-  maxDate.setDate(maxDate.getDate() + 18);
-  const spanMs   = maxDate - minDate;
-
-  function xOf(date, w) {
-    const usable = w - PAD_L - PAD_R;
-    return PAD_L + ((date - minDate) / spanMs) * usable;
-  }
-
-  function el(tag, attrs, parent) {
-    const e = document.createElementNS(SVG_NS, tag);
-    for (const [k, v] of Object.entries(attrs)) e.setAttribute(k, v);
+  const SVG_NS  = "http://www.w3.org/2000/svg";
+  const svg     = document.getElementById("timelineSvg");
+  const tooltip = document.getElementById("tlTooltip");
+  const TIER_COLOR = { Top:"#00369f", Disciplinary:"#009f36", Other:"#888" };
+  const DOT_R=6, AXIS_Y=20, LABEL_BASE_Y=42, ROW_H=16, MAX_ROWS=5, TICK_H=5, PAD_L=8, PAD_R=20;
+  const TOTAL_H = LABEL_BASE_Y + MAX_ROWS*ROW_H + 18;
+  function labelWidth(t) { return t.length*6.2+4; }
+  const sorted = [...conferences].sort((a,b)=>parseDateLocal(a.deadline)-parseDateLocal(b.deadline));
+  const today   = getToday();
+  const minDate = new Date(today);
+  const maxDate = new Date(Math.max(...conferences.map(c=>parseDateLocal(c.deadline))));
+  maxDate.setDate(maxDate.getDate()+18);
+  const spanMs  = maxDate - minDate;
+  function xOf(date,w) { return PAD_L+((date-minDate)/spanMs)*(w-PAD_L-PAD_R); }
+  function el(tag,attrs,parent) {
+    const e = document.createElementNS(SVG_NS,tag);
+    for (const [k,v] of Object.entries(attrs)) e.setAttribute(k,v);
     if (parent) parent.appendChild(e);
     return e;
   }
-
   function draw() {
     svg.innerHTML = "";
     const w = svg.parentElement.offsetWidth || 900;
-    svg.setAttribute("viewBox", `0 0 ${w} ${TOTAL_H}`);
+    svg.setAttribute("viewBox",`0 0 ${w} ${TOTAL_H}`);
     svg.setAttribute("height", TOTAL_H);
-
-    // ── Axis ──
-    el("line", {
-      x1:PAD_L, y1:AXIS_Y, x2:w-PAD_R, y2:AXIS_Y,
-      stroke:"#ddd", "stroke-width":2, "stroke-linecap":"round"
-    }, svg);
-
-    // ── Month ticks ──
+    el("line",{x1:PAD_L,y1:AXIS_Y,x2:w-PAD_R,y2:AXIS_Y,stroke:"#ddd","stroke-width":2,"stroke-linecap":"round"},svg);
     const cur = new Date(minDate.getFullYear(), minDate.getMonth(), 1);
     while (cur <= maxDate) {
-      const x = xOf(cur, w);
-      if (x >= PAD_L - 1) {
-        el("line", { x1:x, y1:AXIS_Y-TICK_H, x2:x, y2:AXIS_Y+TICK_H,
-                     stroke:"#ccc", "stroke-width":1 }, svg);
-        const lbl = cur.toLocaleDateString("en-GB", {month:"short", year:"2-digit"});
-        const t = el("text", {
-          x:x, y:TOTAL_H - 3,
-          "text-anchor":"middle", "font-size":"9.5",
-          "font-family":"Roboto, sans-serif", fill:"#aaa"
-        }, svg);
-        t.textContent = lbl;
+      const x = xOf(cur,w);
+      if (x >= PAD_L-1) {
+        el("line",{x1:x,y1:AXIS_Y-TICK_H,x2:x,y2:AXIS_Y+TICK_H,stroke:"#ccc","stroke-width":1},svg);
+        const t = el("text",{x,y:TOTAL_H-3,"text-anchor":"middle","font-size":"9.5","font-family":"Roboto,sans-serif",fill:"#aaa"},svg);
+        t.textContent = cur.toLocaleDateString("en-GB",{month:"short",year:"2-digit"});
       }
-      cur.setMonth(cur.getMonth() + 1);
+      cur.setMonth(cur.getMonth()+1);
     }
-
-    // ── Today marker ──
-    const tx = xOf(today, w);
-    el("line", {
-      x1:tx, y1:0, x2:tx, y2:TOTAL_H - 16,
-      stroke:"#b509ac", "stroke-width":1.5, "stroke-dasharray":"4,3", opacity:0.7
-    }, svg);
-    const tLbl = el("text", {
-      x:tx, y:AXIS_Y - TICK_H - 3,
-      "text-anchor":"middle", "font-size":"8.5",
-      "font-family":"Roboto, sans-serif", "font-weight":"700", fill:"#b509ac"
-    }, svg);
-    tLbl.textContent = "today";
-
-    // ── Conference dots + staggered labels ──
-    //
-    // Strategy: assign each conference to a "row" below the axis.
-    // For each row, track the rightmost x where a label ends.
-    // Pick the lowest-numbered row where the new label doesn't collide.
-    // This avoids all overlaps regardless of clustering.
-    //
+    const tx = xOf(today,w);
+    el("line",{x1:tx,y1:0,x2:tx,y2:TOTAL_H-16,stroke:"#b509ac","stroke-width":1.5,"stroke-dasharray":"4,3",opacity:0.7},svg);
+    const tl = el("text",{x:tx,y:AXIS_Y-TICK_H-3,"text-anchor":"middle","font-size":"8.5","font-family":"Roboto,sans-serif","font-weight":"700",fill:"#b509ac"},svg);
+    tl.textContent = "today";
     const rowEndX = new Array(MAX_ROWS).fill(-Infinity);
-
     sorted.forEach(c => {
-      const dt     = parseDateLocal(c.deadline);
-      const cx     = xOf(dt, w);
-      const color  = TIER_COLOR[c.tier] || "#888";
-      const lw     = labelWidth(c.name);
-      const lx0    = cx - lw / 2;  // left edge of this label
-      const lx1    = cx + lw / 2;  // right edge
-
-      // Find the first row with enough clearance (8px gap between labels)
+      const cx    = xOf(parseDateLocal(c.deadline),w);
+      const color = TIER_COLOR[c.tier]||"#888";
+      const lw    = labelWidth(c.name);
       let row = 0;
-      for (let r = 0; r < MAX_ROWS; r++) {
-        if (lx0 > rowEndX[r] + 8) { row = r; break; }
-        row = r + 1;
-      }
-      row = Math.min(row, MAX_ROWS - 1);
-      rowEndX[row] = lx1;
-
-      const labelY = LABEL_BASE_Y + row * ROW_H;
-
-      // Stem from axis down to label
-      el("line", {
-        x1:cx, y1:AXIS_Y + DOT_R + 2,
-        x2:cx, y2:labelY - 10,
-        stroke:color, "stroke-width":1,
-        "stroke-dasharray": c.tentative ? "3,2" : "none",
-        opacity:0.45
-      }, svg);
-
-      // Dot
-      const circle = el("circle", {
-        cx, cy:AXIS_Y,
-        r:DOT_R,
-        fill:color, stroke:"#fff", "stroke-width":2,
-        style:"cursor:pointer"
-      }, svg);
-
-      // Tentative dashed ring
-      if (c.tentative) {
-        el("circle", {
-          cx, cy:AXIS_Y, r:DOT_R+3,
-          fill:"none", stroke:color,
-          "stroke-width":1, "stroke-dasharray":"3,2", opacity:0.45
-        }, svg);
-      }
-
-      // Label text
-      const labelEl = el("text", {
-        x:cx, y:labelY,
-        "text-anchor":"middle",
-        "font-size":"9.5",
-        "font-family":"Roboto, sans-serif",
-        "font-weight":"600",
-        fill:color,
-        style:"cursor:pointer"
-      }, svg);
-      labelEl.textContent = c.name;
-
-      // Hover tooltip — recompute days live from today
+      for (let r=0; r<MAX_ROWS; r++) { if (cx-lw/2 > rowEndX[r]+8){row=r;break;} row=r+1; }
+      row = Math.min(row, MAX_ROWS-1);
+      rowEndX[row] = cx+lw/2;
+      const labelY = LABEL_BASE_Y + row*ROW_H;
+      el("line",{x1:cx,y1:AXIS_Y+DOT_R+2,x2:cx,y2:labelY-10,stroke:color,"stroke-width":1,"stroke-dasharray":c.tentative?"3,2":"none",opacity:0.45},svg);
+      const circle = el("circle",{cx,cy:AXIS_Y,r:DOT_R,fill:color,stroke:"#fff","stroke-width":2,style:"cursor:pointer"},svg);
+      if (c.tentative) el("circle",{cx,cy:AXIS_Y,r:DOT_R+3,fill:"none",stroke:color,"stroke-width":1,"stroke-dasharray":"3,2",opacity:0.45},svg);
+      const lbl = el("text",{x:cx,y:labelY,"text-anchor":"middle","font-size":"9.5","font-family":"Roboto,sans-serif","font-weight":"600",fill:color,style:"cursor:pointer"},svg);
+      lbl.textContent = c.name;
       function showTip(evt) {
-        const d    = daysFrom(c.deadline);
-        const dStr = d === 0 ? "today!" : `in ${d} day${d===1?"":"s"}`;
-        tooltip.innerHTML =
-          `<strong>${c.name}</strong>${c.fullName}<br>` +
-          `<span style="opacity:.75">${formatDate(c.deadline)}` +
-          `${c.tentative ? " (tentative)" : ""} — ${dStr}</span>` +
-          (c.note ? `<br><span style="color:#fca5a5">⚠ ${c.note}</span>` : "");
+        const d = daysFrom(c.deadline);
+        tooltip.innerHTML = `<strong>${c.name}</strong>${c.fullName}<br><span style="opacity:.75">${formatDate(c.deadline)}${c.tentative?" (tentative)":""} — ${d===0?"today!":`in ${d} day${d===1?"":"s"}`}</span>${c.note?`<br><span style="color:#fca5a5">⚠ ${c.note}</span>`:""}`;
         tooltip.style.display = "block";
         moveTip(evt);
       }
-      [circle, labelEl].forEach(n => {
+      [circle,lbl].forEach(n => {
         n.addEventListener("mouseenter", showTip);
         n.addEventListener("mousemove",  moveTip);
-        n.addEventListener("mouseleave", () => { tooltip.style.display = "none"; });
+        n.addEventListener("mouseleave", () => { tooltip.style.display="none"; });
       });
     });
   }
-
   function moveTip(evt) {
-    tooltip.style.left = Math.min(evt.clientX + 14, window.innerWidth - 255) + "px";
-    tooltip.style.top  = (evt.clientY - 12) + "px";
+    tooltip.style.left = Math.min(evt.clientX+14, window.innerWidth-255)+"px";
+    tooltip.style.top  = (evt.clientY-12)+"px";
   }
-
   draw();
   window.addEventListener("resize", draw);
 })();
 
 render();
-</script> </body> </html>
+</script> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Philipp Leitner. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Last updated: May 05, 2026. </div> </footer> <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> <script src="/assets/js/bootstrap.bundle.min.js"></script> <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/assets/js/masonry.js?a0db7e5d5c70cc3252b3138b0c91dcaf" type="text/javascript"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/js/zoom.js?85ddb88934d28b74e78031fd54cf8308"></script> <script src="/assets/js/no_defer.js?2781658a0a2b13ed609542042a859126"></script> <script defer src="/assets/js/common.js?c15de51d4bb57887caa2c21988d97279"></script> <script defer src="/assets/js/copy_code.js?c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?d9f17b6adc2311cbabd747f4538bb15f"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/assets/js/mathjax-setup.js?a5bb4e6a542c546dd929b24b8b236dfd"></script> <script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6" crossorigin="anonymous"></script> <script defer src="/assets/js/progress-bar.js?2f30e0e6801ea8f5036fa66e1ab0a71a" type="text/javascript"></script> <script src="/assets/js/vanilla-back-to-top.min.js?f40d453793ff4f64e238e420181a1d17"></script> <script>
+    addBackToTop();
+  </script> <script type="module" src="/assets/js/search/ninja-keys.min.js?a3446f084dcaecc5f75aa1757d087dcf"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/assets/js/search-setup.js?6c304f7b1992d4b60f7a07956e52f04a"></script> <script src="/assets/js/search-data.js"></script> <script src="/assets/js/shortcut-key.js?6f508d74becd347268a7f822bca7309d"></script> </body> </html>
