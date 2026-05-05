@@ -51,14 +51,21 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/teaching/";
           },
-        },{id: "nav-resources",
-          title: "resources",
-          description: "ICET-lab documents and resources",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/resources/";
-          },
-        },{id: "post-read-more",
+        },{id: "dropdown-resources",
+              title: "resources",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/resources/";
+              },
+            },{id: "dropdown-target-venues",
+              title: "target venues",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/target-venues/";
+              },
+            },{id: "post-read-more",
         
           title: 'Read More! <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
         
