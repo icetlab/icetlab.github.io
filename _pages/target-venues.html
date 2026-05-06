@@ -125,8 +125,9 @@ nav: false
     display: inline-block;
     padding: 0.18rem 0.55rem;
     border-radius: 12px;
+    font-family: 'Roboto', sans-serif;
     font-size: 0.72rem;
-    font-weight: 600;
+    font-weight: 700;
     white-space: nowrap;
     margin-left: 0.4rem;
     vertical-align: middle;
@@ -362,7 +363,7 @@ document.querySelectorAll(".tv-filter-btn").forEach(btn => {
     }
     const tx = xOf(today,w);
     el("line",{x1:tx,y1:0,x2:tx,y2:TOTAL_H-16,stroke:"#b509ac","stroke-width":1.5,"stroke-dasharray":"4,3",opacity:0.7},svg);
-    const tl = el("text",{x:tx,y:AXIS_Y-TICK_H-3,"text-anchor":"middle","font-size":"8.5","font-family":"Roboto,sans-serif","font-weight":"700",fill:"#b509ac"},svg);
+    const tl = el("text",{x:tx+4,y:AXIS_Y-TICK_H-3,"text-anchor":"start","font-size":"8.5","font-family":"Roboto,sans-serif","font-weight":"700",fill:"#b509ac"},svg);
     tl.textContent = "today";
     const rowEndX = new Array(MAX_ROWS).fill(-Infinity);
     sorted.forEach(c => {
