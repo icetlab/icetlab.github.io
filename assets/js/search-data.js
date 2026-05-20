@@ -175,10 +175,7 @@ ninja.data = [{
             window.open("https://philippleitner.medium.com/a-quick-recap-of-the-1st-vienna-seminar-on-the-relation-of-software-architecture-and-devops-e2a013ce1555?source=rss-a7d643a6ea6f------2", "_blank");
           
         },
-      },{id: "news-new-paper-accepted-at-future-generation-computer-systems-the-title-of-the-paper-is-let-s-trace-it-fine-grained-serverless-benchmarking-for-synchronous-and-asynchronous-applications-paper",
-          title: 'New paper accepted at Future Generation Computer Systems. The title of the paper...',
-          description: "",
-          section: "News",},{id: "news-another-post-christmas-paper-accepted-at-the-journal-of-software-evolution-and-process-the-title-of-the-paper-is-empowering-software-engineers-to-design-more-secure-web-applications-guidelines-and-potential-of-using-llms-as-a-recommender-tool",
+      },{id: "news-another-post-christmas-paper-accepted-at-the-journal-of-software-evolution-and-process-the-title-of-the-paper-is-empowering-software-engineers-to-design-more-secure-web-applications-guidelines-and-potential-of-using-llms-as-a-recommender-tool",
           title: 'Another post-Christmas paper accepted at the Journal of Software: Evolution and Process. The...',
           description: "",
           section: "News",},{id: "news-philipp-will-join-the-programme-committee-pc-of-the-2026-symposium-on-cloud-computing-socc",
