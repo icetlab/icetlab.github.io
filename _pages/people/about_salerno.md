@@ -1,0 +1,5 @@
+<b> Larissa Salerno </b>
+
+I am a Postdoctoral Researcher at Chalmers University of Technology, conducting research on the use of large language models in software engineering in collaboration with <a href="https://www.philippleitner.net/">Philipp Leitner</a>. My research interests cover software engineering, human–computer interaction, business and IT, and education. Within these areas, I focus on empirical software engineering, agile software development methodologies, and software engineering education. I am also interested in software processes more broadly, including how developers and teams collaborate, human aspects of software engineering, and the role of AI and LLMs in software development practices and education.
+
+More information can be found on my <a href="https://www.lsalerno.com/">personal webpage</a>.
