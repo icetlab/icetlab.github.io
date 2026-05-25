@@ -260,8 +260,7 @@ const conferences = [
   { deadline:"2027-03-27", tentative:true,  name:"ASE '27",                 fullName:"IEEE/ACM International Conference on Automated Software Engineering",                                                   location:"El Paso, TX, USA",   tier:"Top",          topical:[],                                cfpUrl:null },
   { deadline:"2027-05-18", tentative:true,  name:"ESEM '27",                fullName:"International Symposium on Empirical Software Engineering and Measurement",                                         location:"TBD",                tier:"Disciplinary", topical:["Empirical research"],            cfpUrl:null },
   { deadline:"2027-05-20", tentative:true,  name:"PROMISE '27",             fullName:"International Conference on Predictive Models and Data Analytics in Software Engineering",                              location:"TBD",                tier:"Other",        topical:["Empirical research"],            cfpUrl:null },
-  { deadline:"2027-08-26", tentative:true,  name:"ASE Workshops",           fullName:"ASE Workshop Track",                                                                                                     location:"El Paso, TX, USA",   tier:"Other",        topical:[],                                cfpUrl:null },
-];
+  { deadline:"2026-07-10", tentative:true,  name:"ASE Workshops '26",       fullName:"ASE Workshop Track",                                                                                                     location:"Munich, Germany",    tier:"Other",        topical:[],                                cfpUrl:"https://conf.researchr.org/track/ase-2026/ase-2026-workshops" },];
 
 function getToday() { const d = new Date(); d.setHours(0,0,0,0); return d; }
 function parseDateLocal(iso) { const [y,m,d] = iso.split("-").map(Number); return new Date(y,m-1,d); }
