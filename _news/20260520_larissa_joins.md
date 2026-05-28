@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-We welcome [Dr. Larissa Salerno](/people/salerno/) to ICET-lab as our newest postdoctoral researcher!
+We welcome [Dr. Larissa Salerno](https://www.lsalerno.com) to ICET-lab as our newest postdoctoral researcher!
