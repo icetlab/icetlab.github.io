@@ -33,6 +33,14 @@ profiles:
       <p>Technical Instructor & PhD Student</p>
       <p>Chalmers University of Technology</p>
   - align: left
+    id: salerno
+    image: larissa1.jpg
+    content: people/about_salerno.md
+    image_circular: false # crops the image to make it circular
+    more_info: >
+      <p>Postdoc</p>
+      <p>Chalmers University of Technology</p>
+  - align: right
     id: khojah
     image: khojah.jpg
     content: people/about_khojah.md
@@ -40,20 +48,12 @@ profiles:
     more_info: >
       <p>PhD Student</p>
       <p>Chalmers University of Technology</p>
-  - align: right
+  - align: left
     id: yi
     image: yi.png
     content: people/about_yi.md
     image_circular: false # crops the image to make it circular
     more_info: >
       <p>PhD Student</p>
-      <p>Chalmers University of Technology</p>      
-  - align: left
-    id: salerno
-    image: larissa1.jpg
-    content: people/about_salerno.md
-    image_circular: false # crops the image to make it circular
-    more_info: >
-      <p>Postdoc</p>
       <p>Chalmers University of Technology</p>      
 ---
