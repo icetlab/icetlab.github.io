@@ -25,23 +25,15 @@ The Internet Computing and Emerging Technologies lab (ICET-lab) is a research gr
 
 
 <div style="width: 55%; margin: 1.5rem auto;">
-  <div id="groupPhotoCarousel" class="carousel slide z-depth-1" data-ride="carousel" data-interval="6000">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="{{ '/assets/img/ICET_Lab/GroupPicture-cropped.jpg' | relative_url }}" class="d-block w-100 img-fluid" alt="Group picture from summer 2026">
-      </div>
-      <div class="carousel-item">
-        <img src="{{ '/assets/img/ICET_Lab/38A1119.jpg' | relative_url }}" class="d-block w-100 img-fluid" alt="Group picture from fall 2024">
-      </div>
-    </div>
-    <a class="carousel-control-prev" href="#groupPhotoCarousel" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#groupPhotoCarousel" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
+  <div style="position: relative; width: 100%; padding-bottom: 66.67%; overflow: hidden;" class="z-depth-1">
+    <img id="groupPhoto-0"
+         src="{{ '/assets/img/ICET_Lab/GroupPicture-cropped.jpg' | relative_url }}"
+         alt="Group picture from summer 2026"
+         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; opacity: 1; transition: opacity 0.8s ease-in-out;">
+    <img id="groupPhoto-1"
+         src="{{ '/assets/img/ICET_Lab/38A1119.jpg' | relative_url }}"
+         alt="Group picture from fall 2024"
+         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; opacity: 0; transition: opacity 0.8s ease-in-out;">
   </div>
   <p id="groupPhotoCaption" style="margin-top: 0.5rem; font-size: 0.9rem;">
     Group picture from summer 2026<br>
@@ -55,11 +47,12 @@ The Internet Computing and Emerging Technologies lab (ICET-lab) is a research gr
     'Group picture from summer 2026<br>(from left to right: Larissa Salerno, Francisco Gomes, Linda Erlenhov, Philipp Leitner, Gregory Gay, Ranim Khojah, Lirong Yi)',
     'Group picture from fall 2024<br>(from left to right: Philipp Leitner, Peter Samoaa, Matei Schiopu, Ranim Khojah, Francisco Gomes, Linda Erlenhov)'
   ];
-  var el = document.getElementById('groupPhotoCarousel');
-  if (el) {
-    el.addEventListener('slid.bs.carousel', function(e) {
-      document.getElementById('groupPhotoCaption').innerHTML = captions[e.to];
-    });
-  }
+  var current = 0;
+  setInterval(function() {
+    document.getElementById('groupPhoto-' + current).style.opacity = '0';
+    current = (current + 1) % 2;
+    document.getElementById('groupPhoto-' + current).style.opacity = '1';
+    document.getElementById('groupPhotoCaption').innerHTML = captions[current];
+  }, 6000);
 })();
 </script>
