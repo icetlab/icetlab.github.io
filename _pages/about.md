@@ -24,10 +24,42 @@ announcements:
 The Internet Computing and Emerging Technologies lab (ICET-lab) is a research group of at the <a href="https://www.chalmers.se/en/departments/cse/our-research/interaction-design-and-software-engineering/">Interaction Design and Software Engineering division</a> at <a href="https://www.chalmers.se/">Chalmers</a> and the <a href="https://www.gu.se/en">University of Gothenburg</a>. We conduct research on software engineering for distributed, Web, and cloud-based systems, particularly related to issues of software performance. The lab is led by <a href="http://philippleitner.net/">Dr. Philipp Leitner</a>, associate professor at Chalmers, and currently entails two faculty, one postdoc, and two PhD students.
 
 
-<p>
-    {% include figure.liquid loading="eager" path="assets/img/ICET_Lab/38A1119.jpg" class="img-fluid z-depth-1" width="55%" zoomable=true %}
-    <p>
-      Group picture from fall 2024<br>
-      (from left to right: Philipp Leitner, Peter Samoaa, Matei Schiopu, Ranim Khojah, Francisco Gomes, Linda Erlenhov)
-    </p>
-</p>
+<div style="width: 55%; margin: 1.5rem auto;">
+  <div id="groupPhotoCarousel" class="carousel slide z-depth-1" data-bs-ride="carousel" data-bs-interval="6000">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{{ '/assets/img/ICET_Lab/GroupPicture-cropped.jpg' | relative_url }}" class="d-block w-100 img-fluid" alt="Group picture from summer 2026">
+      </div>
+      <div class="carousel-item">
+        <img src="{{ '/assets/img/ICET_Lab/38A1119.jpg' | relative_url }}" class="d-block w-100 img-fluid" alt="Group picture from fall 2024">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#groupPhotoCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#groupPhotoCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <p id="groupPhotoCaption" style="margin-top: 0.5rem; font-size: 0.9rem;">
+    Group picture from summer 2026<br>
+    (from left to right: Larissa Salerno, Francisco Gomes, Linda Erlenhov, Philipp Leitner, Gregory Gay, Ranim Khojah, Lirong Yi)
+  </p>
+</div>
+
+<script>
+(function() {
+  var captions = [
+    'Group picture from summer 2026<br>(from left to right: Larissa Salerno, Francisco Gomes, Linda Erlenhov, Philipp Leitner, Gregory Gay, Ranim Khojah, Lirong Yi)',
+    'Group picture from fall 2024<br>(from left to right: Philipp Leitner, Peter Samoaa, Matei Schiopu, Ranim Khojah, Francisco Gomes, Linda Erlenhov)'
+  ];
+  var el = document.getElementById('groupPhotoCarousel');
+  if (el) {
+    el.addEventListener('slid.bs.carousel', function(e) {
+      document.getElementById('groupPhotoCaption').innerHTML = captions[e.to];
+    });
+  }
+})();
+</script>
