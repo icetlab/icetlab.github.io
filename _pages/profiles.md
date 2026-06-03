@@ -30,7 +30,7 @@ profiles:
     content: people/about_erlenhov.md
     image_circular: false # crops the image to make it circular
     more_info: >
-      <p>Technical Instructor & PhD Student</p>
+      <p>Lecturer of the Practice (Tekniklektor)</p>
       <p>Chalmers University of Technology</p>
   - align: left
     id: salerno
