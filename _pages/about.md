@@ -25,7 +25,7 @@ The Internet Computing and Emerging Technologies lab (ICET-lab) is a research gr
 
 
 <div style="width: 55%; margin: 1.5rem auto;">
-  <div id="groupPhotoCarousel" class="carousel slide z-depth-1" data-bs-ride="carousel" data-bs-interval="6000">
+  <div id="groupPhotoCarousel" class="carousel slide z-depth-1" data-ride="carousel" data-interval="6000">
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="{{ '/assets/img/ICET_Lab/GroupPicture-cropped.jpg' | relative_url }}" class="d-block w-100 img-fluid" alt="Group picture from summer 2026">
@@ -34,14 +34,14 @@ The Internet Computing and Emerging Technologies lab (ICET-lab) is a research gr
         <img src="{{ '/assets/img/ICET_Lab/38A1119.jpg' | relative_url }}" class="d-block w-100 img-fluid" alt="Group picture from fall 2024">
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#groupPhotoCarousel" data-bs-slide="prev">
+    <a class="carousel-control-prev" href="#groupPhotoCarousel" role="button" data-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#groupPhotoCarousel" data-bs-slide="next">
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#groupPhotoCarousel" role="button" data-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
+      <span class="sr-only">Next</span>
+    </a>
   </div>
   <p id="groupPhotoCaption" style="margin-top: 0.5rem; font-size: 0.9rem;">
     Group picture from summer 2026<br>
