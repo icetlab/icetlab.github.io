@@ -25,15 +25,15 @@ The Internet Computing and Emerging Technologies lab (ICET-lab) is a research gr
 
 
 <div style="width: 55%; margin: 1.5rem 0;">
-  <div style="position: relative; width: 100%; padding-bottom: 66.67%; overflow: hidden;" class="z-depth-1">
+  <div id="photoWrapper" style="position: relative; padding-bottom: 50.6%; transition: padding-bottom 0.8s ease-in-out;">
     <img id="groupPhoto-0"
-         src="{{ '/assets/img/ICET_Lab/GroupPicture-cropped.jpg' | relative_url }}"
+         src="{{ '/assets/img/ICET_Lab/GroupPicture-cropped.jpeg' | relative_url }}"
          alt="Group picture from summer 2026"
-         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; opacity: 1; transition: opacity 0.8s ease-in-out;">
+         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; opacity: 1; transition: opacity 0.8s ease-in-out;">
     <img id="groupPhoto-1"
          src="{{ '/assets/img/ICET_Lab/38A1119.jpg' | relative_url }}"
          alt="Group picture from fall 2024"
-         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; opacity: 0; transition: opacity 0.8s ease-in-out;">
+         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 0.8s ease-in-out;">
   </div>
   <p id="groupPhotoCaption" style="margin-top: 0.5rem; font-size: 0.9rem;">
     Group picture from summer 2026<br>
@@ -47,11 +47,13 @@ The Internet Computing and Emerging Technologies lab (ICET-lab) is a research gr
     'Group picture from summer 2026<br>(from left to right: Larissa Salerno, Francisco Gomes, Linda Erlenhov, Philipp Leitner, Gregory Gay, Ranim Khojah, Lirong Yi)',
     'Group picture from fall 2024<br>(from left to right: Philipp Leitner, Peter Samoaa, Matei Schiopu, Ranim Khojah, Francisco Gomes, Linda Erlenhov)'
   ];
+  var ratios = ['50.6%', '66.67%'];
   var current = 0;
   setInterval(function() {
     document.getElementById('groupPhoto-' + current).style.opacity = '0';
     current = (current + 1) % 2;
     document.getElementById('groupPhoto-' + current).style.opacity = '1';
+    document.getElementById('photoWrapper').style.paddingBottom = ratios[current];
     document.getElementById('groupPhotoCaption').innerHTML = captions[current];
   }, 6000);
 })();
