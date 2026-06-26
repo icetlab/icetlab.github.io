@@ -193,7 +193,7 @@ ninja.data = [{
           section: "News",},{id: "news-we-welcome-dr-larissa-salerno-to-icet-lab-as-our-newest-postdoctoral-researcher",
           title: 'We welcome Dr. Larissa Salerno to ICET-lab as our newest postdoctoral researcher!',
           description: "",
-          section: "News",},{id: "news-ranim-s-paper-eye-tracking-insights-into-reviewing-llm-labelled-code-has-been-accepted-to-the-research-track-of-ase-2026-congratulations-ranim",
+          section: "News",},{id: "news-ranim-s-paper-eye-tracking-insights-into-reviewing-llm-labelled-code-has-been-accepted-to-the-research-track-of-ase-2026-congratulations-ranim-preprint",
           title: 'Ranim’s paper “Eye Tracking Insights into Reviewing LLM-Labelled Code” has been accepted to...',
           description: "",
           section: "News",},{id: "projects-chatbots-in-software-development",
