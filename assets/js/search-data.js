@@ -196,8 +196,8 @@ ninja.data = [{
           section: "News",},{id: "news-ranim-s-paper-eye-tracking-insights-into-reviewing-llm-labelled-code-has-been-accepted-to-the-research-track-of-ase-2026-congratulations-ranim-preprint",
           title: 'Ranim’s paper “Eye Tracking Insights into Reviewing LLM-Labelled Code” has been accepted to...',
           description: "",
-          section: "News",},{id: "news-philipp-promoted-to-professor-at-chalmers-university-of-technology",
-          title: 'Philipp Promoted to Professor at Chalmers University of Technology',
+          section: "News",},{id: "news-philipp-has-been-promoted-to-professor",
+          title: 'Philipp has been promoted to Professor',
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/20260821_leitner_professor/";
