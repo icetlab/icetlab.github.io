@@ -18,16 +18,16 @@ Slides from the inauguration lecture:
 </div>
 
 <div class="row align-items-center">
-    <div class="col-6 mt-3 mt-md-0">
+    <div class="col-sm-6 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/leitner_professor/leitner1.jpg" title="Philipp's inauguration lecture" class="img-fluid rounded z-depth-1" %}
     </div>
-    <div class="col-6 mt-3 mt-md-0">
+    <div class="col-sm-6 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/leitner_professor/leitner2.jpg" title="Philipp's inauguration lecture" class="img-fluid rounded z-depth-1" %}
     </div>
-    <div class="col-6 mt-3 mt-md-0">
+    <div class="col-sm-6 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/leitner_professor/leitner3.jpg" title="Philipp's inauguration lecture" class="img-fluid rounded z-depth-1" %}
     </div>
-    <div class="col-6 mt-3 mt-md-0">
+    <div class="col-sm-6 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/leitner_professor/leitner4.jpg" title="Philipp's inauguration lecture" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
