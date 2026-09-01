@@ -13,7 +13,7 @@ profiles:
     content: people/about_leitner.md
     image_circular: false # crops the image to make it circular
     more_info: >
-      <p>Professor</p>
+      <p>Professor</p><br>
       <p>Head of ICET-lab</p>
       <p>Chalmers University of Technology</p>
   - align: left
