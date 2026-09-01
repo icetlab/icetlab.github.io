@@ -23,11 +23,11 @@ related_publications: true
     </div>
 </div>
 
-In collaboration with the [Computer and Network Systems research unit](https://www.chalmers.se/en/departments/cse/our-research/computer-and-network-systems/) at Chalmers we are working on methods to reduce machine learning bloat, while at the same time guaranteeing uninterrupted functioning of the system (something that state of the art debloating tools, such as [docker-slim](https://hub.docker.com/r/dslim/docker-slim), sometimes struggle with).
+In collaboration with the [Computer and Network Systems research unit](https://www.chalmers.se/en/departments/cse/our-research/computer-and-network-systems/) at Chalmers, we built BLAFS, a bloat-aware container filesystem that removes unused files at runtime while guaranteeing the debloated container still works correctly {% cite zhang:25 %}. Accessed files move into a debloating layer as the container runs, and, similar to garbage collection, files that are never accessed get removed. An optional reloading layer fetches anything mistakenly removed from a remote cache on demand.
+
+Across the top 20 most-downloaded Docker Hub containers, four ML containers, and a 10-function serverless benchmark suite, BLAFS reduces container image sizes by up to 95% and cold starts by up to 68%. In a security-hardened mode it removes up to 89% of known CVEs, where the two state-of-the-art debloating tools we compared against, including [docker-slim](https://hub.docker.com/r/dslim/docker-slim), largely fail on the same workloads.
 
 **Contacts:**
-
-[Huaifeng Zhang](https://scholar.google.se/citations?user=93dCgM4AAAAJ&hl=zh-CN), CNS unit, Chalmers
 
 [Dr. Ahmed Ali-Eldin Hassan](https://www.chalmers.se/en/persons/ahmhass/), CNS unit, Chalmers
 

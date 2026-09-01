@@ -32,7 +32,7 @@ either camp expects.
     <div class="col-sm-8 offset-sm-2">
         {% include figure.liquid loading="eager" path="assets/img/aioptimization.png" title="distribution of speedup scores" class="img-fluid rounded z-depth-1" %}
         <div class="caption">
-            Distribution of speedup scores for LLM-generated patches, by prompting strategy and by model. The red line is the original code; the blue line is the median developer solution.
+            Distribution of speedup scores for LLM-generated patches, by prompting strategy and by model. The red line is the original code. The blue line is the median developer solution.
         </div>
     </div>
 </div>
@@ -40,14 +40,14 @@ either camp expects.
 Models solve a surprisingly large share of these genuinely hard engineering tasks, and most of their
 patches do make the code faster. But the spread is enormous, and on average they remain behind the
 human developers whose commits we compare against, across every model and prompting strategy we
-tried. The problem is not that AI writes slow code; it is that AI writes *unpredictable* code, which
+tried. The problem is not that AI writes slow code. It is that AI writes *unpredictable* code, which
 for a production system is often the worse property.
 
 <div class="row">
     <div class="col-sm-8 offset-sm-2">
         {% include figure.liquid loading="eager" path="assets/img/aieffectsize.png" title="effect sizes" class="img-fluid rounded z-depth-1" %}
         <div class="caption">
-            Effect sizes against the original code (circles) and against the developer's own patch (triangles). Every configuration beats the original; none beats the developer.
+            Effect sizes against the original code (circles) and against the developer's own patch (triangles). Every configuration beats the original. None beats the developer.
         </div>
     </div>
 </div>
@@ -75,7 +75,7 @@ In our ongoing work in this theme, we are particularly interested in:
 
 -   **Avoidance rather than optimization.** Every benchmark in this space poses the same task: here
     is slow code, make it fast. Almost nobody asks the industrial question: an agent makes fifty
-    commits to a repository over three months; does the system get slower? That is harder, because
+    commits to a repository over three months. Does the system get slower? That is harder, because
     there is no identified hotspot and no reference patch, and the effects are diffuse and
     cumulative.
 

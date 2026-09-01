@@ -77,6 +77,6 @@ agent-authored change rather than a labelled segment.
 
 [Ranim Khojah](https://ranimkhojah.com)
 
-Dr. Francisco Gomes de Oliveira Neto
+[Dr. Francisco Gomes de Oliveira Neto](https://www.icet-lab.eu/people/)
 
 [Dr. Philipp Leitner](http://philippleitner.net)

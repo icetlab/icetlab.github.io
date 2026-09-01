@@ -58,7 +58,7 @@ combination of them, evaluated across three LLMs on 221 function-level generatio
     </div>
 </div>
 
-The headline result is a deflationary one. Providing the function signature matters; most of the
+The headline result is a deflationary one. Providing the function signature matters. Most of the
 techniques that dominate practitioner advice do not add much on top of it, and some combinations
 make things worse. The difference between the best and the worst combination of techniques is about
 ten percentage points, meaning prompt programming has a noticeable effect on roughly one generation
@@ -83,6 +83,6 @@ interfaces to autonomous coding agents.
 
 [Dr. Larissa Salerno](https://www.lsalerno.com/)
 
-Dr. Francisco Gomes de Oliveira Neto
+[Dr. Francisco Gomes de Oliveira Neto](https://www.icet-lab.eu/people/)
 
 [Dr. Philipp Leitner](http://philippleitner.net)

@@ -58,6 +58,6 @@ Obviously, the rise of Large Language Models (LLMs) has transformed this area of
 
 [Ranim Khojah](https://ranimkhojah.com)
 
-[Dr. Francisco Gomes](https://www.chalmers.se/en/persons/gomesf/)
+[Dr. Francisco Gomes de Oliveira Neto](https://www.icet-lab.eu/people/)
 
 [Dr. Philipp Leitner](http://philippleitner.net)

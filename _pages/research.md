@@ -114,7 +114,7 @@ category_descriptions:
 
 ### Past Themes
 
-Research lines that have run their course. The work stands; we are simply not adding to it.
+Research lines that have run their course. The work stands. We are simply not adding to it.
 
 **[Migrating to Microservices](/projects/microservicemigration/)** (2019–2024): a grounded-theory
 and survey line on how organisations actually move from monoliths to microservices, covering the
