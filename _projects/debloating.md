@@ -3,8 +3,8 @@ layout: page
 title: Debloating ML Systems
 description: measuring and reducing code bloat in AI platforms
 img: assets/img/mlbloat.png
-importance: 2
-category: machine-speed performance
+importance: 3
+category: performance engineering
 related_publications: true
 ---
 

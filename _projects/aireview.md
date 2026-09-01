@@ -14,7 +14,7 @@ As more code is written by machines, review becomes the place where quality is d
 lot of weight on a human process that was designed under the assumption that another human wrote the
 code, and could be asked what they meant.
 
-We study what actually changes in that process — behaviourally, not aspirationally.
+We study what actually changes in that process: behaviourally, not aspirationally.
 
 ### Reviewers spend longer, but do not look harder
 
@@ -63,14 +63,14 @@ committed code.
 Developers mostly accept the suggestion and use it without modification, typically after a short
 interaction of one to four prompts. When they do change it, the changes are substantial rather than
 cosmetic, and fall into five patterns that depend on the refactoring activity, the prompt, and
-whether the response was valid at all — most commonly, dropping the part that introduced an error or
+whether the response was valid at all, most commonly dropping the part that introduced an error or
 some unrequested new behaviour, and keeping the rest.
 
 Taken together: suggestions arrive largely unexamined, and the review that follows spends more time
 without applying more scrutiny.
 
 In our ongoing work in this theme, we are interested in what review tooling should surface when
-nobody wrote the code — and in whether the effects above hold when the unit of review is an entire
+nobody wrote the code, and in whether the effects above hold when the unit of review is an entire
 agent-authored change rather than a labelled segment.
 
 **Contacts:**

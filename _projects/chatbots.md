@@ -45,8 +45,8 @@ problem, and to get training on a skill or concept.
 ### How much prompting actually matters
 
 The internal factors turned out to be worth a study of their own. CodePromptEval
-{% cite khojah:25 %} is a dataset of 7,072 prompts covering five prompt techniques —
-few-shot examples, persona, chain-of-thought, function signature, and list of packages — and every
+{% cite khojah:25 %} is a dataset of 7,072 prompts covering five prompt techniques
+(few-shot examples, persona, chain-of-thought, function signature, and list of packages) and every
 combination of them, evaluated across three LLMs on 221 function-level generation tasks.
 
 <div class="row">
@@ -62,16 +62,16 @@ The headline result is a deflationary one. Providing the function signature matt
 techniques that dominate practitioner advice do not add much on top of it, and some combinations
 make things worse. The difference between the best and the worst combination of techniques is about
 ten percentage points, meaning prompt programming has a noticeable effect on roughly one generation
-task in ten. Correctness is also not the whole story — we find that techniques that help correctness
+task in ten. Correctness is also not the whole story: we find that techniques that help correctness
 do not necessarily help the similarity or the quality of the resulting code.
 
 ### What organisations do about it
 
 Adoption is not only a technical question. We interviewed managers at 11 software organisations
 across four countries in Europe and Asia about how they write LLM policy, and what drives it
-{% cite khojah:26 %}. The concerns that shape these policies — ownership and
+{% cite khojah:26 %}. The concerns that shape these policies (ownership and
 quality of generated content, accountability, and the risk of sensitive data leaving the
-organisation through an external API — are largely not the ones the research literature focuses on.
+organisation through an external API) are largely not the ones the research literature focuses on.
 
 In our ongoing work in this theme, we are studying how context provided in a prompt affects the
 quality of generated artifacts, and how the picture above changes as engineers move from chat

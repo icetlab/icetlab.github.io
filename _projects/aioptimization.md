@@ -3,8 +3,8 @@ layout: page
 title: Faster Code from AI?
 description: can LLMs and agents make real software faster, and how would we know?
 img: assets/img/aioptimization.png
-importance: 1
-category: machine-speed performance
+importance: 2
+category: performance engineering
 related_publications: true
 ---
 
@@ -16,7 +16,7 @@ Unit tests are fast, binary, and trustworthy enough to run inside a training loo
 agent's inner loop, which is why the correctness of LLM-generated code has improved so quickly.
 Performance has no equivalent. Benchmarks are slow, statistically fragile, expensive to run, and
 frequently do not even exercise the code path whose cost changed. As a result there is essentially
-no reward signal for execution cost anywhere in the stack — not in training, not in agent
+no reward signal for execution cost anywhere in the stack: not in training, not in agent
 scaffolding, and not in the CI pipelines of most projects.
 
 We think this makes the efficiency gap in machine-generated code structural rather than a
@@ -39,7 +39,7 @@ either camp expects.
 
 Models solve a surprisingly large share of these genuinely hard engineering tasks, and most of their
 patches do make the code faster. But the spread is enormous, and on average they remain behind the
-human developers whose commits we compare against — across every model and prompting strategy we
+human developers whose commits we compare against, across every model and prompting strategy we
 tried. The problem is not that AI writes slow code; it is that AI writes *unpredictable* code, which
 for a production system is often the worse property.
 
@@ -58,7 +58,7 @@ the human found. Telling the model *what* to optimize helps considerably more th
 benchmark code.
 
 We also find that the popular algorithmic-puzzle benchmarks give a substantially more optimistic
-picture of LLM optimization ability than real production code does — which matters, because most of
+picture of LLM optimization ability than real production code does, which matters because most of
 what the field currently believes about machine efficiency rests on those benchmarks.
 
 In our ongoing work in this theme, we are particularly interested in:
@@ -74,7 +74,7 @@ In our ongoing work in this theme, we are particularly interested in:
     code they replace. Validating a cost oracle is itself a research contribution.
 
 -   **Avoidance rather than optimization.** Every benchmark in this space poses the same task: here
-    is slow code, make it fast. Almost nobody asks the industrial question — an agent makes fifty
+    is slow code, make it fast. Almost nobody asks the industrial question: an agent makes fifty
     commits to a repository over three months; does the system get slower? That is harder, because
     there is no identified hotspot and no reference patch, and the effects are diffuse and
     cumulative.

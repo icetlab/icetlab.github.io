@@ -8,7 +8,7 @@ category: cloud and distributed systems
 related_publications: true
 ---
 
-*2015–2019. Concluded — but see below.*
+*2015–2019. Concluded (but see below).*
 
 A common challenge in software engineering for the cloud is to understand the performance of applications. Applications are often composed of many services and run on shared infrastructure. Besides the inherent [performance variability of cloud services](/projects/cloudbenchmarking), the performance of applications can be affected by many factors, such as the the network, the application code, and user behavior.
 
@@ -50,7 +50,7 @@ We developed these ideas further in a proof-of-concept prototype called *Perform
 </div>
 
 The problem feedback-driven development was built for has, if anything, become more acute. You
-cannot see slowness in a diff — and when the diff was written by an agent, there is no author to ask
+cannot see slowness in a diff, and when the diff was written by an agent, there is no author to ask
 what it was supposed to cost. We are returning to these ideas in our work on
 [performance feedback for machine-written code](/projects/aioptimization/).
 

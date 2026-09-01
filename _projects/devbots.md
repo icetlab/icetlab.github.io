@@ -50,7 +50,7 @@ Automation is a key enabler for effective software development. It can help deve
     </div>    
 </div>
 
-Obviously, the rise of Large Language Models (LLMs) has transformed this area of research. ICET-lab members are actively involved in research on how LLMs can support developers {% cite khojah:24 %}, and for which use cases more traditional DevBots and automation pipelines are more suited — see our work on [LLMs in software engineering practice](/projects/chatbots/).
+Obviously, the rise of Large Language Models (LLMs) has transformed this area of research. ICET-lab members are actively involved in research on how LLMs can support developers {% cite khojah:24 %}, and for which use cases more traditional DevBots and automation pipelines are more suited. See our work on [LLMs in software engineering practice](/projects/chatbots/).
 
 **Contacts:**
 

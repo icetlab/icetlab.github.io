@@ -5,34 +5,24 @@ permalink: /research/
 description: important ICET-lab research projects, present and past
 nav: false
 nav_order: 3
-display_categories: [performance engineering, machine-speed performance, AI-assisted development, cloud and distributed systems]
+display_categories: [performance engineering, AI-assisted development, cloud and distributed systems]
 horizontal: true
 category_descriptions:
   performance engineering: >
-    Measuring software performance so that the result can be trusted — microbenchmarking,
-    regression detection in CI, and cutting the cost of performance testing.
-    <em>Philipp Leitner.</em>
-  machine-speed performance: >
-    What happens to efficiency when code is written by machines, and what a performance signal
-    would have to look like to sit inside a generation loop.
-    <em>Lirong Esme Yi, Philipp Leitner.</em>
+    Measuring, predicting, and improving software performance, from microbenchmarks and
+    regression detection in CI to the efficiency of code written by AI models and agents.
   AI-assisted development: >
-    How software engineers actually work with LLMs, agents, and bots — usage, prompting, review,
+    How software engineers actually work with LLMs, agents, and bots: usage, prompting, review,
     and the organisational policies that grow around them.
-    <em>Ranim Khojah, Larissa Salerno, Linda Erlenhov, Francisco Gomes de Oliveira Neto.</em>
   cloud and distributed systems: >
-    The lab's foundational thread: performance and engineering practice for cloud, serverless,
-    and service-based systems. Less central than it was, but not closed.
-    <em>Philipp Leitner.</em>
+    Understanding and predicting the performance of cloud, serverless, and service-based systems.
+    This was the lab's founding research area, and it is still active today.
 ---
 
 <div class="row">
   <div class="col-md-8 justify-content-sm-center">
     <p>
-      ICET-lab studies how software systems are built, and how well they run. Our two core interests are <strong>software performance engineering</strong> — measuring, predicting, and improving the performance of software from individual methods up to cloud deployments — and <strong>AI-assisted software engineering</strong>, meaning both how developers actually work with LLMs and coding agents, and what happens to a system when much of its code is machine-authored.
-    </p>
-    <p>
-      Increasingly these are one question. Code is now produced at machine speed, but the feedback loops that are supposed to keep it correct, fast, and maintainable were designed for humans. Functional correctness has a cheap and trustworthy verifier in the form of unit tests. Efficiency does not, and so it is not rewarded anywhere in the stack. Much of our current work is about closing that gap.
+      ICET-lab studies two connected questions: how to measure, predict, and improve the performance of software systems, and how developers and organisations actually work with LLMs and coding agents. Increasingly these are the same question, since code is now produced at machine speed by systems whose efficiency is rarely checked.
     </p>
     <p>
       Many of our studies have an empirical slant (e.g., we crawl open source repositories, send out surveys, or conduct interviews), but we also frequently conduct experimental research (e.g., controlled lab experiments, field studies, or performance evaluations). We are also keen on building proof-of-concepts and tools. We are commited to open and reproducible science, as well as to transferring our results to industry and society as a whole. As part of this, we often speak about our work at academic and industrial conferences.
@@ -126,12 +116,12 @@ category_descriptions:
 
 Research lines that have run their course. The work stands; we are simply not adding to it.
 
-**[Migrating to Microservices](/projects/microservicemigration/)** (2019–2024) — a grounded-theory
+**[Migrating to Microservices](/projects/microservicemigration/)** (2019–2024): a grounded-theory
 and survey line on how organisations actually move from monoliths to microservices, covering the
 decision-making, the migration journey itself, and the competences it demands of engineers. Concluded
 with [Hamdy Michael Ayas et al. (2024)](https://doi.org/10.1016/j.jss.2024.112055) in the Journal of
 Systems and Software.
 
-**Serverless performance benchmarking** (2019–2026) — fine-grained, cross-provider benchmarking of
+**Serverless performance benchmarking** (2019–2026): fine-grained, cross-provider benchmarking of
 FaaS platforms, function triggers, and orchestrated serverless applications (CrossFit, TriggerBench).
 See the [publication list](/publications/) for the full set.
