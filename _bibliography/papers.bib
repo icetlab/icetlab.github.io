@@ -1547,3 +1547,27 @@ url="http://dx.doi.org/10.1007/978-3-319-08245-5_11"
  address = {New York, NY, USA},
 }
 
+@article{yi:25,
+title = {Do AI Models Dream of Faster Code? An Empirical Study on LLM-Proposed Performance Improvements in Real-World Software},
+journal = {arXiv preprint},
+year = {2025},
+author = {Lirong Yi and Gregory Gay and Philipp Leitner},
+preview = {yi.png},
+abbr = {arXiv},
+pdf = {https://arxiv.org/abs/2510.15494},
+note = {Submitted for publication},
+abstract = {Large Language Models (LLMs) can generate code, but can they generate fast code for complex, real-world software systems? In this study, we investigate this question using a dataset of 65 tasks mined from performance-critical open-source Java projects. Unlike prior studies, which focused on algorithmic puzzles, we conduct experiments on actual performance-sensitive production code and employ developer-written JMH benchmarks to rigorously validate performance gains against human baselines. Our results reveal a nuanced reality -- although LLMs demonstrate a surprisingly high capability to solve these complex engineering problems, their solutions suffer from extreme volatility and still lag behind human developers on average. Consequently, we find that the current benchmarks based on algorithmic tasks yields an overly optimistic assessment of LLM capabilities. We trace this real-world performance gap to two primary limitations: first, LLMs struggle to autonomously pinpoint performance hotspots, and second, even with explicit guidance, they often fall short of synthesizing optimal algorithmic improvements. Our results highlight the need to move beyond static code generation towards more complex agent-based systems that are able to profile and observe runtime behavior for performance improvement.}
+}
+
+@article{besbes:26,
+title = {Exploring Statistical Change Point Detection Techniques for Performance Anomaly Detection at Mozilla},
+journal = {arXiv preprint},
+year = {2026},
+author = {Mohamed Bilel Besbes and Gregory Mierzwinski and Suhaib Mujahid and Philipp Leitner and Alexander Serebrenik and Dave Hunt and Diego Elias Costa},
+preview = {chalmers.png},
+abbr = {arXiv},
+pdf = {https://arxiv.org/abs/2606.18377},
+note = {Submitted for publication},
+abstract = {Software performance regressions can have significant business consequences, making automated detection a critical component of modern continuous integration pipelines. At Mozilla, performance anomaly detection is handled by Perfherder, Mozilla's performance engineering management system that relies on a Student's T-test-based approach to flag regressions across hundreds of daily code changes. However, our preliminary analysis of one year of Mozilla performance data reveals that 12.5% of generated alert groups are false positives, while approximately 6.8% of them contain regressions missed by the automated system. This paper presents an empirical study evaluating 25 change-point detection (CPD) methods and 15 ensemble approaches as alternatives to Mozilla's current method. We construct a ground-truth dataset of 174 performance time series manually annotated by eleven Mozilla performance engineers, representing one of the first practitioner-annotated CPD benchmarks for performance engineering. Our results show that while offline and hybrid CPD methods improve recall over Mozilla's method, they do so at a high cost to precision. Ensemble voting strategies alleviate this trade-off and offer more consistent performance, resulting in 11% improvement in the F1-score. We validate the experimental results through a practitioner survey and report on lessons learned from integrating the best methods into Mozilla's performance engineering system.}
+}
+

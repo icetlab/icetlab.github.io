@@ -1,12 +1,14 @@
 ---
 layout: page
 title: Software Development Bots
-description: bot-based automation in software projects
+description: bot-based automation, before and after LLMs
 img: assets/img/devbots.png
-importance: 1
-category: bots
+importance: 3
+category: AI-assisted development
 related_publications: true
 ---
+
+*Active since 2018.*
 
 Automation is a key enabler for effective software development. It can help developers to focus on the more creative aspects of software development, while repetitive tasks are taken care of by machines. Our key research interest in this area is how developers interact with highly automated tools ("DevBots").
 
@@ -14,7 +16,7 @@ Automation is a key enabler for effective software development. It can help deve
     <div class="col-sm-7 mt-3 mt-md-0">
         <p>We identify six key characteristics of DevBots {% cite erlenhov:20 %}. On a high level, all DevBots are automation tools with exhibit some human traits. Further, DevBots commonly have a human-like identity, such as a name.</p>
 
-        <p>Other characteristics depend on the type of bot. In our research, we distinguish between <i>>Charlie</i> bots (where the defining characteristic is a human-language interface), <i>Alex</i> bots (which are defined by doing things autonomously, independent of a human developer), and <i>Sam</i> bots (which exhibit a "smartness" that goes beyond executing a well-defined script).</p>
+        <p>Other characteristics depend on the type of bot. In our research, we distinguish between <i>Charlie</i> bots (where the defining characteristic is a human-language interface), <i>Alex</i> bots (which are defined by doing things autonomously, independent of a human developer), and <i>Sam</i> bots (which exhibit a "smartness" that goes beyond executing a well-defined script).</p>
     </div>
     <div class="col-sm-5 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/devbot_characteristics.png" title="DevBot Characteristics" class="img-fluid rounded z-depth-1" %}
@@ -38,7 +40,7 @@ Automation is a key enabler for effective software development. It can help deve
 
 <div class="row align-items-center">
     <div class="col-sm-7 mt-3 mt-md-0">
-        <p>In our ongoing work, we are also interested in bots for continuous performance assessment {% cite markusse:22 %}, connecting the lab's interest in performance engineering and measurement with software development automation. We are currently working with researchers at Concordia Univeersity (Canada), Eindhoven University of Technology (The Netherlands), and <a href="https://www.mozilla.org/">Mozilla</a> on better bots for monitoring software performance.</p>
+        <p>In our ongoing work, we are also interested in bots for continuous performance assessment {% cite markusse:22 %}, connecting the lab's interest in performance engineering and measurement with software development automation. We are currently working with researchers at Concordia University (Canada), Eindhoven University of Technology (The Netherlands), and <a href="https://www.mozilla.org/">Mozilla</a> on better bots for monitoring software performance.</p>
     </div>
     <div class="col-sm-5 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/performancebot.png" title="A DevBot for Continuous Performance Assessment" class="img-fluid rounded z-depth-1" %}
@@ -48,7 +50,7 @@ Automation is a key enabler for effective software development. It can help deve
     </div>    
 </div>
 
-Obviously, the rise of Large Language Models (LLMs) has transformed this area of research. ICET-lab members are actively involved in research on how LLMs can support developers {% cite khojah:24 %}, and for which use cases more traditional DevBots and automation pipelines are more suited.
+Obviously, the rise of Large Language Models (LLMs) has transformed this area of research. ICET-lab members are actively involved in research on how LLMs can support developers {% cite khojah:24 %}, and for which use cases more traditional DevBots and automation pipelines are more suited — see our work on [LLMs in software engineering practice](/projects/chatbots/).
 
 **Contacts:**
 

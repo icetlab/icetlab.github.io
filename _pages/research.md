@@ -5,14 +5,34 @@ permalink: /research/
 description: important ICET-lab research projects, present and past
 nav: false
 nav_order: 3
-display_categories: [performance, bots, cloud engineering]
+display_categories: [performance engineering, machine-speed performance, AI-assisted development, cloud and distributed systems]
 horizontal: true
+category_descriptions:
+  performance engineering: >
+    Measuring software performance so that the result can be trusted — microbenchmarking,
+    regression detection in CI, and cutting the cost of performance testing.
+    <em>Philipp Leitner.</em>
+  machine-speed performance: >
+    What happens to efficiency when code is written by machines, and what a performance signal
+    would have to look like to sit inside a generation loop.
+    <em>Lirong Esme Yi, Philipp Leitner.</em>
+  AI-assisted development: >
+    How software engineers actually work with LLMs, agents, and bots — usage, prompting, review,
+    and the organisational policies that grow around them.
+    <em>Ranim Khojah, Larissa Salerno, Linda Erlenhov, Francisco Gomes de Oliveira Neto.</em>
+  cloud and distributed systems: >
+    The lab's foundational thread: performance and engineering practice for cloud, serverless,
+    and service-based systems. Less central than it was, but not closed.
+    <em>Philipp Leitner.</em>
 ---
 
 <div class="row">
   <div class="col-md-8 justify-content-sm-center">
     <p>
-      The core research interest of ICET-lab is in software engineering for distributed, Web, and cloud-based systems, as well as (increasingly) in measuring and improving software performance. The overarching goal of the team is to understand how developers use emerging Internet technology, and to support the community in using these technologies effectively.
+      ICET-lab studies how software systems are built, and how well they run. Our two core interests are <strong>software performance engineering</strong> — measuring, predicting, and improving the performance of software from individual methods up to cloud deployments — and <strong>AI-assisted software engineering</strong>, meaning both how developers actually work with LLMs and coding agents, and what happens to a system when much of its code is machine-authored.
+    </p>
+    <p>
+      Increasingly these are one question. Code is now produced at machine speed, but the feedback loops that are supposed to keep it correct, fast, and maintainable were designed for humans. Functional correctness has a cheap and trustworthy verifier in the form of unit tests. Efficiency does not, and so it is not rewarded anywhere in the stack. Much of our current work is about closing that gap.
     </p>
     <p>
       Many of our studies have an empirical slant (e.g., we crawl open source repositories, send out surveys, or conduct interviews), but we also frequently conduct experimental research (e.g., controlled lab experiments, field studies, or performance evaluations). We are also keen on building proof-of-concepts and tools. We are commited to open and reproducible science, as well as to transferring our results to industry and society as a whole. As part of this, we often speak about our work at academic and industrial conferences.
@@ -75,6 +95,8 @@ horizontal: true
   <a id="{{ category }}" href=".#{{ category }}">
     <h2 class="category">{{ category }}</h2>
   </a>
+  {% assign blurb = page.category_descriptions[category] %}
+  {% if blurb %}<p class="category-description">{{ blurb }}</p>{% endif %}
   {% assign categorized_projects = site.projects | where: "category", category %}
   {% assign sorted_projects = categorized_projects | sort: "importance" %}
   <!-- Generate cards for each project -->
@@ -96,3 +118,20 @@ horizontal: true
   {% endfor %}
 
 {% endif %}
+</div>
+
+<hr />
+
+### Past Themes
+
+Research lines that have run their course. The work stands; we are simply not adding to it.
+
+**[Migrating to Microservices](/projects/microservicemigration/)** (2019–2024) — a grounded-theory
+and survey line on how organisations actually move from monoliths to microservices, covering the
+decision-making, the migration journey itself, and the competences it demands of engineers. Concluded
+with [Hamdy Michael Ayas et al. (2024)](https://doi.org/10.1016/j.jss.2024.112055) in the Journal of
+Systems and Software.
+
+**Serverless performance benchmarking** (2019–2026) — fine-grained, cross-provider benchmarking of
+FaaS platforms, function triggers, and orchestrated serverless applications (CrossFit, TriggerBench).
+See the [publication list](/publications/) for the full set.

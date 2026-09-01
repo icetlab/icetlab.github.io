@@ -8,6 +8,8 @@ category: cloud engineering
 related_publications: true
 ---
 
+*2019–2024. Concluded.*
+
 <div class="row align-items-center">
     <div class="col-sm-7 mt-3 mt-md-0">
         <p>Organizations in many industries are increasingly adopting Microservices-based Software Architectures (MSAs) for designing, developing, testing and maintaining software systems, in order to scale-up their Development and Operations capabilities. However, transitioning to MSAs is easier said than done.</p>

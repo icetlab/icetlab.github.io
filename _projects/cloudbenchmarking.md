@@ -3,10 +3,12 @@ layout: page
 title: Cloud Benchmarking
 description: measuring the performance of cloud systems
 img: assets/img/cloudbenchmark.png
-importance: 2
-category: performance
+importance: 1
+category: cloud and distributed systems
 related_publications: true
 ---
+
+*Active since 2014.*
 
 <div class="row align-items-center">
     <div class="col-sm-5 mt-3 mt-md-0">

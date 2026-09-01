@@ -4,10 +4,11 @@ title: Software Performance Benchmarking with JMH
 description: measuring, predicting, and optimizing software performance in Java using JMH
 img: assets/img/dynamicreconfig.png
 importance: 1
-category: performance
+category: performance engineering
 related_publications: true
 ---
 
+*Active since 2015.*
 
 <div class="row align-items-center">
     <div class="col-sm-7 mt-3 mt-md-0">
@@ -51,6 +52,13 @@ In our ongoing work in this research theme, we are particularly interested in:
 * How to _predict_ the execution time of benchmarks (and, hence, performance) prior to execution. We have already achieved initial success predicting the execution time of small pieces of code using graph-based neural networks {% cite samoaa:22:1 %}. The ultimate vision, of course, is to be able to warn developers _before_ committing slow code, without the need for expensive performance testing.
 
 * How to make performance testing _easier_, through performance assessment bots {% cite markusse:22 %} or good visualizations {% cite cito:19%}.
+
+* How to reliably *detect* a regression once it has happened. Together with
+  [Mozilla](https://www.mozilla.org/), we benchmarked 25 change point detection methods against
+  a ground truth of 174 performance time series annotated by eleven Mozilla performance
+  engineers {% cite besbes:26 %}. Ensemble voting gives the best trade-off
+  between catching real regressions and not crying wolf, and the paper reports on integrating
+  the best-performing methods into Mozilla's production system.
 
 **Contacts:**
 

@@ -3,10 +3,12 @@ layout: page
 title: Debloating ML Systems
 description: measuring and reducing code bloat in AI platforms
 img: assets/img/mlbloat.png
-importance: 3
-category: performance
+importance: 2
+category: machine-speed performance
 related_publications: true
 ---
+
+*Active since 2023.*
 
 <div class="row">
     <div class="col-sm-7 mt-3 mt-md-0">
