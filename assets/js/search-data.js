@@ -201,9 +201,19 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/20260821_leitner_professor/";
-            },},{id: "projects-chatbots-in-software-development",
-          title: 'Chatbots in Software Development',
-          description: "how are LLMs used, designed, and evaluated in software engineering industry?",
+            },},{id: "projects-faster-code-from-ai",
+          title: 'Faster Code from AI?',
+          description: "can LLMs and agents make real software faster, and how would we know?",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/aioptimization/";
+            },},{id: "projects-reviewing-ai-generated-code",
+          title: 'Reviewing AI-Generated Code',
+          description: "what changes when the code under review was not written by a human?",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/aireview/";
+            },},{id: "projects-llms-in-software-engineering-practice",
+          title: 'LLMs in Software Engineering Practice',
+          description: "how do software engineers actually use LLMs, and what do organisations do about it?",
           section: "Projects",handler: () => {
               window.location.href = "/projects/chatbots/";
             },},{id: "projects-cloud-benchmarking",
@@ -218,7 +228,7 @@ ninja.data = [{
               window.location.href = "/projects/debloating/";
             },},{id: "projects-software-development-bots",
           title: 'Software Development Bots',
-          description: "bot-based automation in software projects",
+          description: "bot-based automation, before and after LLMs",
           section: "Projects",handler: () => {
               window.location.href = "/projects/devbots/";
             },},{id: "projects-software-performance-benchmarking-with-jmh",
