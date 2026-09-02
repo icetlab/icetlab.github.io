@@ -37,11 +37,11 @@ either camp expects.
     </div>
 </div>
 
-Models solve a surprisingly large share of these genuinely hard engineering tasks, and most of their
-patches do make the code faster. But the spread is enormous, and on average they remain behind the
+Models solve a surprisingly large share of these hard engineering tasks, and most of their
+patches do make the code faster. But the spread is enormous, and on average they remain (far) behind the
 human developers whose commits we compare against, across every model and prompting strategy we
-tried. The problem is not that AI writes slow code. It is that AI writes *unpredictable* code, which
-for a production system is often the worse property.
+tried. AI not only writes slow code, it writes *unpredictable* code, which
+for a production system is often even worse.
 
 <div class="row">
     <div class="col-sm-8 offset-sm-2">
@@ -52,10 +52,6 @@ for a production system is often the worse property.
     </div>
 </div>
 
-Two limitations explain most of the gap. Models struggle to locate the hotspot on their own, and even
-when we hand them the problem description they often fail to synthesize the algorithmic change that
-the human found. Telling the model *what* to optimize helps considerably more than showing it the
-benchmark code.
 
 We also find that the popular algorithmic-puzzle benchmarks give a substantially more optimistic
 picture of LLM optimization ability than real production code does, which matters because most of

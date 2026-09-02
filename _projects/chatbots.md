@@ -58,8 +58,8 @@ combination of them, evaluated across three LLMs on 221 function-level generatio
     </div>
 </div>
 
-The headline result is a deflationary one. Providing the function signature matters. Most of the
-techniques that dominate practitioner advice do not add much on top of it, and some combinations
+Interestingly, we find that most of the
+techniques that dominate practitioner advice do not really add much, and some combinations
 make things worse. The difference between the best and the worst combination of techniques is about
 ten percentage points, meaning prompt programming has a noticeable effect on roughly one generation
 task in ten. Correctness is also not the whole story: we find that techniques that help correctness
