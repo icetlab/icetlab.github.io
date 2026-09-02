@@ -201,7 +201,10 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/20260821_leitner_professor/";
-            },},{id: "projects-faster-code-from-ai",
+            },},{id: "news-we-have-updated-our-research-page-to-better-reflect-the-lab-s-current-focus-on-performance-engineering-and-ai-assisted-software-engineering",
+          title: 'We have updated our research page to better reflect the lab’s current focus...',
+          description: "",
+          section: "News",},{id: "projects-faster-code-from-ai",
           title: 'Faster Code from AI?',
           description: "can LLMs and agents make real software faster, and how would we know?",
           section: "Projects",handler: () => {
