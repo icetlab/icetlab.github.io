@@ -64,6 +64,6 @@ In our ongoing work in this research theme, we are particularly interested in:
 
 [Dr. Christoph Laaber](https://laaber.net) (probably the world's foremost expert on academic research about JMH benchmarking)
 
-[Dr. Philipp Leitner](http://philippleitner.net)
+[Prof. Philipp Leitner](http://philippleitner.net)
 
 ---

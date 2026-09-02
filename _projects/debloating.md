@@ -31,6 +31,6 @@ Across the top 20 most-downloaded Docker Hub containers, four ML containers, and
 
 [Dr. Ahmed Ali-Eldin Hassan](https://www.chalmers.se/en/persons/ahmhass/), CNS unit, Chalmers
 
-[Dr. Philipp Leitner](http://philippleitner.net)
+[Prof. Philipp Leitner](http://philippleitner.net)
 
 ---

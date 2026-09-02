@@ -54,6 +54,6 @@ We are currently working on a toolkit for benchmarking serverless applications, 
 
 [Dr. Joel Scheuner](https://joelscheuner.com)
 
-[Dr. Philipp Leitner](http://philippleitner.net)
+[Prof. Philipp Leitner](http://philippleitner.net)
 
 ---

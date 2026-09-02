@@ -35,6 +35,6 @@ Our contributions in this area include:
 
 [Hamdy Michael Ayas](https://hmicha01.github.io)
 
-[Dr. Philipp Leitner](https://philippleitner.net)
+[Prof. Philipp Leitner](https://philippleitner.net)
 
 ---

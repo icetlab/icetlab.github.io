@@ -58,6 +58,6 @@ what it was supposed to cost. We are returning to these ideas in our work on
 
 [Prof. Jürgen Cito](https://informatics.tuwien.ac.at/people/juergen-cito)
 
-[Dr. Philipp Leitner](http://philippleitner.net)
+[Prof. Philipp Leitner](http://philippleitner.net)
 
 ---

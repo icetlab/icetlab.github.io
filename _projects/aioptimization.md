@@ -83,4 +83,4 @@ In our ongoing work in this theme, we are particularly interested in:
 
 [Lirong Esme Yi](https://www.icet-lab.eu/people/)
 
-[Dr. Philipp Leitner](http://philippleitner.net)
+[Prof. Philipp Leitner](http://philippleitner.net)
