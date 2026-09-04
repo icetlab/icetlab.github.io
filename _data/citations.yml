@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-08-28'
+  last_updated: '2026-09-04'
 papers:
   wZ9f8CAAAAAJ:-BKJ5vZJwzMC:
     citations: 19
@@ -14,7 +14,7 @@ papers:
     title: Do AI Models Dream of Faster Code? An Empirical Study on LLM-Proposed Performance Improvements in Real-World Software
     year: '2025'
   wZ9f8CAAAAAJ:-fu4zM_6qcIC:
-    citations: 71
+    citations: 73
     title: 'Continuous experimentation: challenges, implementation techniques, and current research'
     year: '2018'
   wZ9f8CAAAAAJ:-qpA3cGbmHsC:
@@ -42,9 +42,13 @@ papers:
     title: The roles, responsibilities, and skills of engineers in the era of microservices-based architectures
     year: '2024'
   wZ9f8CAAAAAJ:1Aeql8wG3wEC:
-    citations: 419
+    citations: 421
     title: Extraction of microservices from monolithic software architectures
     year: '2017'
+  wZ9f8CAAAAAJ:1YatL4jblGcC:
+    citations: 0
+    title: 'ARGUS: MCP-Grounded Root Cause Analysis for Kubernetes Incidents'
+    year: '2026'
   wZ9f8CAAAAAJ:1_W9tMSvGuwC:
     citations: 203
     title: Comparing and combining predictive business process monitoring techniques
@@ -146,7 +150,7 @@ papers:
     title: Workshop on Web APIs and Service Architecture (WS-REST) Organization
     year: Unknown Year
   wZ9f8CAAAAAJ:Amrzk_ktLr0C:
-    citations: 1
+    citations: 2
     title: "Let\u2019s trace it: Fine-grained serverless benchmarking for synchronous and asynchronous applications"
     year: '2026'
   wZ9f8CAAAAAJ:AubyX3KqGToC:
@@ -178,7 +182,7 @@ papers:
     title: End-to-end support for QoS-aware service selection, invocation and mediation in VRESCo
     year: '2009'
   wZ9f8CAAAAAJ:DPO9WFcz7UcC:
-    citations: 111
+    citations: 112
     title: "We\u2019re doing it live: A multi-method empirical study on continuous experimentation"
     year: '2018'
   wZ9f8CAAAAAJ:Dmoar05iI2YC:
@@ -194,7 +198,7 @@ papers:
     title: 'WPress: Benchmarking infrastructure-as-a-service cloud computing systems for on-line transaction processing applications'
     year: '2014'
   wZ9f8CAAAAAJ:EsrhoZGmrkoC:
-    citations: 458
+    citations: 459
     title: Optimized IoT service placement in the fog
     year: '2017'
   wZ9f8CAAAAAJ:F9HO9s0W2bwC:
@@ -226,7 +230,7 @@ papers:
     title: Service Research Challenges and Solutions for the Future Internet
     year: '2010'
   wZ9f8CAAAAAJ:IjCSPb-OGe4C:
-    citations: 182
+    citations: 183
     title: Monitoring and analyzing influential factors of business process performance
     year: '2009'
   wZ9f8CAAAAAJ:J-ba04ztB30C:
@@ -238,7 +242,7 @@ papers:
     title: Estimating cloud application performance based on micro-benchmark profiling
     year: '2018'
   wZ9f8CAAAAAJ:JTtNqH-x4gYC:
-    citations: 97
+    citations: 98
     title: Current and future bots in software development
     year: '2019'
   wZ9f8CAAAAAJ:JV2RwH3_ST0C:
@@ -398,7 +402,7 @@ papers:
     title: "VRESCo\u2013Vienna Runtime Environment for Service-oriented Computing"
     year: '2010'
   wZ9f8CAAAAAJ:UY3hNwcQ290C:
-    citations: 52
+    citations: 55
     title: The impact of prompt programming on function-level code generation
     year: '2025'
   wZ9f8CAAAAAJ:UeHWp8X0CEIC:
@@ -530,7 +534,7 @@ papers:
     title: Cost-efficient and application SLA-aware client side request scheduling in an infrastructure-as-a-service cloud
     year: '2012'
   wZ9f8CAAAAAJ:bbjcffOLshcC:
-    citations: 221
+    citations: 226
     title: An empirical analysis of the docker container ecosystem on github
     year: '2017'
   wZ9f8CAAAAAJ:bkKuixW_xMkC:
@@ -618,7 +622,7 @@ papers:
     title: The perceived impact and sequence of activities when transitioning to microservices
     year: '2023'
   wZ9f8CAAAAAJ:g30IDTdgJMgC:
-    citations: 148
+    citations: 149
     title: 'The making of cloud applications: An empirical study on software development for the cloud'
     year: '2015'
   wZ9f8CAAAAAJ:gI9wzKcniAoC:
@@ -842,7 +846,7 @@ papers:
     title: "2023 IEEE International Conference on Service-Oriented System Engineering (SOSE)| 979-8-3503-2239-2/23/$31.00\xA9 2023 IEEE| DOI: 10.1109/SOSE58276. 2023.00039"
     year: Unknown Year
   wZ9f8CAAAAAJ:w9ZB08sdvuUC:
-    citations: 150
+    citations: 152
     title: 'Beyond code generation: An observational study of chatgpt usage in software engineering practice'
     year: '2024'
   wZ9f8CAAAAAJ:wgKq3sYidysC:
@@ -858,7 +862,7 @@ papers:
     title: Topology-Aware Continuous Experimentation in Microservice-Based
     year: '2020'
   wZ9f8CAAAAAJ:yNlG6JgpFqoC:
-    citations: 45
+    citations: 46
     title: A systematic mapping study of source code representation for deep learning in software engineering
     year: '2022'
   wZ9f8CAAAAAJ:yaBp1wUtcLsC:
