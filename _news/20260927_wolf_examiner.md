@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Philipp will serve as external examiner for Alex Wolf at the University of Zurich, Switzerland.
+Philipp will serve as external examiner for [Alex Wolf](https://scholar.google.com/citations?user=qT-Vt3sAAAAJ&hl=en) at the University of Zurich, Switzerland.
