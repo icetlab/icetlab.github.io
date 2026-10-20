@@ -186,7 +186,7 @@ ninja.data = [{
           section: "News",},{id: "news-philipp-will-serve-as-external-examiner-for-alex-wolf-at-the-university-of-zurich-switzerland",
           title: 'Philipp will serve as external examiner for Alex Wolf at the University of...',
           description: "",
-          section: "News",},{id: "news-philipp-will-give-a-talk-on-performance-optimization-with-llms-at-lindholmen-software-development-day-lsdd-2026-on-october-20-in-gothenburg",
+          section: "News",},{id: "news-philipp-will-give-a-talk-on-performance-optimization-with-llms-at-lindholmen-software-development-day-lsdd-2026-on-october-20-in-gothenburg-the-slides-are-available-online",
           title: 'Philipp will give a talk on Performance Optimization With LLMs at Lindholmen Software...',
           description: "",
           section: "News",},{id: "news-ranim-s-paper-same-scrutiny-more-time-eye-tracking-insights-into-reviewing-llm-labelled-code-received-a-distinguished-paper-award-at-ase-2026-congratulations-to-ranim-and-all-co-authors-paper",
