@@ -3,7 +3,7 @@ layout: page
 permalink: /target-venues/
 title: Target Conference Venues
 description: >
-  Upcoming submission deadlines tracked by ICET-lab &mdash; Internet Computing &amp; Emerging Technologies, Chalmers &amp; University of Gothenburg. Last updated 18 October 2026.
+  Upcoming submission deadlines tracked by ICET-lab &mdash; Internet Computing &amp; Emerging Technologies, Chalmers &amp; University of Gothenburg. Last updated 25 October 2026.
 nav: false
 ---
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Roboto+Slab:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -230,9 +230,6 @@ nav: false
 
 <script>
 const conferences = [
-  { deadline:"2026-10-18", tentative:false, name:"TheWebConf '27",          fullName:"The Web Conference (WWW)",                                                                                               location:"Dublin, Ireland",    tier:"Top",          topical:["Web (many tracks)"],             cfpUrl:"https://acmweb2027.org/important-dates/" },
-  { deadline:"2026-10-23", tentative:false, name:"ICSE '27 SEIP",           fullName:"ICSE Software Engineering in Practice Track",                                                                            location:"Dublin, Ireland",    tier:"Disciplinary", topical:["Industry studies"],              cfpUrl:"https://conf.researchr.org/track/icse-2027/icse-2027-seip" },
-  { deadline:"2026-10-23", tentative:false, name:"MSR/CHASE '27",          fullName:"ICSE co-located events (MSR, CHASE) — ICPC has a later deadline, see separate entry",                                 location:"Dublin, Ireland",    tier:"Disciplinary", topical:[],                                cfpUrl:"https://conf.researchr.org/home/icse-2027" },
   { deadline:"2026-10-30", tentative:false, name:"FORGE '27",              fullName:"ACM International Conference on AI Foundation Models and Software Engineering",                                          location:"Dublin, Ireland",    tier:"Disciplinary", topical:["AI / LLM"],                      cfpUrl:"https://conf.researchr.org/track/forge-2027/forge-2027-research-papers", note:"Data and Benchmarking Track deadline: 15 Nov 2026" },
   { deadline:"2026-11-02", tentative:false, name:"ICST",                    fullName:"IEEE International Conference on Software Testing, Verification and Validation",                                        location:"San Sebastian, Spain", tier:"Disciplinary", topical:["Testing"],                   cfpUrl:"https://conf.researchr.org/track/icst-2027/icst-2027-research-papers" },
   { deadline:"2026-11-04", tentative:false, name:"ICSA",                    fullName:"IEEE International Conference on Software Architecture",                                                                 location:"Sydney, Australia",  tier:"Disciplinary", topical:["Architecture"],                  cfpUrl:"https://conf.researchr.org/track/icsa-2027/icsa-2027-papers" },
@@ -265,6 +262,9 @@ const conferences = [
   { deadline:"2027-10-02", tentative:true,  name:"FSE '28",                 fullName:"ACM International Conference on the Foundations of Software Engineering",                                               location:"Milan, Italy",       tier:"Top",          topical:[],                                cfpUrl:null, note:"Host city confirmed as Milan, Italy; exact dates and CFP not yet published." },
   { deadline:"2027-10-09", tentative:true,  name:"SIGMETRICS '28",          fullName:"ACM SIGMETRICS International Conference on Measurement and Modeling of Computer Systems",                               location:"London, UK",                tier:"Top",          topical:["Performance"],                   cfpUrl:null, note:"Fall submission round; previous cycle's deadline (2026-10-09) passed, rotated to next year — date is tentative" },
   { deadline:"2027-10-14", tentative:true,  name:"OOPSLA '28",                  fullName:"ACM SIGPLAN International Conference on Object-Oriented Programming, Systems, Languages, and Applications",            location:"TBA",    tier:"Top",          topical:["Programming"],                   cfpUrl:null, note:"1st submission round; previous cycle deadline carried forward by one year, date tentative" },
+  { deadline:"2027-10-18", tentative:true,  name:"TheWebConf '28",          fullName:"The Web Conference (WWW)",                                                                                               location:"Edmonton, Canada",    tier:"Top",          topical:["Web (many tracks)"],             cfpUrl:null, note:"Host city confirmed; submission deadline carried forward by one year and tentative; CFP not yet published" },
+  { deadline:"2027-10-23", tentative:true,  name:"ICSE '28 SEIP",           fullName:"ICSE Software Engineering in Practice Track",                                                                            location:"TBA",    tier:"Disciplinary", topical:["Industry studies"],              cfpUrl:null, note:"Submission deadline carried forward by one year and tentative; future conference details TBA" },
+  { deadline:"2027-10-23", tentative:true,  name:"MSR/CHASE '28",          fullName:"ICSE co-located events (MSR, CHASE)",                                 location:"TBA",    tier:"Disciplinary", topical:[],                                cfpUrl:null, note:"Submission deadline carried forward by one year and tentative; future conference details TBA" },
 ];
 
 function getToday() { const d = new Date(); d.setHours(0,0,0,0); return d; }
